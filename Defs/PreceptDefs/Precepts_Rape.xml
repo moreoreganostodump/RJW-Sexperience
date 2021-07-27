@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>Rape</defName>
+    <label>rape</label>
+    <iconPath>UI/Issues/Rape</iconPath>
+  </IssueDef>
+
+  <HistoryEventDef>
+    <defName>Raped</defName>
+    <label>raped</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>RapedSlave</defName>
+    <label>raped slave</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>RapedPrisoner</defName>
+    <label>raped prisoner</label>
+  </HistoryEventDef>
+  
+  <HistoryEventDef>
+    <defName>WasRaped</defName>
+    <label>was raped</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>WasRapedSlave</defName>
+    <label>was raped</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>WasRapedPrisoner</defName>
+    <label>was raped</label>
+  </HistoryEventDef>
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Rape_Abhorrent</defName>
+    <issue>Rape</issue>
+    <label>abhorrent</label>
+    <description>Rape beings is deeply evil.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>30</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Rapist</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>HumanPrimacy</li>
+      <li>Collectivist</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Raped</eventDef>
+        <thought>Rape_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>Raped</eventDef>
+        <thought>Rape_Know_Abhorrent</thought>
+        <description>Someone raped other</description>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>Rape_Horrible</thought>
+        <description>Raped prisoner</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>Rape_Know_Horrible</thought>
+        <description>Someone raped prisoner</description>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RapedSlave</eventDef>
+        <thought>Rape_Disapproved</thought>
+        <description>Raped slave</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RapedSlave</eventDef>
+        <thought>Rape_Know_Disapproved</thought>
+        <description>Someone raped slave</description>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rape_Horrible</defName>
+    <issue>Rape</issue>
+    <label>horrible</label>
+    <description>Raping other is a horrible thing.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>30</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Rapist</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>HumanPrimacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Raped</eventDef>
+        <thought>Rape_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>Raped</eventDef>
+        <thought>Rape_Know_Horrible</thought>
+        <description>Someone raped other</description>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>Rape_Disapproved</thought>
+        <description>Raped prisoner</description>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>Rape_Know_Disapproved</thought>
+        <description>Someone raped prisoner</description>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rape_Disapproved</defName>
+    <issue>Rape</issue>
+    <label>disapproved</label>
+    <description>Rape is part of life, though it is extremely distasteful.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>20</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Rapist</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>HumanPrimacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Raped</eventDef>
+        <thought>Rape_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>Raped</eventDef>
+        <thought>Rape_Know_Disapproved</thought>
+        <description>Someone raped other</description>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rape_Acceptable</defName>
+    <issue>Rape</issue>
+    <label>acceptable</label>
+    <description>Rape is a normal, unremarkable part of life.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>10</defaultSelectionWeight>
+    <approvesOfSlavery>true</approvesOfSlavery>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Rape_Honorable</defName>
+    <issue>Rape</issue>
+    <label>proud</label>
+    <description>Raping is one of proud behavior.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <conflictingMemes>
+      <li>HumanPrimacy</li>
+    </conflictingMemes>
+    <requiredMemes>
+      <li>Rapist</li>
+    </requiredMemes>
+    <statFactors>
+      <Vulnerability>0.75</Vulnerability>
+    </statFactors>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Raped</eventDef>
+        <thought>BloodlustStoleSomeLovin</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>Raped</eventDef>
+        <thought>Rape_Know_Honorable</thought>
+        <description>Someone raped other</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>BloodlustStoleSomeLovin</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>Rape_Know_Honorable</thought>
+        <description>Someone raped other</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>RapedSlave</eventDef>
+        <thought>BloodlustStoleSomeLovin</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>RapedSlave</eventDef>
+        <thought>Rape_Know_Honorable</thought>
+        <description>Someone raped other</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+  <!-- Thoughts -->
+  
+
+  <ThoughtDef>
+    <defName>Rape_Abhorrent</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Rapist</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Rape_Honorable</li>
+      <li>Rape_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>raped someone</label>
+        <description>I raped someone. I shouldn't do that.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rape_Know_Abhorrent</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Rapist</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Rape_Honorable</li>
+      <li>Rape_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>raped someone</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rape_Horrible</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Rapist</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Rape_Honorable</li>
+      <li>Rape_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>raped someone</label>
+        <description>I raped someone. I shouldn't do that.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rape_Know_Horrible</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Rapist</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Rape_Honorable</li>
+      <li>Rape_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>raped someone</label>
+        <baseOpinionOffset>-15</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rape_Disapproved</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Rapist</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Rape_Honorable</li>
+      <li>Rape_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>raped someone</label>
+        <description>I raped someone. I shouldn't do that.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rape_Know_Disapproved</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Rapist</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Rape_Honorable</li>
+      <li>Rape_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>raped someone</label>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Rape_Know_Honorable</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>25</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingPrecepts>
+      <li>Rape_Abhorrent</li>
+      <li>Rape_Disapproved</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>raped someone</label>
+        <baseOpinionOffset>1</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

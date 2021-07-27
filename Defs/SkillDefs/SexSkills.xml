@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <SkillDef>
+    <defName>Sex</defName>
+    <description>Sex skill.</description>
+    <skillLabel>sex</skillLabel>
+    <listOrder>5</listOrder>
+  </SkillDef>
+
+</Defs>

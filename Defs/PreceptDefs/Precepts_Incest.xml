@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>Incestuos</defName>
+    <label>incest</label>
+    <iconPath>UI/Issues/Incest</iconPath>
+  </IssueDef>
+
+  <HistoryEventDef>
+    <defName>Incestuos_Marriage</defName>
+    <label>Incestuos marriage</label>
+  </HistoryEventDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Incestuos_Free</defName>
+    <issue>Incestuos</issue>
+    <label>free</label>
+    <description>Open minded.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>60</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>100</defaultSelectionWeight>
+  </PreceptDef>
+
+
+  <PreceptDef>
+    <defName>Incestuos_Disapproved_CloseOnly</defName>
+    <issue>Incestuos</issue>
+    <label>disapproved on close relatives</label>
+    <description>Incest is disapproved socially. Relations farther than cousin are recognized as not incest.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>100</defaultSelectionWeight>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Incestuos_Marriage</eventDef>
+        <thought>IncestuosMarriage_Disapproved</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Incestuos_Disapproved</defName>
+    <issue>Incestuos</issue>
+    <label>disapproved</label>
+    <description>Incest is disapproved socially.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>100</defaultSelectionWeight>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Incestuos_Marriage</eventDef>
+        <thought>IncestuosMarriage_Disapproved</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>Incestuos_Marriage</eventDef>
+        <thought>Sex_Know_IncestMarriage_Disapproved</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Incest_Disapproved</thought>
+        <tag>Incestuos</tag>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Incestuos_Forbidden</defName>
+    <issue>Incestuos</issue>
+    <label>forbidden</label>
+    <description>Incest is forbidden.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>100</defaultSelectionWeight>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Incestuos_Marriage</eventDef>
+        <thought>IncestuosMarriage_Forbidden</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>Incestuos_Marriage</eventDef>
+        <thought>Sex_Know_IncestMarriage_Forbidden</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Know_Incest_Forbidden</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Know_Incest_Forbidden</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Know_Incest_Forbidden</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_Incest_Forbidden</thought>
+        <tag>Incestuos</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Incest_Forbidden</thought>
+        <tag>Incestuos</tag>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Incestuos_IncestOnly</defName>
+    <issue>Incestuos</issue>
+    <label>incest only</label>
+    <description>For preserving pure blood, only incest allowed.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <conflictingMemes>
+      <li>Zoophile</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>GotMarried_SpouseCount_OneOrFewer</eventDef>
+        <thought>Sex_Know_IncestMarriage_Violated</thought>
+        <tag>Incestuos</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Know_Incest_Violated</thought>
+        <tag>Incestuos</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Know_Incest_Violated</thought>
+        <tag>Incestuos</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Know_Incest_Violated</thought>
+        <tag>Incestuos</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_Incest_Violated</thought>
+        <tag>Incestuos</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Incest_Violated</thought>
+        <tag>Incestuos</tag>
+        <exclusive>true</exclusive>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  
+  <!-- Thoughts -->
+  <ThoughtDef>
+    <defName>IncestuosMarriage_Forbidden</defName>
+    <durationDays>30</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_IncestOnly</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>social condemnation</label>
+        <description>No one bless our marriage.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>IncestuosMarriage_Disapproved</defName>
+    <durationDays>30</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_IncestOnly</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>being gossip</label>
+        <description>They are speaking behind our back.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Sex_Know_Incest_Disapproved</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_IncestOnly</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>incest</label>
+        <baseOpinionOffset>-15</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Sex_Know_Incest_Forbidden</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_IncestOnly</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>incest</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Sex_Know_IncestMarriage_Disapproved</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>60</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_IncestOnly</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>incest</label>
+        <baseOpinionOffset>-15</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Sex_Know_IncestMarriage_Forbidden</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>60</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_IncestOnly</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>incest</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+
+  <ThoughtDef>
+    <defName>Sex_Know_Incest_Violated</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_Disapproved_CloseOnly</li>
+      <li>Incestuos_Disapproved</li>
+      <li>Incestuos_Forbidden</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with non-family</label>
+        <baseOpinionOffset>-15</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>Sex_Know_IncestMarriage_Violated</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>300</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Incestuos_Disapproved_CloseOnly</li>
+      <li>Incestuos_Disapproved</li>
+      <li>Incestuos_Forbidden</li>
+      <li>Incestuos_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>corrupt the blood</label>
+        <baseOpinionOffset>-50</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

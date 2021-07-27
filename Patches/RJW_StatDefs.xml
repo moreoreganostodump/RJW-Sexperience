@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="SexAbility"]</xpath>
+		<value>
+			<skillNeedFactors>
+				<li Class="rjw_CORE_EXPOSED.SkillNeed_BaseBonus">
+					<skill>Sex</skill>
+					<baseValue>0.40</baseValue>
+					<bonusPerLevel>0.15</bonusPerLevel>
+				</li>
+			</skillNeedFactors>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="SexFrequency"]/parts</xpath>
+		<value>
+			<li Class="RJWSexperience.StatPart_Lust">
+				<factor>1.0</factor>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/StatDef[defName="Vulnerability"]/parts</xpath>
+		<value>
+			<li Class="RJWSexperience.StatPart_GenderPrimacy">
+				<modifier>0.5</modifier>
+			</li>
+			<li Class="RJWSexperience.StatPart_Slave">
+				<factor>3.0</factor>
+			</li>
+		</value>
+	</Operation>
+
+
+</Patch>

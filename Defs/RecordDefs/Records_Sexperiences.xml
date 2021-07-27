@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RecordDef>
+		<defName>NumofEatenCum</defName>
+		<label>swallowed cum</label>
+		<description>The number of times that i swalloed cum.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>Lust</defName>
+		<label>lust</label>
+		<description>How lustful i am.</description>
+		<type>Float</type>
+	</RecordDef>
+	
+
+</Defs>

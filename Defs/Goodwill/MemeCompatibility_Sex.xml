@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Agreement - same -->
+
+  <GoodwillSituationDef>
+    <defName>Zoophile_Zoophile</defName>
+    <label>zoophile agreement</label>
+    <workerClass>GoodwillSituationWorker_MemeCompatibility</workerClass>
+    <meme>Zoophile</meme>
+    <otherMeme>Zoophile</otherMeme>
+    <naturalGoodwillOffset>30</naturalGoodwillOffset>
+  </GoodwillSituationDef>
+
+  <!-- Disagreement -->
+
+  <GoodwillSituationDef>
+    <defName>Zoophile_All</defName>
+    <label>zoophile</label>
+    <workerClass>RJWSexperience.GoodwillSituationWorker_OneWayReceive</workerClass>
+    <meme>Zoophile</meme>
+    <versusAll>true</versusAll>
+    <naturalGoodwillOffset>-50</naturalGoodwillOffset>
+  </GoodwillSituationDef>
+
+  <GoodwillSituationDef>
+    <defName>Rapist_All</defName>
+    <label>rapist</label>
+    <workerClass>RJWSexperience.GoodwillSituationWorker_OneWayReceive</workerClass>
+    <meme>Rapist</meme>
+    <versusAll>true</versusAll>
+    <naturalGoodwillOffset>-20</naturalGoodwillOffset>
+  </GoodwillSituationDef>
+</Defs>

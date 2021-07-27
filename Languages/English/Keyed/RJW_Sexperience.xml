@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LustStatFactor>Lust: x{0}%</LustStatFactor>
+  <SlaveStatFactor>Slave: x{0}%</SlaveStatFactor>
+  <SlaveStatFactorDefault>Not Slave: x100%</SlaveStatFactorDefault>
+  <MemeStatFactor>Meme: x{0}%</MemeStatFactor>
+</LanguageData>

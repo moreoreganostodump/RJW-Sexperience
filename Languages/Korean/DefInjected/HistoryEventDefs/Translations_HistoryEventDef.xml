@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SexWithAnimal.label>동물과 교미</SexWithAnimal.label>
+  <SexWithVeneratedAnimal.label>숭배받는 동물과 교미</SexWithVeneratedAnimal.label>
+  <Raped.label>강간</Raped.label>
+  <RapedSlave.label>노예 강간</RapedSlave.label>
+  <RapedPrisoner.label>죄수 강간</RapedPrisoner.label>
+  <VaginalSex.label>보지 섹스</VaginalSex.label>
+  <AnalSex.label>항문 성교</AnalSex.label>
+  <OralSex.label>구강 성교</OralSex.label>
+  <MiscSex.label>섹스</MiscSex.label>
+  <PromiscuousSex.label>문란한 섹스</PromiscuousSex.label>
+  <Incestuos_Marriage.label>근친혼</Incestuos_Marriage.label>
+</LanguageData>

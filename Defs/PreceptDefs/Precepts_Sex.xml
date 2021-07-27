@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>Sextype</defName>
+    <label>sex type</label>
+    <iconPath>UI/Issues/Bestiality</iconPath>
+  </IssueDef>
+
+  <HistoryEventDef>
+    <defName>VaginalSex</defName>
+    <label>vaginal sex</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>AnalSex</defName>
+    <label>anal sex</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>OralSex</defName>
+    <label>oral sex</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>MiscSex</defName>
+    <label>sex</label>
+  </HistoryEventDef>
+  
+  <HistoryEventDef>
+    <defName>PromiscuousSex</defName>
+    <label>promiscuous sex</label>
+  </HistoryEventDef>
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Sex_Free</defName>
+    <issue>Sextype</issue>
+    <label>free</label>
+    <description>Open minded.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>100</defaultSelectionWeight>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Sex_VaginalOnly</defName>
+    <issue>Sextype</issue>
+    <label>vaginal only</label>
+    <description>Only vaginal sex is approval and others are crude.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>100</defaultSelectionWeight>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Sex_AnalOnly</defName>
+    <issue>Sextype</issue>
+    <label>anal only</label>
+    <description>Only anal sex is approval and others are crude.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>10</defaultSelectionWeight>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Sex_OralOnly</defName>
+    <issue>Sextype</issue>
+    <label>oral only</label>
+    <description>Only oral sex is approval and others are crude.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>5</defaultSelectionWeight>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Promiscuous</thought>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Promiscuous</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Sex_Promiscuous</defName>
+    <issue>Sextype</issue>
+    <label>promiscuous</label>
+    <description>Messy sex life is approved.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <statFactors>
+      <SexFrequency>1.5</SexFrequency>
+      <SexAbility>1.25</SexAbility>
+    </statFactors>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>VaginalSex</eventDef>
+        <thought>Sex_Know_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>AnalSex</eventDef>
+        <thought>Sex_Know_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>OralSex</eventDef>
+        <thought>Sex_Know_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>MiscSex</eventDef>
+        <thought>Sex_Know_NonPromiscuous</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>PromiscuousSex</eventDef>
+        <thought>Sex_Know_Promiscuous_Approval</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  
+  <!-- Thoughts -->
+  
+
+  <RJWSexperience.ThoughtDef_Recordbased>
+    <defName>Sex_Promiscuous</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+		<thoughtClass>RJWSexperience.Thought_IncreaseRecord</thoughtClass>
+		<recordDef>Lust</recordDef>
+    <increment>3.0</increment>
+    <stages>
+      <li>
+        <label>promiscuous sex</label>
+        <description>I was immoral. It makes me aroused.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </RJWSexperience.ThoughtDef_Recordbased>
+
+  <ThoughtDef>
+    <defName>Sex_NonPromiscuous</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ordinary sex</label>
+        <description>It cannot satisfy me.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Sex_Know_Promiscuous</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>Rapist</li>
+      <li>Necrophiliac</li>
+      <li>Gay</li>
+      <li>Bisexual</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Sex_Free</li>
+      <li>Sex_Promiscuous</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>promiscuous</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Sex_Know_Promiscuous_Approval</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingPrecepts>
+      <li>Sex_VaginalOnly</li>
+      <li>Sex_AnalOnly</li>
+      <li>Sex_OralOnly</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>promiscuous</label>
+        <baseOpinionOffset>3</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Sex_Know_NonPromiscuous</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingPrecepts>
+      <li>Sex_VaginalOnly</li>
+      <li>Sex_AnalOnly</li>
+      <li>Sex_OralOnly</li>
+      <li>Sex_Free</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>boring</label>
+        <baseOpinionOffset>-3</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

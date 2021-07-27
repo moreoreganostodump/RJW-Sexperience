@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>Bestiality</defName>
+    <label>bestiality</label>
+    <iconPath>UI/Commands/Breeding_Pawn_off</iconPath>
+  </IssueDef>
+
+  <HistoryEventDef>
+    <defName>SexWithAnimal</defName>
+    <label>sex with animal</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>SexWithVeneratedAnimal</defName>
+    <label>sex with venerated animal</label>
+  </HistoryEventDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Bestiality_Abhorrent</defName>
+    <issue>Bestiality</issue>
+    <label>abhorrent</label>
+    <description>Bestiality beings is deeply evil.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <defaultSelectionWeight>30</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Zoophile</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>HumanPrimacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Know_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Know_Abhorrent</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Bestiality_Horrible</defName>
+    <issue>Bestiality</issue>
+    <label>horrible</label>
+    <description>Bestiality is a horrible thing.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>200</displayOrderInImpact>
+    <defaultSelectionWeight>30</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Zoophile</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>HumanPrimacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Know_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Know_Horrible</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Bestiality_Disapproved</defName>
+    <issue>Bestiality</issue>
+    <label>disapproved</label>
+    <description>Bestiality is extremely distasteful.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>300</displayOrderInImpact>
+    <defaultSelectionWeight>20</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Zoophile</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>HumanPrimacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Know_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Know_Disapproved</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Bestiality_Acceptable</defName>
+    <issue>Bestiality</issue>
+    <label>acceptable</label>
+    <description>Bestiality is a normal, unremarkable part of life.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>10</defaultSelectionWeight>
+    <approvesOfSlavery>true</approvesOfSlavery>
+  </PreceptDef>
+  
+
+  <PreceptDef>
+    <defName>Bestiality_OnlyVenerated</defName>
+    <issue>Bestiality</issue>
+    <label>only venerated</label>
+    <description>One who sex with venerated animals should be honored and respected. But having sex with other animals will be denounced</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <conflictingMemes>
+      <li>HumanPrimacy</li>
+    </conflictingMemes>
+    <requiredMemes>
+      <li>Zoophile</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Nonvenerated_Disapproved</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Nonvenerated_Know_Disapproved</thought>
+        <description>Someone sex with any animal</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Honorable</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Know_Honorable</thought>
+        <description>Someone sex with animal</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Bestiality_Honorable</defName>
+    <issue>Bestiality</issue>
+    <label>encouraging</label>
+    <description>One who sex with animals should be encouraged.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <conflictingMemes>
+      <li>HumanPrimacy</li>
+    </conflictingMemes>
+    <requiredMemes>
+      <li>Zoophile</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Honorable</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Know_Honorable</thought>
+        <description>Someone sex with animal</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+  <!-- Thoughts -->
+  
+
+  <ThoughtDef>
+    <defName>Bestiality_Abhorrent</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Zoophile</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_OnlyVenerated</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <description>I had sex with animal. I want to die.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Know_Abhorrent</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Zoophile</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_OnlyVenerated</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Horrible</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Zoophile</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_OnlyVenerated</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <description>I had sex with animal. I'm not sure I can forgive myself.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Know_Horrible</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Zoophile</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_OnlyVenerated</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Disapproved</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Zoophile</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_OnlyVenerated</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <description>I had sex with animal. I hope nothing terrible happens to them.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Know_Disapproved</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Zoophile</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_OnlyVenerated</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>Bestiality_Nonvenerated_Disapproved</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with non-venerated animal</label>
+        <description>I had sex with any animal. I hope nothing terrible happens to them.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Nonvenerated_Know_Disapproved</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingPrecepts>
+      <li>Bestiality_Honorable</li>
+      <li>Bestiality_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with any animal</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Honorable</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingPrecepts>
+      <li>Bestiality_Abhorrent</li>
+      <li>Bestiality_Horrible</li>
+      <li>Bestiality_Disapproved</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <description>I had sex with animal.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Bestiality_Know_Honorable</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>25</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingPrecepts>
+      <li>Bestiality_Abhorrent</li>
+      <li>Bestiality_Horrible</li>
+      <li>Bestiality_Disapproved</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>sex with animal</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

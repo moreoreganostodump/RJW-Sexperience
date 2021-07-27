@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>GatheredCum</defName>
+    <label>cum</label>
+    <description>Gathered cum.</description>
+	<thingCategories>
+		<li>AnimalProductRaw</li>
+	</thingCategories>
+    <graphicData>
+      <texPath>Things/Item/GatheredCum</texPath>
+      <drawSize>1</drawSize>
+	  <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+	    <Mass>0.1</Mass>
+	    <Nutrition>0.01</Nutrition>
+	    <Beauty>-5</Beauty>
+	    <Cleanliness>-1</Cleanliness>
+	    <FoodPoisonChanceFixedHuman>0.00</FoodPoisonChanceFixedHuman>
+	    <DeteriorationRate>60</DeteriorationRate>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, AnimalProduct</foodType>
+      <preferability>DesperateOnlyForHumanlikes</preferability>
+	    <tasteThought>AteCum</tasteThought>
+	    <specialThoughtAsIngredient>AteCum</specialThoughtAsIngredient>
+	    <optimalityOffsetHumanlikes>-10</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+    </ingestible>
+  </ThingDef>
+  
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>UsedCondom</defName>
+		<label>Used Condom</label>
+		<description>A condom filled with sperm. MMMM So good and tasty!</description>
+		<graphicData>
+			<texPath>Things/Item/UsedCondom</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>50</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<generateCommonality>0.0</generateCommonality>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<Beauty>-10</Beauty>
+			<MarketValue>1</MarketValue>
+			<Mass>0.05</Mass>
+      		<Nutrition>0.05</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, AnimalProduct</foodType>
+			<preferability>DesperateOnlyForHumanlikes</preferability>
+	    <tasteThought>AteCum</tasteThought>
+	    <specialThoughtAsIngredient>AteCum</specialThoughtAsIngredient>
+		</ingestible>
+		<altitudeLayer>Item</altitudeLayer>
+		<tickerType>Never</tickerType>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+		<tradeability>Sellable</tradeability>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+
+</Defs>

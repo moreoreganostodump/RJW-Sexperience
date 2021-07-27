@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+	<identifier>RJW Sexperience</identifier>
+	<version>1.0.1.5</version>
+	<dependencies>
+	</dependencies>
+	<incompatibleWith />
+	<loadAfter>
+	</loadAfter>
+	<suggests>
+	</suggests>
+</Manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotBredByAnimal"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Bestiality_OnlyVenerated</li>
+				<li>Bestiality_Honorable</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotAnalBredByAnimal"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Bestiality_OnlyVenerated</li>
+				<li>Bestiality_Honorable</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="AllowedAnimalToBreed"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Bestiality_OnlyVenerated</li>
+				<li>Bestiality_Honorable</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotLickedByAnimal"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Bestiality_OnlyVenerated</li>
+				<li>Bestiality_Honorable</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="GotGropedByAnimal"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Bestiality_OnlyVenerated</li>
+				<li>Bestiality_Honorable</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="AllowedAnimalToGrope"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Bestiality_OnlyVenerated</li>
+				<li>Bestiality_Honorable</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="StoleSomeLovin"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Rape_Honorable</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThoughtDef[defName="Incestuous"]</xpath>
+		<value>
+			<nullifyingPrecepts>
+				<li>Incestuos_Free</li>
+				<li>Incestuos_IncestOnly</li>
+			</nullifyingPrecepts>
+		</value>
+	</Operation>
+</Patch>

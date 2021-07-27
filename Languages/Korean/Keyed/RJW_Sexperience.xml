@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LustStatFactor>음란함: x{0}%</LustStatFactor>
+  <SlaveStatFactor>노예: x{0}%</SlaveStatFactor>
+  <SlaveStatFactorDefault>노예가 아님: x100%</SlaveStatFactorDefault>
+  <MemeStatFactor>문화 요소: x{0}%</MemeStatFactor>
+</LanguageData>

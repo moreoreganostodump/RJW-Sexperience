@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RJWSexperience.ThoughtDef_Recordbased>
+		<defName>AteCum</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+		<recordDef>NumofEatenCum</recordDef>
+		<thoughtClass>RJWSexperience.Thought_AteCum</thoughtClass>
+		<minimumValueforStage>
+			<li>10</li>
+			<li>60</li>
+			<li>120</li>
+		</minimumValueforStage>
+		<stages>
+			<li>
+				<label>ate cum</label>
+				<description>Disgusting.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+			<li>
+				<label>ate cum</label>
+				<description>Tastes bad and stinky.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>ate cum</label>
+				<description>Tastes bad. But i liked it.</description>
+				<baseMoodEffect>1</baseMoodEffect>
+			</li>
+			<li>
+				<label>ate cum</label>
+				<description>Delicious.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</RJWSexperience.ThoughtDef_Recordbased>
+	
+	
+</Defs>

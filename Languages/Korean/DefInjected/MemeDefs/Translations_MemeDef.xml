@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Zoophile.label>수간</Zoophile.label>
+  <Zoophile.description>동물박이들</Zoophile.description>
+  <Zoophile.descriptionMaker.rules.rulesStrings.0>creation(tag=meme_Zoophile)        ->[deity0_name]는 동물과 교미하는것을 즐겼습니다.</Zoophile.descriptionMaker.rules.rulesStrings.0>
+  <Zoophile.descriptionMaker.rules.rulesStrings.1>episode(uses=1,tag=meme_Zoophile)  ->[deity0_name]는 모두에게 말했습니다, "Sigmar forbids this!"</Zoophile.descriptionMaker.rules.rulesStrings.1>
+  <Zoophile.descriptionMaker.rules.rulesStrings.2>setup(tag=meme_Zoophile)           ->어느날, [founderName]은(는) 너무 발정이나서 동물을 따먹었고 그것을 좋아하게 되었습니다.</Zoophile.descriptionMaker.rules.rulesStrings.2>
+  <Zoophile.descriptionMaker.rules.rulesStrings.3>story(uses=1,tag=meme_Zoophile)    ->동물들을 퍼뜨리기 위해, [founderName]은(는) 동물과 교미하고 다니기 시작했습니다.</Zoophile.descriptionMaker.rules.rulesStrings.3>
+  <Zoophile.descriptionMaker.rules.rulesStrings.4>lessonIntro(tag=meme_Zoophile)         ->어느날, 나는 동물과 섹스했습니다. 그리고 사람보다 훨씬 나았습니다!</Zoophile.descriptionMaker.rules.rulesStrings.4>
+  <Zoophile.descriptionMaker.rules.rulesStrings.5>lesson(tag=meme_Zoophile)              ->오직 동물만 나를 만족시킬수 있습니다.</Zoophile.descriptionMaker.rules.rulesStrings.5>
+  <Zoophile.descriptionMaker.rules.rulesStrings.6>lessonReinforcement(tag=meme_Zoophile) ->동물과 교미하는것은 영원한 행복입니다.</Zoophile.descriptionMaker.rules.rulesStrings.6>
+  <Zoophile.descriptionMaker.rules.rulesStrings.7>archistBasis(tag=meme_Zoophile)    ->초월주의자들은 항상 궁극의 쾌락을 찾고 있었습니다.</Zoophile.descriptionMaker.rules.rulesStrings.7>
+  <Zoophile.descriptionMaker.rules.rulesStrings.8>archistFact(tag=meme_Zoophile)     ->그것은 동물과 교미하는 것이었습니다..</Zoophile.descriptionMaker.rules.rulesStrings.8>
+  <Zoophile.descriptionMaker.rules.rulesStrings.9>archistProphecy(tag=meme_Zoophile) ->[inTheEnd], 초월공학은 이종간 번식을 가능하게 했습니다. 이것이 그들을 궁극의 쾌락으로 인도할지도 모릅니다.</Zoophile.descriptionMaker.rules.rulesStrings.9>
+  <Zoophile.descriptionMaker.rules.rulesStrings.10>animistFact(tag=meme_Zoophile)     ->가장 강력한 영혼은 짐승의 것입니다, 그리고 짐승의 영혼은 짐승에게 지배받지 않는 한 날뛸것입니다.</Zoophile.descriptionMaker.rules.rulesStrings.10>
+  <Zoophile.descriptionMaker.rules.rulesStrings.11>animistProphecy(tag=meme_Zoophile) ->[itIsSaid] 그 강력한 파괴의 영혼은 우주의 파멸을 찾아다닐 것입니다. 하지만 인간에게서 태어난 짐승이 [relic0_name]의 힘을 사용하여 파괴자를 파괴할 것입니다.</Zoophile.descriptionMaker.rules.rulesStrings.11>
+  <Zoophile.generalRules.rulesStrings.0>memeAdjective->수간</Zoophile.generalRules.rulesStrings.0>
+  <Zoophile.generalRules.rulesStrings.1>memeAdjective->수간</Zoophile.generalRules.rulesStrings.1>
+  <Zoophile.generalRules.rulesStrings.2>memeHyphenPrefix->수간</Zoophile.generalRules.rulesStrings.2>
+  <Zoophile.generalRules.rulesStrings.3>memeConcept->수태</Zoophile.generalRules.rulesStrings.3>
+  <Zoophile.generalRules.rulesStrings.4>memeConcept->수간</Zoophile.generalRules.rulesStrings.4>
+  <Zoophile.generalRules.rulesStrings.5>memeConcept->수간</Zoophile.generalRules.rulesStrings.5>
+  <Zoophile.generalRules.rulesStrings.6>memeLeaderNoun->가축</Zoophile.generalRules.rulesStrings.6>
+  <Zoophile.symbolPacks.0.ideoName>번식모판</Zoophile.symbolPacks.0.ideoName>
+  <Zoophile.symbolPacks.0.theme>번식</Zoophile.symbolPacks.0.theme>
+  <Zoophile.symbolPacks.0.adjective>수간</Zoophile.symbolPacks.0.adjective>
+  <Zoophile.symbolPacks.0.member>번식기</Zoophile.symbolPacks.0.member>
+  <Zoophile.symbolPacks.1.ideoName>포켓몬스터 갤러리</Zoophile.symbolPacks.1.ideoName>
+  <Zoophile.symbolPacks.1.theme>수간</Zoophile.symbolPacks.1.theme>
+  <Zoophile.symbolPacks.1.adjective>수간</Zoophile.symbolPacks.1.adjective>
+  <Zoophile.symbolPacks.1.member>수간충</Zoophile.symbolPacks.1.member>
+
+  <Rapist.label>강간</Rapist.label>
+  <Rapist.description>강간은 최고야</Rapist.description>
+  <Rapist.descriptionMaker.rules.rulesStrings.0>creation(tag=meme_Rapist)        ->[deity0_name]는 강간을 사랑합니다.</Rapist.descriptionMaker.rules.rulesStrings.0>
+  <Rapist.descriptionMaker.rules.rulesStrings.1>episode(uses=1,tag=meme_Rapist)  ->[deity0_name]는 복상사 할때까지 강간하다 죽었습니다.</Rapist.descriptionMaker.rules.rulesStrings.1>
+  <Rapist.descriptionMaker.rules.rulesStrings.2>setup(tag=meme_Rapist)           ->[founderName]은(는) 항상 발정나있습니다.</Rapist.descriptionMaker.rules.rulesStrings.2>
+  <Rapist.descriptionMaker.rules.rulesStrings.3>story(uses=1,tag=meme_Rapist)    ->[founderName]은(는) 모두를 강간했습니다. 아무도 [founderName]을(를) 멈출수 없었습니다. [founderName]은(는) 행성을 강간하려다 죽었습니다.</Rapist.descriptionMaker.rules.rulesStrings.3>
+  <Rapist.descriptionMaker.rules.rulesStrings.4>lessonIntro(tag=meme_Rapist)         ->강간은 최고야! 강간은 최고야! 강간은 최고야!</Rapist.descriptionMaker.rules.rulesStrings.4>
+  <Rapist.descriptionMaker.rules.rulesStrings.5>lesson(tag=meme_Rapist)              ->강간은 최고야! 강간은 최고야! 강간은 최고야! 강간은 최고야!</Rapist.descriptionMaker.rules.rulesStrings.5>
+  <Rapist.descriptionMaker.rules.rulesStrings.6>lessonReinforcement(tag=meme_Rapist) ->강간은 최고야! 강간은 최고야! 강간은 최고야! 강간은 최고야! 강간은 최고야!</Rapist.descriptionMaker.rules.rulesStrings.6>
+  <Rapist.descriptionMaker.rules.rulesStrings.7>archistBasis(tag=meme_Rapist)    ->인간의 역사는 강간의 역사입니다.</Rapist.descriptionMaker.rules.rulesStrings.7>
+  <Rapist.descriptionMaker.rules.rulesStrings.8>archistFact(tag=meme_Rapist)     ->초월공학 조차도 강간범들을 막지는 못했습니다.</Rapist.descriptionMaker.rules.rulesStrings.8>
+  <Rapist.descriptionMaker.rules.rulesStrings.9>archistProphecy(tag=meme_Rapist) ->[inTheEnd], 강간범들은 절대 강간을 멈추지 않을겁니다.</Rapist.descriptionMaker.rules.rulesStrings.9>
+  <Rapist.descriptionMaker.rules.rulesStrings.10>animistFact(tag=meme_Rapist)     ->가장 강력한 영혼을 가진 것은 강간범들입니다. 그리고 그들은 모두를 강간할것입니다.</Rapist.descriptionMaker.rules.rulesStrings.10>
+  <Rapist.descriptionMaker.rules.rulesStrings.11>animistProphecy(tag=meme_Rapist) ->[itIsSaid]  그 강력한 파괴의 영혼은 우주의 파멸을 찾아다닐 것입니다. 하지만 백만번을 강간한 강간범이 [relic0_name]의 힘을 사용하여 파괴자를 강간할 것입니다.</Rapist.descriptionMaker.rules.rulesStrings.11>
+  <Rapist.generalRules.rulesStrings.0>memeAdjective->강간하는</Rapist.generalRules.rulesStrings.0>
+  <Rapist.generalRules.rulesStrings.1>memeAdjective->겁탈하는</Rapist.generalRules.rulesStrings.1>
+  <Rapist.generalRules.rulesStrings.2>memeHyphenPrefix->강간범</Rapist.generalRules.rulesStrings.2>
+  <Rapist.generalRules.rulesStrings.3>memeHyphenPrefix->치한</Rapist.generalRules.rulesStrings.3>
+  <Rapist.generalRules.rulesStrings.4>memeHyphenPrefix->변태</Rapist.generalRules.rulesStrings.4>
+  <Rapist.generalRules.rulesStrings.5>memeConcept->강간 </Rapist.generalRules.rulesStrings.5>
+  <Rapist.generalRules.rulesStrings.6>memeConcept->변태적인</Rapist.generalRules.rulesStrings.6>
+  <Rapist.generalRules.rulesStrings.7>memeGod->슬라네쉬</Rapist.generalRules.rulesStrings.7>
+  <Rapist.generalRules.rulesStrings.8>memeLeaderNoun->종마</Rapist.generalRules.rulesStrings.8>
+  <Rapist.generalRules.rulesStrings.9>memeLeaderNoun->위대한 강간범</Rapist.generalRules.rulesStrings.9>
+  <Rapist.symbolPacks.0.ideoName>강간범들</Rapist.symbolPacks.0.ideoName>
+  <Rapist.symbolPacks.0.theme>강간</Rapist.symbolPacks.0.theme>
+  <Rapist.symbolPacks.0.adjective>강간하는</Rapist.symbolPacks.0.adjective>
+  <Rapist.symbolPacks.0.member>강간범</Rapist.symbolPacks.0.member>
+  <Rapist.symbolPacks.1.ideoName>슬라네쉬 교단</Rapist.symbolPacks.1.ideoName>
+  <Rapist.symbolPacks.1.theme>쾌락</Rapist.symbolPacks.1.theme>
+  <Rapist.symbolPacks.1.adjective>타락한</Rapist.symbolPacks.1.adjective>
+  <Rapist.symbolPacks.1.member>이교도</Rapist.symbolPacks.1.member>
+</LanguageData>

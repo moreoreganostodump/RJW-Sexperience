@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Rape_Abhorrent.stages.0.label>누군가를 강간함</Rape_Abhorrent.stages.0.label>
+  <Rape_Abhorrent.stages.0.description>그랬으면 안됐는데.</Rape_Abhorrent.stages.0.description>
+  <Rape_Know_Abhorrent.stages.0.label>누군가를 강간함</Rape_Know_Abhorrent.stages.0.label>
+  <Rape_Horrible.stages.0.label>누군가를 강간함</Rape_Horrible.stages.0.label>
+  <Rape_Horrible.stages.0.description>그랬으면 안됐는데.</Rape_Horrible.stages.0.description>
+  <Rape_Know_Horrible.stages.0.label>누군가를 강간함</Rape_Know_Horrible.stages.0.label>
+  <Rape_Disapproved.stages.0.label>누군가를 강간함</Rape_Disapproved.stages.0.label>
+  <Rape_Disapproved.stages.0.description>그랬으면 안됐는데.</Rape_Disapproved.stages.0.description>
+  <Rape_Know_Disapproved.stages.0.label>누군가를 강간함</Rape_Know_Disapproved.stages.0.label>
+  <Rape_Know_Honorable.stages.0.label>누군가를 강간함</Rape_Know_Honorable.stages.0.label>
+  <Sex_Promiscuous.stages.0.label>문란한 섹스</Sex_Promiscuous.stages.0.label>
+  <Sex_Promiscuous.stages.0.description>배덕감에 흥분돼...</Sex_Promiscuous.stages.0.description>
+  <Sex_NonPromiscuous.stages.0.label>평범한 섹스</Sex_NonPromiscuous.stages.0.label>
+  <Sex_NonPromiscuous.stages.0.description>이걸론 만족할수 없어.</Sex_NonPromiscuous.stages.0.description>
+  <Sex_Know_Promiscuous.stages.0.label>문란함</Sex_Know_Promiscuous.stages.0.label>
+  <Sex_Know_Promiscuous_Approval.stages.0.label>문란함</Sex_Know_Promiscuous_Approval.stages.0.label>
+  <Sex_Know_NonPromiscuous.stages.0.label>시시함</Sex_Know_NonPromiscuous.stages.0.label>
+  <Bestiality_Abhorrent.stages.0.label>수간</Bestiality_Abhorrent.stages.0.label>
+  <Bestiality_Abhorrent.stages.0.description>수간을 하다니... 죽고싶다...</Bestiality_Abhorrent.stages.0.description>
+  <Bestiality_Know_Abhorrent.stages.0.label>수간</Bestiality_Know_Abhorrent.stages.0.label>
+  <Bestiality_Horrible.stages.0.label>수간</Bestiality_Horrible.stages.0.label>
+  <Bestiality_Horrible.stages.0.description>수간을 하다니... 나 스스로를 용서할수 없을것 같아.</Bestiality_Horrible.stages.0.description>
+  <Bestiality_Know_Horrible.stages.0.label>수간</Bestiality_Know_Horrible.stages.0.label>
+  <Bestiality_Disapproved.stages.0.label>수간</Bestiality_Disapproved.stages.0.label>
+  <Bestiality_Disapproved.stages.0.description>수간을 하다니... 다시는 그러지 않을거야.</Bestiality_Disapproved.stages.0.description>
+  <Bestiality_Know_Disapproved.stages.0.label>수간</Bestiality_Know_Disapproved.stages.0.label>
+  <Bestiality_Nonvenerated_Disapproved.stages.0.label>숭배받지 않는 동물과 교미</Bestiality_Nonvenerated_Disapproved.stages.0.label>
+  <Bestiality_Nonvenerated_Disapproved.stages.0.description>수간을 하다니... 다시는 그러지 않을거야.</Bestiality_Nonvenerated_Disapproved.stages.0.description>
+  <Bestiality_Nonvenerated_Know_Disapproved.stages.0.label>숭배받지 않는 동물과 교미</Bestiality_Nonvenerated_Know_Disapproved.stages.0.label>
+  <Bestiality_Honorable.stages.0.label>수간</Bestiality_Honorable.stages.0.label>
+  <Bestiality_Honorable.stages.0.description>동물과 교미했어.</Bestiality_Honorable.stages.0.description>
+  <Bestiality_Know_Honorable.stages.0.label>수간</Bestiality_Know_Honorable.stages.0.label>
+  <IncestuosMarriage_Forbidden.stages.0.label>사회적 규탄</IncestuosMarriage_Forbidden.stages.0.label>
+  <IncestuosMarriage_Forbidden.stages.0.description>아무도 우리를 축복해주지 않아.</IncestuosMarriage_Forbidden.stages.0.description>
+  <IncestuosMarriage_Disapproved.stages.0.label>가십거리가 됨</IncestuosMarriage_Disapproved.stages.0.label>
+  <IncestuosMarriage_Disapproved.stages.0.description>남들이 우리의 뒷담을 하고있어.</IncestuosMarriage_Disapproved.stages.0.description>
+  <Sex_Know_Incest_Disapproved.stages.0.label>근친</Sex_Know_Incest_Disapproved.stages.0.label>
+  <Sex_Know_Incest_Forbidden.stages.0.label>근친</Sex_Know_Incest_Forbidden.stages.0.label>
+  <Sex_Know_IncestMarriage_Disapproved.stages.0.label>근친</Sex_Know_IncestMarriage_Disapproved.stages.0.label>
+  <Sex_Know_IncestMarriage_Forbidden.stages.0.label>근친</Sex_Know_IncestMarriage_Forbidden.stages.0.label>
+  <Sex_Know_Incest_Violated.stages.0.label>혈족이 아닌사람과 성관계</Sex_Know_Incest_Violated.stages.0.label>
+  <Sex_Know_IncestMarriage_Violated.stages.0.label>혈통을 더럽힘</Sex_Know_IncestMarriage_Violated.stages.0.label>
+
+</LanguageData>

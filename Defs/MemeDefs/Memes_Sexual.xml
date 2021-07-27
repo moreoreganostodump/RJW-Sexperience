@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MemeGroupDef>
+    <defName>SexualDissolutely</defName>
+    <drawOffset>(0.65, 0.23)</drawOffset>
+    <maxRows>1</maxRows>
+    <renderOrder>3000</renderOrder>
+  </MemeGroupDef>
+
+  <MemeDef Name="SexualDissoulutelyBase" Abstract="True">
+    <groupDef>SexualDissolutely</groupDef>
+    <selectOneOrNone>
+      <noneChance>1.0</noneChance>
+      <preceptThingPairs>
+      </preceptThingPairs>
+    </selectOneOrNone>
+  </MemeDef>
+
+  <MemeDef ParentName="SexualDissoulutelyBase">
+    <defName>Zoophile</defName>
+    <label>zoophile</label>
+    <description>Animal fuckers.</description>
+    <iconPath>UI/Commands/Breeding_Pawn_off</iconPath>
+    <impact>3</impact>
+    <requireOne>
+      <li>
+        <li>Bestiality_Acceptable</li>
+        <li>Bestiality_OnlyVenerated</li>
+        <li>Bestiality_Honorable</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->bestial</li>
+        <li>memeAdjective->zoophile</li>
+        <li>memeHyphenPrefix->bestial</li>
+        <li>memeConcept->breeding</li>
+        <li>memeConcept->bestiality</li>
+        <li>memeConcept->zoophile</li>
+        <li>memeLeaderNoun->livestock</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_Zoophile)        ->[deity0_name] loves breeding with beasts.</li>
+          <li>episode(uses=1,tag=meme_Zoophile)  ->[deity0_name] said to all, "Sigmar forbids this!"</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_Zoophile)           ->Someday, [founderName] was so horny that accidentally fucked with an animal and loved it. </li>
+          <li>story(uses=1,tag=meme_Zoophile)    ->For spreading animals, [founderName] started to breed with animals.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_Zoophile)         ->Someday, i had sex with animal. It was much better than humans!</li>
+          <li>lesson(tag=meme_Zoophile)              ->Only the animals can satisfy me.</li>
+          <li>lessonReinforcement(tag=meme_Zoophile) ->Breed with animals. It is the eternal hapiness.</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_Zoophile)    ->Archists are always seeking ultimate pleasure.</li>
+          <li>archistFact(tag=meme_Zoophile)     ->That was breeding with animals.</li>
+          <li>archistProphecy(tag=meme_Zoophile) ->[inTheEnd], the archotechs will finally unlock the interspecies breeding, so that they may lead ultimate pleasure.</li>
+          <!-- animist -->
+          <li>animistFact(tag=meme_Zoophile)     ->The most powerful spirits are those of beasts, and spirits of beasts will be restless unless beasts rule.</li>
+          <li>animistProphecy(tag=meme_Zoophile) ->[itIsSaid] that a powerful spirit of destruction will seek to end the universe, but that a human-born beast will wield the spirit of the [relic0_name] and destroy the destroyer.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Breeders</ideoName>
+        <theme>breed</theme>
+        <adjective>bestiality</adjective>
+        <member>breeder</member>
+      </li>
+      <li>
+        <ideoName>Zoophilia</ideoName>
+        <theme>zoophile</theme>
+        <adjective>zoophile</adjective>
+        <member>zoophiliac</member>
+      </li>
+    </symbolPacks>
+    <agreeableTraits>
+      <li>Zoophile</li>
+    </agreeableTraits>
+  </MemeDef>
+
+
+  <MemeDef ParentName="SexualDissoulutelyBase">
+    <defName>Rapist</defName>
+    <label>rapist</label>
+    <description>Rape is best.</description>
+    <iconPath>UI/Memes/Rape</iconPath>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Rape_Honorable</li>
+        <li>Rape_Acceptable</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->violent</li>
+        <li>memeAdjective->raping</li>
+        <li>memeHyphenPrefix->rapist</li>
+        <li>memeHyphenPrefix->molester</li>
+        <li>memeHyphenPrefix->pervert</li>
+        <li>memeConcept->rapist</li>
+        <li>memeConcept->pervert</li>
+        <li>memeGod->slaanesh</li>
+        <li>memeLeaderNoun->stallion</li>
+        <li>memeLeaderNoun->grand rapist</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth -->
+          <li>creation(tag=meme_Rapist)        ->[deity0_name] loves rape.</li>
+          <li>episode(uses=1,tag=meme_Rapist)  ->[deity0_name] raped everyone until death during rape.</li>
+          <!-- ideological founder -->
+          <li>setup(tag=meme_Rapist)           ->[founderName] is always horny. </li>
+          <li>story(uses=1,tag=meme_Rapist)    ->[founderName] raped everyone. No one can stop [founderName]. [founderName] died trying to rape planet.</li>
+          <!-- ideological lesson -->
+          <li>lessonIntro(tag=meme_Rapist)         ->Rape is best! Rape is best! Rape is best!</li>
+          <li>lesson(tag=meme_Rapist)              ->Rape is best! Rape is best! Rape is best! Rape is best!</li>
+          <li>lessonReinforcement(tag=meme_Rapist) ->Rape is best! Rape is best! Rape is best! Rape is best! Rape is best!</li>
+          <!-- archist -->
+          <li>archistBasis(tag=meme_Rapist)    ->Human history is history of rape.</li>
+          <li>archistFact(tag=meme_Rapist)     ->Even archotechs cannot stop rapists.</li>
+          <li>archistProphecy(tag=meme_Rapist) ->[inTheEnd], the rapists never stop raping.</li>
+          <!-- animist -->
+          <li>animistFact(tag=meme_Rapist)     ->The most powerful spirits are those of rapists, and spirits of rapists will rape all.</li>
+          <li>animistProphecy(tag=meme_Rapist) ->[itIsSaid] that a powerful spirit of destruction will seek to end the universe, but that a million-raped rapist will wield the spirit of the [relic0_name] and rape the destroyer.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Rapists</ideoName>
+        <theme>rapist</theme>
+        <adjective>raping</adjective>
+        <member>rapist</member>
+      </li>
+      <li>
+        <ideoName>Cult of Slaanesh</ideoName>
+        <theme>pleasure</theme>
+        <adjective>decadent</adjective>
+        <member>heretic</member>
+      </li>
+    </symbolPacks>
+    <agreeableTraits>
+      <li>Rapist</li>
+    </agreeableTraits>
+  </MemeDef>
+
+</Defs>

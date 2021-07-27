@@ -1,0 +1,21 @@
+Version Beta 1.0.1.5
+ - changed icon for precepts and memes
+ - added stat factors to precepts
+ - added record randomizing on pawn generation
+   - pawns will have different sex drive
+
+Version Beta 1.0.1.4
+ - gender supremacy affects to pawn's vulnerability
+ - nymps will get passion for sex skill always
+ - raping prisoner reduces will
+ - added incestous precepts
+ - more detailed implementations
+
+Version Beta 1.0.1.3
+ - added sextype precepts
+
+Version Beta 1.0.1.2
+ - added precept interactions
+
+Version Beta 1.0.1.1
+ - added ideologies
