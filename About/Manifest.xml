@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
 	<identifier>RJW Sexperience</identifier>
-	<version>1.0.1.5</version>
+	<version>1.0.1.6</version>
 	<dependencies>
 	</dependencies>
 	<incompatibleWith />
@@ -9,4 +9,6 @@
 	</loadAfter>
 	<suggests>
 	</suggests>
+  <manifestUri>https://raw.githubusercontent.com/moreoreganostodump/RJW-Sexperience/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/moreoreganostodump/RJW-Sexperience</downloadUri>
 </Manifest>

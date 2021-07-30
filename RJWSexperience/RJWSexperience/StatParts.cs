@@ -17,19 +17,14 @@ namespace RJWSexperience
         public override string ExplanationPart(StatRequest req)
         {
             Pawn pawn = req.Thing as Pawn;
-            return Keyed.LustStatFactor(LustFactor(pawn) * factor * 100);
+            return Keyed.LustStatFactor(String.Format("{0:0.##}", pawn.LustFactor() * factor * 100));
 
         }
 
         public override void TransformValue(StatRequest req, ref float val)
         {
             Pawn pawn = req.Thing as Pawn;
-            if (pawn != null) val *= LustFactor(pawn) * factor;
-        }
-
-        protected float LustFactor(Pawn pawn)
-        {
-            return 1 + pawn.records.GetValue(VariousDefOf.Lust) / 100;
+            if (pawn != null) val *= pawn.LustFactor() * factor;
         }
 
     }
@@ -59,7 +54,7 @@ namespace RJWSexperience
                         break;
                     }
                 }
-            return Keyed.MemeStatFactor(fact * 100);
+            return Keyed.MemeStatFactor(String.Format("{0:0.##}", fact * 100));
         }
 
         public override void TransformValue(StatRequest req, ref float val)
@@ -96,7 +91,7 @@ namespace RJWSexperience
             {
                 if (pawn.IsSlave)
                 {
-                    return Keyed.SlaveStatFactor(fact);
+                    return Keyed.SlaveStatFactor(String.Format("{0:0.##}", fact));
                 }
             }
             return Keyed.SlaveStatFactorDefault;

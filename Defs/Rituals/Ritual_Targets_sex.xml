@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RitualObligationTargetFilterDef>
+    <defName>RitualSpotOrAltar_Gangbang</defName>
+    <workerClass>RitualObligationTargetWorker_AnyRitualSpotOrAltar_Scarification</workerClass>
+  </RitualObligationTargetFilterDef>
+</Defs>

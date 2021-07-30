@@ -16,6 +16,7 @@
   <Bestiality_Honorable.label>장려됨</Bestiality_Honorable.label>
   <Bestiality_Honorable.description>수간은 장려되어야 합니다.</Bestiality_Honorable.description>
   <Bestiality_Honorable.comps.1.description>수간</Bestiality_Honorable.comps.1.description>
+  
   <Rape_Abhorrent.label>혐오스러움</Rape_Abhorrent.label>
   <Rape_Abhorrent.description>강간은 절대 용납할수 없는 행위입니다.</Rape_Abhorrent.description>
   <Rape_Abhorrent.comps.1.description>강간</Rape_Abhorrent.comps.1.description>
@@ -36,6 +37,7 @@
   <Rape_Honorable.label>자랑스러움</Rape_Honorable.label>
   <Rape_Honorable.description>강간은 자랑할만한 일입니다.</Rape_Honorable.description>
   <Rape_Honorable.comps.1.description>강간</Rape_Honorable.comps.1.description>
+
   <Sex_Free.label>자유</Sex_Free.label>
   <Sex_Free.description>어떠한것도 배척받지 않습니다.</Sex_Free.description>
   <Sex_VaginalOnly.label>성기만 사용</Sex_VaginalOnly.label>
@@ -46,6 +48,7 @@
   <Sex_OralOnly.description>구강성교만이 일반적인 것으로 받아들여집니다. 그 외에는 문란한것으로 간주됩니다.</Sex_OralOnly.description>
   <Sex_Promiscuous.label>문란함</Sex_Promiscuous.label>
   <Sex_Promiscuous.description>문란한 성생활이 선호됩니다.</Sex_Promiscuous.description>
+
   <Incestuos_Free.label>자유</Incestuos_Free.label>
   <Incestuos_Free.description>근친상간이 허용됩니다.</Incestuos_Free.description>
   <Incestuos_Disapproved_CloseOnly.label>가까운 친척만 싫어함</Incestuos_Disapproved_CloseOnly.label>
@@ -56,4 +59,12 @@
   <Incestuos_Forbidden.description>근친상간은 용납되지 않습니다.</Incestuos_Forbidden.description>
   <Incestuos_IncestOnly.label>근친만 가능</Incestuos_IncestOnly.label>
   <Incestuos_IncestOnly.description>순수혈통을 보존하기위해 근친상간만을 허용합니다.</Incestuos_IncestOnly.description>
+
+  <Submissive_None.label>없음</Submissive_None.label>
+  <Submissive_None.description>평범합니다.</Submissive_None.description>
+  <Submissive_Male.label>순종적인 남성</Submissive_Male.label>
+  <Submissive_Male.description>남성들은 순종적입니다. 심지어 강간당하더라도 받아들일 것입니다.</Submissive_Male.description>
+  <Submissive_Female.label>순종적인 여성</Submissive_Female.label>
+  <Submissive_Female.description>여성들은 순종적입니다. 심지어 강간당하더라도 받아들일 것입니다.</Submissive_Female.description>
+  
 </LanguageData>

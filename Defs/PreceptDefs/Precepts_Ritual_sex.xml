@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <PreceptDef>
+    <defName>GangbangCeremony</defName>
+    <label>gangbang</label>
+    <description>A ritualistic gangbang where a initiator rape a victim. The audience will rape as the initiator.</description>
+    <issue>Ritual</issue>
+    <impact>Medium</impact>
+    <iconPath>UI/Issues/Gangbang</iconPath>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <ritualPatternBase>Gangbang</ritualPatternBase>
+    <allowDuplicates>true</allowDuplicates>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+    <receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <allowStackingRitualObligationAlerts>true</allowStackingRitualObligationAlerts>
+    <exclusionTags>
+      <li>RapeBad</li>
+    </exclusionTags>
+    <requiredMemes>
+      <li>Rapist</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>AnimalGangbangCeremony</defName>
+    <label>animal gangbang</label>
+    <description>A ritualistic gangbang where animals rape a victim.</description>
+    <issue>Ritual</issue>
+    <impact>Medium</impact>
+    <iconPath>UI/Commands/Breeding_Pawn_off</iconPath>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <ritualPatternBase>GangbangByAnimal</ritualPatternBase>
+    <allowDuplicates>true</allowDuplicates>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+    <receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <allowStackingRitualObligationAlerts>true</allowStackingRitualObligationAlerts>
+    <requiredMemes>
+      <li>Zoophile</li>
+    </requiredMemes>
+  </PreceptDef>
+
+</Defs>

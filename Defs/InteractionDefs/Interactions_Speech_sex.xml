@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <InteractionDef>
+    <defName>Speech_Gangbang</defName>
+    <label>gangbang speech</label>
+    <workerClass>InteractionWorker</workerClass>
+    <ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>SpeechUtility</li></include>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+        <li>r_logentry(p=0.2)->[INITIATOR_nameDef] [crazy].</li>
+
+        <li>speechtopic->the meaning and true value of rape</li>
+        <li>speechtopic->expressions of rape</li>
+        <li>speechtopic->controlled lustful</li>
+        <li>speechtopic->the warmth of pussy</li>
+        <li>speechtopic->the meaning of cum</li>
+        <li>speechtopic->love and rape</li>
+        <li>speechtopic->symbolizing rape</li>
+        <li>speechtopic->dick and pussy</li>
+        <li>speechtopic->the art of rape</li>
+        <li>speechtopic->the seduction of victim</li>
+        <li>speechtopic->the music of screams</li>
+        <li>speechtopic->cums on the floor</li>
+
+        <li>crazy->screamed maniacally</li>
+        <li>crazy->broke into a chant</li>
+        <li>crazy->chanted towards the heavens</li>
+        <li>crazy->spat in the sacrifice's genital</li>
+        <li>crazy->cackled</li>
+        <li>crazy->brandished a condom</li>
+        <li>crazy->muttered repetitively while masturbating</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef>
+    <defName>Speech_Zoophile</defName>
+    <label>zoophile speech</label>
+    <workerClass>InteractionWorker</workerClass>
+    <ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>SpeechUtility</li></include>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+
+        <li>speechtopic->the meaning and true value of bestiality</li>
+        <li>speechtopic->expressions of bestiality</li>
+        <li>speechtopic->controlled lustful</li>
+        <li>speechtopic->the warmth of cum</li>
+        <li>speechtopic->the meaning of interspecies breeding</li>
+        <li>speechtopic->animal and love</li>
+        <li>speechtopic->symbolizing bestiality</li>
+        <li>speechtopic->breed and birth</li>
+        <li>speechtopic->the art of breeding</li>
+        <li>speechtopic->the seduction of animals</li>
+        <li>speechtopic->cums on the floor</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

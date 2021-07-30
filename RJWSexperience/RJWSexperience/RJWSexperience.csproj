@@ -77,11 +77,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configurations.cs" />
     <Compile Include="GoodwillSituationWorker_MemeCompatibility.cs" />
     <Compile Include="Harmony.cs" />
+    <Compile Include="Rituals\JobGiver_GangbangVictim.cs" />
     <Compile Include="Keyed.cs" />
     <Compile Include="PreceptComp_SelftTookThoughtExtended.cs" />
     <Compile Include="Rimworld_Patch.cs" />
+    <Compile Include="Rituals\RitualBehaviorWorkers.cs" />
+    <Compile Include="Rituals\RitualOutcomeComps.cs" />
+    <Compile Include="Rituals\RitualRoles.cs" />
     <Compile Include="RJW_Patch.cs" />
     <Compile Include="StatParts.cs" />
     <Compile Include="Thought_Recordbased.cs" />

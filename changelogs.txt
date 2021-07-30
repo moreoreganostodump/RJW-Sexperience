@@ -1,3 +1,11 @@
+Version Beta 1.0.1.6
+ - changed stat calculation of lust
+   - on negative lust, use exponential function instead of linear
+ - added gangbang rituals 
+ - chance of bestiality with non-venerated animal on only venerated precept reduced greatly
+ - added submissive precepts
+ - added mod settings
+
 Version Beta 1.0.1.5
  - changed icon for precepts and memes
  - added stat factors to precepts

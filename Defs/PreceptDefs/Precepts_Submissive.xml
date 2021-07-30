@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>Submissive</defName>
+    <label>submissive</label>
+    <iconPath>UI/Issues/Submissive</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Submissive_None</defName>
+    <issue>Submissive</issue>
+    <label>Normal</label>
+    <description>Just normal.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Submissive_Male</defName>
+    <issue>Submissive</issue>
+    <label>submissive male</label>
+    <description>Males are submissive. They will obey and accept even being raped.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <requiredMemes>
+      <li>FemaleSupremacy</li>
+    </requiredMemes>
+    <comps>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRaped</eventDef>
+        <thought>BeenRaped_Submissive</thought>
+        <tag>Male, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRaped</eventDef>
+        <thought>BeenRaped_NotSubmissive</thought>
+        <tag>Female, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>Raped</eventDef>
+        <thought>Raped_Know_NotBeingSubmissive</thought>
+        <description>not obedient</description>
+        <tag>Female, Raped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedPrisoner</eventDef>
+        <thought>BeenRaped_Submissive</thought>
+        <tag>Male, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedPrisoner</eventDef>
+        <thought>BeenRaped_NotSubmissive</thought>
+        <tag>Female, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>Raped_Know_NotBeingSubmissive</thought>
+        <description>not obedient</description>
+        <tag>Female, Raped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedSlave</eventDef>
+        <thought>BeenRaped_Submissive</thought>
+        <tag>Male, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedSlave</eventDef>
+        <thought>BeenRaped_NotSubmissive</thought>
+        <tag>Female, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>RapedSlave</eventDef>
+        <thought>Raped_Know_NotBeingSubmissive</thought>
+        <description>not obedient</description>
+        <tag>Female, Raped</tag>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Submissive_Female</defName>
+    <issue>Submissive</issue>
+    <label>submissive female</label>
+    <description>Females are submissive. They will obey and accept even being raped.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <requiredMemes>
+      <li>MaleSupremacy</li>
+    </requiredMemes>
+    <comps>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRaped</eventDef>
+        <thought>BeenRaped_Submissive</thought>
+        <tag>Female, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRaped</eventDef>
+        <thought>BeenRaped_NotSubmissive</thought>
+        <tag>Male, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>Raped</eventDef>
+        <thought>Raped_Know_NotBeingSubmissive</thought>
+        <description>not obedient</description>
+        <tag>Male, Raped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedPrisoner</eventDef>
+        <thought>BeenRaped_Submissive</thought>
+        <tag>Female, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedPrisoner</eventDef>
+        <thought>BeenRaped_NotSubmissive</thought>
+        <tag>Male, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>RapedPrisoner</eventDef>
+        <thought>Raped_Know_NotBeingSubmissive</thought>
+        <description>not obedient</description>
+        <tag>Male, Raped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedSlave</eventDef>
+        <thought>BeenRaped_Submissive</thought>
+        <tag>Female, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>WasRapedSlave</eventDef>
+        <thought>BeenRaped_NotSubmissive</thought>
+        <tag>Male, BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>RapedSlave</eventDef>
+        <thought>Raped_Know_NotBeingSubmissive</thought>
+        <description>not obedient</description>
+        <tag>Male, Raped</tag>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  
+  <!-- Thoughts -->
+  
+
+  <RJWSexperience.ThoughtDef_Recordbased>
+    <defName>BeenRaped_Submissive</defName>
+    <durationDays>10</durationDays>
+    <stackLimit>100</stackLimit>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>had been raped</label>
+        <description>I had to accept. But i don't feel so good.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </RJWSexperience.ThoughtDef_Recordbased>
+
+  <RJWSexperience.ThoughtDef_Recordbased>
+    <defName>BeenRaped_NotSubmissive</defName>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>{0} raped me</label>
+        <description>How dare...</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+        <baseOpinionOffset>-200</baseOpinionOffset>
+      </li>
+    </stages>
+  </RJWSexperience.ThoughtDef_Recordbased>
+
+  <ThoughtDef>
+    <defName>Raped_Know_NotBeingSubmissive</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>not obedient</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

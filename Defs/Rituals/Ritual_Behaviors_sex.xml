@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RitualBehaviorDef Name="GangbangBehaviorBase" Abstract="True" ParentName="DateRitualBehavior">
+    <preceptRequirements><li Class="PreceptRequirement_Altar"/></preceptRequirements>
+    <durationTicks>7500</durationTicks>
+    <roles Inherit="False">
+      <li Class="RitualRoleTag">
+        <label>initiator</label>
+        <id>initiator</id>
+        <tag>Initiator</tag>
+        <precept>IdeoRole_Moralist</precept>
+        <required>True</required>
+        <substitutable>true</substitutable>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>False</countsAsParticipant>
+      </li>
+    </roles>
+  </RitualBehaviorDef>
+
+  <RitualBehaviorDef ParentName="GangbangBehaviorBase">
+    <defName>Gangbang</defName>
+    <workerClass>RJWSexperience.RitualBehaviorWorker_Gangbang</workerClass>
+    <roles>
+      <li Class="RJWSexperience.RitualRole_RapeVictim">
+        <label>victim</label>
+        <missingDesc>a victim</missingDesc>
+        <id>victim</id>
+        <maxCount>1</maxCount>
+        <required>True</required>
+        <countsAsParticipant>False</countsAsParticipant>
+        <ignoreBleeding>true</ignoreBleeding>
+      </li>
+    </roles>
+    <stages Inherit="False">
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
+        </endTriggers>
+        <failTriggers>
+          <li Class="StageFailTrigger_TargetPawnUnreachable">
+            <takerId>initiator</takerId>
+            <takeeId>victim</takeeId>
+            <desc>Victim is not reachable.</desc>
+          </li>
+        </failTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>DeliverPawnToAltar</dutyDef>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Gangbang</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_Lectern">
+                <maxDistanceToFocus>5</maxDistanceToFocus>
+              </li>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
+        <defaultDuty>Gangbang</defaultDuty>
+        <essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.9</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>FuckVictim</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
+        <defaultDuty>Gangbang</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Gangbang</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+
+
+
+  <RitualBehaviorDef ParentName="GangbangBehaviorBase">
+    <defName>GangbangByAnimal</defName>
+    <roles>
+      <li Class="RJWSexperience.RitualRole_HumanBreedee">
+        <label>breedee</label>
+        <missingDesc>a breedee who will be fucked by animal</missingDesc>
+        <id>victim</id>
+        <maxCount>1</maxCount>
+        <required>True</required>
+        <countsAsParticipant>False</countsAsParticipant>
+        <ignoreBleeding>true</ignoreBleeding>
+      </li>
+      <li Class="RJWSexperience.RitualRole_AnimalBreeder">
+        <label>breeder</label>
+        <id>animal</id>
+        <maxCount>8</maxCount>
+        <required>True</required>
+        <missingDesc>a breedable animal.</missingDesc>
+        <countsAsParticipant>false</countsAsParticipant>
+      </li>
+    </roles>
+    <stages Inherit="False">
+      <li Class="RitualStage_InteractWithRole">
+        <targets>
+          <li>
+            <pawnId>initiator</pawnId>
+            <targetId>victim</targetId>
+          </li>
+        </targets>
+        <defaultDuty>Spectate</defaultDuty>
+        <spectateDistanceOverride>5~7</spectateDistanceOverride>
+        <failTriggers>
+          <li Class="StageFailTrigger_TargetPawnUnreachable">
+            <takerId>initiator</takerId>
+            <takeeId>victim</takeeId>
+            <desc>Victim is not reachable.</desc>
+          </li>
+        </failTriggers>
+        <endTriggers>
+          <li Class="StageEndTrigger_RolesArrived">
+            <roleIds>
+              <li>initiator</li>
+            </roleIds>
+            <clearTag>true</clearTag>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>DeliverPawnToCellIfAliveThenIdle</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_DuelistStart">
+                <distFromTarget>2</distFromTarget>
+                <duelistIndex>0</duelistIndex>
+              </li>
+            </customPositions>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>Idle</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Zoophile</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_Lectern">
+                <maxDistanceToFocus>5</maxDistanceToFocus>
+              </li>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>animal</roleId>
+            <dutyDef>Spectate</dutyDef>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
+        <defaultDuty>Spectate</defaultDuty>
+        <essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.9</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>animal</roleId>
+            <dutyDef>Gangbang</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Zoophile</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>victim</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+  
+</Defs>

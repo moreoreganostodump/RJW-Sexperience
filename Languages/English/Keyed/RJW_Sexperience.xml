@@ -1,7 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <RS_Mod_Title>RJW Sexperience</RS_Mod_Title>
+
   <LustStatFactor>Lust: x{0}%</LustStatFactor>
   <SlaveStatFactor>Slave: x{0}%</SlaveStatFactor>
   <SlaveStatFactorDefault>Not Slave: x100%</SlaveStatFactorDefault>
   <MemeStatFactor>Meme: x{0}%</MemeStatFactor>
+
+  <RSOption_1_Label>Enable record randomizer</RSOption_1_Label>
+  <RSOption_1_Desc>Randomize pawn's sex records.</RSOption_1_Desc>
+  <RSOption_2_Label>Lust effect power</RSOption_2_Label>
+  <RSOption_2_Desc>Set how much lust affect to sex drive.</RSOption_2_Desc>
+  <RSOption_3_Label>Maximum lust deviation</RSOption_3_Label>
+  <RSOption_3_Desc>Set maximum deviation of lust.&#10;The lust value can be negative depending on its average.</RSOption_3_Desc>
+  <RSOption_4_Label>Average Lust</RSOption_4_Label>
+  <RSOption_4_Desc>Set average of lust.</RSOption_4_Desc>
+  <RSOption_5_Label>Maximum sex count deviation</RSOption_5_Label>
+  <RSOption_5_Desc>Set maximum deviation of sex count.</RSOption_5_Desc>
+  <RSOption_6_Label>Average sex count per year</RSOption_6_Label>
+  <RSOption_6_Desc>Set average sex count.</RSOption_6_Desc>
+  <RSOption_7_Label>Enable slaves get raped experience</RSOption_7_Label>
+  <RSOption_7_Desc>Slaves will have experience of being raped</RSOption_7_Desc>
+  <RSOption_8_Label></RSOption_8_Label>
+  <RSOption_8_Desc> </RSOption_8_Desc>
+  <RSOption_9_Label></RSOption_9_Label>
+  <RSOption_9_Desc> </RSOption_9_Desc>
+  <RSOption_10_Label></RSOption_10_Label>
+  <RSOption_10_Desc> </RSOption_10_Desc>
+  <RSOption_11_Label></RSOption_11_Label>
+  <RSOption_11_Desc> </RSOption_11_Desc>
+
 </LanguageData>

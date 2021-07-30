@@ -55,33 +55,41 @@
     <displayOrderInImpact>1000</displayOrderInImpact>
     <defaultSelectionWeight>100</defaultSelectionWeight>
     <comps>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>AnalSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>AnalSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>OralSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>OralSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>MiscSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>MiscSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>PromiscuousSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>3.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>PromiscuousSex</eventDef>
@@ -100,33 +108,41 @@
     <displayOrderInImpact>1000</displayOrderInImpact>
     <defaultSelectionWeight>10</defaultSelectionWeight>
     <comps>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>VaginalSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>VaginalSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>OralSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>OralSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>MiscSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>MiscSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>PromiscuousSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>3.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>PromiscuousSex</eventDef>
@@ -145,33 +161,41 @@
     <displayOrderInImpact>1000</displayOrderInImpact>
     <defaultSelectionWeight>5</defaultSelectionWeight>
     <comps>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>VaginalSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>VaginalSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>AnalSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>AnalSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>MiscSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>2.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>MiscSex</eventDef>
         <thought>Sex_Know_Promiscuous</thought>
       </li>
-      <li Class="PreceptComp_SelfTookMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_SelfTookThoughtTagged">
         <eventDef>PromiscuousSex</eventDef>
         <thought>Sex_Promiscuous</thought>
+        <recordDef>Lust</recordDef>
+        <recordoffset>3.0</recordoffset>
       </li>
       <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>PromiscuousSex</eventDef>

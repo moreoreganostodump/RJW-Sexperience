@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RitualPatternDef Abstract="True" Name="GangbangBase" ParentName="CelebrationPartyChat">
+    <nameMaker>NamerRitualFestival</nameMaker>
+    <canStartAnytime>true</canStartAnytime>
+    <ritualObligationTargetFilter>RitualSpotOrAltar</ritualObligationTargetFilter>
+    <ritualExpectedPostfix>{0} {1} want to carry out the gangbang as soon as possible.</ritualExpectedPostfix>
+    <tags>
+      <li>Rape</li>
+    </tags>
+  </RitualPatternDef>
+  
+  <RitualPatternDef ParentName="GangbangBase">
+    <defName>Gangbang</defName>
+    <ritualBehavior>Gangbang</ritualBehavior>
+    <shortDescOverride>gangbang</shortDescOverride>
+    <descOverride>A ritualistic gangbang. The organizer will give a speech to excite the crowd, then fuck the prisoner. If the organizer cannot fuck victim, the ritual will be canceled.</descOverride>
+    <iconPathOverride>UI/Issues/Gangbang</iconPathOverride>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <patternGroupTag/>
+    <ritualOutcomeEffect>Gangbang</ritualOutcomeEffect>
+  </RitualPatternDef>
+
+  <RitualPatternDef ParentName="GangbangBase">
+    <defName>GangbangByAnimal</defName>
+    <ritualBehavior>GangbangByAnimal</ritualBehavior>
+    <shortDescOverride>gangbang by animal</shortDescOverride>
+    <descOverride>A ritualistic animal gangbang. The organizer will give a speech to excite the crowd, then animals begin fuck victim.</descOverride>
+    <iconPathOverride>UI/Commands/Breeding_Pawn_off</iconPathOverride>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <patternGroupTag/>
+    <ritualOutcomeEffect>BestialGangbang</ritualOutcomeEffect>
+  </RitualPatternDef>
+  
+</Defs>

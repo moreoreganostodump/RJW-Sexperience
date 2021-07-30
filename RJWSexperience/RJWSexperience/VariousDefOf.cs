@@ -14,6 +14,7 @@ namespace RJWSexperience
         public static readonly RecordDef Lust = DefDatabase<RecordDef>.GetNamed("Lust");
         public static readonly SkillDef SexSkill = DefDatabase<SkillDef>.GetNamed("Sex");
         public static readonly ThoughtDef_Recordbased AteCum = DefDatabase<ThoughtDef_Recordbased>.GetNamed("AteCum");
+        public static readonly JobDef RapeVictim = DefDatabase<JobDef>.GetNamed("RapeVictim");
 
         [MayRequireIdeology] public static readonly MemeDef Zoophile = DefDatabase<MemeDef>.GetNamed("Zoophile");
         [MayRequireIdeology] public static readonly MemeDef Rapist = DefDatabase<MemeDef>.GetNamed("Rapist");

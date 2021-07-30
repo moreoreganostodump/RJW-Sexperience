@@ -41,6 +41,10 @@
   <Sex_Know_IncestMarriage_Disapproved.stages.0.label>근친</Sex_Know_IncestMarriage_Disapproved.stages.0.label>
   <Sex_Know_IncestMarriage_Forbidden.stages.0.label>근친</Sex_Know_IncestMarriage_Forbidden.stages.0.label>
   <Sex_Know_Incest_Violated.stages.0.label>혈족이 아닌사람과 성관계</Sex_Know_Incest_Violated.stages.0.label>
-  <Sex_Know_IncestMarriage_Violated.stages.0.label>혈통을 더럽힘</Sex_Know_IncestMarriage_Violated.stages.0.label>
+  <BeenRaped_Submissive.stages.0.label>강간당함</BeenRaped_Submissive.stages.0.label>
+  <BeenRaped_Submissive.stages.0.description>받아들여야해. 하지만 기분이 안좋아.</BeenRaped_Submissive.stages.0.description>
+  <BeenRaped_NotSubmissive.stages.0.label>{0}에게 강간당함</BeenRaped_NotSubmissive.stages.0.label>
+  <BeenRaped_NotSubmissive.stages.0.description>어떻게 감히...</BeenRaped_NotSubmissive.stages.0.description>
+  <Raped_Know_NotBeingSubmissive.stages.0.label>순종적이지 않음</Raped_Know_NotBeingSubmissive.stages.0.label>
 
 </LanguageData>

@@ -79,4 +79,24 @@
 			</nullifyingPrecepts>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="GotRaped" or defName="GotAnalRaped" or defName="GotAnalRapedByFemale" or defName="GotRapedUnconscious" or defName="HateMyRapist" or defName="AllowedMeToGetRaped"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="GotRaped" or defName="GotAnalRaped" or defName="GotAnalRapedByFemale" or defName="GotRapedUnconscious" or defName="HateMyRapist" or defName="AllowedMeToGetRaped"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>Submissive_Male</li>
+					<li>Submissive_Female</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="GotRaped" or defName="GotAnalRaped" or defName="GotAnalRapedByFemale" or defName="GotRapedUnconscious" or defName="HateMyRapist" or defName="AllowedMeToGetRaped"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>Submissive_Male</li>
+				<li>Submissive_Female</li>
+			</value>
+		</match>
+	</Operation>
 </Patch>

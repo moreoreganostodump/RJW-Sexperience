@@ -40,17 +40,21 @@
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Abhorrent</thought>
       </li>
-      <li Class="PreceptComp_KnowsMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Know_Abhorrent</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
       </li>
       <li Class="PreceptComp_SelfTookMemoryThought">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Abhorrent</thought>
       </li>
-      <li Class="PreceptComp_KnowsMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Know_Abhorrent</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
       </li>
     </comps>
   </PreceptDef>
@@ -75,17 +79,21 @@
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Horrible</thought>
       </li>
-      <li Class="PreceptComp_KnowsMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Know_Horrible</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
       </li>
       <li Class="PreceptComp_SelfTookMemoryThought">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Horrible</thought>
       </li>
-      <li Class="PreceptComp_KnowsMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Know_Horrible</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
       </li>
     </comps>
   </PreceptDef>
@@ -110,17 +118,21 @@
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Disapproved</thought>
       </li>
-      <li Class="PreceptComp_KnowsMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Know_Disapproved</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
       </li>
       <li Class="PreceptComp_SelfTookMemoryThought">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Disapproved</thought>
       </li>
-      <li Class="PreceptComp_KnowsMemoryThought">
+      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Know_Disapproved</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
       </li>
     </comps>
   </PreceptDef>
@@ -199,6 +211,17 @@
       </li>
       <li Class="PreceptComp_KnowsMemoryThought">
         <eventDef>SexWithAnimal</eventDef>
+        <thought>Bestiality_Know_Honorable</thought>
+        <description>Someone sex with animal</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
+        <thought>Bestiality_Honorable</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Know_Honorable</thought>
         <description>Someone sex with animal</description>
         <onlyForNonSlaves>true</onlyForNonSlaves>

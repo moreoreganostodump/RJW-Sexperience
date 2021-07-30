@@ -58,7 +58,28 @@ namespace RJWSexperience
             return value;
         }
 
+        public static bool ContainAll(this string str, string[] tags)
+        {
+            string lstr = str.ToLower();
+            if (!tags.NullOrEmpty()) for (int i=0; i< tags.Count(); i++)
+                {
+                    if (!lstr.Contains('[' + tags[i].ToLower() + ']')) return false;
+                }
+            return true;
+        }
 
+
+        public static float LustFactor(this Pawn pawn)
+        {
+            float lust = pawn.records.GetValue(VariousDefOf.Lust) * Configurations.LustEffectPower;
+            if (lust < 0)
+            {
+                lust = (float)Math.Exp((lust + 200 * Math.Log(10)) / 100) - 100f;
+            }
+
+
+            return 1 + lust / 100;
+        }
 
     }
 }

@@ -48,6 +48,9 @@
     <displayOrderInIssue>40</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
     <defaultSelectionWeight>30</defaultSelectionWeight>
+    <exclusionTags>
+      <li>RapeBad</li>
+    </exclusionTags>
     <conflictingMemes>
       <li>Rapist</li>
     </conflictingMemes>
@@ -97,6 +100,9 @@
     <displayOrderInIssue>30</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
     <defaultSelectionWeight>30</defaultSelectionWeight>
+    <exclusionTags>
+      <li>RapeBad</li>
+    </exclusionTags>
     <conflictingMemes>
       <li>Rapist</li>
     </conflictingMemes>
@@ -135,6 +141,9 @@
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>1000</displayOrderInImpact>
     <defaultSelectionWeight>20</defaultSelectionWeight>
+    <exclusionTags>
+      <li>RapeBad</li>
+    </exclusionTags>
     <conflictingMemes>
       <li>Rapist</li>
     </conflictingMemes>
