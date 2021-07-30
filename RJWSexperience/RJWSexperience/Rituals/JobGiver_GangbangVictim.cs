@@ -26,7 +26,7 @@ namespace RJWSexperience
             }
             else return null;
 
-			if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_rape(pawn))
+			if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_rape(pawn, true))
             {
                 return null;
 			}

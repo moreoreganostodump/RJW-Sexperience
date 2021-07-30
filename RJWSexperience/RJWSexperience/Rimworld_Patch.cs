@@ -112,5 +112,16 @@ namespace RJWSexperience
         }
     }
 
+    [HarmonyPatch(typeof(RitualOutcomeEffectWorker_FromQuality), "GiveMemoryToPawn")]
+    public static class Rimworld_Patch_GiveMemoryToPawn
+    {
+        public static bool Prefix(Pawn pawn, ThoughtDef memory, LordJob_Ritual jobRitual)
+        {
+            if (pawn.IsAnimal()) return false;
+
+            return true;
+        }
+    }
+
 
 }

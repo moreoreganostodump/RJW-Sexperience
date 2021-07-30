@@ -145,7 +145,7 @@
       <li Class="RJWSexperience.RitualRole_AnimalBreeder">
         <label>breeder</label>
         <id>animal</id>
-        <maxCount>8</maxCount>
+        <maxCount>10</maxCount>
         <required>True</required>
         <missingDesc>a breedable animal.</missingDesc>
         <countsAsParticipant>false</countsAsParticipant>

@@ -68,7 +68,7 @@
       </li>
       <li>
         <label>Boring</label>
-        <chance>0.15</chance>
+        <chance>0.10</chance>
         <memory>BoringGangbang</memory>
         <description>The {0} was boring. The speech was repetitive and the victim was noticeably flawed. It just didn't feel dignified.</description>
         <positivityIndex>-1</positivityIndex>
@@ -83,7 +83,7 @@
       </li>
       <li>
         <label>Spectacular</label>
-        <chance>0.2</chance>
+        <chance>0.25</chance>
         <memory>UnforgettableGangbang</memory>
         <description>The {0} was spectacular! The speech brought everyone to the edge of a frenzy and the victim was like succubus.</description>
         <potentialExtraOutcomeDesc>There's a 10% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
@@ -155,14 +155,14 @@
       </li>
       <li>
         <label>Boring</label>
-        <chance>0.15</chance>
+        <chance>0.10</chance>
         <memory>BoringGangbang</memory>
         <description>The {0} was boring. The speech was repetitive and the victim was noticeably flawed. It just didn't feel dignified.</description>
         <positivityIndex>-1</positivityIndex>
       </li>
       <li>
         <label>Satisfying</label>
-        <chance>0.6</chance>
+        <chance>0.65</chance>
         <memory>FunGangbang</memory>
         <description>The {0} was satisfying. The speech felt meaningful, and the victim was precise and dignified.</description>
         <potentialExtraOutcomeDesc>There's a 5% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
