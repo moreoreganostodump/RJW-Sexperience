@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Zoophile.label>恋兽癖</Zoophile.label>
+  <Zoophile.description>日山羊的。</Zoophile.description>
+  <Zoophile.generalRules.rulesStrings.0>memeAdjective-&gt;兽交的</Zoophile.generalRules.rulesStrings.0>
+  <Zoophile.generalRules.rulesStrings.1>memeAdjective-&gt;恋兽的</Zoophile.generalRules.rulesStrings.1>
+  <Zoophile.generalRules.rulesStrings.2>memeHyphenPrefix-&gt;恋兽</Zoophile.generalRules.rulesStrings.2>
+  <Zoophile.generalRules.rulesStrings.3>memeConcept-&gt;繁殖</Zoophile.generalRules.rulesStrings.3>
+  <Zoophile.generalRules.rulesStrings.4>memeConcept-&gt;恋兽癖</Zoophile.generalRules.rulesStrings.4>
+  <Zoophile.generalRules.rulesStrings.5>memeConcept-&gt;兽交</Zoophile.generalRules.rulesStrings.5>
+  <Zoophile.generalRules.rulesStrings.6>memeLeaderNoun-&gt;家畜</Zoophile.generalRules.rulesStrings.6>
+  <Zoophile.descriptionMaker.rules.rulesStrings.0>creation(tag=meme_Zoophile)        -&gt;[deity0_name] 喜欢和兽类繁殖。</Zoophile.descriptionMaker.rules.rulesStrings.0>
+  <Zoophile.descriptionMaker.rules.rulesStrings.1>episode(uses=1,tag=meme_Zoophile)  -&gt;[deity0_name] 告诫众人：“西格玛禁止此等行为！”</Zoophile.descriptionMaker.rules.rulesStrings.1>
+  <Zoophile.descriptionMaker.rules.rulesStrings.2>setup(tag=meme_Zoophile)           -&gt;有一天， [founderName] 性甚至哉，误打误撞强上了一个动物，从此喜欢上了这项运动。 </Zoophile.descriptionMaker.rules.rulesStrings.2>
+  <Zoophile.descriptionMaker.rules.rulesStrings.3>story(uses=1,tag=meme_Zoophile)    -&gt;为了扩大动物种群， [founderName] 开始和动物爱爱。</Zoophile.descriptionMaker.rules.rulesStrings.3>
+  <Zoophile.descriptionMaker.rules.rulesStrings.4>lessonIntro(tag=meme_Zoophile)         -&gt;有一天，我跟动物做爱了，比跟人做好多了！</Zoophile.descriptionMaker.rules.rulesStrings.4>
+  <Zoophile.descriptionMaker.rules.rulesStrings.5>lesson(tag=meme_Zoophile)              -&gt;还是动物适合老子。</Zoophile.descriptionMaker.rules.rulesStrings.5>
+  <Zoophile.descriptionMaker.rules.rulesStrings.6>lessonReinforcement(tag=meme_Zoophile) -&gt;和动物做爱吧！这里有永恒的快乐。</Zoophile.descriptionMaker.rules.rulesStrings.6>
+  <Zoophile.descriptionMaker.rules.rulesStrings.7>archistBasis(tag=meme_Zoophile)    -&gt;机械神教徒永远寻找永恒的快乐。</Zoophile.descriptionMaker.rules.rulesStrings.7>
+  <Zoophile.descriptionMaker.rules.rulesStrings.8>archistFact(tag=meme_Zoophile)     -&gt;那便是同动物做爱。</Zoophile.descriptionMaker.rules.rulesStrings.8>
+  <Zoophile.descriptionMaker.rules.rulesStrings.9>archistProphecy(tag=meme_Zoophile) -&gt;[inTheEnd]， 机械神教徒终于解锁了异种性行为，因此，他们也获得了真正的永恒的快乐。</Zoophile.descriptionMaker.rules.rulesStrings.9>
+  <Zoophile.descriptionMaker.rules.rulesStrings.10>animistFact(tag=meme_Zoophile)     -&gt;最强大的力量来源于野兽，只有接受野兽的支配，才能发挥野兽的强大力量。</Zoophile.descriptionMaker.rules.rulesStrings.10>
+  <Zoophile.descriptionMaker.rules.rulesStrings.11>animistProphecy(tag=meme_Zoophile) -&gt;[itIsSaid] 一个强大的毁灭之神会摧垮宇宙，但一个由动物产下的人类挥舞着 [relic0_name] 击退了毁灭者。</Zoophile.descriptionMaker.rules.rulesStrings.11>
+  <Zoophile.symbolPacks.0.adjective>兽交的</Zoophile.symbolPacks.0.adjective>
+  <Zoophile.symbolPacks.1.adjective>恋兽的</Zoophile.symbolPacks.1.adjective>
+
+  <Rapist.label>强奸犯</Rapist.label>
+  <Rapist.description>无强奸，不做爱</Rapist.description>
+  <Rapist.generalRules.rulesStrings.0>memeAdjective-&gt;暴力的</Rapist.generalRules.rulesStrings.0>
+  <Rapist.generalRules.rulesStrings.1>memeAdjective-&gt;强奸的</Rapist.generalRules.rulesStrings.1>
+  <Rapist.generalRules.rulesStrings.2>memeHyphenPrefix-&gt;强奸犯</Rapist.generalRules.rulesStrings.2>
+  <Rapist.generalRules.rulesStrings.3>memeHyphenPrefix-&gt;骚扰犯</Rapist.generalRules.rulesStrings.3>
+  <Rapist.generalRules.rulesStrings.4>memeHyphenPrefix-&gt;变态</Rapist.generalRules.rulesStrings.4>
+  <Rapist.generalRules.rulesStrings.5>memeConcept-&gt;强奸犯</Rapist.generalRules.rulesStrings.5>
+  <Rapist.generalRules.rulesStrings.6>memeConcept-&gt;变态</Rapist.generalRules.rulesStrings.6>
+  <Rapist.generalRules.rulesStrings.7>memeGod-&gt;色孽</Rapist.generalRules.rulesStrings.7>
+  <Rapist.generalRules.rulesStrings.8>memeLeaderNoun-&gt;种马</Rapist.generalRules.rulesStrings.8>
+  <Rapist.generalRules.rulesStrings.9>memeLeaderNoun-&gt;大强奸犯</Rapist.generalRules.rulesStrings.9>
+  <Rapist.descriptionMaker.rules.rulesStrings.0>creation(tag=meme_Rapist)        -&gt;[deity0_name] 尤好强奸。</Rapist.descriptionMaker.rules.rulesStrings.0>
+  <Rapist.descriptionMaker.rules.rulesStrings.1>episode(uses=1,tag=meme_Rapist)  -&gt;[deity0_name] 将某人强奸致死。</Rapist.descriptionMaker.rules.rulesStrings.1>
+  <Rapist.descriptionMaker.rules.rulesStrings.2>setup(tag=meme_Rapist)           -&gt;[founderName] 总是欲火焚身。 </Rapist.descriptionMaker.rules.rulesStrings.2>
+  <Rapist.descriptionMaker.rules.rulesStrings.3>story(uses=1,tag=meme_Rapist)    -&gt;[founderName] 强奸了某人。 没人能够制止 [founderName]。 [founderName] 试图强奸整个星球，死在了半路上。</Rapist.descriptionMaker.rules.rulesStrings.3>
+  <Rapist.descriptionMaker.rules.rulesStrings.4>lessonIntro(tag=meme_Rapist)         -&gt;干艹好棒好棒的！干艹好棒好棒的！干艹好棒好棒的！</Rapist.descriptionMaker.rules.rulesStrings.4>
+  <Rapist.descriptionMaker.rules.rulesStrings.5>lesson(tag=meme_Rapist)              -&gt;干艹好棒好棒的！干艹好棒好棒的！干艹好棒好棒的！干艹好棒好棒的！</Rapist.descriptionMaker.rules.rulesStrings.5>
+  <Rapist.descriptionMaker.rules.rulesStrings.6>lessonReinforcement(tag=meme_Rapist) -&gt;干艹好棒好棒的！干艹好棒好棒的！干艹好棒好棒的！干艹好棒好棒的！干艹好棒好棒的！</Rapist.descriptionMaker.rules.rulesStrings.6>
+  <Rapist.descriptionMaker.rules.rulesStrings.7>archistBasis(tag=meme_Rapist)    -&gt;人类的历史就是强奸的历史。</Rapist.descriptionMaker.rules.rulesStrings.7>
+  <Rapist.descriptionMaker.rules.rulesStrings.8>archistFact(tag=meme_Rapist)     -&gt;机械信徒也阻止不了强奸犯。</Rapist.descriptionMaker.rules.rulesStrings.8>
+  <Rapist.descriptionMaker.rules.rulesStrings.9>archistProphecy(tag=meme_Rapist) -&gt;[inTheEnd]，强奸犯从未停止过强奸。</Rapist.descriptionMaker.rules.rulesStrings.9>
+  <Rapist.descriptionMaker.rules.rulesStrings.10>animistFact(tag=meme_Rapist)     -&gt;强奸之灵是最强大的灵，牠会强奸其他所有的灵。</Rapist.descriptionMaker.rules.rulesStrings.10>
+  <Rapist.descriptionMaker.rules.rulesStrings.11>animistProphecy(tag=meme_Rapist) -&gt;[itIsSaid] 一个强大的毁灭之神会摧垮宇宙，但一个强奸了一百万个人类的强奸犯挥舞着 [relic0_name] 击退了毁灭者。</Rapist.descriptionMaker.rules.rulesStrings.11>
+  <Rapist.symbolPacks.0.adjective>强奸的</Rapist.symbolPacks.0.adjective>
+  <Rapist.symbolPacks.1.adjective>颓废的</Rapist.symbolPacks.1.adjective>
+
+
+</LanguageData>

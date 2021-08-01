@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Incestuos_Free.label>无所禁忌</Incestuos_Free.label>
+  <Incestuos_Free.description>随便</Incestuos_Free.description>
+
+  <Incestuos_Disapproved_CloseOnly.label>不允许近亲</Incestuos_Disapproved_CloseOnly.label>
+  <Incestuos_Disapproved_CloseOnly.description>族内通婚不应被允许，但堂表亲不算族内通婚。</Incestuos_Disapproved_CloseOnly.description>
+
+  <Incestuos_Disapproved.label>不赞同</Incestuos_Disapproved.label>
+  <Incestuos_Disapproved.description>族内通婚违反公序良俗。</Incestuos_Disapproved.description>
+
+  <Incestuos_Forbidden.label>禁忌</Incestuos_Forbidden.label>
+  <Incestuos_Forbidden.description>禁止族内通婚。</Incestuos_Forbidden.description>
+
+  <Incestuos_IncestOnly.label>仅族内通婚</Incestuos_IncestOnly.label>
+  <Incestuos_IncestOnly.description>万世一系，血脉相融。</Incestuos_IncestOnly.description>
+
+
+</LanguageData>

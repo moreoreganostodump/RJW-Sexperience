@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thoughts -->
+
+  <IncestuosMarriage_Forbidden.stages.0.label>被社会排除在外</IncestuosMarriage_Forbidden.stages.0.label>
+  <IncestuosMarriage_Forbidden.stages.0.description>没人会祝福我们的婚事……</IncestuosMarriage_Forbidden.stages.0.description>
+
+  <IncestuosMarriage_Disapproved.stages.0.label>被人在背后指指点点</IncestuosMarriage_Disapproved.stages.0.label>
+  <IncestuosMarriage_Disapproved.stages.0.description>他们在戳我们的脊梁骨。</IncestuosMarriage_Disapproved.stages.0.description>
+
+  <Sex_Know_Incest_Disapproved.stages.0.label>族内通婚</Sex_Know_Incest_Disapproved.stages.0.label>
+  <Sex_Know_Incest_Forbidden.stages.0.label>族内通婚</Sex_Know_Incest_Forbidden.stages.0.label>
+  <Sex_Know_IncestMarriage_Disapproved.stages.0.label>族内通婚</Sex_Know_IncestMarriage_Disapproved.stages.0.label>
+  <Sex_Know_IncestMarriage_Forbidden.stages.0.label>族内通婚</Sex_Know_IncestMarriage_Forbidden.stages.0.label>
+  <Sex_Know_Incest_Violated.stages.0.label>和非亲族做爱</Sex_Know_Incest_Violated.stages.0.label>
+  <Sex_Know_IncestMarriage_Violated.stages.0.label>我脏了</Sex_Know_IncestMarriage_Violated.stages.0.label>
+
+
+</LanguageData>

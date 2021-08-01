@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Submissive_None.label>正常的</Submissive_None.label>
+  <Submissive_None.description>无影响</Submissive_None.description>
+
+  <Submissive_Male.label>男性须服从</Submissive_Male.label>
+  <Submissive_Male.description>男性必须服从。即使被人强奸，也得乖乖受着。</Submissive_Male.description>
+  <Submissive_Male.comps.2.description>不听话</Submissive_Male.comps.2.description>
+  <Submissive_Male.comps.5.description>不听话</Submissive_Male.comps.5.description>
+  <Submissive_Male.comps.8.description>不听话</Submissive_Male.comps.8.description>
+
+  <Submissive_Female.label>女性须服从</Submissive_Female.label>
+  <Submissive_Female.description>女性必须服从。即使被人强奸，也得乖乖受着。</Submissive_Female.description>
+  <Submissive_Female.comps.2.description>不听话</Submissive_Female.comps.2.description>
+  <Submissive_Female.comps.5.description>不听话</Submissive_Female.comps.5.description>
+  <Submissive_Female.comps.8.description>不听话</Submissive_Female.comps.8.description>
+
+
+</LanguageData>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Gangbang.description>根据仪式的质量，参加者会获得介于 {MINMOOD} 与 {MAXMOOD} 之间的心情更易，维持 {MOODDAYS} 天。</Gangbang.description>
+  <Gangbang.comps.0.label>道德导师在场</Gangbang.comps.0.label>
+  <Gangbang.comps.1.label>参与人数</Gangbang.comps.1.label>
+  <Gangbang.comps.2.label>在祭坛举办</Gangbang.comps.2.label>
+  <Gangbang.comps.3.label>受害者精神扭曲</Gangbang.comps.3.label>
+  <Gangbang.comps.4.label>受害者精神崩溃</Gangbang.comps.4.label>
+  <Gangbang.comps.5.label>受害者精神崩坏</Gangbang.comps.5.label>
+  <Gangbang.comps.6.label>满意的参加者</Gangbang.comps.6.label>
+  <Gangbang.outcomeChances.0.label>糟糕的</Gangbang.outcomeChances.0.label>
+  <Gangbang.outcomeChances.0.description> {0} 太糟糕了！ 演讲结结巴巴，语无伦次，受害者很拙劣——每个人都在等着它结束。</Gangbang.outcomeChances.0.description>
+  <Gangbang.outcomeChances.1.label>无聊的</Gangbang.outcomeChances.1.label>
+  <Gangbang.outcomeChances.1.description> {0} 无聊透顶。 演讲内容重复，受害者明显是个残次品。真的很没面子。</Gangbang.outcomeChances.1.description>
+  <Gangbang.outcomeChances.2.label>满意的</Gangbang.outcomeChances.2.label>
+  <Gangbang.outcomeChances.2.description> {0} 令人满意。 讲话感觉意味深长，受害者很棒。</Gangbang.outcomeChances.2.description>
+  <Gangbang.outcomeChances.3.label>超凡的</Gangbang.outcomeChances.3.label>
+  <Gangbang.outcomeChances.3.description> {0} 太棒了！ 演讲让所有人都陷入了疯狂的边缘，受害者就像魅魔一样。</Gangbang.outcomeChances.3.description>
+
+  <BestialGangbang.description>根据仪式的质量，参加者会获得介于 {MINMOOD} 与 {MAXMOOD} 之间的心情更易，维持 {MOODDAYS} 天。</BestialGangbang.description>
+  <BestialGangbang.comps.0.label>道德导师在场</BestialGangbang.comps.0.label>
+  <BestialGangbang.comps.1.label>参与人数</BestialGangbang.comps.1.label>
+  <BestialGangbang.comps.2.label>在祭坛举办</BestialGangbang.comps.2.label>
+  <BestialGangbang.comps.3.label>受精者精神扭曲</BestialGangbang.comps.3.label>
+  <BestialGangbang.comps.4.label>受精者精神崩溃</BestialGangbang.comps.4.label>
+  <BestialGangbang.comps.5.label>受精者精神崩坏</BestialGangbang.comps.5.label>
+  <BestialGangbang.outcomeChances.0.label>糟糕的</BestialGangbang.outcomeChances.0.label>
+  <BestialGangbang.outcomeChances.0.description> {0} 太糟糕了！ 演讲结结巴巴，语无伦次，受害者很拙劣——每个人都在等着它结束。</BestialGangbang.outcomeChances.0.description>
+  <BestialGangbang.outcomeChances.1.label>无聊的</BestialGangbang.outcomeChances.1.label>
+  <BestialGangbang.outcomeChances.1.description> {0} 无聊透顶。 演讲内容重复，受害者明显是个残次品。真的很没面子。</BestialGangbang.outcomeChances.1.description>
+  <BestialGangbang.outcomeChances.2.label>满意的</BestialGangbang.outcomeChances.2.label>
+  <BestialGangbang.outcomeChances.2.description> {0} 令人满意。 讲话感觉意味深长，受害者很棒。</BestialGangbang.outcomeChances.2.description>
+  <BestialGangbang.outcomeChances.3.label>超凡的</BestialGangbang.outcomeChances.3.label>
+  <BestialGangbang.outcomeChances.3.description> {0} 太棒了！ 演讲让所有人都陷入了疯狂的边缘，受害者就像魅魔一样。</BestialGangbang.outcomeChances.3.description>
+
+
+</LanguageData>
