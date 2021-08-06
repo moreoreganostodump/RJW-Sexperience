@@ -53,5 +53,8 @@ namespace RJWSexperience
         [MayRequireIdeology] public static readonly PreceptDef Incestuos_Forbidden = DefDatabase<PreceptDef>.GetNamed("Incestuos_Forbidden");
         [MayRequireIdeology] public static readonly PreceptDef Incestuos_IncestOnly = DefDatabase<PreceptDef>.GetNamed("Incestuos_IncestOnly");
         [MayRequireIdeology] public static readonly PreceptDef Incestuos_Disapproved_CloseOnly = DefDatabase<PreceptDef>.GetNamed("Incestuos_Disapproved_CloseOnly");
+        [MayRequireIdeology] public static readonly PreceptDef BabyFaction_AlwaysMother = DefDatabase<PreceptDef>.GetNamed("BabyFaction_AlwaysMother");
+        [MayRequireIdeology] public static readonly PreceptDef BabyFaction_AlwaysFather = DefDatabase<PreceptDef>.GetNamed("BabyFaction_AlwaysFather");
+        [MayRequireIdeology] public static readonly PreceptDef BabyFaction_AlwaysColony = DefDatabase<PreceptDef>.GetNamed("BabyFaction_AlwaysColony");
     }
 }

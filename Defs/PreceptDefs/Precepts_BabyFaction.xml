@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>BabyFaction</defName>
+    <label>baby faction</label>
+    <iconPath>UI/Issues/Birth</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>BabyFaction_AlwaysMother</defName>
+    <issue>BabyFaction</issue>
+    <label>always mother(default)</label>
+    <description>New born babies always follow mother's faction and ideology.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>BabyFaction_AlwaysFather</defName>
+    <issue>BabyFaction</issue>
+    <label>always father</label>
+    <description>New born babies always follow father's faction and ideology(if exists).</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>BabyFaction_AlwaysColony</defName>
+    <issue>BabyFaction</issue>
+    <label>always colony</label>
+    <description>New born babies are always player's faction and ideology.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+</Defs>

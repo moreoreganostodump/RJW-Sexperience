@@ -6,6 +6,11 @@
   <SlaveStatFactor>Slave: x{0}%</SlaveStatFactor>
   <SlaveStatFactorDefault>Not Slave: x100%</SlaveStatFactorDefault>
   <MemeStatFactor>Meme: x{0}%</MemeStatFactor>
+  <RSVictimCondition>slave, prisoner, submissive gender only</RSVictimCondition>
+  <RSBreederCondition>improper animal: cannot breed or forbidden by precepts</RSBreederCondition>
+  <RSNotHuman>not human</RSNotHuman>
+  <RSNotAnimal>not animal</RSNotAnimal>
+  <RSShouldCanFuck>capable of sex is required</RSShouldCanFuck>
 
   <RSOption_1_Label>Enable record randomizer</RSOption_1_Label>
   <RSOption_1_Desc>Randomize pawn's sex records.</RSOption_1_Desc>
@@ -21,8 +26,8 @@
   <RSOption_6_Desc>Set average sex count.</RSOption_6_Desc>
   <RSOption_7_Label>Enable slaves get raped experience</RSOption_7_Label>
   <RSOption_7_Desc>Slaves will have experience of being raped</RSOption_7_Desc>
-  <RSOption_8_Label></RSOption_8_Label>
-  <RSOption_8_Desc> </RSOption_8_Desc>
+  <RSOption_8_Label>Lust Limit</RSOption_8_Label>
+  <RSOption_8_Desc>Set limitation of lust.&#10;If absolute value of lust close to or larger than this value, lust will be less likely to change.</RSOption_8_Desc>
   <RSOption_9_Label></RSOption_9_Label>
   <RSOption_9_Desc> </RSOption_9_Desc>
   <RSOption_10_Label></RSOption_10_Label>

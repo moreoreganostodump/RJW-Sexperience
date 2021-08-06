@@ -78,8 +78,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configurations.cs" />
+    <Compile Include="DebugAction.cs" />
     <Compile Include="GoodwillSituationWorker_MemeCompatibility.cs" />
     <Compile Include="Harmony.cs" />
+    <Compile Include="PawnRelationWorkers.cs" />
     <Compile Include="Rituals\JobGiver_GangbangVictim.cs" />
     <Compile Include="Keyed.cs" />
     <Compile Include="PreceptComp_SelftTookThoughtExtended.cs" />

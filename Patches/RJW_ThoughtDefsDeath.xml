@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="MyKinDied" or defName="MyCousinDied" or defName="MyGrandparentDied" or defName="MyUncleDied" or defName="MyAuntDied" or defName="MyHalfSiblingDied" or defName="MyNephewDied" or defName="MyNieceDied" or defName="MyHalfSiblingDied" or defName="MyHalfSiblingDied" or defName="MyHalfSiblingDied"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyKinDied" or defName="MyCousinDied" or defName="MyGrandparentDied" or defName="MyUncleDied" or defName="MyAuntDied" or defName="MyHalfSiblingDied" or defName="MyNephewDied" or defName="MyNieceDied" or defName="MyHalfSiblingDied" or defName="MyHalfSiblingDied" or defName="MyHalfSiblingDied"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>SocialAffection_Psychopath</li>
+					<li>SocialAffection_Dry</li>
+					<li>SocialAffection_Small</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyKinDied" or defName="MyCousinDied" or defName="MyGrandparentDied" or defName="MyUncleDied" or defName="MyAuntDied" or defName="MyHalfSiblingDied" or defName="MyNephewDied" or defName="MyNieceDied" or defName="MyHalfSiblingDied" or defName="MyHalfSiblingDied" or defName="MyHalfSiblingDied"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>SocialAffection_Psychopath</li>
+				<li>SocialAffection_Dry</li>
+				<li>SocialAffection_Small</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" ]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" ]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>SocialAffection_Psychopath</li>
+					<li>SocialAffection_Dry</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" ]/nullifyingPrecepts</xpath>
+			<value>
+				<li>SocialAffection_Psychopath</li>
+				<li>SocialAffection_Dry</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="KnowGuestExecuted" or defName="KnowColonistExecuted" or defName="KnowPrisonerDiedInnocent" or defName="KnowColonistDied" or defName="PawnWithGoodOpinionDied" or defName="PawnWithBadOpinionDied" or defName="WitnessedDeathAlly" or defName="WitnessedDeathNonAlly" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonistBanishedToDie" or defName="ColonistLeftUnburied"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="KnowGuestExecuted" or defName="KnowColonistExecuted" or defName="KnowPrisonerDiedInnocent" or defName="KnowColonistDied" or defName="PawnWithGoodOpinionDied" or defName="PawnWithBadOpinionDied" or defName="WitnessedDeathAlly" or defName="WitnessedDeathNonAlly" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonistBanishedToDie" or defName="ColonistLeftUnburied"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>SocialAffection_Psychopath</li>
+					<li>SocialAffection_OnlyFamily</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="KnowGuestExecuted" or defName="KnowColonistExecuted" or defName="KnowPrisonerDiedInnocent" or defName="KnowColonistDied" or defName="PawnWithGoodOpinionDied" or defName="PawnWithBadOpinionDied" or defName="WitnessedDeathAlly" or defName="WitnessedDeathNonAlly" or defName="ColonistBanishedToDie" or defName="PrisonerBanishedToDie" or defName="ColonistBanishedToDie" or defName="ColonistLeftUnburied"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>SocialAffection_Psychopath</li>
+				<li>SocialAffection_OnlyFamily</li>
+			</value>
+		</match>
+	</Operation>
+	
+
+
+</Patch>

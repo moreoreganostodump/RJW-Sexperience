@@ -1,10 +1,20 @@
-Version Beta 1.0.1.6
+Version Beta 1.0.1.7
+ - added baby faction and social affection precepts 
  - changed stat calculation of lust
-   - on negative lust, use exponential function instead of linear
- - added gangbang rituals 
- - chance of bestiality with non-venerated animal on only venerated precept reduced greatly
- - added submissive precepts
- - added mod settings
+   - added lust limit
+ - added debug actions for reset lust
+ - fixed mod setting was not saved
+ - fixed bestiality chance
+ - fixed errors when fuck corpse
+ - added bastard relation(nothing special yet)
+
+Version Beta 1.0.1.6
+  - changed stat calculation of lust
+    - on negative lust, use exponential function instead of linear
+  - added gangbang rituals 
+  - chance of bestiality with non-venerated animal on only venerated precept reduced greatly
+  - added submissive precepts
+  - added mod settings
 
 Version Beta 1.0.1.5
  - changed icon for precepts and memes

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnRelationDef>
+    <workerClass>RJWSexperience.PawnRelationWorker_Bastard</workerClass>
+    <defName>Bastard</defName>
+    <label>bastard</label>
+    <labelFemale>bastard</labelFemale>
+    <importance>185</importance>
+    <opinionOffset>-10</opinionOffset>
+    <generationChanceFactor>0.0</generationChanceFactor>
+    <implied>true</implied>
+    <familyByBloodRelation>true</familyByBloodRelation>
+  </PawnRelationDef>
+  
+</Defs>

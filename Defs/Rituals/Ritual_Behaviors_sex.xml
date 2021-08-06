@@ -147,7 +147,7 @@
         <id>animal</id>
         <maxCount>10</maxCount>
         <required>True</required>
-        <missingDesc>a breedable animal.</missingDesc>
+        <missingDesc>a breedable animal</missingDesc>
         <countsAsParticipant>false</countsAsParticipant>
       </li>
     </roles>

@@ -23,14 +23,13 @@ namespace RJWSexperience
             if (CanBeVictim(p)) return true;
             if (!skipReason)
             {
-                reason = "slave, prisoner, submissive gender only";
+                reason = Keyed.RSVictimCondition;
             }
             return false;
         }
 
         public static bool CanBeVictim(Pawn pawn)
         {
-            
             if (pawn.IsPrisonerOfColony || pawn.IsSlaveOfColony) return true;
             if (pawn.Ideo?.HasMeme(MemeDefOf.FemaleSupremacy) ?? false && pawn.gender != Gender.Female) return true;
             else if (pawn.Ideo?.HasMeme(MemeDefOf.MaleSupremacy) ?? false && pawn.gender != Gender.Male) return true;
@@ -52,13 +51,13 @@ namespace RJWSexperience
             reason = null;
             if (!xxx.is_human(p))
             {
-                reason = "not human";
+                reason = Keyed.RSNotHuman;
                 return false;
             }
             if (CanBeBreedee(p)) return true;
             if (!skipReason)
             {
-                reason = "capable of sex is required";
+                reason = Keyed.RSShouldCanFuck;
             }
             return false;
         }
@@ -85,13 +84,13 @@ namespace RJWSexperience
             reason = null;
             if (!p.IsAnimal())
             {
-                reason = "not animal";
+                reason = Keyed.RSNotAnimal;
                 return false;
             }
             if (CanBeBreeder(p, assignments?.Ritual)) return true;
             if (!skipReason)
             {
-                reason = "improper animal: cannot breed or forbidden by precepts";
+                reason = Keyed.RSBreederCondition;
             }
             return false;
         }

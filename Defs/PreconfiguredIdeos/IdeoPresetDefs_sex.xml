@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <IdeoPresetDef>
+    <defName>Animal_Breeders</defName>
+    <label>animal breeders</label>
+    <description>Animals are our better half.</description>
+    <categoryDef>Intense</categoryDef>
+    <memes>
+      <li>AnimalPersonhood</li>
+      <li>Zoophile</li>
+    </memes>
+  </IdeoPresetDef>
+
+  <IdeoPresetDef>
+    <defName>Savage_Rapist_Brigands</defName>
+    <label>savage rapist brigands</label>
+    <description>All of them are ours.</description>
+    <categoryDef>Intense</categoryDef>
+    <memes>
+      <li>Rapist</li>
+      <li>Nudism</li>
+      <li>Raider</li>
+    </memes>
+  </IdeoPresetDef>
+
+  <IdeoPresetDef>
+    <defName>Hentai_Tribe</defName>
+    <label>hentai tribe</label>
+    <categoryDef>Intense</categoryDef>
+    <description>Impregnate.</description>
+    <memes>
+      <li>MaleSupremacy</li>
+      <li>Rapist</li>
+    </memes>
+  </IdeoPresetDef>
+</Defs>

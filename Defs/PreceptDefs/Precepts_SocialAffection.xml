@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>SocialAffection</defName>
+    <label>social affection</label>
+    <iconPath>UI/Issues/SocialAffection</iconPath>
+  </IssueDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>SocialAffection_Normal</defName>
+    <issue>SocialAffection</issue>
+    <label>normal(vanilla)</label>
+    <description>Just normal.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>SocialAffection_Small</defName>
+    <issue>SocialAffection</issue>
+    <label>only immediate family</label>
+    <description>Care about only immediate family.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>SocialAffection_OnlyFamily</defName>
+    <issue>SocialAffection</issue>
+    <label>only family</label>
+    <description>Don't care about non-family memeber's tragedy.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>SocialAffection_Dry</defName>
+    <issue>SocialAffection</issue>
+    <label>not family</label>
+    <description>Don't care about family memeber's tragedy.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>SocialAffection_Psychopath</defName>
+    <issue>SocialAffection</issue>
+    <label>Psychopath</label>
+    <description>Don't care about others.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+  </PreceptDef>
+</Defs>

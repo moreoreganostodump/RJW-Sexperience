@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="MyKinLost" or defName="MyCousinLost" or defName="MyGrandparentLost" or defName="MyUncleLost" or defName="MyAuntLost" or defName="MyHalfSiblingLost" or defName="MyNephewLost" or defName="MyNieceLost" or defName="MyHalfSiblingLost" or defName="MyHalfSiblingLost" or defName="MyHalfSiblingLost"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyKinLost" or defName="MyCousinLost" or defName="MyGrandparentLost" or defName="MyUncleLost" or defName="MyAuntLost" or defName="MyHalfSiblingLost" or defName="MyNephewLost" or defName="MyNieceLost" or defName="MyHalfSiblingLost" or defName="MyHalfSiblingLost" or defName="MyHalfSiblingLost"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>SocialAffection_Psychopath</li>
+					<li>SocialAffection_Dry</li>
+					<li>SocialAffection_Small</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyKinLost" or defName="MyCousinLost" or defName="MyGrandparentLost" or defName="MyUncleLost" or defName="MyAuntLost" or defName="MyHalfSiblingLost" or defName="MyNephewLost" or defName="MyNieceLost" or defName="MyHalfSiblingLost" or defName="MyHalfSiblingLost" or defName="MyHalfSiblingLost"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>SocialAffection_Psychopath</li>
+				<li>SocialAffection_Dry</li>
+				<li>SocialAffection_Small</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="MyMotherLost" or defName="MyFatherLost" or defName="MyGrandchildLost" or defName="MySisterLost" or defName="MyBrotherLost" or defName="MyDaughterLost" or defName="MySonLost"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyMotherLost" or defName="MyFatherLost" or defName="MyGrandchildLost" or defName="MySisterLost" or defName="MyBrotherLost" or defName="MyDaughterLost" or defName="MySonLost"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>SocialAffection_Psychopath</li>
+					<li>SocialAffection_Dry</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="MyMotherLost" or defName="MyFatherLost" or defName="MyGrandchildLost" or defName="MySisterLost" or defName="MyBrotherLost" or defName="MyDaughterLost" or defName="MySonLost"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>SocialAffection_Psychopath</li>
+				<li>SocialAffection_Dry</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThoughtDef[defName="ColonistLost" or defName="PawnWithGoodOpinionLost" or defName="PawnWithBadOpinionLost"]/nullifyingPrecepts</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="ColonistLost" or defName="PawnWithGoodOpinionLost" or defName="PawnWithBadOpinionLost"]</xpath>
+			<value>
+				<nullifyingPrecepts>
+					<li>SocialAffection_Psychopath</li>
+					<li>SocialAffection_OnlyFamily</li>
+				</nullifyingPrecepts>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="ColonistLost" or defName="PawnWithGoodOpinionLost" or defName="PawnWithBadOpinionLost"]/nullifyingPrecepts</xpath>
+			<value>
+				<li>SocialAffection_Psychopath</li>
+				<li>SocialAffection_OnlyFamily</li>
+			</value>
+		</match>
+	</Operation>
+	
+
+
+</Patch>

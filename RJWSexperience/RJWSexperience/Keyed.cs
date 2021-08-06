@@ -17,6 +17,12 @@ namespace RJWSexperience
 
         public static readonly string Mod_Title = "RS_Mod_Title".Translate();
         public static readonly string SlaveStatFactorDefault = "SlaveStatFactorDefault".Translate();
+        public static readonly string RSVictimCondition = "RSVictimCondition".Translate();
+        public static readonly string RSBreederCondition = "RSBreederCondition".Translate();
+        public static readonly string RSNotHuman = "RSNotHuman".Translate();
+        public static readonly string RSNotAnimal = "RSNotAnimal".Translate();
+        public static readonly string RSShouldCanFuck = "RSShouldCanFuck".Translate();
+
 
         public static readonly string Option_1_Label = "RSOption_1_Label".Translate();
         public static readonly string Option_1_Desc  = "RSOption_1_Desc".Translate();

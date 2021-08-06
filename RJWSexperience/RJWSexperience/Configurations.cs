@@ -21,6 +21,7 @@ namespace RJWSexperience
         public const float SexPerYearDefault = 30;
         public const bool SlavesBeenRapedExpDefault = true;
         public const bool EnableStatRandomizerDefault = true;
+        public const float LustLimitDefault = 500f/3f;
 
         public static float MaxLustDeviation = MaxInitialLustDefault;
         public static float AvgLust = AvgLustDefault;
@@ -29,6 +30,7 @@ namespace RJWSexperience
         public static float SexPerYear = SexPerYearDefault;
         public static bool SlavesBeenRapedExp = SlavesBeenRapedExpDefault;
         public static bool EnableRecordRandomizer = EnableStatRandomizerDefault;
+        public static float LustLimit = LustLimitDefault;
 
         public static void ResettoDefault()
         {
@@ -39,19 +41,19 @@ namespace RJWSexperience
             SexPerYear = SexPerYearDefault;
             SlavesBeenRapedExp = SlavesBeenRapedExpDefault;
             EnableRecordRandomizer = EnableStatRandomizerDefault;
+            LustLimit = LustLimitDefault;
         }
 
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref MaxLustDeviation, "MaxLustDeviation", MaxLustDeviation);
-            Scribe_Values.Look(ref AvgLust, "AvgLust", AvgLust);
-            Scribe_Values.Look(ref MaxSexCountDeviation, "MaxSexCountDeviation", MaxSexCountDeviation);
-            Scribe_Values.Look(ref LustEffectPower, "LustEffectPower", LustEffectPower);
-            Scribe_Values.Look(ref SexPerYear, "SexPerYear", SexPerYear);
-            Scribe_Values.Look(ref SlavesBeenRapedExp, "SlavesBeenRapedExp", SlavesBeenRapedExp);
-            Scribe_Values.Look(ref EnableRecordRandomizer, "EnableRecordRandomizer", EnableRecordRandomizer);
-
-
+            Scribe_Values.Look(ref MaxLustDeviation, "MaxLustDeviation", MaxLustDeviation, true);
+            Scribe_Values.Look(ref AvgLust, "AvgLust", AvgLust, true);
+            Scribe_Values.Look(ref MaxSexCountDeviation, "MaxSexCountDeviation", MaxSexCountDeviation, true);
+            Scribe_Values.Look(ref LustEffectPower, "LustEffectPower", LustEffectPower, true);
+            Scribe_Values.Look(ref SexPerYear, "SexPerYear", SexPerYear, true);
+            Scribe_Values.Look(ref SlavesBeenRapedExp, "SlavesBeenRapedExp", SlavesBeenRapedExp, true);
+            Scribe_Values.Look(ref EnableRecordRandomizer, "EnableRecordRandomizer", EnableRecordRandomizer, true);
+            Scribe_Values.Look(ref LustLimit, "LustLimit", LustLimit, true);
             base.ExposeData();
         }
     }
@@ -74,6 +76,7 @@ namespace RJWSexperience
         public override void DoSettingsWindowContents(Rect inRect)
         {
             int Adjuster;
+            float fAdjuster;
             Rect outRect = new Rect(0f, 30f, inRect.width, inRect.height - 30f);
             Rect mainRect = new Rect(0f, 0f, inRect.width - 30f, inRect.height + 480f);
             Listing_Standard listmain = new Listing_Standard();
@@ -82,16 +85,23 @@ namespace RJWSexperience
             listmain.Begin(mainRect);
             listmain.Gap(20f);
 
+
+            LabelwithTextfield(listmain.GetRect(24f), Keyed.Option_2_Label + " x" + Configurations.LustEffectPower, Keyed.Option_2_Desc, ref Configurations.LustEffectPower, 0f, 100f);
+            Adjuster = (int)(Configurations.LustEffectPower * 1000);
+            //listmain.Label(Keyed.Option_2_Label + " x" + Configurations.LustEffectPower , -1, Keyed.Option_2_Desc);
+            Adjuster = (int)listmain.Slider(Adjuster, 0, 2000);
+            Configurations.LustEffectPower = (float)Adjuster / 1000;
+
+            fAdjuster = Configurations.LustLimit * 3;
+            LabelwithTextfield(listmain.GetRect(24f), Keyed.Option_8_Label + " " + fAdjuster, Keyed.Option_8_Desc, ref fAdjuster, 0, 10000f);
+            fAdjuster = (int)listmain.Slider(fAdjuster, 0, 1000);
+            Configurations.LustLimit = fAdjuster / 3;
+
             listmain.CheckboxLabeled(Keyed.Option_1_Label, ref Configurations.EnableRecordRandomizer, Keyed.Option_1_Desc);
             if (Configurations.EnableRecordRandomizer)
             {
-                Listing_Standard section = listmain.BeginSection(24f*11f);
+                Listing_Standard section = listmain.BeginSection(24f*9f);
 
-                LabelwithTextfield(section.GetRect(24f), Keyed.Option_2_Label + " x" + Configurations.LustEffectPower, Keyed.Option_2_Desc, ref Configurations.LustEffectPower, 0f, 100f);
-                Adjuster = (int)(Configurations.LustEffectPower * 1000);
-                //listmain.Label(Keyed.Option_2_Label + " x" + Configurations.LustEffectPower , -1, Keyed.Option_2_Desc);
-                Adjuster = (int)section.Slider(Adjuster, 0, 2000);
-                Configurations.LustEffectPower = (float)Adjuster / 1000;
 
                 LabelwithTextfield(section.GetRect(24f), Keyed.Option_3_Label + " " + Configurations.MaxLustDeviation, Keyed.Option_3_Label, ref Configurations.MaxLustDeviation, 0f, 2000f);
                 Adjuster = (int)Configurations.MaxLustDeviation;
@@ -104,6 +114,7 @@ namespace RJWSexperience
                 //listmain.Label(Keyed.Option_4_Label + " " + Configurations.AvgLust, -1, Keyed.Option_4_Desc);
                 Adjuster = (int)section.Slider(Adjuster, -1000, 1000);
                 Configurations.AvgLust = Adjuster;
+
 
                 LabelwithTextfield(section.GetRect(24f), Keyed.Option_5_Label + " " + Configurations.MaxSexCountDeviation, Keyed.Option_5_Desc, ref Configurations.MaxSexCountDeviation, 0f, 2000f);
                 Adjuster = (int)Configurations.MaxSexCountDeviation;

@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <Mod_Title>RJW Sexperience</Mod_Title>
+  <RS_Mod_Title>RJW Sexperience</RS_Mod_Title>
 
   <LustStatFactor>음란함: x{0}%</LustStatFactor>
   <SlaveStatFactor>노예: x{0}%</SlaveStatFactor>
   <SlaveStatFactorDefault>노예가 아님: x100%</SlaveStatFactorDefault>
   <MemeStatFactor>문화 요소: x{0}%</MemeStatFactor>
+  <RSVictimCondition>노예, 죄수, 순종적인 성별만 가능합니다.</RSVictimCondition>
+  <RSBreederCondition>부적절한 동물: 번식할수 없거나 규율에의해 금지된 동물입니다.</RSBreederCondition>
+  <RSNotHuman>사람이 아님</RSNotHuman>
+  <RSNotAnimal>동물이 아님</RSNotAnimal>
+  <RSShouldCanFuck>성관계가 가능해야 합니다.</RSShouldCanFuck>
 
   <RSOption_1_Label>기록 생성기 활성화</RSOption_1_Label>
   <RSOption_1_Desc>폰의 섹스기록을 무작위로 생성합니다.</RSOption_1_Desc>
@@ -21,12 +26,6 @@
   <RSOption_6_Desc>평균 섹스 횟수를 설정합니다.</RSOption_6_Desc>
   <RSOption_7_Label>노예 강간 경험 활성화</RSOption_7_Label>
   <RSOption_7_Desc>활성화할 경우 노예는 강간당한 경험을 가집니다.</RSOption_7_Desc>
-  <RSOption_8_Label></RSOption_8_Label>
-  <RSOption_8_Desc> </RSOption_8_Desc>
-  <RSOption_9_Label></RSOption_9_Label>
-  <RSOption_9_Desc> </RSOption_9_Desc>
-  <RSOption_10_Label></RSOption_10_Label>
-  <RSOption_10_Desc> </RSOption_10_Desc>
-  <RSOption_11_Label></RSOption_11_Label>
-  <RSOption_11_Desc> </RSOption_11_Desc>
+  <RSOption_8_Label>음란함 한계</RSOption_8_Label>
+  <RSOption_8_Desc>음란함의 한계치를 설정합니다.&#10;음란함의 절대값이 이 값에 가까워지거나 클수록, 음란함이 적게 변합니다.</RSOption_8_Desc>
 </LanguageData>

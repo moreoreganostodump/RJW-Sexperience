@@ -74,11 +74,14 @@ namespace RJWSexperience
             float lust = pawn.records.GetValue(VariousDefOf.Lust) * Configurations.LustEffectPower;
             if (lust < 0)
             {
-                lust = (float)Math.Exp((lust + 200 * Math.Log(10)) / 100) - 100f;
+                lust = Mathf.Exp((lust + 200f * Mathf.Log(10f)) / 100f) - 100f;
             }
-
-
-            return 1 + lust / 100;
+            else
+            {
+                lust = Mathf.Sqrt(100f*(lust + 25f)) - 50f;
+            }
+            
+            return 1 + lust / 100f;
         }
 
     }

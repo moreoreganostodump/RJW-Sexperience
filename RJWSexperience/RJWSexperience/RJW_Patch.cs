@@ -7,6 +7,7 @@ using HarmonyLib;
 using rjw;
 using RimWorld;
 using Verse;
+using UnityEngine;
 
 
 namespace RJWSexperience
@@ -15,7 +16,7 @@ namespace RJWSexperience
     {
         public static float GetSexStat(this Pawn pawn)
         {
-            if (xxx.is_human(pawn))
+            if (xxx.is_human(pawn) && !pawn.Dead)
             {
                 return pawn.GetStatValue(xxx.sex_stat);
             }
@@ -26,6 +27,32 @@ namespace RJWSexperience
         {
             return new HistoryEvent(def, pawn.Named(HistoryEventArgsNames.Doer), tag.Named(HistoryEventArgsNamesCustom.Tag), partner.Named(HistoryEventArgsNamesCustom.Partner));
         }
+
+        public static Faction GetFactionUsingPrecept(this Pawn baby, out Ideo ideo)
+        {
+            Faction playerfaction = Find.FactionManager.OfPlayer;
+            Ideo mainideo = playerfaction.ideos.PrimaryIdeo;
+            if (mainideo != null)
+            {
+                if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysFather))
+                {
+                    Pawn parent = baby.GetFather();
+                    if (parent == null) baby.GetMother();
+
+                    ideo = parent.Ideo;
+                    return parent.Faction;
+                }
+                else if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysColony))
+                {
+                    ideo = mainideo;
+                    return playerfaction;
+                }
+            }
+            Pawn mother = baby.GetMother();
+            ideo = mother.Ideo;
+            return mother.Faction;
+        }
+
 
     }
 
@@ -81,17 +108,23 @@ namespace RJWSexperience
     [HarmonyPatch(typeof(SexUtility), "SatisfyPersonal")]
     public static class RJW_Patch_SatisfyPersonal_Post
     {
-        private const float base_sat_per_fuck = 0.3f;
+        private const float base_sat_per_fuck = 0.4f;
         public static void Postfix(Pawn pawn, Pawn partner, xxx.rjwSextype sextype, bool violent, bool pawn_is_raping, float satisfaction)
         {
             float? lust = pawn.records?.GetValue(VariousDefOf.Lust);
             if (lust != null)
             {
-                if (sextype != xxx.rjwSextype.Masturbation) pawn.records.AddTo(VariousDefOf.Lust, satisfaction - base_sat_per_fuck); // If the sex is satisfactory, lust grows up. Declines at the opposite.
-                else pawn.records.AddTo(VariousDefOf.Lust, satisfaction * satisfaction);                                             // Masturbation always increases lust.
+                if (sextype != xxx.rjwSextype.Masturbation) pawn.records.AddTo(VariousDefOf.Lust, Mathf.Clamp((satisfaction - base_sat_per_fuck) * LustIncrementFactor(lust ?? 0),-0.5f,0.5f)); // If the sex is satisfactory, lust grows up. Declines at the opposite.
+                else pawn.records.AddTo(VariousDefOf.Lust, Mathf.Clamp(satisfaction * satisfaction * LustIncrementFactor(lust ?? 0), 0,0.5f));                                             // Masturbation always increases lust.
             }
 
         }
+
+        public static float LustIncrementFactor(float lust)
+        {
+            return Mathf.Exp(-Mathf.Pow(lust / Configurations.LustLimit, 2));
+        }
+
     }
 
     [HarmonyPatch(typeof(ThinkNode_ChancePerHour_Bestiality), "MtbHours")]
@@ -100,7 +133,7 @@ namespace RJWSexperience
         public static void Postfix(Pawn pawn, ref float __result)
         {
             Ideo ideo = pawn.Ideo;
-            if (ideo != null) __result = BestialityByPrecept(ideo); // ideo is null if don't have dlc
+            if (ideo != null) __result *= BestialityByPrecept(ideo); // ideo is null if don't have dlc
         }
 
         public static float BestialityByPrecept(Ideo ideo)
@@ -403,6 +436,7 @@ namespace RJWSexperience
 
                 }
             }
+
         }
 
     }
@@ -421,7 +455,20 @@ namespace RJWSexperience
         }
     }
 
-
+    [HarmonyPatch(typeof(Hediff_BasePregnancy), "PostBirth")]
+    public static class RJW_Patch_PostBirth
+    {
+        public static void Postfix(Pawn mother, Pawn father, Pawn baby)
+        {
+            if (!mother.IsAnimal())
+            {
+                //baby.SetFactionDirect(baby.GetFactionUsingPrecept());
+                baby.SetFaction(baby.GetFactionUsingPrecept(out Ideo ideo));
+                baby.ideo.SetIdeo(ideo);
+                if (baby.Faction == Find.FactionManager.OfPlayer && !baby.IsSlave) baby.guest.SetGuestStatus(null, GuestStatus.Guest);
+            }
+        }
+    }
     
 
 
