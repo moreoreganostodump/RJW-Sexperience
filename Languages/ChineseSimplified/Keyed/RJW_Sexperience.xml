@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RS_Mod_Title>RJW 性经验</RS_Mod_Title>
+
+  <LustStatFactor>性欲: x{0}%</LustStatFactor>
+  <SlaveStatFactor>囚犯: x{0}%</SlaveStatFactor>
+  <SlaveStatFactorDefault>非囚犯: x100%</SlaveStatFactorDefault>
+  <MemeStatFactor>迷因: x{0}%</MemeStatFactor>
+
+  <RSOption_1_Label>开启随机性记录</RSOption_1_Label>
+  <RSOption_1_Desc>随机化小人的性记录。</RSOption_1_Desc>
+  <RSOption_2_Label>色欲值的影响</RSOption_2_Label>
+  <RSOption_2_Desc>设置色欲值对性冲动的影响。</RSOption_2_Desc>
+  <RSOption_3_Label>最大色欲值偏差</RSOption_3_Label>
+  <RSOption_3_Desc>设置色欲的最大偏差。根据平均值的不同，色欲值可能为负。</RSOption_3_Desc>
+  <RSOption_4_Label>平均色欲值</RSOption_4_Label>
+  <RSOption_4_Desc>设置色欲值的均值。</RSOption_4_Desc>
+  <RSOption_5_Label>最大性交次数偏差</RSOption_5_Label>
+  <RSOption_5_Desc>设置性交次数的最大偏差。</RSOption_5_Desc>
+  <RSOption_6_Label>平均每年性交次数</RSOption_6_Label>
+  <RSOption_6_Desc>设置平均每年的性交次数</RSOption_6_Desc>
+  <RSOption_7_Label>允许奴隶被强奸获得性经验</RSOption_7_Label>
+  <RSOption_7_Desc>奴隶被强奸获得性经验</RSOption_7_Desc>
+  <RSOption_8_Label></RSOption_8_Label>
+  <RSOption_8_Desc> </RSOption_8_Desc>
+  <RSOption_9_Label></RSOption_9_Label>
+  <RSOption_9_Desc> </RSOption_9_Desc>
+  <RSOption_10_Label></RSOption_10_Label>
+  <RSOption_10_Desc> </RSOption_10_Desc>
+  <RSOption_11_Label></RSOption_11_Label>
+  <RSOption_11_Desc> </RSOption_11_Desc>
+
+</LanguageData>

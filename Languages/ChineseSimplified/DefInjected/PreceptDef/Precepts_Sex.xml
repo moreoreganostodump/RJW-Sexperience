@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Sex_Free.label>自由的</Sex_Free.label>
+  <Sex_Free.description>随心所欲</Sex_Free.description>
+
+  <Sex_VaginalOnly.label>仅阴道性交</Sex_VaginalOnly.label>
+  <Sex_VaginalOnly.description>只有阴道性交是合理的，其他都太怪了。</Sex_VaginalOnly.description>
+
+  <Sex_AnalOnly.label>仅肛门性交</Sex_AnalOnly.label>
+  <Sex_AnalOnly.description>只有肛交是合理的，其他都太怪了。</Sex_AnalOnly.description>
+
+  <Sex_OralOnly.label>仅口腔性交</Sex_OralOnly.label>
+  <Sex_OralOnly.description>只有口交是合理的，其他都太怪了。</Sex_OralOnly.description>
+
+  <Sex_Promiscuous.label>越怪越好</Sex_Promiscuous.label>
+  <Sex_Promiscuous.description>生活总得添点绿……</Sex_Promiscuous.description>
+
+
+</LanguageData>

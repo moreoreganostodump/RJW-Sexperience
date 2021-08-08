@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Issues -->
+
+  <Raped.label>被强奸</Raped.label>
+  <RapedSlave.label>强奸了奴隶</RapedSlave.label>
+  <RapedPrisoner.label>强奸了囚犯</RapedPrisoner.label>
+  <WasRaped.label>被强奸</WasRaped.label>
+  <WasRapedSlave.label>奴隶被强奸</WasRapedSlave.label>
+  <WasRapedPrisoner.label>囚犯被强奸</WasRapedPrisoner.label>
+
+
+</LanguageData>

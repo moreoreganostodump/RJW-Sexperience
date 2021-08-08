@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Bestiality_Abhorrent.label>可恶的</Bestiality_Abhorrent.label>
+  <Bestiality_Abhorrent.description>兽交是绝对之恶。</Bestiality_Abhorrent.description>
+
+  <Bestiality_Horrible.label>骇人听闻的</Bestiality_Horrible.label>
+  <Bestiality_Horrible.description>兽交听起来太吓人了。</Bestiality_Horrible.description>
+
+  <Bestiality_Disapproved.label>不赞同的</Bestiality_Disapproved.label>
+  <Bestiality_Disapproved.description>兽交也太恶心了吧。</Bestiality_Disapproved.description>
+
+  <Bestiality_Acceptable.label>可以接受</Bestiality_Acceptable.label>
+  <Bestiality_Acceptable.description>兽交是生活中正常的，无可厚非的一部分。</Bestiality_Acceptable.description>
+
+  <Bestiality_OnlyVenerated.label>仅圣兽</Bestiality_OnlyVenerated.label>
+  <Bestiality_OnlyVenerated.description>和圣兽做爱应该鼓励，但和其他动物做爱是罪行。</Bestiality_OnlyVenerated.description>
+  <Bestiality_OnlyVenerated.comps.1.description>某人和动物做爱</Bestiality_OnlyVenerated.comps.1.description>
+  <Bestiality_OnlyVenerated.comps.3.description>某人和圣兽做爱</Bestiality_OnlyVenerated.comps.3.description>
+
+  <Bestiality_Honorable.label>鼓励的</Bestiality_Honorable.label>
+  <Bestiality_Honorable.description>是吧！我就是亚历山大日山羊的，怎么了？！</Bestiality_Honorable.description>
+  <Bestiality_Honorable.comps.1.description>某人和动物做爱</Bestiality_Honorable.comps.1.description>
+  <Bestiality_Honorable.comps.3.description>某人和圣兽做爱</Bestiality_Honorable.comps.3.description>
+
+
+</LanguageData>

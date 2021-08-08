@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Rape_Abhorrent.label>可恶的</Rape_Abhorrent.label>
+  <Rape_Abhorrent.description>强奸是深刻的罪恶。</Rape_Abhorrent.description>
+  <Rape_Abhorrent.comps.1.description>某人强奸了他人</Rape_Abhorrent.comps.1.description>
+  <Rape_Abhorrent.comps.2.description>强奸了囚犯</Rape_Abhorrent.comps.2.description>
+  <Rape_Abhorrent.comps.3.description>某人强奸了囚犯</Rape_Abhorrent.comps.3.description>
+  <Rape_Abhorrent.comps.4.description>强奸了奴隶</Rape_Abhorrent.comps.4.description>
+  <Rape_Abhorrent.comps.5.description>某人强奸了奴隶</Rape_Abhorrent.comps.5.description>
+
+  <Rape_Horrible.label>骇人听闻的</Rape_Horrible.label>
+  <Rape_Horrible.description>强奸听起来太吓人了</Rape_Horrible.description>
+  <Rape_Horrible.comps.1.description>某人强奸了他人</Rape_Horrible.comps.1.description>
+  <Rape_Horrible.comps.2.description>强奸了囚犯</Rape_Horrible.comps.2.description>
+  <Rape_Horrible.comps.3.description>某人强奸了囚犯</Rape_Horrible.comps.3.description>
+
+  <Rape_Disapproved.label>不赞同的</Rape_Disapproved.label>
+  <Rape_Disapproved.description>虽然强奸听起来好疼，但这也是生活必不可少的一部分。</Rape_Disapproved.description>
+  <Rape_Disapproved.comps.1.description>某人强奸了他人</Rape_Disapproved.comps.1.description>
+
+  <Rape_Acceptable.label>允许的</Rape_Acceptable.label>
+  <Rape_Acceptable.description>强奸是生活中正常的，不可磨灭的一部分。</Rape_Acceptable.description>
+
+  <Rape_Honorable.label>自豪的</Rape_Honorable.label>
+  <Rape_Honorable.description>强奸他人可以吹一辈子。</Rape_Honorable.description>
+  <Rape_Honorable.comps.1.description>某人强奸了他人</Rape_Honorable.comps.1.description>
+  <Rape_Honorable.comps.3.description>某人强奸了他人</Rape_Honorable.comps.3.description>
+  <Rape_Honorable.comps.5.description>某人强奸了他人</Rape_Honorable.comps.5.description>
+
+
+</LanguageData>

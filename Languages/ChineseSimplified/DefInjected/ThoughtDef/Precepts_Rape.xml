@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thoughts -->
+
+  <Rape_Abhorrent.stages.0.label>强奸了某人</Rape_Abhorrent.stages.0.label>
+  <Rape_Abhorrent.stages.0.description>我强奸了某人。 我不该那么做。</Rape_Abhorrent.stages.0.description>
+
+  <Rape_Know_Abhorrent.stages.0.label>强奸了某人</Rape_Know_Abhorrent.stages.0.label>
+
+  <Rape_Horrible.stages.0.label>强奸了某人</Rape_Horrible.stages.0.label>
+  <Rape_Horrible.stages.0.description>我强奸了某人。 我不该那么做。</Rape_Horrible.stages.0.description>
+
+  <Rape_Know_Horrible.stages.0.label>强奸了某人</Rape_Know_Horrible.stages.0.label>
+
+  <Rape_Disapproved.stages.0.label>强奸了某人</Rape_Disapproved.stages.0.label>
+  <Rape_Disapproved.stages.0.description>我强奸了某人。 我不该那么做。</Rape_Disapproved.stages.0.description>
+
+  <Rape_Know_Disapproved.stages.0.label>强奸了某人</Rape_Know_Disapproved.stages.0.label>
+  <Rape_Know_Honorable.stages.0.label>强奸了某人</Rape_Know_Honorable.stages.0.label>
+
+
+</LanguageData>
