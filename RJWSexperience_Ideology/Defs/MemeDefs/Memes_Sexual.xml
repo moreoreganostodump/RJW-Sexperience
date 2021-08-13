@@ -151,4 +151,93 @@
     </agreeableTraits>
   </MemeDef>
 
+  <MemeDef ParentName="SexualDissoulutelyBase">
+    <defName>Lewd</defName>
+    <label>lewd</label>
+    <description>Perverts.</description>
+    <iconPath>UI/Memes/SexualDissolutely</iconPath>
+    <impact>3</impact>
+    <consumableBuildings>
+      <li>Burnbong_Aphrodisiac</li>
+    </consumableBuildings>
+    <requireOne>
+      <li>
+        <li>Lovin_FreeApproved</li>
+      </li>
+      <li>
+        <li>Incestuos_Free</li>
+      </li>
+      <li>
+        <li>Sex_Free</li>
+        <li>Sex_Promiscuous</li>
+      </li>
+    </requireOne>
+    <requiredRituals>
+      <li>
+        <precept>DateRitualConsumable</precept>
+        <pattern>DrugOrgy</pattern>
+        <building>Burnbong_Aphrodisiac</building>
+      </li>
+    </requiredRituals>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->horny</li>
+        <li>memeAdjective->lewd</li>
+        <li>memeAdjective->arousing</li>
+        <li>memeAdjective->sexy</li>
+        <li>memeAdjective->estrous</li>
+        <li>memeAdjective->decadent</li>
+        <li>memeHyphenPrefix->estro</li>
+        <li>memeHyphenPrefix->lust</li>
+        <li>memeConcept->lust</li>
+        <li>memeConcept->libido</li>
+        <li>memeConcept->estrus</li>
+        <li>memeConcept->arousal</li>
+        <li>memeConcept->desire</li>
+        <li>memeConcept->sex</li>
+        <li>memeConcept->perversion</li>
+        <li>memeGod->slaanesh</li>
+      </rulesStrings>
+    </generalRules>
+    <symbolPacks>
+      <li>
+        <ideoName>Cult of Slaanesh</ideoName>
+        <theme>pleasure</theme>
+        <adjective>decadent</adjective>
+        <member>heretic</member>
+      </li>
+    </symbolPacks>
+    <addDesignators>
+      <li>Autobong_Aphrodisiac</li>
+    </addDesignators>
+    <agreeableTraits>
+      <li>Nymphomaniac</li>
+    </agreeableTraits>
+  </MemeDef>
+
+  <MemeDef ParentName="SexualDissoulutelyBase">
+    <defName>Necrophile</defName>
+    <label>necrophile</label>
+    <description>Corpse fuckers.</description>
+    <iconPath>UI/Memes/Necrophile</iconPath>
+    <impact>2</impact>
+    <requireOne>
+      <li>
+        <li>Necrophilia_Acceptable</li>
+        <li>Necrophilia_Approved</li>
+      </li>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeGod->sonic</li>
+        <li>memeGod->mega man</li>
+      </rulesStrings>
+    </generalRules>
+    <agreeableTraits>
+      <li>Necrophiliac</li>
+    </agreeableTraits>
+  </MemeDef>
 </Defs>

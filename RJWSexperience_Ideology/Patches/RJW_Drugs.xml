@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/HediffDef[defName="HumpShroomEffect"]/stages</xpath>
+		<value>
+			<stages>
+				<li>
+					<label>lingering</label>
+					<statOffsets>
+						<SexFrequency>1.25</SexFrequency>
+						<SexSatisfaction>0.25</SexSatisfaction>
+					</statOffsets>
+				</li>
+				<li>
+					<minSeverity>0.3</minSeverity>
+					<label>mild</label>
+					<restFallFactor>1.1</restFallFactor>
+					<statOffsets>
+						<SexFrequency>2</SexFrequency>
+						<SexSatisfaction>0.5</SexSatisfaction>
+					</statOffsets>
+				</li>
+				<li>
+					<minSeverity>0.6</minSeverity>
+					<label>moderate</label>
+					<restFallFactor>1.33</restFallFactor>
+					<statOffsets>
+						<SexFrequency>3</SexFrequency>
+						<SexSatisfaction>0.75</SexSatisfaction>
+					</statOffsets>
+				</li>
+				<li>
+					<minSeverity>0.9</minSeverity>
+					<label>high</label>
+					<restFallFactor>1.33</restFallFactor>
+					<statOffsets>
+						<SexFrequency>5</SexFrequency>
+						<SexSatisfaction>1.5</SexSatisfaction>
+					</statOffsets>
+				</li>
+			</stages>
+		</value>
+	</Operation>
+
+
+</Patch>

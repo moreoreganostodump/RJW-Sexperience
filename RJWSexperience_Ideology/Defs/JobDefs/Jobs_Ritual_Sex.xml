@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<JobDef>
+		<defName>RapeVictim</defName>
+		<driverClass>RJWSexperience.JobDriver_RapeVictim</driverClass>
+		<reportString>rapin' victim</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
+	<JobDef>
+		<defName>DrugSex</defName>
+		<driverClass>RJWSexperience.JobDriver_SexDrugOrgy</driverClass>
+		<reportString>lovin'.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
+	<JobDef>
+		<defName>GettinDrugSex</defName>
+		<driverClass>RJWSexperience.JobDriver_DrugSexReceiver</driverClass>
+		<reportString>lovin'.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+	
+	<JobDef>
+		<defName>DrugMasturbate</defName>
+		<driverClass>RJWSexperience.JobDriver_DrugMasturabate</driverClass>
+		<reportString>masturbatin'.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+</Defs>

@@ -1,3 +1,17 @@
+Version Beta 1.0.1.8
+ - fixed animal gangbang doesn't work properly
+ - fixed bastard relation was not removed after marriage
+ - fixed moral guide present
+ - separated ideology defs
+ - added cum bucket
+   - masturbating around this will collect cum
+ - added cum addiction
+ - added necrophile meme
+ - added lewd meme
+ - added drug orgy ritual
+ - added burnbong and autobong using humpshroom(require lewd meme)
+ - added some stages for humpshroom effect
+
 Version Beta 1.0.1.7
  - added baby faction and social affection precepts 
  - changed stat calculation of lust

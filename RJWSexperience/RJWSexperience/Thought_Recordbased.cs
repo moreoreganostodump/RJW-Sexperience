@@ -48,6 +48,15 @@ namespace RJWSexperience
 
         protected int recordIncrement = 1;
 
+        public override int CurStageIndex
+        {
+            get
+            {
+                if (pawn.health.hediffSet.HasHediff(VariousDefOf.CumAddiction)) return minimumValueforStage.Count;
+                return base.CurStageIndex;
+            }
+        }
+
         public override void ExposeData()
         {
             base.ExposeData();

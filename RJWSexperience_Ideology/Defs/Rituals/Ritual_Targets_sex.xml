@@ -4,4 +4,12 @@
     <defName>RitualSpotOrAltar_Gangbang</defName>
     <workerClass>RitualObligationTargetWorker_AnyRitualSpotOrAltar_Scarification</workerClass>
   </RitualObligationTargetFilterDef>
+  
+  <RitualObligationTargetFilterDef>
+    <defName>DrugOrgy</defName>
+    <workerClass>RitualObligationTargetWorker_ConsumableBuilding</workerClass>
+    <thingDefs>
+      <li>Burnbong_Aphrodisiac</li>
+    </thingDefs>
+  </RitualObligationTargetFilterDef>
 </Defs>

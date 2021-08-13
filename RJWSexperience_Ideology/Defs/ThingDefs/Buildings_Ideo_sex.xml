@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="IdeoSmokerBase">
+    <defName>Burnbong_Aphrodisiac</defName>
+    <label>lustbong</label>
+    <description>A wood structure packed with humpshroom. It can be ignited during a ritual and produce a huge amount of humpshroom smoke for a few hours, after which it is destroyed.</description>
+    <drawerType>RealtimeOnly</drawerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/Misc/Burnbong/Burnbong</texPath>
+      <drawSize>(1.2,1.2)</drawSize>
+      <shadowData>
+        <volume>(0.92, 1 ,0.92)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(1,1)</size>
+    <costList>
+      <WoodLog>30</WoodLog>
+      <HumpShroom>30</HumpShroom>
+    </costList>
+    <killedLeavings>
+      <HumpShroom>30</HumpShroom>
+    </killedLeavings>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>25</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_RitualTargetEffecterSpawner">
+        <effecter>BurnbongSmoke</effecter>
+      </li>
+      <li Class="CompProperties_FireOverlayRitual">
+        <fireSize>0.5</fireSize>
+        <offset>(0, 0, 0.42)</offset>
+      </li>
+      <li Class="CompProperties_RitualHediffGiverInRoom">
+        <hediff>HumpShroomEffect</hediff>
+        <resetLastRecreationalDrugTick>true</resetLastRecreationalDrugTick>
+        <minRadius>10</minRadius>
+        <severity>0.01</severity>
+      </li>
+    </comps>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Autobong_Aphrodisiac</defName>
+    <label>estro-bong</label>
+    <description>An automatic humpshroom-burning device which generates an estro-smoke cloud around itself. Anyone in the cloud will become horny over time.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Misc/Autobong/Autobong</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconPath>Things/Building/Misc/Autobong/Autobong</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>42</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.20</fillPercent>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <size>(2,2)</size>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <HumpShroom>10</HumpShroom>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0.35</fuelConsumptionRate>
+        <fuelCapacity>10.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>HumpShroom</li>
+          </thingDefs>
+        </fuelFilter>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <consumeFuelOnlyWhenPowered>true</consumeFuelOnlyWhenPowered>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(252,187,113,0)</glowColor>
+      </li>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>150</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_GiveHediffSeverity">
+        <hediff>HumpShroomEffect</hediff>
+        <range>4.9</range>
+        <severityPerSecond>0.005</severityPerSecond>
+        <drugExposure>true</drugExposure>
+      </li>
+      <li Class="CompProperties_SmokeCloudMaker">
+        <sourceStreamEffect>BurnbongSmoke</sourceStreamEffect>
+        <cloudRadius>4.9</cloudRadius>
+        <fleckScale>4</fleckScale>
+        <cloudFleck>AutobongSmoke</cloudFleck>
+        <fleckSpawnMTB>25</fleckSpawnMTB>
+      </li>
+    </comps>
+    <designationCategory>Misc</designationCategory>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <placeWorkers>
+      <li>PlaceWorker_SmokeCloudMaker</li>
+    </placeWorkers>
+  </ThingDef>
+
+
+</Defs>

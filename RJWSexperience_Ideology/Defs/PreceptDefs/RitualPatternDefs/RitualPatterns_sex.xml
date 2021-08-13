@@ -17,8 +17,8 @@
     <descOverride>A ritualistic gangbang. The organizer will give a speech to excite the crowd, then fuck the victim. If the organizer cannot fuck victim, the ritual will be canceled.</descOverride>
     <iconPathOverride>UI/Issues/Gangbang</iconPathOverride>
     <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
-    <patternGroupTag/>
     <ritualOutcomeEffect>Gangbang</ritualOutcomeEffect>
+    <patternGroupTag/>
   </RitualPatternDef>
 
   <RitualPatternDef ParentName="GangbangBase">
@@ -28,8 +28,19 @@
     <descOverride>A ritualistic animal gangbang. The organizer will give a speech to excite the crowd, then animals begin fuck victim.</descOverride>
     <iconPathOverride>UI/Commands/Breeding_Pawn_off</iconPathOverride>
     <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
-    <patternGroupTag/>
     <ritualOutcomeEffect>BestialGangbang</ritualOutcomeEffect>
+    <patternGroupTag/>
+  </RitualPatternDef>
+  
+  <RitualPatternDef ParentName="CelebrationConsumable">
+    <defName>DrugOrgy</defName>
+    <shortDescOverride>drug orgy</shortDescOverride>
+    <descOverride>An orgy with large amounts of aphrodisiac. Participants will gather around a burnbong or incense shrine, light it on fire, and fuck each other while inhaling the fumes.</descOverride>
+    <iconPathOverride>UI/Icons/Rituals/SmokeCircle</iconPathOverride>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <ritualObligationTargetFilter>DrugOrgy</ritualObligationTargetFilter>
+    <ritualBehavior>DrugOrgy</ritualBehavior>
+    <ritualOutcomeEffect>DrugOrgy</ritualOutcomeEffect>
   </RitualPatternDef>
   
 </Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="Corpses_DontCare"]/requiredMemes</xpath>
+		<value>
+			<li>Necrophile</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="Corpses_DontCare"]/associatedMemes</xpath>
+		<value>
+			<li>Necrophile</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PreceptDef[defName="Lovin_FreeApproved"]</xpath>
+		<value>
+			<statOffsets>
+					<SexFrequency>0.5</SexFrequency>
+					<SexAbility>0.25</SexAbility>
+			</statOffsets>
+		</value>
+	</Operation>
+
+
+</Patch>

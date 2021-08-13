@@ -9,7 +9,7 @@
     </extraPredictedOutcomeDescriptions>
     <comps>
       <li Class="RitualOutcomeComp_RolePresentNotSubstituted">
-        <roleId>moralist</roleId>
+        <roleId>initiator</roleId>
         <label>moral guide present</label>
         <qualityOffset>0.10</qualityOffset>
       </li>
@@ -102,7 +102,7 @@
     </extraPredictedOutcomeDescriptions>
     <comps>
       <li Class="RitualOutcomeComp_RolePresentNotSubstituted">
-        <roleId>moralist</roleId>
+        <roleId>initiator</roleId>
         <label>moral guide present</label>
         <qualityOffset>0.10</qualityOffset>
       </li>
@@ -180,4 +180,75 @@
   </RitualOutcomeEffectDef>
 
 
+  <RitualOutcomeEffectDef>
+    <defName>DrugOrgy</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>RitualOutcomeEffectWorker_RemoveConsumableBuilding</workerClass>
+    <extraPredictedOutcomeDescriptions>
+      <li>If the {0} is satisfying, one of the participants might gain an inspiration.</li>
+    </extraPredictedOutcomeDescriptions>
+    <comps>
+      <li Class="RitualOutcomeComp_DestroyConsumableBuilding" />
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  -0.50)</li>
+            <li>(3,  0.0)</li>
+            <li>(5, 0.10)</li>
+            <li>(10, 0.30)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_RoomStat">
+        <label>room impressiveness</label>
+        <statDef>Impressiveness</statDef>
+        <curve>
+          <points>
+            <li>0,  0</li>
+            <li>50,  0.1</li>
+            <li>120, 0.2</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RJWSexperience.RitualOutcomeComp_NeedBased">
+        <label>statisfied participants</label>
+        <qualityOffset>0.7</qualityOffset>
+        <needDef>Sex</needDef>
+        <minAvgNeed>0.7</minAvgNeed>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>TerribleOrgy</memory>
+        <description>The {0} was terrible!</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Boring</label>
+        <chance>0.10</chance>
+        <memory>BoringOrgy</memory>
+        <description>The {0} was boring.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Satisfying</label>
+        <chance>0.6</chance>
+        <memory>FunOrgy</memory>
+        <description>The {0} was satisfying.</description>
+        <potentialExtraOutcomeDesc>There's a 5% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Spectacular</label>
+        <chance>0.25</chance>
+        <memory>UnforgettableOrgy</memory>
+        <description>The {0} was spectacular!</description>
+        <potentialExtraOutcomeDesc>There's a 10% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
 </Defs>

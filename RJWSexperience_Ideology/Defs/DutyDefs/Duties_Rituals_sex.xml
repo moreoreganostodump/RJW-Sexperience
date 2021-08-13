@@ -36,6 +36,29 @@
       </subNodes>
     </thinkNode>
   </DutyDef>
-
   
+  <DutyDef>
+    <defName>DrugOrgy</defName>
+    <hook>HighPriority</hook>
+    <socialModeMax>Off</socialModeMax>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_ConditionalInGatheringArea">
+          <subNodes>
+            <li Class="ThinkNode_ConditionalRandom">
+              <chance>0.15</chance>
+              <subNodes>
+                 <li Class="RJWSexperience.JobGiver_DrugOrgy"/>
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+
+        <li Class="JobGiver_WanderInGatheringArea">
+			  	<locomotionUrgency>Jog</locomotionUrgency>
+			  	<ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
+			  </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
 </Defs>

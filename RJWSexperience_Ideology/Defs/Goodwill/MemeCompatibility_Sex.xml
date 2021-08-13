@@ -11,6 +11,14 @@
     <naturalGoodwillOffset>30</naturalGoodwillOffset>
   </GoodwillSituationDef>
 
+  <GoodwillSituationDef>
+    <defName>Necrophile_Necrophile</defName>
+    <label>necrophile agreement</label>
+    <workerClass>GoodwillSituationWorker_MemeCompatibility</workerClass>
+    <meme>Necrophile</meme>
+    <otherMeme>Necrophile</otherMeme>
+    <naturalGoodwillOffset>30</naturalGoodwillOffset>
+  </GoodwillSituationDef>
   <!-- Disagreement -->
 
   <GoodwillSituationDef>
@@ -29,5 +37,14 @@
     <meme>Rapist</meme>
     <versusAll>true</versusAll>
     <naturalGoodwillOffset>-20</naturalGoodwillOffset>
+  </GoodwillSituationDef>
+
+  <GoodwillSituationDef>
+    <defName>Necrophile_All</defName>
+    <label>necrophile</label>
+    <workerClass>RJWSexperience.GoodwillSituationWorker_OneWayReceive</workerClass>
+    <meme>Necrophile</meme>
+    <versusAll>true</versusAll>
+    <naturalGoodwillOffset>-50</naturalGoodwillOffset>
   </GoodwillSituationDef>
 </Defs>

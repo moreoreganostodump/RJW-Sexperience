@@ -48,4 +48,26 @@
     </requiredMemes>
   </PreceptDef>
 
+
+  <PreceptDef>
+    <defName>DrugOrgyCeremony</defName>
+    <label>drug orgy</label>
+    <description>An orgy using massive aphrodisiac.</description>
+    <issue>Ritual</issue>
+    <impact>Medium</impact>
+    <iconPath>UI/Issues/Gangbang</iconPath>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <ritualPatternBase>DrugOrgy</ritualPatternBase>
+    <allowDuplicates>true</allowDuplicates>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+    <receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <allowStackingRitualObligationAlerts>true</allowStackingRitualObligationAlerts>
+    <requiredMemes>
+      <li>Lewd</li>
+    </requiredMemes>
+  </PreceptDef>
 </Defs>

@@ -26,9 +26,6 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/StatDef[defName="Vulnerability"]/parts</xpath>
 		<value>
-			<li Class="RJWSexperience.StatPart_GenderPrimacy">
-				<modifier>0.5</modifier>
-			</li>
 			<li Class="RJWSexperience.StatPart_Slave">
 				<factor>3.0</factor>
 			</li>

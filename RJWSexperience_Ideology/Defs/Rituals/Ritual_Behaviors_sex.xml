@@ -33,7 +33,7 @@
       </li>
     </roles>
     <stages Inherit="False">
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
         <defaultDuty>Spectate</defaultDuty>
         <endTriggers>
           <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
@@ -81,7 +81,7 @@
           </li>
         </roleBehaviors>
       </li>
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
         <defaultDuty>Gangbang</defaultDuty>
         <essential>True</essential>
         <endTriggers>
@@ -103,7 +103,7 @@
           </li>
         </roleBehaviors>
       </li>
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
         <defaultDuty>Gangbang</defaultDuty>
         <endTriggers>
           <li Class="StageEndTrigger_DurationPercentage">
@@ -222,7 +222,7 @@
           </li>
         </roleBehaviors>
       </li>
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
+      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
         <defaultDuty>Spectate</defaultDuty>
         <essential>True</essential>
         <endTriggers>
@@ -269,4 +269,23 @@
     </stages>
   </RitualBehaviorDef>
   
+  <RitualBehaviorDef ParentName="DateRitualBehavior">
+    <defName>DrugOrgy</defName>
+    <durationTicks>7500</durationTicks>
+    <roles Inherit="False"/>
+    <spectatorsLabel>Participants</spectatorsLabel>
+    <spectatorGerund>participate</spectatorGerund>
+    <stages Inherit="False">
+      <li>
+        <defaultDuty>DrugOrgy</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1.0</percentage>
+          </li>
+        </endTriggers>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+
+
 </Defs>

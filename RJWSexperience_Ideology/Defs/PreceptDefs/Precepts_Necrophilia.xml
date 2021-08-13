@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+  <IssueDef>
+    <defName>Necrophilia</defName>
+    <label>necrophilia</label>
+    <iconPath>UI/Issues/Necrophilia</iconPath>
+  </IssueDef>
+
+  <HistoryEventDef>
+    <defName>SexWithCorpse</defName>
+    <label>fucked corpse</label>
+  </HistoryEventDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Necrophilia_Abhorrent</defName>
+    <issue>Necrophilia</issue>
+    <label>abhorrent</label>
+    <description>Necrophilia beings is deeply evil.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <defaultSelectionWeight>30</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Necrophile</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Abhorrent</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Know_Abhorrent</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Necrophilia_Horrible</defName>
+    <issue>Necrophilia</issue>
+    <label>horrible</label>
+    <description>Necrophilia is a horrible thing.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>200</displayOrderInImpact>
+    <defaultSelectionWeight>30</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Necrophile</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Horrible</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Know_Horrible</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Necrophilia_Disapproved</defName>
+    <issue>Necrophilia</issue>
+    <label>disapproved</label>
+    <description>Necrophilia is extremely distasteful.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>20</displayOrderInIssue>
+    <displayOrderInImpact>300</displayOrderInImpact>
+    <defaultSelectionWeight>20</defaultSelectionWeight>
+    <conflictingMemes>
+      <li>Necrophile</li>
+    </conflictingMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Disapproved</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Know_Disapproved</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Necrophilia_Acceptable</defName>
+    <issue>Necrophilia</issue>
+    <label>acceptable</label>
+    <description>Necrophilia is a normal, unremarkable part of life.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>10</defaultSelectionWeight>
+    <approvesOfSlavery>true</approvesOfSlavery>
+    <requiredMemes>
+      <li>Necrophile</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Necrophilia_Approved</defName>
+    <issue>Necrophilia</issue>
+    <label>approved</label>
+    <description>Fucking corpse is approval.</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <requiredMemes>
+      <li>Necrophile</li>
+      <li>Lewd</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Approved</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SexWithCorpse</eventDef>
+        <thought>Necrophilia_Know_Approved</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+  
+  <!-- Thoughts -->
+  
+
+  <ThoughtDef>
+    <defName>Necrophilia_Abhorrent</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Necrophiliac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Approved</li>
+      <li>Necrophilia_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <description>I had fucked corpse.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Necrophilia_Know_Abhorrent</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Necrophiliac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Approved</li>
+      <li>Necrophilia_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Necrophilia_Horrible</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Necrophiliac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Approved</li>
+      <li>Necrophilia_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <description>I had fucked corpse.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Necrophilia_Know_Horrible</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Necrophiliac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Approved</li>
+      <li>Necrophilia_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Necrophilia_Disapproved</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>Necrophiliac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Approved</li>
+      <li>Necrophilia_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <description>I had fucked corpse.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Necrophilia_Know_Disapproved</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Necrophiliac</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Approved</li>
+      <li>Necrophilia_Acceptable</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Necrophilia_Approved</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Abhorrent</li>
+      <li>Necrophilia_Horrible</li>
+      <li>Necrophilia_Disapproved</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <description>I had fucked corpse.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Necrophilia_Know_Approved</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>25</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingPrecepts>
+      <li>Necrophilia_Abhorrent</li>
+      <li>Necrophilia_Horrible</li>
+      <li>Necrophilia_Disapproved</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>fucked corpse</label>
+        <baseOpinionOffset>5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

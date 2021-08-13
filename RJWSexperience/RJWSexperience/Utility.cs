@@ -84,5 +84,83 @@ namespace RJWSexperience
             return 1 + lust / 100f;
         }
 
+        public static bool IsSubmissive(this Pawn pawn)
+        {
+            Ideo ideo = pawn.Ideo;
+            if (ideo != null)
+            {
+                if (ideo.HasPrecept(VariousDefOf.Submissive_Female) && pawn.gender == Gender.Female) return true;
+                else if (ideo.HasPrecept(VariousDefOf.Submissive_Male) && pawn.gender == Gender.Male) return true;
+            }
+
+            return false;
+        }
+
+        public static Building GetAdjacentBuilding<T>(this Pawn pawn) where T : Building 
+        {
+
+            if (pawn.Spawned)
+            {
+                EdificeGrid edifice = pawn.Map.edificeGrid;
+                if (edifice[pawn.Position] is T) return edifice[pawn.Position];
+                IEnumerable<IntVec3> adjcells = GenAdjFast.AdjacentCells8Way(pawn.Position);
+                foreach(IntVec3 pos in adjcells)
+                {
+                    if (edifice[pos] is T) return edifice[pos];
+                }
+            }
+            return null;
+        }
+
+
+        public static float GetCumVolume(this Pawn pawn)
+        {
+            List<Hediff> hediffs = Genital_Helper.get_PartsHediffList(pawn, Genital_Helper.get_genitalsBPR(pawn));
+            if (hediffs.NullOrEmpty()) return 0;
+            else return pawn.GetCumVolume(hediffs);
+        }
+
+        public static float GetCumVolume(this Pawn pawn, List<Hediff> hediffs)
+        {
+            CompHediffBodyPart part = hediffs?.FindAll((Hediff hed) => hed.def.defName.ToLower().Contains("penis")).InRandomOrder().FirstOrDefault()?.TryGetComp<CompHediffBodyPart>();
+            if (part == null) part = hediffs?.FindAll((Hediff hed) => hed.def.defName.ToLower().Contains("ovipositorf")).InRandomOrder().FirstOrDefault()?.TryGetComp<CompHediffBodyPart>();
+            if (part == null) part = hediffs?.FindAll((Hediff hed) => hed.def.defName.ToLower().Contains("ovipositorm")).InRandomOrder().FirstOrDefault()?.TryGetComp<CompHediffBodyPart>();
+            if (part == null) part = hediffs?.FindAll((Hediff hed) => hed.def.defName.ToLower().Contains("tentacle")).InRandomOrder().FirstOrDefault()?.TryGetComp<CompHediffBodyPart>();
+
+
+            return pawn.GetCumVolume(part);
+        }
+
+
+        public static float GetCumVolume(this Pawn pawn, CompHediffBodyPart part)
+        {
+            float res;
+
+            try
+            {
+                res = part.FluidAmmount * part.FluidModifier * pawn.BodySize / pawn.RaceProps.baseBodySize * Rand.Range(0.8f, 1.2f) * RJWSettings.cum_on_body_amount_adjust * 0.3f;
+            }
+            catch (NullReferenceException)
+            {
+                res = 0.0f;
+            }
+            if (pawn.Has(Quirk.Messy)) res *= Rand.Range(4.0f, 8.0f);
+
+            return res;
+        }
+
+        public static void CumDrugEffect(this Pawn pawn)
+        {
+            Need need = pawn.needs?.TryGetNeed(VariousDefOf.Chemical_Cum);
+            if (need != null) need.CurLevel += VariousDefOf.CumneedLevelOffset;
+            Hediff addictive = HediffMaker.MakeHediff(VariousDefOf.CumTolerance, pawn);
+            addictive.Severity = 0.032f;
+            pawn.health.AddHediff(addictive);
+            Hediff addiction = pawn.health.hediffSet.GetFirstHediffOfDef(VariousDefOf.CumAddiction);
+            if (addiction != null) addiction.Severity += VariousDefOf.CumexistingAddictionSeverityOffset;
+
+            pawn.needs?.mood?.thoughts?.memories?.TryGainMemoryFast(VariousDefOf.AteCum);
+        }
+
     }
 }

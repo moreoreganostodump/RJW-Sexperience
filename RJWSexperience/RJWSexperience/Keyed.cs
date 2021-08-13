@@ -22,6 +22,7 @@ namespace RJWSexperience
         public static readonly string RSNotHuman = "RSNotHuman".Translate();
         public static readonly string RSNotAnimal = "RSNotAnimal".Translate();
         public static readonly string RSShouldCanFuck = "RSShouldCanFuck".Translate();
+        public static readonly string RSTotalGatheredCum = "RSTotalGatheredCum".Translate();
 
 
         public static readonly string Option_1_Label = "RSOption_1_Label".Translate();
