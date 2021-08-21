@@ -33,7 +33,7 @@ namespace RJWSexperience
         {            
             get
             {                
-                float value = pawn.records.GetValue(recordDef);
+                float value = pawn?.records?.GetValue(recordDef) ?? 0f;
                 for (int i = minimumValueforStage.Count - 1; i > 0; i--)
                 {
                     if (minimumValueforStage[i] < value) return i + 1;
@@ -52,7 +52,7 @@ namespace RJWSexperience
         {
             get
             {
-                if (pawn.health.hediffSet.HasHediff(VariousDefOf.CumAddiction)) return minimumValueforStage.Count;
+                if (pawn?.health?.hediffSet?.HasHediff(VariousDefOf.CumAddiction) ?? false) return minimumValueforStage.Count;
                 return base.CurStageIndex;
             }
         }

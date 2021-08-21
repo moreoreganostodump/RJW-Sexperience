@@ -40,7 +40,7 @@
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Abhorrent</thought>
       </li>
-      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Know_Abhorrent</thought>
         <tag>BeenRaped</tag>
@@ -50,7 +50,7 @@
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Abhorrent</thought>
       </li>
-      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Know_Abhorrent</thought>
         <tag>BeenRaped</tag>
@@ -79,7 +79,7 @@
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Horrible</thought>
       </li>
-      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Know_Horrible</thought>
         <tag>BeenRaped</tag>
@@ -89,7 +89,7 @@
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Horrible</thought>
       </li>
-      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Know_Horrible</thought>
         <tag>BeenRaped</tag>
@@ -118,7 +118,7 @@
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Disapproved</thought>
       </li>
-      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithVeneratedAnimal</eventDef>
         <thought>Bestiality_Know_Disapproved</thought>
         <tag>BeenRaped</tag>
@@ -128,7 +128,7 @@
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Disapproved</thought>
       </li>
-      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>SexWithAnimal</eventDef>
         <thought>Bestiality_Know_Disapproved</thought>
         <tag>BeenRaped</tag>

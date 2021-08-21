@@ -2,17 +2,20 @@
 <LanguageData>
   <Gangbang.description>의식의 품질에 따라, 참여자들은  {MINMOOD} ~ {MAXMOOD} 기분을 {MOODDAYS}일동안 얻게 됩니다.</Gangbang.description>
   <Gangbang.extraPredictedOutcomeDescriptions.0>만약 {0}이 훌륭히 진행된다면 참여자중 한명이 영감을 얻을 수 있습니다.</Gangbang.extraPredictedOutcomeDescriptions.0>
+  <Gangbang.comps.0.label>종교 지도자 참여</Gangbang.comps.0.label>
   <Gangbang.comps.2.label>제단에서 시작</Gangbang.comps.2.label>
   <Gangbang.comps.3.label>희생양 무너짐</Gangbang.comps.3.label>
   <Gangbang.comps.4.label>희생양 극도로 무너짐</Gangbang.comps.4.label>
   <Gangbang.comps.5.label>희생양 완전히 무너짐</Gangbang.comps.5.label>
-  <Gangbang.comps.6.label>만족한 참가자</Gangbang.comps.6.label>
+  <Gangbang.comps.6.label>만족한 참여자</Gangbang.comps.6.label>
   <Gangbang.outcomeChances.0.label>끔찍한</Gangbang.outcomeChances.0.label>
   <Gangbang.outcomeChances.1.label>지루한</Gangbang.outcomeChances.1.label>
   <Gangbang.outcomeChances.2.label>즐거운</Gangbang.outcomeChances.2.label>
   <Gangbang.outcomeChances.3.label>인상적인</Gangbang.outcomeChances.3.label>
+
   <BestialGangbang.description>의식의 품질에 따라, 참여자들은  {MINMOOD} ~ {MAXMOOD} 기분을 {MOODDAYS}일동안 얻게 됩니다.</BestialGangbang.description>
   <BestialGangbang.extraPredictedOutcomeDescriptions.0>만약 {0}이 훌륭히 진행된다면 참여자중 한명이 영감을 얻을 수 있습니다.</BestialGangbang.extraPredictedOutcomeDescriptions.0>
+  <BestialGangbang.comps.0.label>종교 지도자 참여</BestialGangbang.comps.0.label>
   <BestialGangbang.comps.2.label>제단에서 시작</BestialGangbang.comps.2.label>
   <BestialGangbang.comps.3.label>교배대상 무너짐</BestialGangbang.comps.3.label>
   <BestialGangbang.comps.4.label>교배대상 극도로 무너짐</BestialGangbang.comps.4.label>
@@ -21,5 +24,14 @@
   <BestialGangbang.outcomeChances.1.label>지루한</BestialGangbang.outcomeChances.1.label>
   <BestialGangbang.outcomeChances.2.label>즐거운</BestialGangbang.outcomeChances.2.label>
   <BestialGangbang.outcomeChances.3.label>인상적인</BestialGangbang.outcomeChances.3.label>
+
+  <DrugOrgy.description>의식의 품질에 따라, 참여자들은  {MINMOOD} ~ {MAXMOOD} 기분을 {MOODDAYS}일동안 얻게 됩니다.</DrugOrgy.description>
+  <DrugOrgy.extraPredictedOutcomeDescriptions.0>만약 {0}이 훌륭히 진행된다면 참여자중 한명이 영감을 얻을 수 있습니다.</DrugOrgy.extraPredictedOutcomeDescriptions.0>
+  <DrugOrgy.comps.2.label>방 인상</DrugOrgy.comps.2.label>
+  <DrugOrgy.comps.3.label>만족한 참여자</DrugOrgy.comps.3.label>
+  <DrugOrgy.outcomeChances.0.label>끔찍한</DrugOrgy.outcomeChances.0.label>
+  <DrugOrgy.outcomeChances.1.label>지루한</DrugOrgy.outcomeChances.1.label>
+  <DrugOrgy.outcomeChances.2.label>즐거운</DrugOrgy.outcomeChances.2.label>
+  <DrugOrgy.outcomeChances.3.label>인상적인</DrugOrgy.outcomeChances.3.label>
   
 </LanguageData>

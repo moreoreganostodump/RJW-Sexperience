@@ -197,7 +197,7 @@
         <thought>BloodlustStoleSomeLovin</thought>
         <onlyForNonSlaves>true</onlyForNonSlaves>
       </li>
-      <li Class="RJWSexperience.PreceptComp_KnowsMemoryThoughtTagged">
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
         <eventDef>Raped</eventDef>
         <thought>Rape_Know_Honorable</thought>
         <description>Someone raped other</description>

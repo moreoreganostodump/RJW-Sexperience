@@ -51,7 +51,7 @@
   <Rapist.generalRules.rulesStrings.4>memeHyphenPrefix->변태</Rapist.generalRules.rulesStrings.4>
   <Rapist.generalRules.rulesStrings.5>memeConcept->강간</Rapist.generalRules.rulesStrings.5>
   <Rapist.generalRules.rulesStrings.6>memeConcept->겁탈</Rapist.generalRules.rulesStrings.6>
-  <Rapist.generalRules.rulesStrings.7>memeGod->슬라네쉬</Rapist.generalRules.rulesStrings.7>
+  <Rapist.generalRules.rulesStrings.7>r_deityName->슬라네쉬</Rapist.generalRules.rulesStrings.7>
   <Rapist.generalRules.rulesStrings.8>memeLeaderNoun->종마</Rapist.generalRules.rulesStrings.8>
   <Rapist.generalRules.rulesStrings.9>memeLeaderNoun->위대한 강간범</Rapist.generalRules.rulesStrings.9>
   <Rapist.symbolPacks.0.ideoName>강간범들</Rapist.symbolPacks.0.ideoName>
@@ -62,4 +62,35 @@
   <Rapist.symbolPacks.1.theme>쾌락</Rapist.symbolPacks.1.theme>
   <Rapist.symbolPacks.1.adjective>타락한</Rapist.symbolPacks.1.adjective>
   <Rapist.symbolPacks.1.member>이교도</Rapist.symbolPacks.1.member>
+  
+  <Lewd.label>음탕함</Lewd.label>
+  <Lewd.description>변태들.</Lewd.description>
+  <Lewd.generalRules.rulesStrings.0>memeAdjective->발정난</Lewd.generalRules.rulesStrings.0>
+  <Lewd.generalRules.rulesStrings.1>memeAdjective->음탕한</Lewd.generalRules.rulesStrings.1>
+  <Lewd.generalRules.rulesStrings.2>memeAdjective->야한</Lewd.generalRules.rulesStrings.2>
+  <Lewd.generalRules.rulesStrings.3>memeAdjective->섹시한</Lewd.generalRules.rulesStrings.3>
+  <Lewd.generalRules.rulesStrings.4>memeAdjective->발정기의</Lewd.generalRules.rulesStrings.4>
+  <Lewd.generalRules.rulesStrings.5>memeAdjective->타락한</Lewd.generalRules.rulesStrings.5>
+  <Lewd.generalRules.rulesStrings.6>memeConcept->겁</Lewd.generalRules.rulesStrings.6>
+  <Lewd.generalRules.rulesStrings.7>memeHyphenPrefix->발정</Lewd.generalRules.rulesStrings.7>
+  <Lewd.generalRules.rulesStrings.8>memeHyphenPrefix->성욕</Lewd.generalRules.rulesStrings.8>
+  <Lewd.generalRules.rulesStrings.9>memeConcept->음란함</Lewd.generalRules.rulesStrings.9>
+  <Lewd.generalRules.rulesStrings.10>memeConcept->성욕</Lewd.generalRules.rulesStrings.10>
+  <Lewd.generalRules.rulesStrings.11>memeConcept->발정기</Lewd.generalRules.rulesStrings.11>
+  <Lewd.generalRules.rulesStrings.12>memeConcept->흥분</Lewd.generalRules.rulesStrings.12>
+  <Lewd.generalRules.rulesStrings.13>memeConcept->욕망</Lewd.generalRules.rulesStrings.13>
+  <Lewd.generalRules.rulesStrings.14>memeConcept->섹스</Lewd.generalRules.rulesStrings.14>
+  <Lewd.generalRules.rulesStrings.15>memeConcept->음탕함</Lewd.generalRules.rulesStrings.15>
+  <Lewd.generalRules.rulesStrings.16>r_deityName->슬라네쉬</Lewd.generalRules.rulesStrings.16>
+  <Rapist.symbolPacks.0.ideoName>슬라네쉬 교단</Rapist.symbolPacks.0.ideoName>
+  <Rapist.symbolPacks.0.theme>쾌락</Rapist.symbolPacks.0.theme>
+  <Rapist.symbolPacks.0.adjective>타락한</Rapist.symbolPacks.0.adjective>
+  <Rapist.symbolPacks.0.member>이교도</Rapist.symbolPacks.0.member>
+  
+  <Necrophile.label>시간</Necrophile.label>
+  <Necrophile.description>시체박이들.</Necrophile.description>
+  <Necrophile.generalRules.rulesStrings.0>r_deityName->소닉</Necrophile.generalRules.rulesStrings.0>
+  <Necrophile.generalRules.rulesStrings.1>r_deityName->록맨</Necrophile.generalRules.rulesStrings.1>
+  <Necrophile.generalRules.rulesStrings.2>memeConcept->시체</Necrophile.generalRules.rulesStrings.2>
+  <Necrophile.generalRules.rulesStrings.3>memeConcept->죽음</Necrophile.generalRules.rulesStrings.3>
 </LanguageData>

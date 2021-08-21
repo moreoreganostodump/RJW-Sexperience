@@ -9,7 +9,7 @@ using Verse.AI;
 using RimWorld;
 
 
-namespace RJWSexperience
+namespace RJWSexperience.Ideology
 {
     public class JobGiver_DrugOrgy : ThinkNode_JobGiver
     {

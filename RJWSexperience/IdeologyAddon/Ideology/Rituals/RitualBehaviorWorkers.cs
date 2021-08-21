@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using RimWorld;
 using Verse;
+using Verse.AI.Group;
 
-
-
-namespace RJWSexperience
+namespace RJWSexperience.Ideology
 {
     public class RitualBehaviorWorker_Gangbang : RitualBehaviorWorker
     {
@@ -27,7 +26,13 @@ namespace RJWSexperience
 				
 			}
 		}
-	}
+
+        protected override LordJob CreateLordJob(TargetInfo target, Pawn organizer, Precept_Ritual ritual, RitualObligation obligation, RitualRoleAssignments assignments)
+        {
+            return new LordJob_Ritual_Gangbang(target, ritual, obligation, def.stages, assignments, organizer);
+		}
+
+    }
 
 	public class RitualStage_InteractWithVictim : RitualStage
     {
@@ -44,4 +49,5 @@ namespace RJWSexperience
 			return ritual.assignments.AssignedPawns("victim").FirstOrDefault();
 		}
 	}
+
 }

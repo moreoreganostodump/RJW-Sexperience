@@ -1,3 +1,11 @@
+Version Beta 1.0.1.9
+ - removed consciousness and manipulation factors from sex ability stat
+ - fixed rituals get canceled after the victim being incapacitated
+   - does not apply on your save. (you should remove and add rituals again using debug mod)
+ - fixed victim's requirement
+ - fixed wrong rulepack
+ - fixed VTE confliction
+
 Version Beta 1.0.1.8
  - fixed animal gangbang doesn't work properly
  - fixed bastard relation was not removed after marriage

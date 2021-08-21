@@ -66,5 +66,40 @@
   <Submissive_Male.description>남성들은 순종적입니다. 심지어 강간당하더라도 받아들일 것입니다.</Submissive_Male.description>
   <Submissive_Female.label>순종적인 여성</Submissive_Female.label>
   <Submissive_Female.description>여성들은 순종적입니다. 심지어 강간당하더라도 받아들일 것입니다.</Submissive_Female.description>
+
+  <Necrophilia_Abhorrent.label>혐오스러움</Necrophilia_Abhorrent.label>
+  <Necrophilia_Abhorrent.description>시체를 범하는것은 절대 용납될수 없는 행위입니다.</Necrophilia_Abhorrent.description>
+  <Necrophilia_Horrible.label>끔찍함</Necrophilia_Horrible.label>
+  <Necrophilia_Horrible.description>시체를 범하는것은 끔찍한 짓입니다.</Necrophilia_Horrible.description>
+  <Necrophilia_Disapproved.label>싫어함</Necrophilia_Disapproved.label>
+  <Necrophilia_Disapproved.description>시체를 범하는것을 싫어합니다.</Necrophilia_Disapproved.description>
+  <Necrophilia_Acceptable.label>수용가능</Necrophilia_Acceptable.label>
+  <Necrophilia_Acceptable.description>시간은 일상적입니다.</Necrophilia_Acceptable.description>
+  <Necrophilia_Approved.label>좋아함</Necrophilia_Approved.label>
+  <Necrophilia_Approved.description>시체에 박는것을 좋아합니다.</Necrophilia_Approved.description>
   
+  <SocialAffection_Normal.label>평범함(바닐라)</SocialAffection_Normal.label>
+  <SocialAffection_Normal.description>평범합니다.</SocialAffection_Normal.description>
+  <SocialAffection_Small.label>직계가족만</SocialAffection_Small.label>
+  <SocialAffection_Small.description>오직 직계가족만 상관합니다.</SocialAffection_Small.description>
+  <SocialAffection_OnlyFamily.label>친족만</SocialAffection_OnlyFamily.label>
+  <SocialAffection_OnlyFamily.description>친족이 아닌 남의 비극에 신경쓰지 않습니다.</SocialAffection_OnlyFamily.description>
+  <SocialAffection_Dry.label>친족 제외</SocialAffection_Dry.label>
+  <SocialAffection_Dry.description>친족의 비극에 신경쓰지 않습니다.</SocialAffection_Dry.description>
+  <SocialAffection_Psychopath.label>사이코패스</SocialAffection_Psychopath.label>
+  <SocialAffection_Psychopath.description>남을 신경쓰지 않습니다.</SocialAffection_Psychopath.description>
+  
+  <BabyFaction_AlwaysMother.label>항상 엄마를 따름(기본)</BabyFaction_AlwaysMother.label>
+  <BabyFaction_AlwaysMother.description>새로 태어난 아기는 엄마의 소속과 이념을 따릅니다.</BabyFaction_AlwaysMother.description>
+  <BabyFaction_AlwaysFather.label>항상 아빠를 따름</BabyFaction_AlwaysFather.label>
+  <BabyFaction_AlwaysFather.description>새로 태어난 아기는 아빠의 소속과 이념을 따릅니다.</BabyFaction_AlwaysFather.description>
+  <BabyFaction_AlwaysColony.label>항상 정착지를 따름</BabyFaction_AlwaysColony.label>
+  <BabyFaction_AlwaysColony.description>새로 태어난 아기는 정착지의 소속과 이념을 따릅니다.</BabyFaction_AlwaysColony.description>
+  
+  <GangbangCeremony.label>윤간</GangbangCeremony.label>
+  <GangbangCeremony.description>개시자가 참여자들과 함께 희생자를 강간하는 의례적 윤간입니다.</GangbangCeremony.description>
+  <AnimalGangbangCeremony.label>동물에의한 윤간</AnimalGangbangCeremony.label>
+  <AnimalGangbangCeremony.description>동물이 희생자를 윤간하는 의례적 윤간입니다.</AnimalGangbangCeremony.description>
+  <DrugOrgyCeremony.label>마약난교</DrugOrgyCeremony.label>
+  <DrugOrgyCeremony.description>엄청난 양의 최음제를 사용하는 난교입니다.</DrugOrgyCeremony.description>
 </LanguageData>

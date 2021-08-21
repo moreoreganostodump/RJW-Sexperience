@@ -10,7 +10,7 @@ using RimWorld;
 using rjw;
 
 
-namespace RJWSexperience
+namespace RJWSexperience.Ideology
 {
     public class JobGiver_GangbangVictim : ThinkNode_JobGiver
     {

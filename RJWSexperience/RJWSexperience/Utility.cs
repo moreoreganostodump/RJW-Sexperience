@@ -32,22 +32,6 @@ namespace RJWSexperience
             records.AddTo(record, value - recordval);
         }
 
-        public static bool IsIncest(this Pawn pawn, Pawn partner)
-        {
-            IEnumerable<PawnRelationDef> relations = pawn.GetRelations(partner);
-            Ideo ideo = pawn.Ideo;
-            bool wide = false;
-            if (ideo != null) wide = ideo.HasPrecept(VariousDefOf.Incestuos_Disapproved_CloseOnly);
-            if (!relations.EnumerableNullOrEmpty()) foreach(PawnRelationDef relation in relations)
-            {
-                if(wide)
-                {
-                    if (relation.incestOpinionOffset < 0) return true;
-                }
-                else if (relation.familyByBloodRelation) return true;
-            }
-            return false;
-        }
         
         public static float RecordRandomizer(this Pawn pawn, RecordDef record, float avg, float dist, float min = 0, float max = float.MaxValue)
         {
@@ -84,17 +68,6 @@ namespace RJWSexperience
             return 1 + lust / 100f;
         }
 
-        public static bool IsSubmissive(this Pawn pawn)
-        {
-            Ideo ideo = pawn.Ideo;
-            if (ideo != null)
-            {
-                if (ideo.HasPrecept(VariousDefOf.Submissive_Female) && pawn.gender == Gender.Female) return true;
-                else if (ideo.HasPrecept(VariousDefOf.Submissive_Male) && pawn.gender == Gender.Male) return true;
-            }
-
-            return false;
-        }
 
         public static Building GetAdjacentBuilding<T>(this Pawn pawn) where T : Building 
         {

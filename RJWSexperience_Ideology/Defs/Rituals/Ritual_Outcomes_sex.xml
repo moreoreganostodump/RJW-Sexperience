@@ -30,28 +30,28 @@
         <qualityOffset>0.2</qualityOffset>
         <expectedThingLabelTip>an altar</expectedThingLabelTip>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_HediffBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>victim broken</label>
         <qualityOffset>0.2</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.3</minSeverity>
         <roleId>victim</roleId>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_HediffBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>victim extremly broken</label>
         <qualityOffset>0.2</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.5</minSeverity>
         <roleId>victim</roleId>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_HediffBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>victim completely broken</label>
         <qualityOffset>0.4</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.9</minSeverity>
         <roleId>victim</roleId>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_NeedBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_NeedBased">
         <label>statisfied participants</label>
         <qualityOffset>0.2</qualityOffset>
         <needDef>Sex</needDef>
@@ -123,21 +123,21 @@
         <qualityOffset>0.2</qualityOffset>
         <expectedThingLabelTip>an altar</expectedThingLabelTip>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_HediffBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>breedee broken</label>
         <qualityOffset>0.3</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.3</minSeverity>
         <roleId>victim</roleId>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_HediffBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>breedee extremly broken</label>
         <qualityOffset>0.3</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.5</minSeverity>
         <roleId>victim</roleId>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_HediffBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>breedee completely broken</label>
         <qualityOffset>0.6</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
@@ -211,7 +211,7 @@
           </points>
         </curve>
       </li>
-      <li Class="RJWSexperience.RitualOutcomeComp_NeedBased">
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_NeedBased">
         <label>statisfied participants</label>
         <qualityOffset>0.7</qualityOffset>
         <needDef>Sex</needDef>

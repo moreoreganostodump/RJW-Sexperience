@@ -23,36 +23,10 @@ namespace RJWSexperience
             else return 1.0f;
         }
 
-        public static HistoryEvent TaggedEvent(this HistoryEventDef def ,Pawn pawn, string tag, Pawn partner)
+        public static float LustIncrementFactor(float lust)
         {
-            return new HistoryEvent(def, pawn.Named(HistoryEventArgsNames.Doer), tag.Named(HistoryEventArgsNamesCustom.Tag), partner.Named(HistoryEventArgsNamesCustom.Partner));
+            return Mathf.Exp(-Mathf.Pow(lust / Configurations.LustLimit, 2));
         }
-
-        public static Faction GetFactionUsingPrecept(this Pawn baby, out Ideo ideo)
-        {
-            Faction playerfaction = Find.FactionManager.OfPlayer;
-            Ideo mainideo = playerfaction.ideos.PrimaryIdeo;
-            if (mainideo != null)
-            {
-                if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysFather))
-                {
-                    Pawn parent = baby.GetFather();
-                    if (parent == null) baby.GetMother();
-
-                    ideo = parent.Ideo;
-                    return parent.Faction;
-                }
-                else if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysColony))
-                {
-                    ideo = mainideo;
-                    return playerfaction;
-                }
-            }
-            Pawn mother = baby.GetMother();
-            ideo = mother?.Ideo;
-            return mother?.Faction ?? baby.Faction;
-        }
-
 
     }
 
@@ -102,7 +76,7 @@ namespace RJWSexperience
 
         public static void Prefix(Pawn pawn, Pawn partner, xxx.rjwSextype sextype, bool violent, bool pawn_is_raping, ref float satisfaction)
         {
-            satisfaction *= partner.GetSexStat();
+            satisfaction *= Mathf.Max(base_sat_per_fuck, partner.GetSexStat());
         }
 
         public static void Postfix(Pawn pawn, Pawn partner, xxx.rjwSextype sextype, bool violent, bool pawn_is_raping, float satisfaction)
@@ -110,8 +84,8 @@ namespace RJWSexperience
             float? lust = pawn.records?.GetValue(VariousDefOf.Lust);
             if (lust != null)
             {
-                if (sextype != xxx.rjwSextype.Masturbation || partner != null) pawn.records.AddTo(VariousDefOf.Lust, Mathf.Clamp((satisfaction - base_sat_per_fuck) * LustIncrementFactor(lust ?? 0), -0.5f, 0.5f)); // If the sex is satisfactory, lust grows up. Declines at the opposite.
-                else pawn.records.AddTo(VariousDefOf.Lust, Mathf.Clamp(satisfaction * satisfaction * LustIncrementFactor(lust ?? 0), 0, 0.5f));                                             // Masturbation always increases lust.
+                if (sextype != xxx.rjwSextype.Masturbation || partner != null) pawn.records.AddTo(VariousDefOf.Lust, Mathf.Clamp((satisfaction - base_sat_per_fuck) * RJWUtility.LustIncrementFactor(lust ?? 0), -0.5f, 0.5f)); // If the sex is satisfactory, lust grows up. Declines at the opposite.
+                else pawn.records.AddTo(VariousDefOf.Lust, Mathf.Clamp(satisfaction * satisfaction * RJWUtility.LustIncrementFactor(lust ?? 0), 0, 0.5f));                                             // Masturbation always increases lust.
             }
 
             if (sextype == xxx.rjwSextype.Masturbation || partner == null)
@@ -124,10 +98,6 @@ namespace RJWSexperience
             }
         }
 
-        public static float LustIncrementFactor(float lust)
-        {
-            return Mathf.Exp(-Mathf.Pow(lust / Configurations.LustLimit, 2));
-        }
 
 
 

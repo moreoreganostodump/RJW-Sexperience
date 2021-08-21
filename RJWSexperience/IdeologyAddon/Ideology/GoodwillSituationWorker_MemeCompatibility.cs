@@ -7,7 +7,7 @@ using RimWorld;
 using Verse;
 
 
-namespace RJWSexperience
+namespace RJWSexperience.Ideology
 {
     public class GoodwillSituationWorker_OneWayReceive : GoodwillSituationWorker_MemeCompatibility
     {

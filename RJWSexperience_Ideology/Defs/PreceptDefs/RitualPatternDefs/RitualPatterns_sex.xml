@@ -35,7 +35,7 @@
   <RitualPatternDef ParentName="CelebrationConsumable">
     <defName>DrugOrgy</defName>
     <shortDescOverride>drug orgy</shortDescOverride>
-    <descOverride>An orgy with large amounts of aphrodisiac. Participants will gather around a burnbong or incense shrine, light it on fire, and fuck each other while inhaling the fumes.</descOverride>
+    <descOverride>An orgy with large amounts of aphrodisiac. Participants will gather around a lustbong, light it on fire, and fuck each other while inhaling the fumes.</descOverride>
     <iconPathOverride>UI/Icons/Rituals/SmokeCircle</iconPathOverride>
     <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
     <ritualObligationTargetFilter>DrugOrgy</ritualObligationTargetFilter>

@@ -24,9 +24,9 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" ]/nullifyingPrecepts</xpath>
+		<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" or defName="MyPupDied" or defName="MyPupDiedFemale" or defName="KilledMyPup" or defName="KilledMyPupFemale" or defName="SoldMyPup" ]/nullifyingPrecepts</xpath>
 		<nomatch Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" ]</xpath>
+			<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" or defName="MyPupDied" or defName="MyPupDiedFemale" or defName="KilledMyPup" or defName="KilledMyPupFemale" or defName="SoldMyPup"]</xpath>
 			<value>
 				<nullifyingPrecepts>
 					<li>SocialAffection_Psychopath</li>
@@ -35,7 +35,7 @@
 			</value>
 		</nomatch>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" ]/nullifyingPrecepts</xpath>
+			<xpath>Defs/ThoughtDef[defName="MyMotherDied" or defName="MyFatherDied" or defName="MyGrandchildDied" or defName="MySisterDied" or defName="MyBrotherDied" or defName="MyDaughterDied" or defName="MySonDied" or defName="WitnessedDeathFamily" or defName="MyPupDied" or defName="MyPupDiedFemale" or defName="KilledMyPup" or defName="KilledMyPupFemale" or defName="SoldMyPup"]/nullifyingPrecepts</xpath>
 			<value>
 				<li>SocialAffection_Psychopath</li>
 				<li>SocialAffection_Dry</li>

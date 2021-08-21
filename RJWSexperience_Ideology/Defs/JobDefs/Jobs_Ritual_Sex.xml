@@ -3,28 +3,28 @@
 <Defs>
 	<JobDef>
 		<defName>RapeVictim</defName>
-		<driverClass>RJWSexperience.JobDriver_RapeVictim</driverClass>
+		<driverClass>RJWSexperience.Ideology.JobDriver_RapeVictim</driverClass>
 		<reportString>rapin' victim</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 
 	<JobDef>
 		<defName>DrugSex</defName>
-		<driverClass>RJWSexperience.JobDriver_SexDrugOrgy</driverClass>
+		<driverClass>RJWSexperience.Ideology.JobDriver_SexDrugOrgy</driverClass>
 		<reportString>lovin'.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 
 	<JobDef>
 		<defName>GettinDrugSex</defName>
-		<driverClass>RJWSexperience.JobDriver_DrugSexReceiver</driverClass>
+		<driverClass>RJWSexperience.Ideology.JobDriver_DrugSexReceiver</driverClass>
 		<reportString>lovin'.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
 	
 	<JobDef>
 		<defName>DrugMasturbate</defName>
-		<driverClass>RJWSexperience.JobDriver_DrugMasturabate</driverClass>
+		<driverClass>RJWSexperience.Ideology.JobDriver_DrugMasturabate</driverClass>
 		<reportString>masturbatin'.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>

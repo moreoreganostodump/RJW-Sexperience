@@ -8,10 +8,46 @@ using rjw;
 using RimWorld;
 using Verse;
 using UnityEngine;
-
+using SexperienceDefOf = RJWSexperience.VariousDefOf;
 
 namespace RJWSexperience.Ideology
 {
+    public static class RJWUtility_Ideo
+    {
+
+        public static HistoryEvent TaggedEvent(this HistoryEventDef def, Pawn pawn, string tag, Pawn partner)
+        {
+            return new HistoryEvent(def, pawn.Named(HistoryEventArgsNames.Doer), tag.Named(HistoryEventArgsNamesCustom.Tag), partner.Named(HistoryEventArgsNamesCustom.Partner));
+        }
+
+        public static Faction GetFactionUsingPrecept(this Pawn baby, out Ideo ideo)
+        {
+            Faction playerfaction = Find.FactionManager.OfPlayer;
+            Ideo mainideo = playerfaction.ideos.PrimaryIdeo;
+            if (mainideo != null)
+            {
+                if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysFather))
+                {
+                    Pawn parent = baby.GetFather();
+                    if (parent == null) baby.GetMother();
+
+                    ideo = parent.Ideo;
+                    return parent.Faction;
+                }
+                else if (mainideo.HasPrecept(VariousDefOf.BabyFaction_AlwaysColony))
+                {
+                    ideo = mainideo;
+                    return playerfaction;
+                }
+            }
+            Pawn mother = baby.GetMother();
+            ideo = mother?.Ideo;
+            return mother?.Faction ?? baby.Faction;
+        }
+
+
+    }
+
     [HarmonyPatch(typeof(ThinkNode_ChancePerHour_Bestiality), "MtbHours")]
     public static class RJW_Patch_ChancePerHour_Bestiality
     {
@@ -162,11 +198,11 @@ namespace RJWSexperience.Ideology
                     {
                         Find.HistoryEventsManager.RecordEvent(sexevent.TaggedEvent(human, tag + HETag.Gender(human), partner));
                         Find.HistoryEventsManager.RecordEvent(sexevent.TaggedEvent(partner, tag + HETag.Gender(partner), human));
-                        if (sexevent == VariousDefOf.PromiscuousSex)
-                        {
-                            human.records.AddTo(VariousDefOf.Lust, 1.0f);
-                            partner.records.AddTo(VariousDefOf.Lust, 1.0f);
-                        }
+                        //if (sexevent == VariousDefOf.PromiscuousSex)
+                        //{
+                        //    human.records.AddTo(SexperienceDefOf.Lust, 1.0f* RJWUtility.LustIncrementFactor(human.records.GetValue(SexperienceDefOf.Lust)));
+                        //    partner.records.AddTo(SexperienceDefOf.Lust, 1.0f * RJWUtility.LustIncrementFactor(partner.records.GetValue(SexperienceDefOf.Lust)));
+                        //}
 
                     }
                 }
@@ -334,8 +370,8 @@ namespace RJWSexperience.Ideology
             {
                 //baby.SetFactionDirect(baby.GetFactionUsingPrecept());
                 baby.SetFaction(baby.GetFactionUsingPrecept(out Ideo ideo));
-                baby.ideo.SetIdeo(ideo);
-                if (baby.Faction == Find.FactionManager.OfPlayer && !baby.IsSlave) baby.guest.SetGuestStatus(null, GuestStatus.Guest);
+                baby.ideo?.SetIdeo(ideo);
+                if (baby.Faction == Find.FactionManager.OfPlayer && !baby.IsSlave) baby.guest?.SetGuestStatus(null, GuestStatus.Guest);
             }
         }
     }

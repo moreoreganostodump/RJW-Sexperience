@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <loadFolders>
 	<v1.3>
-		<li>\</li>
+		<li>/</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">RJWSexperience_Ideology</li>
 	</v1.3>
 </loadFolders>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using RimWorld;
 using Verse;
 
-namespace RJWSexperience
+namespace RJWSexperience.Ideology
 {
 	public static class HistoryEventArgsNamesCustom
 	{

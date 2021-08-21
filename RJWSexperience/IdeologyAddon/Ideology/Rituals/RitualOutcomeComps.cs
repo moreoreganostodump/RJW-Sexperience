@@ -8,7 +8,7 @@ using Verse;
 using rjw;
 
 
-namespace RJWSexperience
+namespace RJWSexperience.Ideology
 {
     public class RitualOutcomeComp_HediffBased : RitualOutcomeComp_QualitySingleOffset
     {

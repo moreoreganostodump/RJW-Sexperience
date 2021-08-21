@@ -12,7 +12,7 @@
             <li Class="ThinkNode_ConditionalRandom">
               <chance>0.25</chance>
               <subNodes>
-                 <li Class="RJWSexperience.JobGiver_GangbangVictim"/>
+                 <li Class="RJWSexperience.Ideology.JobGiver_GangbangVictim"/>
               </subNodes>
             </li>
           </subNodes>
@@ -32,7 +32,7 @@
     <socialModeMax>Off</socialModeMax>
     <thinkNode Class="ThinkNode_Priority">
       <subNodes>
-        <li Class="RJWSexperience.JobGiver_GangbangVictim"/>
+        <li Class="RJWSexperience.Ideology.JobGiver_GangbangVictim"/>
       </subNodes>
     </thinkNode>
   </DutyDef>
@@ -48,7 +48,7 @@
             <li Class="ThinkNode_ConditionalRandom">
               <chance>0.15</chance>
               <subNodes>
-                 <li Class="RJWSexperience.JobGiver_DrugOrgy"/>
+                 <li Class="RJWSexperience.Ideology.JobGiver_DrugOrgy"/>
               </subNodes>
             </li>
           </subNodes>

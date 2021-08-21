@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C728E06-573B-4B04-A07F-ACBF60CB424D}</ProjectGuid>
+    <ProjectGuid>{B4481C38-31B1-422D-B5AA-0059FE7CCA1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RJWSexperience</RootNamespace>
-    <AssemblyName>RJWSexperience</AssemblyName>
+    <RootNamespace>RJWSexperience.Ideology</RootNamespace>
+    <AssemblyName>RJWSexperience.Ideology</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\Assemblies\</OutputPath>
+    <OutputPath>..\..\RJWSexperience_Ideology\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Assemblies\</OutputPath>
+    <OutputPath>..\..\RJWSexperience_Ideology\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -63,6 +63,22 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
@@ -77,19 +93,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Buildings.cs" />
-    <Compile Include="Configurations.cs" />
-    <Compile Include="DebugAction.cs" />
+    <Compile Include="Ideology\GoodwillSituationWorker_MemeCompatibility.cs" />
     <Compile Include="Harmony.cs" />
-    <Compile Include="PawnRelationWorkers.cs" />
-    <Compile Include="Keyed.cs" />
-    <Compile Include="Rimworld_Patch.cs" />
-    <Compile Include="RJW_Patch.cs" />
-    <Compile Include="StatParts.cs" />
-    <Compile Include="Thought_Recordbased.cs" />
+    <Compile Include="Ideology\Rituals\LordJob_Rituals.cs" />
+    <Compile Include="Ideology\RJW_Patch_Ideo.cs" />
+    <Compile Include="Ideology\PreceptComp_SelftTookThoughtExtended.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility.cs" />
+    <Compile Include="Ideology\Rimworld_Patch.cs" />
+    <Compile Include="Ideology\Rituals\JobGiver_DrugOrgy.cs" />
+    <Compile Include="Ideology\Rituals\JobGiver_GangbangVictim.cs" />
+    <Compile Include="Ideology\Rituals\RitualBehaviorWorkers.cs" />
+    <Compile Include="Ideology\Rituals\RitualOutcomeComps.cs" />
+    <Compile Include="Ideology\Rituals\RitualRoles.cs" />
+    <Compile Include="Ideology\StatParts.cs" />
+    <Compile Include="Ideology\Utility.cs" />
     <Compile Include="VariousDefOf.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RJWSexperience\RJWSexperience.csproj">
+      <Project>{9c728e06-573b-4b04-a07f-acbf60cb424d}</Project>
+      <Name>RJWSexperience</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

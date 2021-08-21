@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/StatDef[defName="Vulnerability"]/parts</xpath>
 		<value>
-			<li Class="RJWSexperience.StatPart_GenderPrimacy">
+			<li Class="RJWSexperience.Ideology.StatPart_GenderPrimacy">
 				<modifier>0.5</modifier>
 			</li>
 		</value>

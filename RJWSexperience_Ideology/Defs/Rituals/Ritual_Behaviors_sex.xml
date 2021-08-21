@@ -20,20 +20,22 @@
 
   <RitualBehaviorDef ParentName="GangbangBehaviorBase">
     <defName>Gangbang</defName>
-    <workerClass>RJWSexperience.RitualBehaviorWorker_Gangbang</workerClass>
+    <workerClass>RJWSexperience.Ideology.RitualBehaviorWorker_Gangbang</workerClass>
     <roles>
-      <li Class="RJWSexperience.RitualRole_RapeVictim">
+      <li Class="RJWSexperience.Ideology.RitualRole_RapeVictim">
         <label>victim</label>
         <missingDesc>a victim</missingDesc>
         <id>victim</id>
         <maxCount>1</maxCount>
-        <required>True</required>
+        <required>true</required>
         <countsAsParticipant>False</countsAsParticipant>
         <ignoreBleeding>true</ignoreBleeding>
+        <allowNonAggroMentalState>true</allowNonAggroMentalState>
+        <allowOtherIdeos>true</allowOtherIdeos>
       </li>
     </roles>
     <stages Inherit="False">
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithVictim">
         <defaultDuty>Spectate</defaultDuty>
         <endTriggers>
           <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
@@ -81,7 +83,7 @@
           </li>
         </roleBehaviors>
       </li>
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithVictim">
         <defaultDuty>Gangbang</defaultDuty>
         <essential>True</essential>
         <endTriggers>
@@ -97,13 +99,9 @@
               <li Class="RitualPosition_OnInteractionCell" />
             </customPositions>
           </li>
-          <li>
-            <roleId>victim</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
-          </li>
         </roleBehaviors>
       </li>
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim">
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithVictim">
         <defaultDuty>Gangbang</defaultDuty>
         <endTriggers>
           <li Class="StageEndTrigger_DurationPercentage">
@@ -119,10 +117,6 @@
               <li Class="RitualPosition_OnInteractionCell" />
             </customPositions>
           </li>
-          <li>
-            <roleId>victim</roleId>
-            <dutyDef>LayDownAwake</dutyDef>
-          </li>
         </roleBehaviors>
       </li>
     </stages>
@@ -132,8 +126,9 @@
 
   <RitualBehaviorDef ParentName="GangbangBehaviorBase">
     <defName>GangbangByAnimal</defName>
+    <workerClass>RJWSexperience.Ideology.RitualBehaviorWorker_Gangbang</workerClass>
     <roles>
-      <li Class="RJWSexperience.RitualRole_HumanBreedee">
+      <li Class="RJWSexperience.Ideology.RitualRole_HumanBreedee">
         <label>breedee</label>
         <missingDesc>a breedee who will be fucked by animal</missingDesc>
         <id>victim</id>
@@ -142,11 +137,11 @@
         <countsAsParticipant>False</countsAsParticipant>
         <ignoreBleeding>true</ignoreBleeding>
       </li>
-      <li Class="RJWSexperience.RitualRole_AnimalBreeder">
+      <li Class="RJWSexperience.Ideology.RitualRole_AnimalBreeder">
         <label>breeder</label>
         <id>animal</id>
-        <maxCount>10</maxCount>
-        <required>True</required>
+        <maxCount>30</maxCount>
+        <required>false</required>
         <missingDesc>a breedable animal</missingDesc>
         <countsAsParticipant>false</countsAsParticipant>
       </li>
@@ -222,7 +217,7 @@
           </li>
         </roleBehaviors>
       </li>
-      <li Class="RJWSexperience.RitualStage_InteractWithVictim_All">
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithVictim_All">
         <defaultDuty>Spectate</defaultDuty>
         <essential>True</essential>
         <endTriggers>

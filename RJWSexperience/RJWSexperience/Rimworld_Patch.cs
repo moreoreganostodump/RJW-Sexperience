@@ -13,37 +13,6 @@ using rjw;
 
 namespace RJWSexperience
 {
-    [HarmonyPatch(typeof(MarriageCeremonyUtility), "Married")]
-    public static class Rimworld_Patch_Marriage
-    {
-        public static void Postfix(Pawn firstPawn, Pawn secondPawn)
-        {
-            if (firstPawn.IsIncest(secondPawn))
-            {
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(VariousDefOf.Incestuos_Marriage, firstPawn.Named(HistoryEventArgsNames.Doer)));
-                Find.HistoryEventsManager.RecordEvent(new HistoryEvent(VariousDefOf.Incestuos_Marriage, secondPawn.Named(HistoryEventArgsNames.Doer)));
-            }
-        }
-
-
-    }
-
-    [HarmonyPatch(typeof(Pawn_RelationsTracker), "SecondaryRomanceChanceFactor")]
-    public static class Rimworld_Patch_SecondaryRomanceChanceFactor
-    {
-        public static void Postfix(Pawn otherPawn, Pawn ___pawn, ref float __result)
-        {
-            Ideo ideo = ___pawn.Ideo;
-            if (ideo != null)
-            {
-                if (ideo.HasPrecept(VariousDefOf.Incestuos_IncestOnly) && ___pawn.IsIncest(otherPawn))
-                {
-                    __result *= 8f;
-                }
-            }
-        }
-    }
-
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public static class Rimworld_Patch_GeneratePawn
     {
@@ -111,17 +80,6 @@ namespace RJWSexperience
                 }
                 __result.records?.SetTo(xxx.CountOfSex, totalsex);
             }
-        }
-    }
-
-    [HarmonyPatch(typeof(RitualOutcomeEffectWorker_FromQuality), "GiveMemoryToPawn")]
-    public static class Rimworld_Patch_GiveMemoryToPawn
-    {
-        public static bool Prefix(Pawn pawn, ThoughtDef memory, LordJob_Ritual jobRitual)
-        {
-            if (pawn.IsAnimal()) return false;
-
-            return true;
         }
     }
 

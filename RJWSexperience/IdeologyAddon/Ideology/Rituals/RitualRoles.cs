@@ -7,7 +7,7 @@ using RimWorld;
 using Verse;
 using rjw;
 
-namespace RJWSexperience
+namespace RJWSexperience.Ideology
 {
     public class RitualRole_RapeVictim : RitualRole
     {
@@ -16,7 +16,7 @@ namespace RJWSexperience
             reason = null;
             return false;
         }
-
+        
         public override bool AppliesToPawn(Pawn p, out string reason, LordJob_Ritual ritual = null, RitualRoleAssignments assignments = null, Precept_Ritual precept = null, bool skipReason = false)
         {
             reason = null;
@@ -31,8 +31,9 @@ namespace RJWSexperience
         public static bool CanBeVictim(Pawn pawn)
         {
             if (pawn.IsPrisonerOfColony || pawn.IsSlaveOfColony) return true;
-            if (pawn.Ideo?.HasMeme(MemeDefOf.FemaleSupremacy) ?? false && pawn.gender != Gender.Female) return true;
-            else if (pawn.Ideo?.HasMeme(MemeDefOf.MaleSupremacy) ?? false && pawn.gender != Gender.Male) return true;
+            if (pawn.IsSubmissive()) return true;
+            //if ((pawn.Ideo?.HasMeme(MemeDefOf.FemaleSupremacy) ?? false) && pawn.gender != Gender.Female) return true;
+            //else if ((pawn.Ideo?.HasMeme(MemeDefOf.MaleSupremacy) ?? false) && pawn.gender != Gender.Male) return true;
             if (pawn.IsDesignatedComfort() || (pawn.guilt != null && pawn.guilt.IsGuilty) || (pawn.apparel != null && pawn.apparel.PsychologicallyNude)) return true;
             return false;
         }
@@ -48,6 +49,7 @@ namespace RJWSexperience
 
         public override bool AppliesToPawn(Pawn p, out string reason, LordJob_Ritual ritual = null, RitualRoleAssignments assignments = null, Precept_Ritual precept = null, bool skipReason = false)
         {
+            
             reason = null;
             if (!xxx.is_human(p))
             {

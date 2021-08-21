@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CumTolerance.label>정액 중독성</CumTolerance.label>
+  <CumTolerance.description>정액 중독성.</CumTolerance.description>
+  <CumAddiction.label>정액 중독</CumAddiction.label>
+  <CumAddiction.description>정액 중독.</CumAddiction.description>
+  <CumAddiction.stages.1.label>금단증상</CumAddiction.stages.1.label>
+
+</LanguageData>
