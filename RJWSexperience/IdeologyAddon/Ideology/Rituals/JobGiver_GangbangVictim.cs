@@ -123,7 +123,7 @@ namespace RJWSexperience.Ideology
 				initAction = delegate
 				{
 					// Trying to add some interactions and social logs
-					SexUtility.ProcessSex(pawn, Partner, usedCondom: usedCondom, rape: isRape, sextype: sexType);
+					SexUtility.ProcessSex(Sexprops);
 					Partner.records.Increment(xxx.GetRapedAsComfortPawn);
 				},
 				defaultCompleteMode = ToilCompleteMode.Instant

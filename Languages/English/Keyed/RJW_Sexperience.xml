@@ -12,6 +12,7 @@
   <RSNotAnimal>not animal</RSNotAnimal>
   <RSShouldCanFuck>capable of sex is required</RSShouldCanFuck>
   <RSTotalGatheredCum>Total gathered cum: </RSTotalGatheredCum>
+  <RS_LostVirgin>{1} took {0}'s virginity.</RS_LostVirgin>
 
   <RSOption_1_Label>Enable record randomizer</RSOption_1_Label>
   <RSOption_1_Desc>Randomize pawn's sex records.</RSOption_1_Desc>
@@ -29,10 +30,10 @@
   <RSOption_7_Desc>Slaves will have experience of being raped</RSOption_7_Desc>
   <RSOption_8_Label>Lust Limit</RSOption_8_Label>
   <RSOption_8_Desc>Set limitation of lust.&#10;If absolute value of lust close to or larger than this value, lust will be less likely to change.</RSOption_8_Desc>
-  <RSOption_9_Label></RSOption_9_Label>
-  <RSOption_9_Desc> </RSOption_9_Desc>
-  <RSOption_10_Label></RSOption_10_Label>
-  <RSOption_10_Desc> </RSOption_10_Desc>
+  <RSOption_9_Label>Minimum age can have sex</RSOption_9_Label>
+  <RSOption_9_Desc>Set minimum sexable age.&#10;This value is not related to RJW's minimum sex age. Only used for generating records.</RSOption_9_Desc>
+  <RSOption_10_Label>Virgin ratio</RSOption_10_Label>
+  <RSOption_10_Desc>Set probability of virgin regardless of age.</RSOption_10_Desc>
   <RSOption_11_Label></RSOption_11_Label>
   <RSOption_11_Desc> </RSOption_11_Desc>
 

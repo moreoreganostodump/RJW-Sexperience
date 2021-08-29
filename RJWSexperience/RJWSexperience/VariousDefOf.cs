@@ -20,7 +20,8 @@ namespace RJWSexperience
         public static readonly HediffDef CumTolerance = DefDatabase<HediffDef>.GetNamed("CumTolerance");
         public static readonly ChemicalDef Cum = DefDatabase<ChemicalDef>.GetNamed("Cum");
         public static readonly NeedDef Chemical_Cum = DefDatabase<NeedDef>.GetNamed("Chemical_Cum");
-        
+        public static readonly TraitDef Virgin = DefDatabase<TraitDef>.GetNamed("Virgin");
+
         public static float CumneedLevelOffset
         {
             get

@@ -1,4 +1,8 @@
+Version Beta 1.0.1.10
+ - requires RJW 4.8.0 or later
+
 Version Beta 1.0.1.9
+ - not compatible with RJW 4.8.0 or later
  - removed consciousness and manipulation factors from sex ability stat
  - fixed rituals get canceled after the victim being incapacitated
    - does not apply on your save. (you should remove and add rituals again using debug mod)

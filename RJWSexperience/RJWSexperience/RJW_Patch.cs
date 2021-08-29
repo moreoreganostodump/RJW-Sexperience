@@ -28,6 +28,36 @@ namespace RJWSexperience
             return Mathf.Exp(-Mathf.Pow(lust / Configurations.LustLimit, 2));
         }
 
+        /// <summary>
+        /// If the pawn is virgin, return true.
+        /// </summary>
+        public static bool IsVirgin(this Pawn pawn)
+        {
+            if (pawn.records.GetValue(xxx.CountOfSex) == 0) return true;
+            return false;
+        }
+
+        /// <summary>
+        /// If pawn is virgin, lose his/her virginity.
+        /// </summary>
+        //public static void PoptheCherry(this Pawn pawn, Pawn partner, bool violent)
+        //{
+        //    if (pawn.IsVirgin())
+        //    {
+        //        Messages.Message(Keyed.RS_LostVirgin(pawn.LabelShort, partner.LabelShort), MessageTypeDefOf.NeutralEvent, true);
+        //        RemoveVirginTrait(pawn);
+        //        FilthMaker.TryMakeFilth(pawn.Position, pawn.Map, ThingDefOf.Filth_Blood, 1, FilthSourceFlags.Pawn);
+        //    }
+        //}
+        //
+        //public static void RemoveVirginTrait(Pawn pawn)
+        //{
+        //    Trait virgin = pawn.story?.traits?.GetTrait(VariousDefOf.Virgin);
+        //    if (virgin != null)
+        //    {
+        //        pawn.story.traits.RemoveTrait(virgin);
+        //    }
+        //}
     }
 
 
@@ -37,13 +67,12 @@ namespace RJWSexperience
     {
         public static void Postfix(JobDriver_Sex __instance)
         {
-            if (__instance.sexType != xxx.rjwSextype.Masturbation && !(__instance is JobDriver_Masturbate))
+            if (__instance.Sexprops.sexType != xxx.rjwSextype.Masturbation && !(__instance is JobDriver_Masturbate))
             {
                 if (__instance.isRape)
                 {
                     __instance.pawn?.skills?.Learn(VariousDefOf.SexSkill, 0.05f, true);
                 }
-                else
                 {   
                     __instance.pawn?.skills?.Learn(VariousDefOf.SexSkill, 0.35f, true);
                 }
@@ -74,14 +103,15 @@ namespace RJWSexperience
     {
         private const float base_sat_per_fuck = 0.4f;
 
-        public static void Prefix(Pawn pawn, Pawn partner, xxx.rjwSextype sextype, bool violent, bool pawn_is_raping, ref float satisfaction)
+        public static void Prefix(Pawn pawn, Pawn partner, SexProps props, bool pawn_is_raping , ref float satisfaction)
         {
-            satisfaction *= Mathf.Max(base_sat_per_fuck, partner.GetSexStat());
+            satisfaction = Mathf.Max(base_sat_per_fuck, satisfaction * partner.GetSexStat());
         }
 
-        public static void Postfix(Pawn pawn, Pawn partner, xxx.rjwSextype sextype, bool violent, bool pawn_is_raping, float satisfaction)
+        public static void Postfix(Pawn pawn, Pawn partner, SexProps props, bool pawn_is_raping, float satisfaction)
         {
             float? lust = pawn.records?.GetValue(VariousDefOf.Lust);
+            xxx.rjwSextype sextype = props.sexType;
             if (lust != null)
             {
                 if (sextype != xxx.rjwSextype.Masturbation || partner != null) pawn.records.AddTo(VariousDefOf.Lust, Mathf.Clamp((satisfaction - base_sat_per_fuck) * RJWUtility.LustIncrementFactor(lust ?? 0), -0.5f, 0.5f)); // If the sex is satisfactory, lust grows up. Declines at the opposite.
@@ -103,12 +133,16 @@ namespace RJWSexperience
 
     }
 
-    [HarmonyPatch(typeof(xxx), "TransferNutrition")]
+    [HarmonyPatch(typeof(SexUtility), "TransferNutrition")]
     public static class RJW_Patch_TransferNutrition
     {
-        public static void Postfix(Pawn pawn, Pawn partner, xxx.rjwSextype sextype)
+        public static void Postfix(SexProps props)
         {
+            Pawn pawn = props.pawn;
+            Pawn partner = props.partner;
+            xxx.rjwSextype sextype = props.sexType;
             Pawn receiver = null;
+
             if (Genital_Helper.has_penis_fertile(pawn)) receiver = partner;
             else if (Genital_Helper.has_penis_fertile(partner)) receiver = pawn;
     

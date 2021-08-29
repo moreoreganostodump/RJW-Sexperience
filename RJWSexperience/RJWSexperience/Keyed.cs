@@ -14,6 +14,7 @@ namespace RJWSexperience
         public static string LustStatFactor(string value) => "LustStatFactor".Translate(value);
         public static string SlaveStatFactor(string value) => "SlaveStatFactor".Translate(value);
         public static string MemeStatFactor(string value) => "MemeStatFactor".Translate(value);
+        public static string RS_LostVirgin(string pawn, string partner) => "RS_LostVirgin".Translate(pawn,partner);
 
         public static readonly string Mod_Title = "RS_Mod_Title".Translate();
         public static readonly string SlaveStatFactorDefault = "SlaveStatFactorDefault".Translate();
@@ -23,7 +24,7 @@ namespace RJWSexperience
         public static readonly string RSNotAnimal = "RSNotAnimal".Translate();
         public static readonly string RSShouldCanFuck = "RSShouldCanFuck".Translate();
         public static readonly string RSTotalGatheredCum = "RSTotalGatheredCum".Translate();
-
+        
 
         public static readonly string Option_1_Label = "RSOption_1_Label".Translate();
         public static readonly string Option_1_Desc  = "RSOption_1_Desc".Translate();

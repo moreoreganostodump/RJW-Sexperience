@@ -14,6 +14,23 @@ namespace RJWSexperience
     {
         public static System.Random random = new System.Random(Environment.TickCount);
 
+        //public static readonly Dictionary<xxx.rjwSextype, RecordDef> sextypeRecords = new Dictionary<xxx.rjwSextype, RecordDef> {
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex },
+        //    { xxx.rjwSextype.Vaginal, xxx.CountOfSex }
+        //
+        //
+        //};
+
         public static float RandGaussianLike(float min, float max, int iterations = 3)
         {
             double res = 0;
@@ -133,6 +150,17 @@ namespace RJWSexperience
             if (addiction != null) addiction.Severity += VariousDefOf.CumexistingAddictionSeverityOffset;
 
             pawn.needs?.mood?.thoughts?.memories?.TryGainMemoryFast(VariousDefOf.AteCum);
+        }
+
+        public static float Normalization(this float num, float min, float max)
+        {
+
+            return (num - min)/(max - min);
+        }
+
+        public static float Denormalization(this float num, float min, float max)
+        {
+            return num * (max - min) + min;
         }
 
     }

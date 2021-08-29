@@ -129,13 +129,20 @@ namespace RJWSexperience.Ideology
     }
 
 
-    [HarmonyPatch(typeof(SexUtility), "Aftersex", new Type[] { typeof(Pawn), typeof(Pawn), typeof(bool), typeof(bool), typeof(bool), typeof(xxx.rjwSextype) })]
+    [HarmonyPatch(typeof(SexUtility), "Aftersex", new Type[] { typeof(SexProps) })]
     public static class RJW_Patch_Aftersex
     {
 
 
-        public static void Postfix(Pawn pawn, Pawn partner, bool usedCondom, bool rape, bool isCoreLovin, xxx.rjwSextype sextype)
+        public static void Postfix(SexProps props)
         {
+            Pawn pawn = props.pawn;
+            Pawn partner = props.partner;
+            bool usedCondom = props.usedCondom;
+            bool rape = props.isRape;
+            bool isCoreLovin = props.isCoreLovin;
+            xxx.rjwSextype sextype = props.sexType;
+
             //Log.Message("Aftersex " + pawn.Label + ": " + sextype);
             if (xxx.is_human(pawn)) AfterSexHuman(pawn, partner, usedCondom, rape, isCoreLovin, sextype);
             else if (xxx.is_human(partner)) AfterSexHuman(partner, pawn, usedCondom, false, isCoreLovin, sextype, true);

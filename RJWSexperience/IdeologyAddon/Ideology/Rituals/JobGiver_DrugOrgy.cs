@@ -149,7 +149,7 @@ namespace RJWSexperience.Ideology
 				initAction = delegate
 				{
 					//// Trying to add some interactions and social logs
-					SexUtility.ProcessSex(pawn, Partner, usedCondom: usedCondom, rape: isRape, sextype: sexType);
+					SexUtility.ProcessSex(Sexprops);
 				},
 				defaultCompleteMode = ToilCompleteMode.Instant
 			};
@@ -260,7 +260,7 @@ namespace RJWSexperience.Ideology
 			{
 				initAction = delegate
 				{
-					SexUtility.Aftersex(pawn, xxx.rjwSextype.Masturbation);
+					SexUtility.Aftersex(Sexprops);
 					if (!SexUtility.ConsiderCleaning(pawn)) return;
 
 					LocalTargetInfo own_cum = pawn.PositionHeld.GetFirstThing<Filth>(pawn.Map);
