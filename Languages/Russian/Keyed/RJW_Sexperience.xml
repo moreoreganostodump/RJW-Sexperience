@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <RS_Mod_Title>RJW Sexperience</RS_Mod_Title>
+
+  <LustStatFactor>Похоть: x{0}%</LustStatFactor>
+  <SlaveStatFactor>Раб: x{0}%</SlaveStatFactor>
+  <SlaveStatFactorDefault>Не раб: x100%</SlaveStatFactorDefault>
+  <MemeStatFactor>Принцип идеологии: x{0}%</MemeStatFactor>
+  <RSVictimCondition>раб, заключенный, подчиненный только по полу</RSVictimCondition>
+  <RSBreederCondition>неподходящее животное: не может размножаться или запрещено правилами</RSBreederCondition>
+  <RSNotHuman>не человек</RSNotHuman>
+  <RSNotAnimal>не животное</RSNotAnimal>
+  <RSShouldCanFuck>требуется способность к сексу</RSShouldCanFuck>
+  <RSTotalGatheredCum>Всего собрано спермы: </RSTotalGatheredCum>
+
+  <RSOption_1_Label>Включить случайные записи</RSOption_1_Label>
+  <RSOption_1_Desc>Сделать записи о сексе пешек случайными.</RSOption_1_Desc>
+  <RSOption_2_Label>Сила влияния похоти</RSOption_2_Label>
+  <RSOption_2_Desc>Установите, насколько сильно похоть влияет на сексуальное влечение.</RSOption_2_Desc>
+  <RSOption_3_Label>Максимальный разброс похоти</RSOption_3_Label>
+  <RSOption_3_Desc>Установите максимальное отклонение вожделения. Значение похоти может быть отрицательным в зависимости от его среднего значения.</RSOption_3_Desc>
+  <RSOption_4_Label>Среднее значение похоти</RSOption_4_Label>
+  <RSOption_4_Desc>Установите среднее значение похоти.</RSOption_4_Desc>
+  <RSOption_5_Label>Максимальное отклонение количества половых контактов</RSOption_5_Label>
+  <RSOption_5_Desc>Установите максимальное отклонение количества половых контактов.</RSOption_5_Desc>
+  <RSOption_6_Label>Среднее количество половых контактов в год</RSOption_6_Label>
+  <RSOption_6_Desc>Установите среднее количество половых контактов.</RSOption_6_Desc>
+  <RSOption_7_Label>Позвольте рабам получить опыт от изнасилования</RSOption_7_Label>
+  <RSOption_7_Desc>Рабы будут получать опыт от изнасилования</RSOption_7_Desc>
+  <RSOption_8_Label>Предел похоти </RSOption_8_Label>
+  <RSOption_8_Desc>Установить ограничение похоти .
+Если абсолютное значение вожделения близко или больше, чем это значение, вожделение с меньшей вероятностью изменится.</RSOption_8_Desc>
+  <RSOption_9_Label></RSOption_9_Label>
+  <RSOption_9_Desc> </RSOption_9_Desc>
+  <RSOption_10_Label></RSOption_10_Label>
+  <RSOption_10_Desc> </RSOption_10_Desc>
+  <RSOption_11_Label></RSOption_11_Label>
+  <RSOption_11_Desc> </RSOption_11_Desc>
+
+</LanguageData>

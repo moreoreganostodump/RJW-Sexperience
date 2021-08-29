@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <SocialAffection_Normal.label>нормально (стандарт)</SocialAffection_Normal.label>
+  <SocialAffection_Normal.description>Как обычно.</SocialAffection_Normal.description>
+
+  <SocialAffection_Small.label>только ближайшие родственники</SocialAffection_Small.label>
+  <SocialAffection_Small.description>Забота только о ближайших родственниках.</SocialAffection_Small.description>
+
+  <SocialAffection_OnlyFamily.label>только семья</SocialAffection_OnlyFamily.label>
+  <SocialAffection_OnlyFamily.description>Не заботят трагедии, не связанные с членами семьи.</SocialAffection_OnlyFamily.description>
+
+  <SocialAffection_Dry.label>не семья</SocialAffection_Dry.label>
+  <SocialAffection_Dry.description>Не заботят трагедии, связанные с членами семьи.</SocialAffection_Dry.description>
+
+  <SocialAffection_Psychopath.label>Психопат</SocialAffection_Psychopath.label>
+  <SocialAffection_Psychopath.description>Плевать на всех.</SocialAffection_Psychopath.description>
+
+
+</LanguageData>

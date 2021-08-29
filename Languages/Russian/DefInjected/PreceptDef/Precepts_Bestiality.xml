@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Bestiality_Abhorrent.label>отвратительно</Bestiality_Abhorrent.label>
+  <Bestiality_Abhorrent.description>Скотоложество это крайнее зло.</Bestiality_Abhorrent.description>
+
+  <Bestiality_Horrible.label>ужасно</Bestiality_Horrible.label>
+  <Bestiality_Horrible.description>Скотоложество это ужасная вещь.</Bestiality_Horrible.description>
+
+  <Bestiality_Disapproved.label>не одобряется</Bestiality_Disapproved.label>
+  <Bestiality_Disapproved.description>Скотоложество крайне неприятно.</Bestiality_Disapproved.description>
+
+  <Bestiality_Acceptable.label>приемлемо</Bestiality_Acceptable.label>
+  <Bestiality_Acceptable.description>Скотоложество это нормальная, ничем не примечательная часть жизни.</Bestiality_Acceptable.description>
+
+  <Bestiality_OnlyVenerated.label>только с почитаемыми</Bestiality_OnlyVenerated.label>
+  <Bestiality_OnlyVenerated.description>Тот, кто занимается сексом с почитаемыми животными, уважаем. Но секс с другими животными осуждается</Bestiality_OnlyVenerated.description>
+  <Bestiality_OnlyVenerated.comps.1.description>Занимается сексом с непочитаемым животным</Bestiality_OnlyVenerated.comps.1.description>
+  <Bestiality_OnlyVenerated.comps.3.description>Занимается сексом с почитаемым животным</Bestiality_OnlyVenerated.comps.3.description>
+
+  <Bestiality_Honorable.label>одобряется</Bestiality_Honorable.label>
+  <Bestiality_Honorable.description>Следует поощрять секс с животными..</Bestiality_Honorable.description>
+  <Bestiality_Honorable.comps.1.description>Занимается сексом с животным</Bestiality_Honorable.comps.1.description>
+  <Bestiality_Honorable.comps.3.description>Занимается сексом с животным</Bestiality_Honorable.comps.3.description>
+
+
+</LanguageData>

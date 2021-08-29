@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Issues -->
+
+  <Raped.label>изнасилован</Raped.label>
+  <RapedSlave.label>изнасилован раб</RapedSlave.label>
+  <RapedPrisoner.label>изнасилован заключеный</RapedPrisoner.label>
+  <WasRaped.label>был изнасилован</WasRaped.label>
+  <WasRapedSlave.label>был изнасилован</WasRapedSlave.label>
+  <WasRapedPrisoner.label>был изнасилован</WasRapedPrisoner.label>
+
+
+</LanguageData>

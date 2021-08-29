@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Issues -->
+
+  <VaginalSex.label>вагинальный секс</VaginalSex.label>
+  <AnalSex.label>анальный секс</AnalSex.label>
+  <OralSex.label>оральный секс</OralSex.label>
+  <MiscSex.label>секс</MiscSex.label>
+  <PromiscuousSex.label>беспорядочный секс</PromiscuousSex.label>
+
+
+</LanguageData>

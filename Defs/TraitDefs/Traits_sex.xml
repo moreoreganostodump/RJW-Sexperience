@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<TraitDef>
+		<defName>Virgin</defName>
+		<commonality>0.0</commonality>
+		<commonalityFemale>0.0</commonalityFemale>
+		<degreeDatas>
+			<li>
+				<label>virgin</label>
+				<description>[PAWN_nameDef] </description>
+				<statOffsets>
+					<SexFrequency>0.1</SexFrequency>
+				</statOffsets>
+        		<skillGains>
+        		  <li>
+        		    <key>Sex</key>
+        		    <value>-4</value>
+        		  </li>
+        		</skillGains>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+</Defs>

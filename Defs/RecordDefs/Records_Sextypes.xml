@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<RecordDef>
+		<defName>VaginalSexCount</defName>
+		<label>vaginal intercourses</label>
+		<description>The number of times of vaginal sex.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>AnalSexCount</defName>
+		<label>anal intercourses</label>
+		<description>The number of times of anal sex.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>OralSexCount</defName>
+		<label>oral intercourses</label>
+		<description>The number of times of oral sex.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>TitjobCount</defName>
+		<label>titjob</label>
+		<description>The number of times of titjob.</description>
+		<type>Int</type>
+	</RecordDef>
+	
+	<RecordDef>
+		<defName>HandjobCount</defName>
+		<label>fingering/handjob</label>
+		<description>The number of times of caress using hands.</description>
+		<type>Int</type>
+	</RecordDef>
+	
+	<RecordDef>
+		<defName>GotHandjobCount</defName>
+		<label>handjob/fingering received</label>
+		<description>The number of times of got caress using hands.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>GotLickedCount</defName>
+		<label>got licked</label>
+		<description>The number of times of licked by others.</description>
+		<type>Int</type>
+	</RecordDef>
+	
+	<RecordDef>
+		<defName>LickedCount</defName>
+		<label>licked</label>
+		<description>The number of times of licked others.</description>
+		<type>Int</type>
+	</RecordDef>
+</Defs>

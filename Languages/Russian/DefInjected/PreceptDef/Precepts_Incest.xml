@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Incestuos_Free.label>свободно</Incestuos_Free.label>
+  <Incestuos_Free.description>Без ограничений.</Incestuos_Free.description>
+
+  <Incestuos_Disapproved_CloseOnly.label>не одобряется для близких родственников</Incestuos_Disapproved_CloseOnly.label>
+  <Incestuos_Disapproved_CloseOnly.description>Инцест не одобряется в обществе. Отношения дальше двоюродных братьев и сестёр не считаются инцестом.</Incestuos_Disapproved_CloseOnly.description>
+
+  <Incestuos_Disapproved.label>не одобряется</Incestuos_Disapproved.label>
+  <Incestuos_Disapproved.description>Инцест не одобряется в обществе .</Incestuos_Disapproved.description>
+
+  <Incestuos_Forbidden.label>запрещён</Incestuos_Forbidden.label>
+  <Incestuos_Forbidden.description>Инцест запрещён.</Incestuos_Forbidden.description>
+
+  <Incestuos_IncestOnly.label>только инцест</Incestuos_IncestOnly.label>
+  <Incestuos_IncestOnly.description>Для сохранения чистой крови разрешен только инцест.</Incestuos_IncestOnly.description>
+
+
+</LanguageData>

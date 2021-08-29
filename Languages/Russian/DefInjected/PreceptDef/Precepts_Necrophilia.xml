@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Necrophilia_Abhorrent.label>отвратительно</Necrophilia_Abhorrent.label>
+  <Necrophilia_Abhorrent.description>Некрофилия это крайнее зло.</Necrophilia_Abhorrent.description>
+
+  <Necrophilia_Horrible.label>ужасно</Necrophilia_Horrible.label>
+  <Necrophilia_Horrible.description>Некрофилия это ужасная вещь.</Necrophilia_Horrible.description>
+
+  <Necrophilia_Disapproved.label>не одобряется</Necrophilia_Disapproved.label>
+  <Necrophilia_Disapproved.description>Некрофилия крайне неприятна.</Necrophilia_Disapproved.description>
+
+  <Necrophilia_Acceptable.label>приемлемо</Necrophilia_Acceptable.label>
+  <Necrophilia_Acceptable.description>Некрофилия это нормальная, ничем не примечательная часть жизни.</Necrophilia_Acceptable.description>
+
+  <Necrophilia_Approved.label>одобряется</Necrophilia_Approved.label>
+  <Necrophilia_Approved.description>Трахать трупы полезно.</Necrophilia_Approved.description>
+
+
+</LanguageData>

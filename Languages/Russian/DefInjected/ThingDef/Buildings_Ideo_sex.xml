@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Burnbong_Aphrodisiac.label>бонг похоти</Burnbong_Aphrodisiac.label>
+  <Burnbong_Aphrodisiac.description>Деревянное сооружение, наполненное стояк-грибом. Оноо поджигается во время ритуала, и в течение нескольких часов испускает огромное количество дыма стояк-грибов, после чего он уничтожается.</Burnbong_Aphrodisiac.description>
+
+  <Autobong_Aphrodisiac.label>бонг течки</Autobong_Aphrodisiac.label>
+  <Autobong_Aphrodisiac.description>Автоматическое устройство для сжигания в стояк-грибов, которое генерирует облако дыма вокруг себя. Любой, кто находится в облаке, со временем возбудится.</Autobong_Aphrodisiac.description>
+  <Autobong_Aphrodisiac_Blueprint.label>estro-bong (blueprint)</Autobong_Aphrodisiac_Blueprint.label>
+  <Autobong_Aphrodisiac_Frame.label>бонг течки (постройка)</Autobong_Aphrodisiac_Frame.label>
+  <Autobong_Aphrodisiac_Frame.description>Автоматическое устройство для сжигания в стояк-грибов, которое генерирует облако дыма вокруг себя. Любой, кто находится в облаке, со временем возбудится.</Autobong_Aphrodisiac_Frame.description>
+
+
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GangbangCeremony.label>групповуха</GangbangCeremony.label>
+  <GangbangCeremony.description>Ритуальная групповуха, в которой инициатор насилует жертву. Зрители будут следовать примеру инициатора.</GangbangCeremony.description>
+
+  <AnimalGangbangCeremony.label>групповуха с животными</AnimalGangbangCeremony.label>
+  <AnimalGangbangCeremony.description>Ритуальная групповуха, в которой животные насилуют жертву.</AnimalGangbangCeremony.description>
+
+  <DrugOrgyCeremony.label>нарко-оргия</DrugOrgyCeremony.label>
+  <DrugOrgyCeremony.description>Оргия с использованием мощного афродизиака.</DrugOrgyCeremony.description>
+
+
+</LanguageData>

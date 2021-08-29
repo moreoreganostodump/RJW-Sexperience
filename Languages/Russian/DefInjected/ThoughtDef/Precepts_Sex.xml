@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thoughts -->
+
+  <Sex_NonPromiscuous.stages.0.label>обычный секс</Sex_NonPromiscuous.stages.0.label>
+  <Sex_NonPromiscuous.stages.0.description>Это не может меня удовлетворить.</Sex_NonPromiscuous.stages.0.description>
+
+  <Sex_Know_Promiscuous.stages.0.label>разнообразный</Sex_Know_Promiscuous.stages.0.label>
+  <Sex_Know_Promiscuous_Approval.stages.0.label>разнообразный</Sex_Know_Promiscuous_Approval.stages.0.label>
+  <Sex_Know_NonPromiscuous.stages.0.label>скучный</Sex_Know_NonPromiscuous.stages.0.label>
+
+
+</LanguageData>

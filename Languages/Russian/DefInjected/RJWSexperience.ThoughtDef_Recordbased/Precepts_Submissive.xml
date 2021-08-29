@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thoughts -->
+
+  <BeenRaped_Submissive.stages.0.label>был изнасилован</BeenRaped_Submissive.stages.0.label>
+  <BeenRaped_Submissive.stages.0.description>Мне пришлось согласиться. Но я чувствую себя не так хорошо.</BeenRaped_Submissive.stages.0.description>
+
+  <BeenRaped_NotSubmissive.stages.0.label>{0} изнасиловал меня</BeenRaped_NotSubmissive.stages.0.label>
+  <BeenRaped_NotSubmissive.stages.0.description>Как посмел...</BeenRaped_NotSubmissive.stages.0.description>
+
+
+</LanguageData>

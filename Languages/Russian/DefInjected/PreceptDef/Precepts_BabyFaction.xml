@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <BabyFaction_AlwaysMother.label>как мать (стандарт)</BabyFaction_AlwaysMother.label>
+  <BabyFaction_AlwaysMother.description>Новорожденные дети принимают фракцию и идеологию матери.</BabyFaction_AlwaysMother.description>
+
+  <BabyFaction_AlwaysFather.label>как отец</BabyFaction_AlwaysFather.label>
+  <BabyFaction_AlwaysFather.description>Новорожденные дети принимают фракцию и идеологию отца (при его наличии).</BabyFaction_AlwaysFather.description>
+
+  <BabyFaction_AlwaysColony.label>как поселение</BabyFaction_AlwaysColony.label>
+  <BabyFaction_AlwaysColony.description>Новорожденные дети принимают фракцию и идеологию колонии.</BabyFaction_AlwaysColony.description>
+
+
+</LanguageData>

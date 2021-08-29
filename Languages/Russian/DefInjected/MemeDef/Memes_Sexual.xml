@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Zoophile.label>зоофилия</Zoophile.label>
+  <Zoophile.description>Трахай животных.</Zoophile.description>
+  <Zoophile.generalRules.rulesStrings.0>memeAdjective-&gt;животное</Zoophile.generalRules.rulesStrings.0>
+  <Zoophile.generalRules.rulesStrings.1>memeAdjective-&gt;зоофильское</Zoophile.generalRules.rulesStrings.1>
+  <Zoophile.generalRules.rulesStrings.2>memeHyphenPrefix-&gt;ското</Zoophile.generalRules.rulesStrings.2>
+  <Zoophile.generalRules.rulesStrings.3>memeConcept-&gt;скотоложество</Zoophile.generalRules.rulesStrings.3>
+  <Zoophile.generalRules.rulesStrings.4>memeConcept-&gt;скотство</Zoophile.generalRules.rulesStrings.4>
+  <Zoophile.generalRules.rulesStrings.5>memeConcept-&gt;зоофильство</Zoophile.generalRules.rulesStrings.5>
+  <Zoophile.generalRules.rulesStrings.6>memeLeaderNoun-&gt;скотина</Zoophile.generalRules.rulesStrings.6>
+  <Zoophile.descriptionMaker.rules.rulesStrings.0>creation(tag=meme_Zoophile)        -&gt;[deity0_name] любит разводить животных.</Zoophile.descriptionMaker.rules.rulesStrings.0>
+  <Zoophile.descriptionMaker.rules.rulesStrings.1>episode(uses=1,tag=meme_Zoophile)  -&gt;[deity0_name] сказал всем: «Сигмар запрещает это!»</Zoophile.descriptionMaker.rules.rulesStrings.1>
+  <Zoophile.descriptionMaker.rules.rulesStrings.2>setup(tag=meme_Zoophile)           -&gt;Однажды [founderName] был так возбужден, что случайно трахнулся с животным и ему это понравилось. </Zoophile.descriptionMaker.rules.rulesStrings.2>
+  <Zoophile.descriptionMaker.rules.rulesStrings.3>story(uses=1,tag=meme_Zoophile)    -&gt;Ради распространения животных, [founderName] начал спариваться с животными.</Zoophile.descriptionMaker.rules.rulesStrings.3>
+  <Zoophile.descriptionMaker.rules.rulesStrings.4>lessonIntro(tag=meme_Zoophile)         -&gt;Однажды у меня был секс с животным. Это было намного лучше, чем с людьми!</Zoophile.descriptionMaker.rules.rulesStrings.4>
+  <Zoophile.descriptionMaker.rules.rulesStrings.5>lesson(tag=meme_Zoophile)              -&gt;Только животные могут удовлетворить меня.</Zoophile.descriptionMaker.rules.rulesStrings.5>
+  <Zoophile.descriptionMaker.rules.rulesStrings.6>lessonReinforcement(tag=meme_Zoophile) -&gt;Спаривайтесь с животными. И прлучите вечное счастье.</Zoophile.descriptionMaker.rules.rulesStrings.6>
+  <Zoophile.descriptionMaker.rules.rulesStrings.7>archistBasis(tag=meme_Zoophile)    -&gt;Архисты всегда ищут максимального удовольствия.</Zoophile.descriptionMaker.rules.rulesStrings.7>
+  <Zoophile.descriptionMaker.rules.rulesStrings.8>archistFact(tag=meme_Zoophile)     -&gt;Это было спаривание с животными.</Zoophile.descriptionMaker.rules.rulesStrings.8>
+  <Zoophile.descriptionMaker.rules.rulesStrings.9>archistProphecy(tag=meme_Zoophile) -&gt;[inTheEnd], архотеки, наконец, откроют межвидовое размножение, чтобы они могли получать максимальное удовольствие.</Zoophile.descriptionMaker.rules.rulesStrings.9>
+  <Zoophile.descriptionMaker.rules.rulesStrings.10>animistFact(tag=meme_Zoophile)     -&gt;Самые могущественные духи - это духи зверей, и духи зверей будут беспокоиться, если звери не правят. </Zoophile.descriptionMaker.rules.rulesStrings.10>
+  <Zoophile.descriptionMaker.rules.rulesStrings.11>animistProphecy(tag=meme_Zoophile) -&gt;[itIsSaid] что могущественный дух разрушения будет стремиться уничтожить вселенную, но зверь, рожденный человеком, овладеет духом [relic0_name] и уничтожит разрушителя.</Zoophile.descriptionMaker.rules.rulesStrings.11>
+  <Zoophile.symbolPacks.0.ideoName>Скотоложество</Zoophile.symbolPacks.0.ideoName>
+  <Zoophile.symbolPacks.0.theme>breed</Zoophile.symbolPacks.0.theme>
+  <Zoophile.symbolPacks.0.adjective>скотоложеский</Zoophile.symbolPacks.0.adjective>
+  <Zoophile.symbolPacks.0.member>скотоложец</Zoophile.symbolPacks.0.member>
+  <Zoophile.symbolPacks.1.ideoName>Зоофилия</Zoophile.symbolPacks.1.ideoName>
+  <Zoophile.symbolPacks.1.theme>zoophile</Zoophile.symbolPacks.1.theme>
+  <Zoophile.symbolPacks.1.adjective>зоофильский</Zoophile.symbolPacks.1.adjective>
+  <Zoophile.symbolPacks.1.member>зоофилиак</Zoophile.symbolPacks.1.member>
+
+  <Rapist.label>изнасилование</Rapist.label>
+  <Rapist.description>Изнасилование лучше всего.</Rapist.description>
+  <Rapist.generalRules.rulesStrings.0>memeAdjective-&gt;насильственное</Rapist.generalRules.rulesStrings.0>
+  <Rapist.generalRules.rulesStrings.1>memeAdjective-&gt;насильническое</Rapist.generalRules.rulesStrings.1>
+  <Rapist.generalRules.rulesStrings.2>memeHyphenPrefix-&gt;затрах</Rapist.generalRules.rulesStrings.2>
+  <Rapist.generalRules.rulesStrings.3>memeHyphenPrefix-&gt;трах</Rapist.generalRules.rulesStrings.3>
+  <Rapist.generalRules.rulesStrings.4>memeHyphenPrefix-&gt;изврат</Rapist.generalRules.rulesStrings.4>
+  <Rapist.generalRules.rulesStrings.5>memeConcept-&gt;изнасилование</Rapist.generalRules.rulesStrings.5>
+  <Rapist.generalRules.rulesStrings.6>memeConcept-&gt;извращение</Rapist.generalRules.rulesStrings.6>
+  <Rapist.generalRules.rulesStrings.7>r_deityName-&gt;Слаанеш</Rapist.generalRules.rulesStrings.7>
+  <Rapist.generalRules.rulesStrings.8>memeLeaderNoun-&gt;жеребец </Rapist.generalRules.rulesStrings.8>
+  <Rapist.generalRules.rulesStrings.9>memeLeaderNoun-&gt;гранд-еблан</Rapist.generalRules.rulesStrings.9>
+  <Rapist.descriptionMaker.rules.rulesStrings.0>creation(tag=meme_Rapist)        -&gt;[deity0_name] любит изнасилования.</Rapist.descriptionMaker.rules.rulesStrings.0>
+  <Rapist.descriptionMaker.rules.rulesStrings.1>episode(uses=1,tag=meme_Rapist)  -&gt;[deity0_name] насиловал всех до смерти во время изнасилования.</Rapist.descriptionMaker.rules.rulesStrings.1>
+  <Rapist.descriptionMaker.rules.rulesStrings.2>setup(tag=meme_Rapist)           -&gt;[founderName] всегда возбужден. </Rapist.descriptionMaker.rules.rulesStrings.2>
+  <Rapist.descriptionMaker.rules.rulesStrings.3>story(uses=1,tag=meme_Rapist)    -&gt;[founderName] изнасиловал всех. Никто не мог остановить [founderName]. [founderName] погиб, пытаясь изнасиловать планету.</Rapist.descriptionMaker.rules.rulesStrings.3>
+  <Rapist.descriptionMaker.rules.rulesStrings.4>lessonIntro(tag=meme_Rapist)         -&gt;Изнасилование лучше всего! Изнасилование лучше всего! Изнасилование лучше всего!</Rapist.descriptionMaker.rules.rulesStrings.4>
+  <Rapist.descriptionMaker.rules.rulesStrings.5>lesson(tag=meme_Rapist)              -&gt;Изнасилование лучше всего! Изнасилование лучше всего! Изнасилование лучше всего! Изнасилование лучше всего!</Rapist.descriptionMaker.rules.rulesStrings.5>
+  <Rapist.descriptionMaker.rules.rulesStrings.6>lessonReinforcement(tag=meme_Rapist) -&gt;Изнасилование лучше всего! Изнасилование лучше всего! Изнасилование лучше всего! Изнасилование лучше всего! Изнасилование лучше всего!</Rapist.descriptionMaker.rules.rulesStrings.6>
+  <Rapist.descriptionMaker.rules.rulesStrings.7>archistBasis(tag=meme_Rapist)    -&gt;История человечества - это история изнасилований.</Rapist.descriptionMaker.rules.rulesStrings.7>
+  <Rapist.descriptionMaker.rules.rulesStrings.8>archistFact(tag=meme_Rapist)     -&gt;Даже архотеки не могут остановить насильников.</Rapist.descriptionMaker.rules.rulesStrings.8>
+  <Rapist.descriptionMaker.rules.rulesStrings.9>archistProphecy(tag=meme_Rapist) -&gt;[inTheEnd], насильники никогда не прекратят насиловать.</Rapist.descriptionMaker.rules.rulesStrings.9>
+  <Rapist.descriptionMaker.rules.rulesStrings.10>animistFact(tag=meme_Rapist)     -&gt;Самые могущественные духи - это духи насильников, а духи насильников будут насиловать всех.</Rapist.descriptionMaker.rules.rulesStrings.10>
+  <Rapist.descriptionMaker.rules.rulesStrings.11>animistProphecy(tag=meme_Rapist) -&gt;[itIsSaid] что могущественный дух разрушения будет стремиться уничтожить вселенную, но совершивший миллион изнасилований насильник овладеет духом [relic0_name] и изнасилует разрушителя.</Rapist.descriptionMaker.rules.rulesStrings.11>
+    
+  <Rapist.symbolPacks.0.ideoName>Насильники</Rapist.symbolPacks.0.ideoName>
+  <Rapist.symbolPacks.0.theme>rapist</Rapist.symbolPacks.0.theme>
+  <Rapist.symbolPacks.0.adjective>насильственный</Rapist.symbolPacks.0.adjective>
+  <Rapist.symbolPacks.0.member>насильник</Rapist.symbolPacks.0.member>
+    
+  <Rapist.symbolPacks.1.ideoName>Культ Слаанеш</Rapist.symbolPacks.1.ideoName>
+  <Rapist.symbolPacks.1.theme>pleasure</Rapist.symbolPacks.1.theme>
+  <Rapist.symbolPacks.1.adjective>упадочный</Rapist.symbolPacks.1.adjective>
+  <Rapist.symbolPacks.1.member>сластолюбец</Rapist.symbolPacks.1.member>
+  
+  
+
+  <Lewd.label>разврат</Lewd.label>
+  <Lewd.description>Простой секс скучен.</Lewd.description>
+  <Lewd.generalRules.rulesStrings.0>memeAdjective-&gt;возбуждённое</Lewd.generalRules.rulesStrings.0>
+  <Lewd.generalRules.rulesStrings.1>memeAdjective-&gt;развратное</Lewd.generalRules.rulesStrings.1>
+  <Lewd.generalRules.rulesStrings.2>memeAdjective-&gt;возбуждающее</Lewd.generalRules.rulesStrings.2>
+  <Lewd.generalRules.rulesStrings.3>memeAdjective-&gt;сексуальное</Lewd.generalRules.rulesStrings.3>
+  <Lewd.generalRules.rulesStrings.4>memeAdjective-&gt;похотливое</Lewd.generalRules.rulesStrings.4>
+  <Lewd.generalRules.rulesStrings.5>memeAdjective-&gt;упадочное</Lewd.generalRules.rulesStrings.5>
+  <Lewd.generalRules.rulesStrings.6>memeHyphenPrefix-&gt;разврат</Lewd.generalRules.rulesStrings.6>
+  <Lewd.generalRules.rulesStrings.7>memeHyphenPrefix-&gt;жаждо</Lewd.generalRules.rulesStrings.7>
+  <Lewd.generalRules.rulesStrings.8>memeConcept-&gt;хотение</Lewd.generalRules.rulesStrings.8>
+  <Lewd.generalRules.rulesStrings.9>memeConcept-&gt;либидо</Lewd.generalRules.rulesStrings.9>
+  <Lewd.generalRules.rulesStrings.10>memeConcept-&gt;вожделение</Lewd.generalRules.rulesStrings.10>
+  <Lewd.generalRules.rulesStrings.11>memeConcept-&gt;возбуждение</Lewd.generalRules.rulesStrings.11>
+  <Lewd.generalRules.rulesStrings.12>memeConcept-&gt;желание</Lewd.generalRules.rulesStrings.12>
+  <Lewd.generalRules.rulesStrings.13>memeConcept-&gt;совокупление</Lewd.generalRules.rulesStrings.13>
+  <Lewd.generalRules.rulesStrings.14>memeConcept-&gt;извращение</Lewd.generalRules.rulesStrings.14>
+  <Lewd.generalRules.rulesStrings.15>r_deityName-&gt;Слаанеш</Lewd.generalRules.rulesStrings.15>
+  <Lewd.symbolPacks.0.ideoName>Культ Слаанеш</Lewd.symbolPacks.0.ideoName>
+  <Lewd.symbolPacks.0.theme>pleasure</Lewd.symbolPacks.0.theme>
+  <Lewd.symbolPacks.0.adjective>упадочный</Lewd.symbolPacks.0.adjective>
+  <Lewd.symbolPacks.0.member>сластолюбец</Lewd.symbolPacks.0.member>
+
+  <Necrophile.label>некрофилия</Necrophile.label>
+  <Necrophile.description>Трахай трупы.</Necrophile.description>
+  <Necrophile.generalRules.rulesStrings.0>r_deityName-&gt;Соник</Necrophile.generalRules.rulesStrings.0>
+  <Necrophile.generalRules.rulesStrings.1>r_deityName-&gt;МегаМан</Necrophile.generalRules.rulesStrings.1>
+  <Necrophile.generalRules.rulesStrings.2>memeConcept-&gt;тело</Necrophile.generalRules.rulesStrings.2>
+  <Necrophile.generalRules.rulesStrings.3>memeConcept-&gt;труп</Necrophile.generalRules.rulesStrings.3>
+
+
+</LanguageData>

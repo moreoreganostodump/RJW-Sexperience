@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thoughts -->
+
+  <IncestuosMarriage_Forbidden.stages.0.label>социальное осуждение</IncestuosMarriage_Forbidden.stages.0.label>
+  <IncestuosMarriage_Forbidden.stages.0.description>Никто не благословит наш брак.</IncestuosMarriage_Forbidden.stages.0.description>
+
+  <IncestuosMarriage_Disapproved.stages.0.label>объект сплетен</IncestuosMarriage_Disapproved.stages.0.label>
+  <IncestuosMarriage_Disapproved.stages.0.description>Они шепчутся за нашей спиной.</IncestuosMarriage_Disapproved.stages.0.description>
+
+  <Sex_Know_Incest_Disapproved.stages.0.label>инцест</Sex_Know_Incest_Disapproved.stages.0.label>
+  <Sex_Know_Incest_Forbidden.stages.0.label>инцест</Sex_Know_Incest_Forbidden.stages.0.label>
+  <Sex_Know_IncestMarriage_Disapproved.stages.0.label>инцест</Sex_Know_IncestMarriage_Disapproved.stages.0.label>
+  <Sex_Know_IncestMarriage_Forbidden.stages.0.label>инцест</Sex_Know_IncestMarriage_Forbidden.stages.0.label>
+  <Sex_Know_Incest_Violated.stages.0.label>секс вне семьи</Sex_Know_Incest_Violated.stages.0.label>
+  <Sex_Know_IncestMarriage_Violated.stages.0.label>кровь испорчена</Sex_Know_IncestMarriage_Violated.stages.0.label>
+
+
+</LanguageData>

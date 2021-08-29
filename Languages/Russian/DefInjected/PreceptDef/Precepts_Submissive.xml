@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Submissive_None.label>Нормально</Submissive_None.label>
+  <Submissive_None.description>Как обычно.</Submissive_None.description>
+
+  <Submissive_Male.label>мужская покорность</Submissive_Male.label>
+  <Submissive_Male.description>Мужчины покорны. Они будут повиноваться и смирятся даже с тем, что их изнасиловали.</Submissive_Male.description>
+  <Submissive_Male.comps.2.description>не повинуется</Submissive_Male.comps.2.description>
+  <Submissive_Male.comps.5.description>не повинуется</Submissive_Male.comps.5.description>
+  <Submissive_Male.comps.8.description>не повинуется</Submissive_Male.comps.8.description>
+
+  <Submissive_Female.label>женская покорность</Submissive_Female.label>
+  <Submissive_Female.description>Женщины покорны. Они будут повиноваться и смирятся даже с тем, что их изнасиловали.</Submissive_Female.description>
+  <Submissive_Female.comps.2.description>не повинуется</Submissive_Female.comps.2.description>
+  <Submissive_Female.comps.5.description>не повинуется</Submissive_Female.comps.5.description>
+  <Submissive_Female.comps.8.description>не повинуется</Submissive_Female.comps.8.description>
+
+
+</LanguageData>

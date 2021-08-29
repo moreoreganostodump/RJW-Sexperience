@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Sex_Free.label>свободно</Sex_Free.label>
+  <Sex_Free.description>Без ограничений.</Sex_Free.description>
+
+  <Sex_VaginalOnly.label>только вагинальный</Sex_VaginalOnly.label>
+  <Sex_VaginalOnly.description>Только вагинальный секс одобряется, всё иное порицается.</Sex_VaginalOnly.description>
+
+  <Sex_AnalOnly.label>только анальный</Sex_AnalOnly.label>
+  <Sex_AnalOnly.description>Только анальный секс одобряется, всё иное порицается.</Sex_AnalOnly.description>
+
+  <Sex_OralOnly.label>только оральный</Sex_OralOnly.label>
+  <Sex_OralOnly.description>Только оральный секс одобряется, всё иное порицается.</Sex_OralOnly.description>
+
+  <Sex_Promiscuous.label>беспорядочный</Sex_Promiscuous.label>
+  <Sex_Promiscuous.description>Грязная сексуальная жизнь одобрена.</Sex_Promiscuous.description>
+
+
+</LanguageData>
