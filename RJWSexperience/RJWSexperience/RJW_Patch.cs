@@ -220,20 +220,13 @@ namespace RJWSexperience
 
         public static void Prefix(SexProps props, ref float satisfaction)
         {
-<<<<<<< HEAD
-=======
             Pawn pawn = props.pawn;
->>>>>>> 2c61e8b5425da0190af8f9c6a499a3da7cd49dcf
             Pawn partner = props.partner;
             satisfaction = Mathf.Max(base_sat_per_fuck, satisfaction * partner.GetSexStat());
         }
 
         public static void Postfix(SexProps props, float satisfaction)
         {
-<<<<<<< HEAD
-=======
-
->>>>>>> 2c61e8b5425da0190af8f9c6a499a3da7cd49dcf
             Pawn pawn = props.pawn;
             Pawn partner = props.partner;
             float? lust = pawn.records?.GetValue(VariousDefOf.Lust);
