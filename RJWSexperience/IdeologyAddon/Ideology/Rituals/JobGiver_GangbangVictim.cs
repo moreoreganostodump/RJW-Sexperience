@@ -96,7 +96,7 @@ namespace RJWSexperience.Ideology
 				Partner.jobs.curDriver.asleep = false;
 				// Unlike normal rape try use comfort prisoner condom
 				CondomUtility.GetCondomFromRoom(Partner);
-				usedCondom = CondomUtility.TryUseCondom(Partner);
+				Sexprops.usedCondom = CondomUtility.TryUseCondom(Partner);
 
 				if (RJWSettings.DebugRape) ModLog.Message("JobDriver_RapeComfortPawn::MakeNewToils() - reserving prisoner");
 				//pawn.Reserve(Partner, xxx.max_rapists_per_prisoner, 0);

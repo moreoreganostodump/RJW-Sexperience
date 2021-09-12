@@ -40,8 +40,12 @@ namespace RJWSexperience.Ideology
 		}
 		
 
+<<<<<<< HEAD
 
 		public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
+=======
+        public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
+>>>>>>> 2c61e8b5425da0190af8f9c6a499a3da7cd49dcf
 		{
 			return new ExpectedOutcomeDesc
 			{
