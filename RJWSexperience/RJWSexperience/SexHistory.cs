@@ -12,6 +12,9 @@ namespace RJWSexperience
 {
     public class SexPartnerHistory : ThingComp
     {
+        public SexPartnerHistory() { }
+
+        
         //protected List<SexHistory> histories = new List<SexHistory>();
         protected Dictionary<string,SexHistory> histories = new Dictionary<string,SexHistory>();
         protected string first = "";
@@ -20,22 +23,49 @@ namespace RJWSexperience
         protected float bestaffinitysat = 0;
         protected xxx.rjwSextype recentsex = xxx.rjwSextype.None;
         protected string recentpartner = "";
+        protected int[] sextypecount = new int[20];
+        protected float[] sextypesat = new float[20];
 
         protected string mostpartnercache = "";
         protected xxx.rjwSextype mostsextypecache = xxx.rjwSextype.None;
+        protected xxx.rjwSextype mostsatsextypecache = xxx.rjwSextype.None;
+
 
         public string FirstSexInfo
         {
             get
             {
+                Update();
                 return
-                    "Partner: " + histories[first]?.Label ?? "Unknown" +
-                    "" +
-                    "" +
+                    "Partner: " + histories.TryGetValue(first)?.Label ?? "Unknown" +
                     "";
-                
             }
         }
+        public string MostSexPartner
+        {
+            get
+            {
+                Update();
+                return histories.TryGetValue(mostpartnercache)?.Label ?? "Unknown";
+            }
+        }
+        public xxx.rjwSextype MostSextype
+        {
+            get
+            {
+                Update();
+                return mostsextypecache;
+            }
+        }
+        public xxx.rjwSextype MostSatisfiedSex
+        {
+            get
+            {
+                Update();
+                return mostsatsextypecache;
+            }
+        }
+
 
 
         public override void PostExposeData()
@@ -46,23 +76,30 @@ namespace RJWSexperience
             Scribe_Values.Look(ref bestaffinitysat, "bestaffinitysat", bestaffinitysat, true);
             Scribe_Values.Look(ref recentsex, "recentsex", recentsex, true);
             Scribe_Values.Look(ref recentpartner, "recentpartner", recentpartner, true);
+            Scribe_Values.Look(ref sextypecount, "sextypecount", sextypecount, true);
+            Scribe_Values.Look(ref sextypesat, "sextypesat", sextypesat, true);
             base.PostExposeData();
         }
 
         public void RecordHistory(Pawn partner, SexProps props)
         {
             TryAddHistory(partner);
+            recentpartner = partner.ThingID;
             SexHistory history = histories[partner.ThingID];
             history?.RecordSex(props);
+            recentsex = props.sexType;
+            sextypecount[(int)props.sexType]++;
+
             dirty = true;
         }
 
         public void RecordSatisfactionHistory(Pawn partner, SexProps props, float satisfaction)
         {
             TryAddHistory(partner);
+            RecordFirst(partner, props);
             SexHistory history = histories[partner.ThingID];
             history?.RecordSatisfaction(props, satisfaction);
-
+            sextypesat[(int)props.sexType] += satisfaction;
             dirty = true;
         }
 
@@ -91,7 +128,46 @@ namespace RJWSexperience
 
         protected void Update()
         {
-            dirty = false;
+            if (dirty)
+            {
+                UpdateStatistics();
+                dirty = false;
+            }
+        }
+
+        protected void UpdateStatistics()
+        {
+            int max = 0;
+            float maxf = 0;
+            int maxindex = 0;
+            string mostID = "Unknown";
+
+            foreach (KeyValuePair<string,SexHistory> element in histories)
+            {
+                SexHistory h = element.Value;
+
+                //find most sex partner
+                if (max < h.TotalSexCount)
+                {
+                    max = h.TotalSexCount;
+                    mostID = element.Key;
+                }
+            }
+
+            max = 0;
+            for (int i=0; i < sextypecount.Length; i++)
+            {
+                float avgsat = sextypesat[i] / sextypecount[i];
+                if (maxf < avgsat)
+                {
+                    maxf = avgsat;
+                    maxindex = i;
+                }
+            }
+
+            mostsatsextypecache = (xxx.rjwSextype)maxindex;
+            mostsextypecache = (xxx.rjwSextype)sextypecount.FirstIndexOf(x => x == sextypecount.Max());
+            mostpartnercache = mostID;
         }
 
         protected bool VirginCheck()
@@ -146,6 +222,14 @@ namespace RJWSexperience
                 return bestsatisfaction;
             }
         }
+        public int TotalSexCount
+        {
+            get
+            {
+                return totalsexhad;
+            }
+        }
+
 
         public SexHistory() { }
 
