@@ -1,7 +1,10 @@
 Version Beta 1.0.2.0
- - 
+ - added virgin
  - added sex history
  - 
+
+Version Beta 1.0.1.11a
+ - fixed errors on gangbang rituals
 
 Version Beta 1.0.1.11
  - requires RimWorld 1.3.3117 or later
