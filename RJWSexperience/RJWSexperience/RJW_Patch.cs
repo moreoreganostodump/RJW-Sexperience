@@ -40,24 +40,139 @@ namespace RJWSexperience
         /// <summary>
         /// If pawn is virgin, lose his/her virginity.
         /// </summary>
-        //public static void PoptheCherry(this Pawn pawn, Pawn partner, bool violent)
-        //{
-        //    if (pawn.IsVirgin())
-        //    {
-        //        Messages.Message(Keyed.RS_LostVirgin(pawn.LabelShort, partner.LabelShort), MessageTypeDefOf.NeutralEvent, true);
-        //        RemoveVirginTrait(pawn);
-        //        FilthMaker.TryMakeFilth(pawn.Position, pawn.Map, ThingDefOf.Filth_Blood, 1, FilthSourceFlags.Pawn);
-        //    }
-        //}
-        //
-        //public static void RemoveVirginTrait(Pawn pawn)
-        //{
-        //    Trait virgin = pawn.story?.traits?.GetTrait(VariousDefOf.Virgin);
-        //    if (virgin != null)
-        //    {
-        //        pawn.story.traits.RemoveTrait(virgin);
-        //    }
-        //}
+        public static void PoptheCherry(this Pawn pawn, Pawn partner, bool violent)
+        {
+            if (pawn.IsVirgin())
+            {
+                Messages.Message(Keyed.RS_LostVirgin(pawn.LabelShort, partner.LabelShort), MessageTypeDefOf.NeutralEvent, true);
+                RemoveVirginTrait(pawn);
+                FilthMaker.TryMakeFilth(pawn.Position, pawn.Map, ThingDefOf.Filth_Blood, 1, FilthSourceFlags.Pawn);
+            }
+        }
+        
+        public static void RemoveVirginTrait(Pawn pawn)
+        {
+            Trait virgin = pawn.story?.traits?.GetTrait(VariousDefOf.Virgin);
+            if (virgin != null)
+            {
+                pawn.story.traits.RemoveTrait(virgin);
+            }
+        }
+
+        public static void UpdateSextypeRecords(SexProps props)
+        {
+            xxx.rjwSextype sextype = props.sexType;
+            Pawn pawn = props.pawn;
+            Pawn partner = props.partner;
+            Pawn receiver = props.reciever;
+            Pawn giver = props.giver;
+
+            if (partner != null)
+            {
+
+                switch (sextype)
+                {
+                    case xxx.rjwSextype.Vaginal:
+                    case xxx.rjwSextype.Scissoring:
+                        IncreaseSameRecords(pawn, partner, VariousDefOf.VaginalSexCount);
+                        break;
+                    case xxx.rjwSextype.Anal:
+                        IncreaseSameRecords(pawn, partner, VariousDefOf.AnalSexCount);
+                        break;
+                    case xxx.rjwSextype.Oral:
+                    case xxx.rjwSextype.Fellatio:
+                        if (Genital_Helper.has_penis_fertile(giver) || Genital_Helper.has_penis_infertile(giver))
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.OralSexCount, VariousDefOf.BlowjobCount);
+                        }
+                        else if (Genital_Helper.has_penis_infertile(receiver) || Genital_Helper.has_penis_infertile(receiver))
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.BlowjobCount, VariousDefOf.OralSexCount);
+                        }
+                        break;
+                    case xxx.rjwSextype.Sixtynine:
+                        IncreaseSameRecords(pawn, partner, VariousDefOf.OralSexCount);
+                        RecordDef recordpawn, recordpartner;
+                        if (Genital_Helper.has_penis_fertile(pawn) || Genital_Helper.has_penis_infertile(pawn))
+                        {
+                            recordpartner = VariousDefOf.BlowjobCount;
+                        }
+                        else
+                        {
+                            recordpartner = VariousDefOf.CunnilingusCount;
+                        }
+
+                        if (Genital_Helper.has_penis_fertile(partner) || Genital_Helper.has_penis_infertile(partner))
+                        {
+                            recordpawn = VariousDefOf.BlowjobCount;
+                        }
+                        else
+                        {
+                            recordpawn = VariousDefOf.CunnilingusCount;
+                        }
+                        IncreaseRecords(pawn, partner, recordpawn, recordpartner);
+                        break;
+                    case xxx.rjwSextype.Cunnilingus:
+                        if (Genital_Helper.has_vagina(giver))
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.OralSexCount, VariousDefOf.CunnilingusCount);
+                        }
+                        else if (Genital_Helper.has_vagina(receiver))
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.CunnilingusCount, VariousDefOf.OralSexCount);
+                        }
+                        break;
+                    case xxx.rjwSextype.Masturbation:
+                        break;
+                    case xxx.rjwSextype.Handjob:
+                        if (Genital_Helper.has_penis_fertile(giver) || Genital_Helper.has_penis_infertile(giver))
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.GenitalCaressCount, VariousDefOf.HadnjobCount);
+                        }
+                        else
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.HadnjobCount, VariousDefOf.GenitalCaressCount);
+                        }
+                        break;
+                    case xxx.rjwSextype.Fingering:
+                    case xxx.rjwSextype.Fisting:
+                        if (Genital_Helper.has_vagina(giver))
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.GenitalCaressCount, VariousDefOf.FingeringCount);
+                        }
+                        else
+                        {
+                            IncreaseRecords(giver, receiver, VariousDefOf.FingeringCount, VariousDefOf.GenitalCaressCount);
+                        }
+                        break;
+                    case xxx.rjwSextype.Footjob:
+                        IncreaseSameRecords(pawn, partner, VariousDefOf.FootjobCount);
+                        break;
+                    default:
+                        IncreaseSameRecords(pawn, partner, VariousDefOf.MiscSexualBehaviorCount);
+                        break;
+                }
+            }
+        }
+
+        public static void UpdatePartnerHistory(Pawn pawn, Pawn partner, SexProps props, float satisfaction)
+        {
+            SexPartnerHistory pawnshistory = pawn.GetComp<SexPartnerHistory>();
+            pawnshistory.RecordHistory(partner, props);
+        }
+
+        public static void IncreaseSameRecords(Pawn pawn, Pawn partner, RecordDef record)
+        {
+            pawn.records?.AddTo(record, 1);
+            partner.records?.AddTo(record, 1);
+        }
+
+        public static void IncreaseRecords(Pawn pawn, Pawn partner, RecordDef recordforpawn, RecordDef recordforpartner)
+        {
+            pawn.records?.AddTo(recordforpawn, 1);
+            partner.records?.AddTo(recordforpartner, 1);
+        }
+
     }
 
 
@@ -103,13 +218,16 @@ namespace RJWSexperience
     {
         private const float base_sat_per_fuck = 0.4f;
 
-        public static void Prefix(Pawn pawn, Pawn partner, SexProps props, bool pawn_is_raping , ref float satisfaction)
+        public static void Prefix(SexProps props, ref float satisfaction)
         {
+            Pawn partner = props.partner;
             satisfaction = Mathf.Max(base_sat_per_fuck, satisfaction * partner.GetSexStat());
         }
 
-        public static void Postfix(Pawn pawn, Pawn partner, SexProps props, bool pawn_is_raping, float satisfaction)
+        public static void Postfix(SexProps props, float satisfaction)
         {
+            Pawn pawn = props.pawn;
+            Pawn partner = props.partner;
             float? lust = pawn.records?.GetValue(VariousDefOf.Lust);
             xxx.rjwSextype sextype = props.sexType;
             if (lust != null)
@@ -169,6 +287,16 @@ namespace RJWSexperience
                 sexskill.xpSinceLastLevel = sexskill.XpRequiredForLevelUp * Rand.Range(0.10f, 0.90f);
             }
         }
+    }
+
+    [HarmonyPatch(typeof(AfterSexUtility), "UpdateRecords")]
+    public static class RJW_Patch_UpdateRecords
+    {
+        public static void Postfix(SexProps props)
+        {
+            RJWUtility.UpdateSextypeRecords(props);
+        }
+
     }
 
 

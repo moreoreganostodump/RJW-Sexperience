@@ -12,6 +12,17 @@ namespace RJWSexperience
     {
         public static readonly RecordDef NumofEatenCum = DefDatabase<RecordDef>.GetNamed("NumofEatenCum");
         public static readonly RecordDef Lust = DefDatabase<RecordDef>.GetNamed("Lust");
+        public static readonly RecordDef VaginalSexCount = DefDatabase<RecordDef>.GetNamed("VaginalSexCount");
+        public static readonly RecordDef AnalSexCount = DefDatabase<RecordDef>.GetNamed("AnalSexCount");
+        public static readonly RecordDef OralSexCount = DefDatabase<RecordDef>.GetNamed("OralSexCount");
+        public static readonly RecordDef BlowjobCount = DefDatabase<RecordDef>.GetNamed("BlowjobCount");
+        public static readonly RecordDef CunnilingusCount = DefDatabase<RecordDef>.GetNamed("CunnilingusCount");
+        public static readonly RecordDef GenitalCaressCount = DefDatabase<RecordDef>.GetNamed("GenitalCaressCount");
+        public static readonly RecordDef HadnjobCount = DefDatabase<RecordDef>.GetNamed("HadnjobCount");
+        public static readonly RecordDef FingeringCount = DefDatabase<RecordDef>.GetNamed("FingeringCount");
+        public static readonly RecordDef FootjobCount = DefDatabase<RecordDef>.GetNamed("FootjobCount");
+        public static readonly RecordDef MiscSexualBehaviorCount = DefDatabase<RecordDef>.GetNamed("MiscSexualBehaviorCount");
+        public static readonly RecordDef SexPartnerCount = DefDatabase<RecordDef>.GetNamed("SexPartnerCount");
         public static readonly SkillDef SexSkill = DefDatabase<SkillDef>.GetNamed("Sex");
         public static readonly ThoughtDef_Recordbased AteCum = DefDatabase<ThoughtDef_Recordbased>.GetNamed("AteCum");
         public static readonly PawnRelationDef Bastard = DefDatabase<PawnRelationDef>.GetNamed("Bastard");

@@ -8,7 +8,7 @@
 		<degreeDatas>
 			<li>
 				<label>virgin</label>
-				<description>[PAWN_nameDef] </description>
+				<description>[PAWN_nameDef] has no experience.</description>
 				<statOffsets>
 					<SexFrequency>0.1</SexFrequency>
 				</statOffsets>

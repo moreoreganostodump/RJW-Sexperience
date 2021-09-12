@@ -38,8 +38,10 @@ namespace RJWSexperience.Ideology
             }
 			return false;
 		}
+		
 
-		public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments)
+
+		public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
 		{
 			return new ExpectedOutcomeDesc
 			{
@@ -74,7 +76,7 @@ namespace RJWSexperience.Ideology
 			return false;
 		}
 
-		public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments)
+		public override ExpectedOutcomeDesc GetExpectedOutcomeDesc(Precept_Ritual ritual, TargetInfo ritualTarget, RitualObligation obligation, RitualRoleAssignments assignments, RitualOutcomeComp_Data data)
 		{
 			return new ExpectedOutcomeDesc
 			{

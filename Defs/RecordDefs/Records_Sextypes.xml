@@ -14,46 +14,74 @@
 		<description>The number of times of anal sex.</description>
 		<type>Int</type>
 	</RecordDef>
-
+	
 	<RecordDef>
 		<defName>OralSexCount</defName>
 		<label>oral intercourses</label>
-		<description>The number of times of oral sex.</description>
+		<description>The number of times of received oral sex.</description>
 		<type>Int</type>
 	</RecordDef>
 
 	<RecordDef>
-		<defName>TitjobCount</defName>
-		<label>titjob</label>
-		<description>The number of times of titjob.</description>
+		<defName>BlowjobCount</defName>
+		<label>blowjobs</label>
+		<description>The number of times of blowjob.</description>
 		<type>Int</type>
 	</RecordDef>
 	
 	<RecordDef>
-		<defName>HandjobCount</defName>
-		<label>fingering/handjob</label>
-		<description>The number of times of caress using hands.</description>
+		<defName>CunnilingusCount</defName>
+		<label>cunnilingus</label>
+		<description>The number of times of cunnilingus.</description>
 		<type>Int</type>
 	</RecordDef>
 	
 	<RecordDef>
-		<defName>GotHandjobCount</defName>
-		<label>handjob/fingering received</label>
-		<description>The number of times of got caress using hands.</description>
+		<defName>GenitalCaressCount</defName>
+		<label>genital touched</label>
+		<description>The number of times of handjob/fingering.</description>
 		<type>Int</type>
 	</RecordDef>
 
 	<RecordDef>
-		<defName>GotLickedCount</defName>
-		<label>got licked</label>
-		<description>The number of times of licked by others.</description>
+		<defName>HadnjobCount</defName>
+		<label>handjobs</label>
+		<description>The number of times of handjob.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>FingeringCount</defName>
+		<label>fingerings</label>
+		<description>The number of times of fingering.</description>
 		<type>Int</type>
 	</RecordDef>
 	
 	<RecordDef>
-		<defName>LickedCount</defName>
-		<label>licked</label>
-		<description>The number of times of licked others.</description>
+		<defName>FootjobCount</defName>
+		<label>footjob</label>
+		<description>The number of times of footjob.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>MiscSexualBehaviorCount</defName>
+		<label>misc. intercourses</label>
+		<description>The number of times of something sexual.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>OrgasmCount</defName>
+		<label>orgasms</label>
+		<description>The number of times of orgasm.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>SexPartnerCount</defName>
+		<label>sex partners</label>
+		<description>The number of sex partners.</description>
 		<type>Int</type>
 	</RecordDef>
 </Defs>

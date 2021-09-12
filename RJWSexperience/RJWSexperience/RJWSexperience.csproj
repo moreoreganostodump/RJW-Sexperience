@@ -81,6 +81,7 @@
     <Compile Include="Configurations.cs" />
     <Compile Include="DebugAction.cs" />
     <Compile Include="Harmony.cs" />
+    <Compile Include="SexHistory.cs" />
     <Compile Include="PawnRelationWorkers.cs" />
     <Compile Include="Keyed.cs" />
     <Compile Include="Rimworld_Patch.cs" />

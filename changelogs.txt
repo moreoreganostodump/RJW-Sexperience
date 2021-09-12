@@ -1,7 +1,12 @@
-Version Beta 1.0.1.11
+Version Beta 1.0.2.0
+ - requires RimWorld 1.3.3117 or later
+ - requires RJW 4.8.1 or later
+ - added records
+ - added sex history
+ - 
 
 Version Beta 1.0.1.10
- - requires RJW 4.8.0 or later
+ - requires RJW 4.8.0
 
 Version Beta 1.0.1.9
  - not compatible with RJW 4.8.0 or later

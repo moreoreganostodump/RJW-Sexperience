@@ -3,8 +3,8 @@
 
   <!-- Issues -->
   <IssueDef>
-    <defName>Rape</defName>
-    <label>rape</label>
+    <defName>Birth</defName>
+    <label>birth</label>
     <iconPath>UI/Issues/Rape</iconPath>
   </IssueDef>
 
