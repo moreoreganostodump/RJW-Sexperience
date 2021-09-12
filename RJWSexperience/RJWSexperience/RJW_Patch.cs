@@ -69,7 +69,7 @@ namespace RJWSexperience
         {
             if (__instance.Sexprops.sexType != xxx.rjwSextype.Masturbation && !(__instance is JobDriver_Masturbate))
             {
-                if (__instance.isRape)
+                if (__instance.Sexprops.isRape)
                 {
                     __instance.pawn?.skills?.Learn(VariousDefOf.SexSkill, 0.05f, true);
                 }
@@ -103,13 +103,18 @@ namespace RJWSexperience
     {
         private const float base_sat_per_fuck = 0.4f;
 
-        public static void Prefix(Pawn pawn, Pawn partner, SexProps props, bool pawn_is_raping , ref float satisfaction)
+        public static void Prefix(SexProps props, ref float satisfaction)
         {
+            Pawn pawn = props.pawn;
+            Pawn partner = props.partner;
             satisfaction = Mathf.Max(base_sat_per_fuck, satisfaction * partner.GetSexStat());
         }
 
-        public static void Postfix(Pawn pawn, Pawn partner, SexProps props, bool pawn_is_raping, float satisfaction)
+        public static void Postfix(SexProps props, float satisfaction)
         {
+
+            Pawn pawn = props.pawn;
+            Pawn partner = props.partner;
             float? lust = pawn.records?.GetValue(VariousDefOf.Lust);
             xxx.rjwSextype sextype = props.sexType;
             if (lust != null)
