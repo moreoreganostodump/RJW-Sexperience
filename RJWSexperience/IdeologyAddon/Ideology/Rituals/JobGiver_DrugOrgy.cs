@@ -127,8 +127,9 @@ namespace RJWSexperience.Ideology
 			{
 				Partner.pather.StopDead();
 				Partner.jobs.curDriver.asleep = false;
-				usedCondom = CondomUtility.TryUseCondom(pawn) || CondomUtility.TryUseCondom(Partner);
+				
 				Start();
+				Sexprops.usedCondom = CondomUtility.TryUseCondom(pawn) || CondomUtility.TryUseCondom(Partner);
 			};
 			SexToil.AddPreTickAction(delegate
 			{
