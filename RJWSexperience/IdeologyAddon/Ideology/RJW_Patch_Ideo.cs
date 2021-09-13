@@ -144,8 +144,11 @@ namespace RJWSexperience.Ideology
             xxx.rjwSextype sextype = props.sexType;
 
             //Log.Message("Aftersex " + pawn.Label + ": " + sextype);
-            if (xxx.is_human(pawn)) AfterSexHuman(pawn, partner, usedCondom, rape, isCoreLovin, sextype);
-            else if (xxx.is_human(partner)) AfterSexHuman(partner, pawn, usedCondom, false, isCoreLovin, sextype, true);
+            if (partner != null)
+            {
+                if (xxx.is_human(pawn)) AfterSexHuman(pawn, partner, usedCondom, rape, isCoreLovin, sextype);
+                else if (xxx.is_human(partner)) AfterSexHuman(partner, pawn, usedCondom, false, isCoreLovin, sextype, true);
+            }
 
         }
 
