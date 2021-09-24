@@ -13,6 +13,48 @@
   <RSShouldCanFuck>capable of sex is required</RSShouldCanFuck>
   <RSTotalGatheredCum>Total gathered cum: </RSTotalGatheredCum>
   <RS_LostVirgin>{1} took {0}'s virginity.</RS_LostVirgin>
+  <RS_FloatMenu_CleanSelf>Gather cums on body</RS_FloatMenu_CleanSelf>
+  <RS_Best_Sextype>Best sextype</RS_Best_Sextype>
+  <RS_Recent_Sextype>Recent sextype</RS_Recent_Sextype>
+  <RS_Sex_Partners>Sex partners</RS_Sex_Partners>
+  <RS_Cum_Swallowed>Cum swallowed</RS_Cum_Swallowed>
+  <RS_Selected_Partner>Selected Partner's Info</RS_Selected_Partner>
+  <RS_Sex_Info>{0}: {1} times</RS_Sex_Info>
+  <RS_SAT_AVG>Avg: {0}</RS_SAT_AVG>
+  <RS_Sex_Count>Sex count: </RS_Sex_Count>
+  <RS_Orgasms>Orgasms: </RS_Orgasms>
+  <RS_Recent_Sex_Partner>Recent Sex Partner</RS_Recent_Sex_Partner>
+  <RS_Recent_Sex_Partner_ToolTip>A recent sex partner.</RS_Recent_Sex_Partner_ToolTip>
+  <RS_First_Sex_Partner>First Sex Partner</RS_First_Sex_Partner>
+  <RS_First_Sex_Partner_ToolTip>The first sex partner.</RS_First_Sex_Partner_ToolTip>
+  <RS_Most_Sex_Partner>Most Sex Partner</RS_Most_Sex_Partner>
+  <RS_Most_Sex_Partner_ToolTip>The most sex partner.</RS_Most_Sex_Partner_ToolTip>
+  <RS_Best_Sex_Partner>Best Sex Partner</RS_Best_Sex_Partner>
+  <RS_Best_Sex_Partner_ToolTip>The partner who had most satisfying sex.</RS_Best_Sex_Partner_ToolTip>
+  <RS_VirginsTaken>Taken virgins</RS_VirginsTaken>
+  <RS_VirginsTaken_ToolTip>The number of partners who i taken first.</RS_VirginsTaken_ToolTip>
+  <RS_TotalSexHad>Total sex had</RS_TotalSexHad>
+  <RS_TotalSexHad_ToolTip>Total number of sex.</RS_TotalSexHad_ToolTip>
+  <RS_Raped>Raped: </RS_Raped>
+  <RS_RapedMe>Raped me: </RS_RapedMe>
+  <RS_Sex_History>Sex History</RS_Sex_History>
+  <RS_Statistics>Sex Statistics</RS_Statistics>
+  <RS_PartnerList>Partner List</RS_PartnerList>
+  <RS_Sexuality>Sexuality</RS_Sexuality>
+  <RS_BeenRaped>Had been raped</RS_BeenRaped>
+  <RS_RapedSomeone>Raped someone</RS_RapedSomeone>
+  <RS_PreferRace>Prefer Race</RS_PreferRace>
+  <RS_Bestiality>Bestiality</RS_Bestiality>
+  <RS_Interspecies>Interspecies</RS_Interspecies>
+  <RS_Normal>Normal</RS_Normal>
+  <RS_Necrophile>Necrophile</RS_Necrophile>
+  <RS_GatherCum>Gather cum</RS_GatherCum>
+  <RS_SexSkill>Sex skill</RS_SexSkill>
+  <RS_CumAddiction>Cum addiction</RS_CumAddiction>
+  <RS_CumAddiction_Tooltip>Addicted to cum.</RS_CumAddiction_Tooltip>
+  <RS_CumAddictiveness>Cum addictiveness</RS_CumAddictiveness>
+  <RS_CumAddictiveness_Tooltip>More likely to get addicted to cum.</RS_CumAddictiveness_Tooltip>
+  <RS_NumofTimes>times</RS_NumofTimes>
 
   <RSOption_1_Label>Enable record randomizer</RSOption_1_Label>
   <RSOption_1_Desc>Randomize pawn's sex records.</RSOption_1_Desc>
@@ -36,5 +78,41 @@
   <RSOption_10_Desc>Set probability of virgin regardless of age.</RSOption_10_Desc>
   <RSOption_11_Label></RSOption_11_Label>
   <RSOption_11_Desc> </RSOption_11_Desc>
+
+  <Vaginal>Vaginal</Vaginal>
+  <Anal>Anal</Anal>
+  <Oral>Oral</Oral>
+  <Masturbation>Masturbation</Masturbation>
+  <DoublePenetration>Double penetration</DoublePenetration>
+  <Boobjob>Boobjob</Boobjob>
+  <Handjob>Handjob</Handjob>
+  <Footjob>Footjob</Footjob>
+  <Fingering>Fingering</Fingering>
+  <Scissoring>Scissoring</Scissoring>
+  <MutualMasturbation>Mutual masturbation</MutualMasturbation>
+  <Fisting>Fisting</Fisting>
+  <MechImplant>Mech implant</MechImplant>
+  <Rimming>Rimming</Rimming>
+  <Fellatio>Fellatio</Fellatio>
+  <Cunnilingus>Cunnilingus</Cunnilingus>
+  <Sixtynine>Sixtynine</Sixtynine>
+
+  <None>None</None>
+  <Asexual>Asexual</Asexual>
+  <Pansexual>Pansexual</Pansexual>
+  <Heterosexual>Hetero</Heterosexual>
+  <MostlyHeterosexual>Mostly hetero</MostlyHeterosexual>
+  <LeaningHeterosexual>Bisexual, leaning hetero</LeaningHeterosexual>
+  <Bisexual>Bisexual</Bisexual>
+  <LeaningHomosexual>Bisexual, leaning gay</LeaningHomosexual>
+  <MostlyHomosexual>Mostly gay</MostlyHomosexual>
+  <Homosexual>Gay</Homosexual>
+
+
+
+  <Lust>lust</Lust>
+  <Unknown>unknown</Unknown>
+  <Virgin>virgin</Virgin>
+  <Incest>incest</Incest>
 
 </LanguageData>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="UsedCondom"]/ingestible/outcomeDoers</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="UsedCondom"]/ingestible</xpath>
+			<value>
+				<outcomeDoers>
+					<li Class="IngestionOutcomeDoer_GiveHediff">
+						<hediffDef>CumTolerance</hediffDef>
+						<severity>0.032</severity>
+						<divideByBodySize>true</divideByBodySize>
+					</li>
+					<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+						<offset>0.05</offset>
+					</li>
+					<li Class="RJWSexperience.CumOutcomeDoers">
+						<unitAmount>5.2</unitAmount>
+					</li>
+				</outcomeDoers>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="UsedCondom"]/ingestible/outcomeDoers</xpath>
+			<value>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CumTolerance</hediffDef>
+					<severity>0.032</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+					<offset>0.05</offset>
+				</li>
+				<li Class="RJWSexperience.CumOutcomeDoers">
+					<unitAmount>5.2</unitAmount>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="UsedCondom"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="UsedCondom"]</xpath>
+			<value>
+				<comps>
+					<li Class="CompProperties_Drug">
+						<chemical>Cum</chemical>
+						<addictiveness>0.050</addictiveness>
+						<minToleranceToAddict>0.8</minToleranceToAddict>
+						<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+						<needLevelOffset>1</needLevelOffset>
+						<listOrder>30</listOrder>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="UsedCondom"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Drug">
+					<chemical>Cum</chemical>
+					<addictiveness>0.050</addictiveness>
+					<minToleranceToAddict>0.8</minToleranceToAddict>
+					<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+					<needLevelOffset>1</needLevelOffset>
+					<listOrder>30</listOrder>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

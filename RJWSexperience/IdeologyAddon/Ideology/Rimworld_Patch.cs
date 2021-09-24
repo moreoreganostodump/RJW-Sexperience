@@ -55,5 +55,36 @@ namespace RJWSexperience.Ideology
         }
     }
 
+    [HarmonyPatch(typeof(IdeoFoundation), "CanAdd")]
+    public static class Rimworld_Patch_IdeoFoundation
+    {
+        public static void Postfix(PreceptDef precept, bool checkDuplicates, ref IdeoFoundation __instance, ref AcceptanceReport __result)
+        {
+            if (precept is PreceptDef_RequirementExtended)
+            {
+                PreceptDef_RequirementExtended def = precept as PreceptDef_RequirementExtended;
+                if (!def.requiredAllMemes.NullOrEmpty())
+                {
+                    for (int i=0; i< def.requiredAllMemes.Count; i++)
+                    {
+                        if (!__instance.ideo.memes.Contains(def.requiredAllMemes[i]))
+                        {
+                            List<string> report = new List<string>();
+                            foreach (MemeDef meme in def.requiredAllMemes) report.Add(meme.LabelCap);
+
+                            __result = new AcceptanceReport("RequiresMeme".Translate() + ": " + report.ToCommaList());
+                            return;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+
+
+    }
 
 }

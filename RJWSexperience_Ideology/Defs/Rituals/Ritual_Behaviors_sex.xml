@@ -2,7 +2,9 @@
 <Defs>
 
   <RitualBehaviorDef Name="GangbangBehaviorBase" Abstract="True" ParentName="DateRitualBehavior">
-    <preceptRequirements><li Class="PreceptRequirement_Altar"/></preceptRequirements>
+    <preceptRequirements>
+      <li Class="PreceptRequirement_Altar"/>
+    </preceptRequirements>
     <durationTicks>7500</durationTicks>
     <roles Inherit="False">
       <li Class="RitualRoleTag">
@@ -84,7 +86,7 @@
         </roleBehaviors>
       </li>
       <li Class="RJWSexperience.Ideology.RitualStage_InteractWithVictim">
-        <defaultDuty>Gangbang</defaultDuty>
+        <defaultDuty>Gangbang_Rape</defaultDuty>
         <essential>True</essential>
         <endTriggers>
           <li Class="StageEndTrigger_DurationPercentage">
@@ -102,7 +104,7 @@
         </roleBehaviors>
       </li>
       <li Class="RJWSexperience.Ideology.RitualStage_InteractWithVictim">
-        <defaultDuty>Gangbang</defaultDuty>
+        <defaultDuty>Gangbang_Rape</defaultDuty>
         <endTriggers>
           <li Class="StageEndTrigger_DurationPercentage">
             <percentage>0.1</percentage>
@@ -122,6 +124,85 @@
     </stages>
   </RitualBehaviorDef>
 
+  <RitualBehaviorDef ParentName="GangbangBehaviorBase">
+    <defName>Gangbang_Consensual</defName>
+    <workerClass>RJWSexperience.Ideology.RitualBehaviorWorker_Gangbang_Consensual</workerClass>
+    <stages Inherit="False">
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithInitiator">
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_RolesArrived">
+            <roleIds>
+              <li>initiator</li>
+            </roleIds>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Gangbang</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_Lectern">
+                <maxDistanceToFocus>5</maxDistanceToFocus>
+              </li>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithInitiator">
+        <defaultDuty>Gangbang_Consensual</defaultDuty>
+        <essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1.0</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithInitiator">
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Gangbang</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
 
 
   <RitualBehaviorDef ParentName="GangbangBehaviorBase">
@@ -228,7 +309,7 @@
         <roleBehaviors>
           <li>
             <roleId>animal</roleId>
-            <dutyDef>Gangbang</dutyDef>
+            <dutyDef>Gangbang_Rape</dutyDef>
             <customPositions>
               <li Class="RitualPosition_OnInteractionCell" />
             </customPositions>
@@ -263,7 +344,106 @@
       </li>
     </stages>
   </RitualBehaviorDef>
+
   
+  <RitualBehaviorDef ParentName="GangbangBehaviorBase">
+    <defName>GangbangByAnimal_Consensual</defName>
+    <workerClass>RJWSexperience.Ideology.RitualBehaviorWorker_Gangbang_Consensual</workerClass>
+    <roles>
+      <li Class="RJWSexperience.Ideology.RitualRole_AnimalBreeder">
+        <label>breeder</label>
+        <id>animal</id>
+        <maxCount>30</maxCount>
+        <required>false</required>
+        <missingDesc>a breedable animal</missingDesc>
+        <countsAsParticipant>false</countsAsParticipant>
+      </li>
+    </roles>
+    <stages Inherit="False">
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithInitiator">
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_RolesArrived">
+            <roleIds>
+              <li>initiator</li>
+            </roleIds>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Zoophile</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_Lectern">
+                <maxDistanceToFocus>5</maxDistanceToFocus>
+              </li>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>animal</roleId>
+            <dutyDef>Spectate</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li Class="RJWSexperience.Ideology.RitualStage_InteractWithInitiator">
+        <defaultDuty>Spectate</defaultDuty>
+        <essential>True</essential>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.9</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>animal</roleId>
+            <dutyDef>Gangbang_Consensual</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>0.1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>initiator</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Zoophile</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+
   <RitualBehaviorDef ParentName="DateRitualBehavior">
     <defName>DrugOrgy</defName>
     <durationTicks>7500</durationTicks>

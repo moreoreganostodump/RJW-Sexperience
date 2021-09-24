@@ -25,8 +25,30 @@
       <li>Rapist</li>
     </requiredMemes>
   </PreceptDef>
-
+  
   <PreceptDef>
+    <defName>GangbangCeremony_Consensual</defName>
+    <label>gangbang</label>
+    <description>A ritualistic gangbang where a organizer being fucked. The audience will fuck the organizer.</description>
+    <issue>Ritual</issue>
+    <impact>Medium</impact>
+    <iconPath>UI/Issues/Gangbang_Consensual</iconPath>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <ritualPatternBase>Gangbang_Consensual</ritualPatternBase>
+    <allowDuplicates>true</allowDuplicates>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+    <receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <allowStackingRitualObligationAlerts>true</allowStackingRitualObligationAlerts>
+    <requiredMemes>
+      <li>Lewd</li>
+    </requiredMemes>
+  </PreceptDef>
+
+  <RJWSexperience.Ideology.PreceptDef_RequirementExtended>
     <defName>AnimalGangbangCeremony</defName>
     <label>animal gangbang</label>
     <description>A ritualistic gangbang where animals rape a victim.</description>
@@ -43,10 +65,34 @@
     <receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
     <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
     <allowStackingRitualObligationAlerts>true</allowStackingRitualObligationAlerts>
+    <requiredAllMemes>
+      <li>Rapist</li>
+      <li>Zoophile</li>
+    </requiredAllMemes>
+  </RJWSexperience.Ideology.PreceptDef_RequirementExtended>
+  
+  <PreceptDef>
+    <defName>AnimalGangbangCeremony_Consensual</defName>
+    <label>animal gangbang</label>
+    <description>A ritualistic gangbang where animals fuck the organizer.</description>
+    <issue>Ritual</issue>
+    <impact>Medium</impact>
+    <iconPath>UI/Commands/Breeding_Pawn_on</iconPath>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <ritualPatternBase>GangbangByAnimal_Consensual</ritualPatternBase>
+    <allowDuplicates>true</allowDuplicates>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <ignoreLimitsInEditMode>false</ignoreLimitsInEditMode>
+    <receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+    <canGenerateAsSpecialPrecept>false</canGenerateAsSpecialPrecept>
+    <allowStackingRitualObligationAlerts>true</allowStackingRitualObligationAlerts>
     <requiredMemes>
       <li>Zoophile</li>
     </requiredMemes>
   </PreceptDef>
+
 
 
   <PreceptDef>

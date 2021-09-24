@@ -44,7 +44,7 @@
 	</RecordDef>
 
 	<RecordDef>
-		<defName>HadnjobCount</defName>
+		<defName>HandjobCount</defName>
 		<label>handjobs</label>
 		<description>The number of times of handjob.</description>
 		<type>Int</type>

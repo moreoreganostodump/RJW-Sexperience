@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<JobDef>
+		<defName>CleanSelfwithBucket</defName>
+		<driverClass>RJWSexperience.JobDriver_CleanSelfWithBucket</driverClass>
+		<reportString>collecting cum</reportString>
+		<casualInterruptible>true</casualInterruptible>
+	</JobDef>
+</Defs>

@@ -10,25 +10,9 @@ using UnityEngine;
 
 namespace RJWSexperience.Ideology
 {
-    public static class Utility
+    public static class IdeoUtility
     {
 
-        public static bool IsIncest(this Pawn pawn, Pawn partner)
-        {
-            IEnumerable<PawnRelationDef> relations = pawn.GetRelations(partner);
-            Ideo ideo = pawn.Ideo;
-            bool wide = false;
-            if (ideo != null) wide = ideo.HasPrecept(VariousDefOf.Incestuos_Disapproved_CloseOnly);
-            if (!relations.EnumerableNullOrEmpty()) foreach (PawnRelationDef relation in relations)
-                {
-                    if (wide)
-                    {
-                        if (relation.incestOpinionOffset < 0) return true;
-                    }
-                    else if (relation.familyByBloodRelation) return true;
-                }
-            return false;
-        }
 
         public static bool IsSubmissive(this Pawn pawn)
         {

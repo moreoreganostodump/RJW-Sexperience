@@ -1,7 +1,22 @@
 Version Beta 1.0.2.0
+This update will mess your pawn's record. Use debug tools.
+ - requires RimWorld 1.3.3117 or later
+ - requires RJW 4.8.1 or later
+ - submissive gender can be designated as comfort
  - added virgin
- - added sex history
- - 
+ - added virgin precept
+ - added hymenoplasty(hymen restoration surgery)
+ - added sex history(not applied retroactively)
+   - you can change hotkey in keyboard configuration(default: none)
+ - can collect cum on body
+ - cum can spill out from cum buckets if over the stack count
+ - fixed disabling sex record generation was not worked
+ - removed lust adjustment from precepts that causing massive lust increment
+ - changed gangbang condition
+ - now pawns will go to the nearest cum bucket when cleaning self or masturbating
+ - added consensual ganbang rituals(requires lewd meme)
+ - non-consensual animal gangbang requires both rapist and zoophile memes
+ - adjusted gangbang outcome values
 
 Version Beta 1.0.1.11b
  - fixed erros on masturbations

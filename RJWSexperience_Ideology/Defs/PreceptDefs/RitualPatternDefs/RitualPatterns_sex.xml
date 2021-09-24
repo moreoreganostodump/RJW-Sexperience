@@ -22,6 +22,17 @@
   </RitualPatternDef>
 
   <RitualPatternDef ParentName="GangbangBase">
+    <defName>Gangbang_Consensual</defName>
+    <ritualBehavior>Gangbang_Consensual</ritualBehavior>
+    <shortDescOverride>gangbang</shortDescOverride>
+    <descOverride>A ritualistic gangbang. The organizer will give a speech to excite the crowd, then fucked by the crowd.</descOverride>
+    <iconPathOverride>UI/Issues/Gangbang_Consensual</iconPathOverride>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <ritualOutcomeEffect>Gangbang_Consensual</ritualOutcomeEffect>
+    <patternGroupTag/>
+  </RitualPatternDef>
+
+  <RitualPatternDef ParentName="GangbangBase">
     <defName>GangbangByAnimal</defName>
     <ritualBehavior>GangbangByAnimal</ritualBehavior>
     <shortDescOverride>gangbang by animal</shortDescOverride>
@@ -29,6 +40,17 @@
     <iconPathOverride>UI/Commands/Breeding_Pawn_off</iconPathOverride>
     <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
     <ritualOutcomeEffect>BestialGangbang</ritualOutcomeEffect>
+    <patternGroupTag/>
+  </RitualPatternDef>
+  
+  <RitualPatternDef ParentName="GangbangBase">
+    <defName>GangbangByAnimal_Consensual</defName>
+    <ritualBehavior>GangbangByAnimal_Consensual</ritualBehavior>
+    <shortDescOverride>gangbang by animal</shortDescOverride>
+    <descOverride>A ritualistic animal gangbang. The organizer will give a speech to excite the crowd, then animals begin fuck the organizer.</descOverride>
+    <iconPathOverride>UI/Commands/Breeding_Pawn_on</iconPathOverride>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <ritualOutcomeEffect>BestialGangbang_Consensual</ritualOutcomeEffect>
     <patternGroupTag/>
   </RitualPatternDef>
   

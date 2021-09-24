@@ -28,4 +28,20 @@
 		<reportString>masturbatin'.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
+
+	<JobDef>
+		<defName>Gangbang</defName>
+		<driverClass>RJWSexperience.Ideology.JobDriver_Gangbang</driverClass>
+		<reportString>lovin'.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
+	<JobDef>
+		<defName>GettinGangbang</defName>
+		<driverClass>RJWSexperience.Ideology.JobDriver_GangbangReceiver</driverClass>
+		<reportString>gettin' gangbanged.</reportString>
+		<checkOverrideOnDamage>Never</checkOverrideOnDamage>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
 </Defs>

@@ -19,7 +19,12 @@ namespace RJWSexperience.Ideology
 		public const string Incestous = "[Incestuos]";
 		public const string BeenRaped = "[BeenRaped]";
 		public const string Rape = "[Rape]";
+		public const string Spouse = "[Spouse]";
+		public const string NotSpouse = "[NotSpouse]";
+
 		public static string Gender(Pawn pawn) => "[" + pawn.gender + "]";
+
+		
 
     }
 
@@ -27,8 +32,8 @@ namespace RJWSexperience.Ideology
 	{
 		public string tag;
 		public bool exclusive = false;
-		public RecordDef recordDef;
-		public float? recordoffset;
+		//public RecordDef recordDef;
+		//public float? recordoffset;
 
 		public PreceptComp_SelfTookThoughtTagged() { }
 
@@ -41,28 +46,28 @@ namespace RJWSexperience.Ideology
 					if (tags.ContainAll(tag.Replace(" ","").Split(',')) ^ exclusive)
                     {
 						TookThought(ev, precept, canApplySelfTookThoughts);
-						if (ev.args.TryGetArg(HistoryEventArgsNames.Doer, out Pawn pawn))
-                        {
-							AdjustRecord(pawn);
-                        }
+						//if (ev.args.TryGetArg(HistoryEventArgsNames.Doer, out Pawn pawn))
+                        //{
+						//	AdjustRecord(pawn);
+                        //}
 					}
 				}
 				else if (exclusive)
 				{
 					TookThought(ev, precept, canApplySelfTookThoughts);
-					if (ev.args.TryGetArg(HistoryEventArgsNames.Doer, out Pawn pawn))
-					{
-						AdjustRecord(pawn);
-					}
+					//if (ev.args.TryGetArg(HistoryEventArgsNames.Doer, out Pawn pawn))
+					//{
+					//	AdjustRecord(pawn);
+					//}
 				}
 			}
             else
             {
 				TookThought(ev, precept, canApplySelfTookThoughts);
-				if (ev.args.TryGetArg(HistoryEventArgsNames.Doer, out Pawn pawn))
-				{
-					AdjustRecord(pawn);
-				}
+				//if (ev.args.TryGetArg(HistoryEventArgsNames.Doer, out Pawn pawn))
+				//{
+				//	AdjustRecord(pawn);
+				//}
 			}
 
 		}
@@ -99,13 +104,13 @@ namespace RJWSexperience.Ideology
 		}
 
 
-		protected void AdjustRecord(Pawn pawn)
-        {
-			if (recordDef != null)
-            {
-				pawn.records.AddTo(recordDef, recordoffset ?? 1f);
-            }
-        }
+		//protected void AdjustRecord(Pawn pawn)
+        //{
+		//	if (recordDef != null)
+        //    {
+		//		pawn.records.AddTo(recordDef, recordoffset ?? 1f);
+        //    }
+        //}
 
 	}
 

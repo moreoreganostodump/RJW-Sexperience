@@ -26,7 +26,7 @@ namespace RJWSexperience.Ideology
             }
             else return null;
 
-			if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_rape(pawn, true))
+			if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_fuck(pawn))
             {
                 return null;
 			}
@@ -57,7 +57,6 @@ namespace RJWSexperience.Ideology
 			var PartnerJob = xxx.gettin_raped;
 
 			this.FailOnDespawnedNullOrForbidden(iTarget);
-			//this.FailOn(() => (!Partner.health.capacities.CanBeAwake) || (!comfort_prisoners.is_designated(Partner)));//this is wrong
 			this.FailOn(() => Partner == null);
 			this.FailOn(() => pawn.Drafted);
 			this.FailOn(() => Partner.Drafted);

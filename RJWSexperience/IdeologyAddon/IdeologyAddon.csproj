@@ -95,9 +95,12 @@
   <ItemGroup>
     <Compile Include="Ideology\GoodwillSituationWorker_MemeCompatibility.cs" />
     <Compile Include="Harmony.cs" />
+    <Compile Include="Ideology\PreceptDef_RequirementExtended.cs" />
+    <Compile Include="Ideology\Rituals\JobGiver_GangbangConsensual.cs" />
     <Compile Include="Ideology\Rituals\LordJob_Rituals.cs" />
     <Compile Include="Ideology\RJW_Patch_Ideo.cs" />
     <Compile Include="Ideology\PreceptComp_SelftTookThoughtExtended.cs" />
+    <Compile Include="Ideology\Sexperience_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ideology\Rimworld_Patch.cs" />
     <Compile Include="Ideology\Rituals\JobGiver_DrugOrgy.cs" />

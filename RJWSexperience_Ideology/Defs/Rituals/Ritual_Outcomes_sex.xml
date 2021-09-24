@@ -32,30 +32,113 @@
       </li>
       <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>victim broken</label>
-        <qualityOffset>0.2</qualityOffset>
+        <qualityOffset>0.15</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.3</minSeverity>
         <roleId>victim</roleId>
       </li>
       <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>victim extremly broken</label>
-        <qualityOffset>0.2</qualityOffset>
+        <qualityOffset>0.15</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.5</minSeverity>
         <roleId>victim</roleId>
       </li>
       <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>victim completely broken</label>
-        <qualityOffset>0.4</qualityOffset>
+        <qualityOffset>0.3</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.9</minSeverity>
         <roleId>victim</roleId>
       </li>
       <li Class="RJWSexperience.Ideology.RitualOutcomeComp_NeedBased">
         <label>statisfied participants</label>
-        <qualityOffset>0.2</qualityOffset>
+        <qualityOffset>0.4</qualityOffset>
         <needDef>Sex</needDef>
         <minAvgNeed>0.7</minAvgNeed>
+      </li>
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_NeedBased">
+        <label>completly statisfied participants</label>
+        <qualityOffset>0.4</qualityOffset>
+        <needDef>Sex</needDef>
+        <minAvgNeed>0.9</minAvgNeed>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>TerribleGangbang</memory>
+        <description>The {0} was terrible! The speech was stuttering and incoherent, and the victim was botched - everyone was waiting for it to end.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Boring</label>
+        <chance>0.10</chance>
+        <memory>BoringGangbang</memory>
+        <description>The {0} was boring. The speech was repetitive and the victim was noticeably flawed. It just didn't feel dignified.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Satisfying</label>
+        <chance>0.6</chance>
+        <memory>FunGangbang</memory>
+        <description>The {0} was satisfying. The speech felt meaningful, and the victim was precise and dignified.</description>
+        <potentialExtraOutcomeDesc>There's a 5% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Spectacular</label>
+        <chance>0.25</chance>
+        <memory>UnforgettableGangbang</memory>
+        <description>The {0} was spectacular! The speech brought everyone to the edge of a frenzy and the victim was like succubus.</description>
+        <potentialExtraOutcomeDesc>There's a 10% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+  
+  <RitualOutcomeEffectDef>
+    <defName>Gangbang_Consensual</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>RitualOutcomeEffectWorker_Consumable</workerClass>
+    <extraPredictedOutcomeDescriptions>
+      <li>If the {0} is satisfying, one of the participants might gain an inspiration.</li>
+    </extraPredictedOutcomeDescriptions>
+    <comps>
+      <li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+        <roleId>initiator</roleId>
+        <label>moral guide present</label>
+        <qualityOffset>0.10</qualityOffset>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  -0.20)</li>
+            <li>(3,  -0.05)</li>
+            <li>(5, 0.05)</li>
+            <li>(10, 0.10)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_RitualTargetDefs">
+        <allowAltars>true</allowAltars>
+        <label>started at altar</label>
+        <qualityOffset>0.2</qualityOffset>
+        <expectedThingLabelTip>an altar</expectedThingLabelTip>
+      </li>
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_NeedBased">
+        <label>statisfied participants</label>
+        <qualityOffset>0.4</qualityOffset>
+        <needDef>Sex</needDef>
+        <minAvgNeed>0.7</minAvgNeed>
+      </li>
+      <li Class="RJWSexperience.Ideology.RitualOutcomeComp_NeedBased">
+        <label>completly statisfied participants</label>
+        <qualityOffset>1.0</qualityOffset>
+        <needDef>Sex</needDef>
+        <minAvgNeed>0.8</minAvgNeed>
       </li>
     </comps>
     <outcomeChances>
@@ -92,7 +175,6 @@
     </outcomeChances>
   </RitualOutcomeEffectDef>
 
-
   <RitualOutcomeEffectDef>
     <defName>BestialGangbang</defName>
     <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
@@ -125,21 +207,21 @@
       </li>
       <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>breedee broken</label>
-        <qualityOffset>0.3</qualityOffset>
+        <qualityOffset>0.45</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.3</minSeverity>
         <roleId>victim</roleId>
       </li>
       <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>breedee extremly broken</label>
-        <qualityOffset>0.3</qualityOffset>
+        <qualityOffset>0.45</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.5</minSeverity>
         <roleId>victim</roleId>
       </li>
       <li Class="RJWSexperience.Ideology.RitualOutcomeComp_HediffBased">
         <label>breedee completely broken</label>
-        <qualityOffset>0.6</qualityOffset>
+        <qualityOffset>0.8</qualityOffset>
         <hediffDef>FeelingBroken</hediffDef>
         <minSeverity>0.9</minSeverity>
         <roleId>victim</roleId>
@@ -179,6 +261,70 @@
     </outcomeChances>
   </RitualOutcomeEffectDef>
 
+  <RitualOutcomeEffectDef>
+    <defName>BestialGangbang_Consensual</defName>
+    <description>Depending on ritual quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+    <workerClass>RitualOutcomeEffectWorker_Consumable</workerClass>
+    <extraPredictedOutcomeDescriptions>
+      <li>If the {0} is satisfying, one of the participants might gain an inspiration.</li>
+    </extraPredictedOutcomeDescriptions>
+    <comps>
+      <li Class="RitualOutcomeComp_RolePresentNotSubstituted">
+        <roleId>initiator</roleId>
+        <label>moral guide present</label>
+        <qualityOffset>0.10</qualityOffset>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>participant count</label>
+        <curve>
+          <points>
+            <li>(1,  0.20)</li>
+            <li>(3,  0.40)</li>
+            <li>(5,  0.65)</li>
+            <li>(10, 1.20)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_RitualTargetDefs">
+        <allowAltars>true</allowAltars>
+        <label>started at altar</label>
+        <qualityOffset>0.2</qualityOffset>
+        <expectedThingLabelTip>an altar</expectedThingLabelTip>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>Terrible</label>
+        <chance>0.05</chance>
+        <memory>TerribleGangbang</memory>
+        <description>The {0} was terrible! The speech was stuttering and incoherent, and the victim was botched - everyone was waiting for it to end.</description>
+        <positivityIndex>-2</positivityIndex>
+      </li>
+      <li>
+        <label>Boring</label>
+        <chance>0.10</chance>
+        <memory>BoringGangbang</memory>
+        <description>The {0} was boring. The speech was repetitive and the victim was noticeably flawed. It just didn't feel dignified.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>Satisfying</label>
+        <chance>0.65</chance>
+        <memory>FunGangbang</memory>
+        <description>The {0} was satisfying. The speech felt meaningful, and the victim was precise and dignified.</description>
+        <potentialExtraOutcomeDesc>There's a 5% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+        <positivityIndex>1</positivityIndex>
+      </li>
+      <li>
+        <label>Spectacular</label>
+        <chance>0.2</chance>
+        <memory>UnforgettableGangbang</memory>
+        <description>The {0} was spectacular! The speech brought everyone to the edge of a frenzy and the victim was like succubus.</description>
+        <potentialExtraOutcomeDesc>There's a 10% chance that a random participant gets an inspiration.</potentialExtraOutcomeDesc>
+        <positivityIndex>2</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
 
   <RitualOutcomeEffectDef>
     <defName>DrugOrgy</defName>

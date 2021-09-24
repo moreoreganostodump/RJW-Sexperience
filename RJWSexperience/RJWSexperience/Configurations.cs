@@ -36,6 +36,8 @@ namespace RJWSexperience
         public static float MinSexablePercent = MinSexablePercentDefault;
         public static float VirginRatio = VirginRatioDefault;
 
+        public static bool SelectionLocked = false;
+
         public static void ResettoDefault()
         {
             MaxLustDeviation = MaxInitialLustDefault;
@@ -62,6 +64,7 @@ namespace RJWSexperience
             Scribe_Values.Look(ref LustLimit, "LustLimit", LustLimit, true);
             Scribe_Values.Look(ref MinSexablePercent, "MinSexablePercent", MinSexablePercent, true);
             Scribe_Values.Look(ref VirginRatio, "VirginRatio", VirginRatio, true);
+            Scribe_Values.Look(ref SelectionLocked, "SelectionLocked", SelectionLocked, true);
             base.ExposeData();
         }
     }

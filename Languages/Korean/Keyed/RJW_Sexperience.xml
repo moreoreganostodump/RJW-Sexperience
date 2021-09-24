@@ -11,6 +11,8 @@
   <RSNotHuman>사람이 아님</RSNotHuman>
   <RSNotAnimal>동물이 아님</RSNotAnimal>
   <RSShouldCanFuck>성관계가 가능해야 합니다.</RSShouldCanFuck>
+  <RSTotalGatheredCum>수집한 정액 양: </RSTotalGatheredCum>
+  <RS_LostVirgin>{1}이(가) {0}의 아다를 뗐습니다.</RS_LostVirgin>
 
   <RSOption_1_Label>기록 생성기 활성화</RSOption_1_Label>
   <RSOption_1_Desc>폰의 섹스기록을 무작위로 생성합니다.</RSOption_1_Desc>
@@ -28,4 +30,8 @@
   <RSOption_7_Desc>활성화할 경우 노예는 강간당한 경험을 가집니다.</RSOption_7_Desc>
   <RSOption_8_Label>음란함 한계</RSOption_8_Label>
   <RSOption_8_Desc>음란함의 한계치를 설정합니다.&#10;음란함의 절대값이 이 값에 가까워지거나 클수록, 음란함이 적게 변합니다.</RSOption_8_Desc>
+  <RSOption_9_Label>섹스가능 최소나이</RSOption_9_Label>
+  <RSOption_9_Desc>섹스 가능한 최소나이를 설정합니다.&#10;이 값은 RJW의 최소 나이 설정과 관계가 없고 기록을 생성하는데만 사용됩니다.</RSOption_9_Desc>
+  <RSOption_10_Label>동정 비율</RSOption_10_Label>
+  <RSOption_10_Desc>나이 상관없이 동정일 확률을 설정합니다.</RSOption_10_Desc>
 </LanguageData>

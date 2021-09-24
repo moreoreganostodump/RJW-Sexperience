@@ -11,6 +11,25 @@ namespace RJWSexperience
 {
     public static class DebugToolsSexperience
     {
+        [DebugAction("RJW Sexperience", "Reset pawn's record", false, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        private static void ResetRecords(Pawn p)
+        {
+            Trait virgin = p.story?.traits?.GetTrait(VariousDefOf.Virgin);
+            if (virgin != null) p.story.traits.RemoveTrait(virgin);
+            p.ResetRecord(true);
+            p.ResetRecord(false);
+            MoteMaker.ThrowText(p.TrueCenter(), p.Map, "Records resetted!");
+        }
+
+        [DebugAction("RJW Sexperience", "Reset pawn's record(virgin)", false, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        private static void ResetRecordsZero(Pawn p)
+        {
+            p.ResetRecord(true);
+            p.AddVirginTrait();
+            MoteMaker.ThrowText(p.TrueCenter(), p.Map, "Records resetted!\nVirginified!");
+        }
+
+
         [DebugAction("RJW Sexperience", "Reset lust", false, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static void ResetLust(Pawn p)
         {

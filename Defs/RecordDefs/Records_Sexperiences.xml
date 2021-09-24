@@ -4,7 +4,14 @@
 	<RecordDef>
 		<defName>NumofEatenCum</defName>
 		<label>swallowed cum</label>
-		<description>The number of times that i swalloed cum.</description>
+		<description>The number of times that i swallowed cum.</description>
+		<type>Int</type>
+	</RecordDef>
+
+	<RecordDef>
+		<defName>AmountofEatenCum</defName>
+		<label>swallowed cum(mL)</label>
+		<description>The amount of cum that i swallowed.</description>
 		<type>Int</type>
 	</RecordDef>
 

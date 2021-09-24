@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Issues -->
+  <IssueDef>
+    <defName>Virginity_Female</defName>
+    <label>virginity of female</label>
+    <iconPath>UI/Issues/Female</iconPath>
+  </IssueDef>
+
+  <IssueDef>
+    <defName>Virginity_Male</defName>
+    <label>virginity of male</label>
+    <iconPath>UI/Issues/Male</iconPath>
+  </IssueDef>
+
+  <HistoryEventDef>
+    <defName>Virgin_TakenF</defName>
+    <label>virgin taken</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>Virgin_TakenM</defName>
+    <label>virgin taken</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>Virgin_TookF</defName>
+    <label>virgin took</label>
+  </HistoryEventDef>
+
+  <HistoryEventDef>
+    <defName>Virgin_TookM</defName>
+    <label>virgin took</label>
+  </HistoryEventDef>
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>Virgin_UselessF</defName>
+    <issue>Virginity_Female</issue>
+    <label>useless</label>
+    <description>Female's virginity is useless.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>10</defaultSelectionWeight>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Virgin_UselessM</defName>
+    <issue>Virginity_Male</issue>
+    <label>useless</label>
+    <description>Male's virginity is useless.</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>50</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>80</defaultSelectionWeight>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Virgin_PreciousF</defName>
+    <issue>Virginity_Female</issue>
+    <label>precious</label>
+    <description>Female's virginity is precious.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>80</defaultSelectionWeight>
+    <comps>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenF</eventDef>
+        <thought>Virgin_Precious_Taken_Forcefully</thought>
+        <tag>BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenF</eventDef>
+        <thought>Virgin_Precious_Taken</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TookF</eventDef>
+        <thought>TookVirginity</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Virgin_PreciousM</defName>
+    <issue>Virginity_Male</issue>
+    <label>precious</label>
+    <description>Male's virginity is precious.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <comps>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenM</eventDef>
+        <thought>Virgin_Precious_Taken_Forcefully</thought>
+        <tag>BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenM</eventDef>
+        <thought>Virgin_Precious_Taken</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TookM</eventDef>
+        <thought>TookVirginity</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Virgin_OnlyForSpouseF</defName>
+    <issue>Virginity_Female</issue>
+    <label>precious(strict)</label>
+    <description>Losing virginity before marriage is evil.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>80</defaultSelectionWeight>
+    <requiredMemes>
+      <li>MaleSupremacy</li>
+    </requiredMemes>
+    <conflictingMemes>
+      <li>FemaleSupremacy</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>MaleSupremacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenF</eventDef>
+        <thought>Virgin_Precious_Taken_Forcefully</thought>
+        <tag>BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenF</eventDef>
+        <thought>Virgin_Precious_Taken</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>Virgin_TakenF</eventDef>
+        <thought>Virgin_OnlyForSpouse_Know_Taken</thought>
+        <tag>Female, NotSpouse</tag>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Virgin_TookF</eventDef>
+        <thought>TookVirginity</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Virgin_OnlyForSpouseM</defName>
+    <issue>Virginity_Male</issue>
+    <label>precious(strict)</label>
+    <description>Losing virginity before marriage is evil.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>40</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>20</defaultSelectionWeight>
+    <requiredMemes>
+      <li>FemaleSupremacy</li>
+    </requiredMemes>
+    <conflictingMemes>
+      <li>MaleSupremacy</li>
+    </conflictingMemes>
+    <associatedMemes>
+      <li>FemaleSupremacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenM</eventDef>
+        <thought>Virgin_Precious_Taken_Forcefully</thought>
+        <tag>BeenRaped</tag>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenM</eventDef>
+        <thought>Virgin_Precious_Taken</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
+      </li>
+      <li Class="RJWSexperience.Ideology.PreceptComp_KnowsMemoryThoughtTagged">
+        <eventDef>Virgin_TakenM</eventDef>
+        <thought>Virgin_OnlyForSpouse_Know_Taken</thought>
+        <tag>Male, NotSpouse</tag>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>Virgin_TookM</eventDef>
+        <thought>TookVirginity</thought>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Virgin_ShamefulF</defName>
+    <issue>Virginity_Female</issue>
+    <label>shameful</label>
+    <description>Remaining as virgin is shameful thing and being laughed at.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    <associatedMemes>
+      <li>FemaleSupremacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenF</eventDef>
+        <thought>Virgin_Shameful_Taken</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <PreceptDef>
+    <defName>Virgin_ShamefulM</defName>
+    <issue>Virginity_Male</issue>
+    <label>shameful</label>
+    <description>Remaining as virgin is shameful thing and being laughed at.</description>
+    <impact>Medium</impact>
+    <displayOrderInIssue>30</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <defaultSelectionWeight>40</defaultSelectionWeight>
+    <associatedMemes>
+      <li>MaleSupremacy</li>
+    </associatedMemes>
+    <comps>
+      <li Class="RJWSexperience.Ideology.PreceptComp_SelfTookThoughtTagged">
+        <eventDef>Virgin_TakenM</eventDef>
+        <thought>Virgin_Shameful_Taken</thought>
+        <tag>BeenRaped</tag>
+        <exclusive>true</exclusive>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <!-- Thoughts -->
+
+  <ThoughtDef>
+    <defName>Virgin_Precious_Taken_Forcefully</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>30</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Lost virginity</label>
+        <description>I lost my virginity forcefully.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+        <baseOpinionOffset>-200</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <RJWSexperience.ThoughtDef_Opinionbased>
+    <defName>Virgin_Precious_Taken</defName>
+    <thoughtClass>RJWSexperience.Thought_Opinionbased</thoughtClass>
+    <durationDays>7</durationDays>
+    <stackLimit>1</stackLimit>
+    <minimumValueforStage>
+      <li>-100</li>
+      <li>-50</li>
+      <li>0</li>
+      <li>75</li>
+    </minimumValueforStage>
+    <stages>
+      <li>
+        <label>Lost virginity by {0}</label>
+        <description>I am no longer virgin.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>Lost virginity by {0}</label>
+        <description>I am no longer virgin.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>Lost virginity by {0}</label>
+        <description>I am no longer virgin.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>Gave virginity to {0}</label>
+        <description>I Gave my virginity to my love.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </RJWSexperience.ThoughtDef_Opinionbased>
+
+  <RJWSexperience.ThoughtDef_Opinionbased>
+    <defName>Virgin_Shameful_Taken</defName>
+    <thoughtClass>RJWSexperience.Thought_Opinionbased</thoughtClass>
+    <durationDays>7</durationDays>
+    <stackLimit>1</stackLimit>
+    <minimumValueforStage>
+      <li>-100</li>
+      <li>0</li>
+      <li>75</li>
+    </minimumValueforStage>
+    <stages>
+      <li>
+        <label>Lost virginity by {0}</label>
+        <description>Finally!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>Lost virginity by {0}</label>
+        <description>Finally!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Lost virginity by {0}</label>
+        <description>Finally!</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </RJWSexperience.ThoughtDef_Opinionbased>
+
+
+  <ThoughtDef>
+    <defName>Virgin_OnlyForSpouse_Know_Taken</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>30</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <nullifyingTraits>
+      <li>Nymphomaniac</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>slut</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

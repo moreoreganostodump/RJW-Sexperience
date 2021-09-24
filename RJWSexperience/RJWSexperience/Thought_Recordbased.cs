@@ -45,9 +45,6 @@ namespace RJWSexperience
 
     public class Thought_AteCum : Thought_Recordbased
     {
-
-        protected int recordIncrement = 1;
-
         public override int CurStageIndex
         {
             get
@@ -60,21 +57,13 @@ namespace RJWSexperience
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref recordIncrement, "recordIncrement", recordIncrement, true);
         }
 
 
 
-        //There is no direct way to modify custom records via ingestion. So i increase it from thought.
         public override void ThoughtInterval()
         {
             base.ThoughtInterval();
-            if (recordIncrement >= 1)
-            {
-                recordIncrement--;
-                pawn.records.AddTo(VariousDefOf.NumofEatenCum, 1);
-            }
-            
         }
 
         public override bool TryMergeWithExistingMemory(out bool showBubble)
@@ -97,13 +86,11 @@ namespace RJWSexperience
         public override void Init()
         {
             base.Init();
-            recordIncrement = 1;
         }
 
         protected virtual void Merged()
         {
             age = 0;
-            recordIncrement += 1;
         }
     }
 

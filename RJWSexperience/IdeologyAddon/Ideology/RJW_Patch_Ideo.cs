@@ -59,8 +59,8 @@ namespace RJWSexperience.Ideology
 
         public static float BestialityByPrecept(Ideo ideo)
         {
-            if (ideo.HasPrecept(VariousDefOf.Bestiality_Honorable)) return 0.3f;
-            else if (ideo.HasPrecept(VariousDefOf.Bestiality_OnlyVenerated)) return 0.6f;
+            if (ideo.HasPrecept(VariousDefOf.Bestiality_Honorable)) return 0.5f;
+            else if (ideo.HasPrecept(VariousDefOf.Bestiality_OnlyVenerated)) return 0.65f;
             else if (ideo.HasPrecept(VariousDefOf.Bestiality_Acceptable)) return 0.75f;
             else if (ideo.HasPrecept(VariousDefOf.Bestiality_Disapproved)) return 1.0f;
             else return 5f;
@@ -78,13 +78,30 @@ namespace RJWSexperience.Ideology
 
         public static float RapeByPrecept(Ideo ideo)
         {
-            if (ideo.HasPrecept(VariousDefOf.Rape_Honorable)) return 0.25f;
-            else if (ideo.HasPrecept(VariousDefOf.Rape_Acceptable)) return 0.5f;
+            if (ideo.HasPrecept(VariousDefOf.Rape_Honorable)) return 0.5f;
+            else if (ideo.HasPrecept(VariousDefOf.Rape_Acceptable)) return 0.75f;
             else if (ideo.HasPrecept(VariousDefOf.Rape_Disapproved)) return 1.0f;
             else return 3f;
         }
     }
 
+    [HarmonyPatch(typeof(ThinkNode_ChancePerHour_Necro), "MtbHours")]
+    public static class RJW_Patch_ThinkNode_ChancePerHour_Necro
+    {
+        public static void Postfix(Pawn pawn, ref float __result)
+        {
+            Ideo ideo = pawn.Ideo;
+            if (ideo != null) __result *= NecroByPrecept(ideo); // ideo is null if don't have dlc
+        }
+
+        public static float NecroByPrecept(Ideo ideo)
+        {
+            if (ideo.HasPrecept(VariousDefOf.Necrophilia_Approved)) return 0.5f;
+            else if (ideo.HasPrecept(VariousDefOf.Necrophilia_Acceptable)) return 0.75f;
+            else if (ideo.HasPrecept(VariousDefOf.Necrophilia_Disapproved)) return 1.0f;
+            else return 8f;
+        }
+    }
 
     [HarmonyPatch(typeof(xxx), "is_rapist")]
     public static class RJW_Patch_is_rapist
@@ -366,6 +383,19 @@ namespace RJWSexperience.Ideology
             if (ideo != null && ideo.HasMeme(VariousDefOf.Zoophile))
             {
                 SaveStorage.DataStore.GetPawnData(pawn).CanDesignateBreeding = true;
+                __result = true;
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(PawnDesignations_Comfort), "UpdateCanDesignateComfort")]
+    public static class RJW_PatchUpdateCanDesignateComfort
+    {
+        public static void Postfix(Pawn pawn, ref bool __result)
+        {
+            if (pawn.IsSubmissive())
+            {
+                SaveStorage.DataStore.GetPawnData(pawn).CanDesignateComfort = true;
                 __result = true;
             }
         }

@@ -23,16 +23,26 @@ namespace RJWSexperience.Ideology
 			{
 				WorkGiver_Warden_TakeToBed.TryTakePrisonerToBed(pawn, warden);
 				pawn.guest.WaitInsteadOfEscapingFor(1250);
-				
 			}
 		}
 
         protected override LordJob CreateLordJob(TargetInfo target, Pawn organizer, Precept_Ritual ritual, RitualObligation obligation, RitualRoleAssignments assignments)
         {
-            return new LordJob_Ritual_Gangbang(target, ritual, obligation, def.stages, assignments, organizer);
+            return new LordJob_Ritual_Gangbang("victim", target, ritual, obligation, def.stages, assignments, organizer);
 		}
-
     }
+
+	public class RitualBehaviorWorker_Gangbang_Consensual : RitualBehaviorWorker
+	{
+		public RitualBehaviorWorker_Gangbang_Consensual() { }
+
+		public RitualBehaviorWorker_Gangbang_Consensual(RitualBehaviorDef def) : base(def) { }
+
+		protected override LordJob CreateLordJob(TargetInfo target, Pawn organizer, Precept_Ritual ritual, RitualObligation obligation, RitualRoleAssignments assignments)
+		{
+			return new LordJob_Ritual_Gangbang("initiator", target, ritual, obligation, def.stages, assignments, organizer);
+		}
+	}
 
 	public class RitualStage_InteractWithVictim : RitualStage
     {
@@ -49,5 +59,11 @@ namespace RJWSexperience.Ideology
 			return ritual.assignments.AssignedPawns("victim").FirstOrDefault();
 		}
 	}
-
+	public class RitualStage_InteractWithInitiator : RitualStage
+	{
+		public override TargetInfo GetSecondFocus(LordJob_Ritual ritual)
+		{
+			return ritual.assignments.AssignedPawns("initiator").FirstOrDefault();
+		}
+	}
 }
