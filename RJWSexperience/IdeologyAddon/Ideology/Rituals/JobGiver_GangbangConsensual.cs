@@ -25,7 +25,7 @@ namespace RJWSexperience.Ideology
             }
             else return null;
 
-            if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_fuck(pawn))
+            if (dutyDef == DutyDefOf.TravelOrLeave || !xxx.can_do_loving(pawn))
             {
                 return null;
             }

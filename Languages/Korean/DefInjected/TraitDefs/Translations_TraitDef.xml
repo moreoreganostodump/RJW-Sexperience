@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Virgin.degreeDatas.0.label>처녀막 손상</Virgin.degreeDatas.0.label>
+  <Virgin.degreeDatas.0.description>[PAWN_nameDef]는 경험이 없습니다. 하지만 모종의 이유로 처녀막이 찢어졌습니다.</Virgin.degreeDatas.0.description>
+  <Virgin.degreeDatas.1.label>동정</Virgin.degreeDatas.1.label>
+  <Virgin.degreeDatas.1.description>[PAWN_nameDef]는 경험이 없습니다.</Virgin.degreeDatas.1.description>
+  <Virgin.degreeDatas.2.label>처녀?</Virgin.degreeDatas.2.label>
+  <Virgin.degreeDatas.2.description>[PAWN_nameDef]는 경험이 있는 것 같습니다. 하지만 처녀막이 여전히 남아있습니다.</Virgin.degreeDatas.2.description>
+  <Virgin.degreeDatas.3.label>처녀</Virgin.degreeDatas.3.label>
+  <Virgin.degreeDatas.3.description>[PAWN_nameDef]는 순수함을 유지하고 있습니다.</Virgin.degreeDatas.3.description>
+
+</LanguageData>

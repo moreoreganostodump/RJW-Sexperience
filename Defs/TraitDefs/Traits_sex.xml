@@ -7,13 +7,13 @@
 		<commonalityFemale>0.0</commonalityFemale>
 		<degreeDatas>
 			<li>
+				<label>damaged virgin</label>
 				<labelMale>BUGGED! MALE CANNOT HAS THIS TRAIT</labelMale>
-				<labelFemale>damaged virgin</labelFemale>
 				<description>[PAWN_nameDef] never experienced. However, her hymen had damaged for some reason.</description>
 				<degree>-1</degree>
 				<marketValueFactorOffset>0.05</marketValueFactorOffset>
 				<statOffsets>
-					<SexFrequency>0.2</SexFrequency>
+					<SexFrequency>-0.2</SexFrequency>
 				</statOffsets>
 				<skillGains>
 					<li>
@@ -37,19 +37,19 @@
 				</skillGains>
 			</li>
 			<li>
+				<label>virgin?</label>
 				<labelMale>BUGGED! MALE CANNOT HAS THIS TRAIT</labelMale>
-				<labelFemale>virgin?</labelFemale>
 				<description>[PAWN_nameDef] looks experienced. But the hymen is still threre.</description>
 				<marketValueFactorOffset>0.10</marketValueFactorOffset>
 				<degree>1</degree>
 			</li>
 			<li>
+				<label>virgin</label>
 				<labelMale>BUGGED! MALE CANNOT HAS THIS TRAIT</labelMale>
-				<labelFemale>virgin</labelFemale>
 				<description>[PAWN_nameDef] never experienced.</description>
 				<degree>2</degree>
 				<statOffsets>
-					<SexFrequency>0.2</SexFrequency>
+					<SexFrequency>-0.2</SexFrequency>
 				</statOffsets>
 				<skillGains>
 					<li>

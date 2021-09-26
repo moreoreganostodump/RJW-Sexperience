@@ -283,7 +283,7 @@ namespace RJWSexperience.UI
                 }
                 else
                 {
-                    GUI.Label(infoRect1, Keyed.RS_Normal + " ", fontstyleright);
+                    //GUI.Label(infoRect1, Keyed.RS_Normal + " ", fontstyleright);
                 }
             }
             else
@@ -342,7 +342,7 @@ namespace RJWSexperience.UI
                 GUI.color = Color.red;
                 GUI.Box(tmp, "", boxstyle);
                 GUI.color = Color.white;
-                GUI.Label(tmp, "Virgin", fontstylecenter);
+                GUI.Label(tmp, Keyed.Virgin, fontstylecenter);
             }
             else
             {

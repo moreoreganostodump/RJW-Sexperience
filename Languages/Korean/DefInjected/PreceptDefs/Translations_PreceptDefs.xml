@@ -95,11 +95,33 @@
   <BabyFaction_AlwaysFather.description>새로 태어난 아기는 아빠의 소속과 이념을 따릅니다.</BabyFaction_AlwaysFather.description>
   <BabyFaction_AlwaysColony.label>항상 정착지를 따름</BabyFaction_AlwaysColony.label>
   <BabyFaction_AlwaysColony.description>새로 태어난 아기는 정착지의 소속과 이념을 따릅니다.</BabyFaction_AlwaysColony.description>
+
+  
+  <Virgin_UselessF.label>쓸모없음</Virgin_UselessF.label>
+  <Virgin_UselessF.description>처녀성은 쓸모없습니다.</Virgin_UselessF.description>
+  <Virgin_UselessM.label>쓸모없음</Virgin_UselessM.label>
+  <Virgin_UselessM.description>동정은 쓸모없습니다.</Virgin_UselessM.description>
+  <Virgin_PreciousF.label>소중함</Virgin_PreciousF.label>
+  <Virgin_PreciousF.description>처녀성은 소중합니다.</Virgin_PreciousF.description>
+  <Virgin_PreciousM.label>동정</Virgin_PreciousM.label>
+  <Virgin_PreciousM.description>동정은 소중합니다.</Virgin_PreciousM.description>
+  <Virgin_OnlyForSpouseF.label>소중함(엄격)</Virgin_OnlyForSpouseF.label>
+  <Virgin_OnlyForSpouseF.description>결혼전에 처녀성을 잃는것은 죄악입니다.</Virgin_OnlyForSpouseF.description>
+  <Virgin_OnlyForSpouseM.label>소중함(엄격)</Virgin_OnlyForSpouseM.label>
+  <Virgin_OnlyForSpouseM.description>결혼전에 동정을 잃는것은 죄악입니다.</Virgin_OnlyForSpouseM.description>
+  <Virgin_ShamefulF.label>수치스러움</Virgin_ShamefulF.label>
+  <Virgin_ShamefulF.description>처녀인것은 수치스러운 일이며 웃음거리가 됩니다.</Virgin_ShamefulF.description>
+  <Virgin_ShamefulM.label>수치스러움</Virgin_ShamefulM.label>
+  <Virgin_ShamefulM.description>동정인것은 수치스러운 일이며 웃음거리가 됩니다.</Virgin_ShamefulM.description>
   
   <GangbangCeremony.label>윤간</GangbangCeremony.label>
   <GangbangCeremony.description>개시자가 참여자들과 함께 희생자를 강간하는 의례적 윤간입니다.</GangbangCeremony.description>
+  <GangbangCeremony_Consensual.label>윤간</GangbangCeremony_Consensual.label>
+  <GangbangCeremony_Consensual.description>수행자가 참여자들에게 윤간당하는 의례적 윤간입니다.</GangbangCeremony_Consensual.description>
   <AnimalGangbangCeremony.label>동물에의한 윤간</AnimalGangbangCeremony.label>
   <AnimalGangbangCeremony.description>동물이 희생자를 윤간하는 의례적 윤간입니다.</AnimalGangbangCeremony.description>
+  <AnimalGangbangCeremony_Consensual.label>동물에의한 윤간</AnimalGangbangCeremony_Consensual.label>
+  <AnimalGangbangCeremony_Consensual.description>동물이 수행자를 윤간하는 의례적 윤간입니다.</AnimalGangbangCeremony_Consensual.description>
   <DrugOrgyCeremony.label>마약난교</DrugOrgyCeremony.label>
   <DrugOrgyCeremony.description>엄청난 양의 최음제를 사용하는 난교입니다.</DrugOrgyCeremony.description>
 </LanguageData>

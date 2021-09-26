@@ -56,6 +56,7 @@ namespace RJWSexperience
         public static readonly string RS_BeenRaped = "RS_BeenRaped".Translate();
         public static readonly string RS_RapedSomeone = "RS_RapedSomeone".Translate();
         public static readonly string RS_PreferRace = "RS_PreferRace".Translate();
+        public static readonly string Virgin = "Virgin".Translate();
         public static readonly string Lust = "Lust".Translate();
         public static readonly string Unknown = "Unknown".Translate();
         public static readonly string Incest = "Incest".Translate();

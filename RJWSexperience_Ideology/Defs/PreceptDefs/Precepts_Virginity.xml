@@ -287,7 +287,7 @@
       </li>
       <li>
         <label>Gave virginity to {0}</label>
-        <description>I Gave my virginity to my love.</description>
+        <description>I gave my virginity to my love.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>

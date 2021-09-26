@@ -13,6 +13,48 @@
   <RSShouldCanFuck>성관계가 가능해야 합니다.</RSShouldCanFuck>
   <RSTotalGatheredCum>수집한 정액 양: </RSTotalGatheredCum>
   <RS_LostVirgin>{1}이(가) {0}의 아다를 뗐습니다.</RS_LostVirgin>
+  <RS_FloatMenu_CleanSelf>몸에 뿌려진 정액 모으기</RS_FloatMenu_CleanSelf>
+  <RS_Best_Sextype>가장 좋았던 체위</RS_Best_Sextype>
+  <RS_Recent_Sextype>최근에 한 체위</RS_Recent_Sextype>
+  <RS_Sex_Partners>경험인원</RS_Sex_Partners>
+  <RS_Cum_Swallowed>정액 먹음</RS_Cum_Swallowed>
+  <RS_Selected_Partner>선택한 상대 정보</RS_Selected_Partner>
+  <RS_Sex_Info>{0}: {1} 번</RS_Sex_Info>
+  <RS_SAT_AVG>평균: {0}</RS_SAT_AVG>
+  <RS_Sex_Count>성관계: </RS_Sex_Count>
+  <RS_Orgasms>절정: </RS_Orgasms>
+  <RS_Recent_Sex_Partner>최근에 관계한 상대</RS_Recent_Sex_Partner>
+  <RS_Recent_Sex_Partner_ToolTip>최근에 섹스한 상대입니다.</RS_Recent_Sex_Partner_ToolTip>
+  <RS_First_Sex_Partner>첫 경험 상대</RS_First_Sex_Partner>
+  <RS_First_Sex_Partner_ToolTip>첫 경험을 한 상대입니다.</RS_First_Sex_Partner_ToolTip>
+  <RS_Most_Sex_Partner>가장 많이 관계한 상대</RS_Most_Sex_Partner>
+  <RS_Most_Sex_Partner_ToolTip>가장 많이 섹스한 상대입니다.</RS_Most_Sex_Partner_ToolTip>
+  <RS_Best_Sex_Partner>가장 좋았던 상대</RS_Best_Sex_Partner>
+  <RS_Best_Sex_Partner_ToolTip>가장 만족스러운 섹스를 한 상대입니다.</RS_Best_Sex_Partner_ToolTip>
+  <RS_VirginsTaken>아다를 뗀 횟수</RS_VirginsTaken>
+  <RS_VirginsTaken_ToolTip>내가 아다를 떼준 사람들의 수.</RS_VirginsTaken_ToolTip>
+  <RS_TotalSexHad>총 성관계</RS_TotalSexHad>
+  <RS_TotalSexHad_ToolTip>지금까지 섹스를 한 횟수입니다.</RS_TotalSexHad_ToolTip>
+  <RS_Raped>강간함: </RS_Raped>
+  <RS_RapedMe>강간당함: </RS_RapedMe>
+  <RS_Sex_History>성교 기록</RS_Sex_History>
+  <RS_Statistics>체위 통계</RS_Statistics>
+  <RS_PartnerList>경험인원 목록</RS_PartnerList>
+  <RS_Sexuality>성적 취향</RS_Sexuality>
+  <RS_BeenRaped>강간당함</RS_BeenRaped>
+  <RS_RapedSomeone>누군가를 강간함</RS_RapedSomeone>
+  <RS_PreferRace>선호 종족</RS_PreferRace>
+  <RS_Bestiality>수간</RS_Bestiality>
+  <RS_Interspecies>이종간</RS_Interspecies>
+  <RS_Normal>일반</RS_Normal>
+  <RS_Necrophile>시간</RS_Necrophile>
+  <RS_GatherCum>정액 모으기</RS_GatherCum>
+  <RS_SexSkill>성 기술</RS_SexSkill>
+  <RS_CumAddiction>정액 중독</RS_CumAddiction>
+  <RS_CumAddiction_Tooltip>정액에 중독됐습니다.</RS_CumAddiction_Tooltip>
+  <RS_CumAddictiveness>정액 중독성</RS_CumAddictiveness>
+  <RS_CumAddictiveness_Tooltip>정액에 중독되기 쉬워집니다.</RS_CumAddictiveness_Tooltip>
+  <RS_NumofTimes>번</RS_NumofTimes>
 
   <RSOption_1_Label>기록 생성기 활성화</RSOption_1_Label>
   <RSOption_1_Desc>폰의 섹스기록을 무작위로 생성합니다.</RSOption_1_Desc>
@@ -34,4 +76,38 @@
   <RSOption_9_Desc>섹스 가능한 최소나이를 설정합니다.&#10;이 값은 RJW의 최소 나이 설정과 관계가 없고 기록을 생성하는데만 사용됩니다.</RSOption_9_Desc>
   <RSOption_10_Label>동정 비율</RSOption_10_Label>
   <RSOption_10_Desc>나이 상관없이 동정일 확률을 설정합니다.</RSOption_10_Desc>
+
+  <Vaginal>보지</Vaginal>
+  <Anal>항문</Anal>
+  <Oral>구강</Oral>
+  <Masturbation>자위</Masturbation>
+  <DoublePenetration>앞뒤로</DoublePenetration>
+  <Boobjob>파이즈리</Boobjob>
+  <Handjob>핸드잡</Handjob>
+  <Footjob>풋잡</Footjob>
+  <Fingering>핑거링</Fingering>
+  <Scissoring>가위치기</Scissoring>
+  <MutualMasturbation>상호대딸</MutualMasturbation>
+  <Fisting>피스팅</Fisting>
+  <MechImplant>메카노이드 주입</MechImplant>
+  <Rimming>후빨</Rimming>
+  <Fellatio>펠라치오</Fellatio>
+  <Cunnilingus>보빨</Cunnilingus>
+  <Sixtynine>69</Sixtynine>
+
+  <Asexual>무성애자</Asexual>
+  <Pansexual>범성욕주의자</Pansexual>
+  <Heterosexual>이성애자</Heterosexual>
+  <MostlyHeterosexual>이성애자</MostlyHeterosexual>
+  <LeaningHeterosexual>이성애성향 양성애자</LeaningHeterosexual>
+  <Bisexual>양성애자</Bisexual>
+  <LeaningHomosexual>동성애성향 양성애자</LeaningHomosexual>
+  <MostlyHomosexual>동성애자</MostlyHomosexual>
+  <Homosexual>동성애자</Homosexual>
+
+  <Lust>음란함</Lust>
+  <Unknown>알 수 없음</Unknown>
+  <Virgin>동정</Virgin>
+  <Incest>근친</Incest>
+
 </LanguageData>

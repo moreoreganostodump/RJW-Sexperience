@@ -61,7 +61,7 @@ namespace RJWSexperience
                     }
                     if (RemoveVirginTrait(pawn, partner, props))
                     {
-                        Messages.Message(Keyed.RS_LostVirgin(pawn.LabelShort, partner.LabelShort), MessageTypeDefOf.NeutralEvent, true);
+                        if (Configurations.EnableRecordRandomizer) Messages.Message(Keyed.RS_LostVirgin(pawn.LabelShort, partner.LabelShort), MessageTypeDefOf.NeutralEvent, true);
                     }
                 }
                 else

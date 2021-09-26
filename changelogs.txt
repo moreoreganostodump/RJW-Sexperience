@@ -1,3 +1,8 @@
+Version Beta 1.0.2.1
+ - messages about virginity loss will not be shown if the record randomizer is off
+ - fixed rituals not worked properly
+ - resolved mod confliction
+
 Version Beta 1.0.2.0
 This update will mess your pawn's record. Use debug tools.
  - requires RimWorld 1.3.3117 or later
