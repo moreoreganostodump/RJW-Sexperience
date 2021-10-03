@@ -55,6 +55,9 @@
   <RS_CumAddictiveness>Cum addictiveness</RS_CumAddictiveness>
   <RS_CumAddictiveness_Tooltip>More likely to get addicted to cum.</RS_CumAddictiveness_Tooltip>
   <RS_NumofTimes>times</RS_NumofTimes>
+  <RS_Ago>ago</RS_Ago>
+  <RS_LastSex>last sex</RS_LastSex>
+  <RS_HadBestSexDaysAgo>Had best sex {0}.</RS_HadBestSexDaysAgo>
 
   <RSOption_1_Label>Enable record randomizer</RSOption_1_Label>
   <RSOption_1_Desc>Randomize pawn's sex records.</RSOption_1_Desc>

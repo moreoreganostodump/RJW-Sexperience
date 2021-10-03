@@ -212,9 +212,10 @@ namespace RJWSexperience.UI
                 FillableBarLabeled(bestsexRect,String.Format(Keyed.RS_Best_Sextype+": {0}", Keyed.Sextype[(int)history.BestSextype]), p / 2, HistoryUtility.SextypeColor[(int)history.BestSextype], Texture2D.blackTexture, null, String.Format("{0:P2}", p));
 
                 if (history.IamFirst) str += "\n" + Keyed.RS_LostVirgin(history.Label, pawn.LabelShort);
-                
+                str += "\n" + history.BestSexDays;
 
                 TooltipHandler.TipRegion(rect, str);
+                
             }
             else
             {
@@ -226,11 +227,12 @@ namespace RJWSexperience.UI
             }
         }
 
-        protected void DrawSexInfoCard(Rect rect, SexHistory history, string label, string tooltip)
+        protected void DrawSexInfoCard(Rect rect, SexHistory history, string label, string tooltip, string rightlabel = "")
         {
             Rect labelRect = new Rect(rect.x, rect.y, rect.width, FONTHEIGHT);
             Rect infoRect = new Rect(rect.x, rect.y + FONTHEIGHT, rect.width, rect.height - FONTHEIGHT);
             GUI.Label(labelRect, label, fontstyleleft);
+            GUI.Label(labelRect, rightlabel, fontstyleright);
             DrawInfoWithPortrait(infoRect,history, tooltip);
             
 
@@ -243,10 +245,10 @@ namespace RJWSexperience.UI
         {
             Listing_Standard listmain = new Listing_Standard();
             listmain.Begin(rect.ContractedBy(4f));
-            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetRecentPartnersHistory, Keyed.RS_Recent_Sex_Partner, Keyed.RS_Recent_Sex_Partner_ToolTip);
-            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetFirstPartnerHistory, Keyed.RS_First_Sex_Partner, Keyed.RS_First_Sex_Partner_ToolTip);
-            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetMostPartnerHistory, Keyed.RS_Most_Sex_Partner, Keyed.RS_Most_Sex_Partner_ToolTip);
-            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetBestSexPartnerHistory, Keyed.RS_Best_Sex_Partner, Keyed.RS_Best_Sex_Partner_ToolTip);
+            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetRecentPartnersHistory, Keyed.RS_Recent_Sex_Partner, Keyed.RS_Recent_Sex_Partner_ToolTip, history.RecentSexDays);
+            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetFirstPartnerHistory, Keyed.RS_First_Sex_Partner, Keyed.RS_First_Sex_Partner_ToolTip, history.FirstSexDays);
+            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetMostPartnerHistory, Keyed.RS_Most_Sex_Partner, Keyed.RS_Most_Sex_Partner_ToolTip, history.MostSexDays);
+            DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), history.GetBestSexPartnerHistory, Keyed.RS_Best_Sex_Partner, Keyed.RS_Best_Sex_Partner_ToolTip, history.BestSexDays);
             GUI.Label(listmain.GetRect(FONTHEIGHT), Keyed.RS_PreferRace, fontstyleleft);
             DrawPreferRace(listmain.GetRect(66f+15f));
             listmain.GetRect(15f);
@@ -354,11 +356,11 @@ namespace RJWSexperience.UI
 
             tmp = listmain.GetRect(FONTHEIGHT);
             p = pawn.records.GetValue(VariousDefOf.Lust);
-            FillableBarLabeled(tmp, String.Format(Keyed.Lust +": {0:0.00}", p), Mathf.Clamp01(p.Normalization(-Configurations.LustLimit*3, Configurations.LustLimit*3)), HistoryUtility.Slaanesh, Texture2D.blackTexture, null, String.Format(xxx.sex_drive_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.GetStatValue(xxx.sex_drive_stat)));
+            FillableBarLabeled(tmp, String.Format(Keyed.Lust +": {0:0.00}", p), Mathf.Clamp01(p.Normalization(-Configurations.LustLimit*3, Configurations.LustLimit*3)), HistoryUtility.Slaanesh, Texture2D.blackTexture, null, String.Format(xxx.sex_drive_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.Dead ? 0 : pawn.GetStatValue(xxx.sex_drive_stat)));
             listmain.Gap(1f);
             if (Mouse.IsOver(tmp))
             {
-                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.sex_drive_stat, pawn.GetStatValue(xxx.sex_drive_stat)));
+                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.sex_drive_stat, pawn.Dead ? 0 : pawn.GetStatValue(xxx.sex_drive_stat)));
             }
 
             p = history.GetBestSextype(out xxx.rjwSextype sextype) / BASESAT;
@@ -414,27 +416,27 @@ namespace RJWSexperience.UI
             if (p < history.BeenRapedCount)
             {
                 p = history.BeenRapedCount;
-                FillableBarLabeled(tmp, String.Format(Keyed.RS_BeenRaped + ": {0}", p), p / 50, Texture2D.grayTexture, Texture2D.blackTexture, null, String.Format(xxx.vulnerability_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.GetStatValue(xxx.vulnerability_stat)));
+                FillableBarLabeled(tmp, String.Format(Keyed.RS_BeenRaped + ": {0}", p), p / 50, Texture2D.grayTexture, Texture2D.blackTexture, null, String.Format(xxx.vulnerability_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.Dead ? 0 : pawn.GetStatValue(xxx.vulnerability_stat)));
                 listmain.Gap(1f);
             }
             else
             {
-                FillableBarLabeled(tmp, String.Format(Keyed.RS_RapedSomeone + ": {0}", p), p / 50, HistoryUtility.Khorne, Texture2D.blackTexture, null, String.Format(xxx.vulnerability_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.GetStatValue(xxx.vulnerability_stat)));
+                FillableBarLabeled(tmp, String.Format(Keyed.RS_RapedSomeone + ": {0}", p), p / 50, HistoryUtility.Khorne, Texture2D.blackTexture, null, String.Format(xxx.vulnerability_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.Dead ? 0 : pawn.GetStatValue(xxx.vulnerability_stat)));
                 listmain.Gap(1f);
             }
             if (Mouse.IsOver(tmp))
             {
-                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.vulnerability_stat, pawn.GetStatValue(xxx.vulnerability_stat)));
+                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.vulnerability_stat, pawn.Dead ? 0 : pawn.GetStatValue(xxx.vulnerability_stat)));
             }
 
 
-            p = pawn.GetStatValue(xxx.sex_satisfaction);
+            p = pawn.Dead ? 0 : pawn.GetStatValue(xxx.sex_satisfaction);
             tmp = listmain.GetRect(FONTHEIGHT);
             FillableBarLabeled(tmp, String.Format(xxx.sex_satisfaction.LabelCap.CapitalizeFirst() + ": {0:P2}", p), p/2, HistoryUtility.Satisfaction, Texture2D.blackTexture);
             listmain.Gap(1f);
             if (Mouse.IsOver(tmp))
             {
-                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.sex_satisfaction, pawn.GetStatValue(xxx.sex_satisfaction)));
+                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.sex_satisfaction, pawn.Dead ? 0 : pawn.GetStatValue(xxx.sex_satisfaction)));
             }
 
             //p = pawn.GetStatValue(xxx.vulnerability_stat);
@@ -444,16 +446,16 @@ namespace RJWSexperience.UI
             SkillRecord skill = pawn.skills?.GetSkill(VariousDefOf.SexSkill);
             p = skill?.Level ?? 0;
             tmp = listmain.GetRect(FONTHEIGHT);
-            FillableBarLabeled(tmp, String.Format(Keyed.RS_SexSkill + ": {0}, {1:P2}", p, skill?.xpSinceLastLevel/ skill?.XpRequiredForLevelUp), p / 20, HistoryUtility.Tzeentch, Texture2D.blackTexture, null, String.Format(xxx.sex_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.GetStatValue(xxx.sex_stat)), HistoryUtility.PassionBG[(int)(skill?.passion ?? 0)]);
+            FillableBarLabeled(tmp, String.Format(Keyed.RS_SexSkill + ": {0}, {1:P2}", p, skill?.xpSinceLastLevel/ skill?.XpRequiredForLevelUp), p / 20, HistoryUtility.Tzeentch, Texture2D.blackTexture, null, String.Format(xxx.sex_stat.LabelCap.CapitalizeFirst() + ": {0:P2}", pawn.Dead ? 0 : pawn.GetStatValue(xxx.sex_stat)), HistoryUtility.PassionBG[(int)(skill?.passion ?? 0)]);
             if (Mouse.IsOver(tmp))
             {
-                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.sex_stat, pawn.GetStatValue(xxx.sex_stat)));
+                TooltipHandler.TipRegion(tmp, RJWUIUtility.GetStatExplanation(pawn, xxx.sex_stat, pawn.Dead ? 0 : pawn.GetStatValue(xxx.sex_stat)));
             }
 
 
             listmain.Gap(1f);
 
-            if (selectedPawn != null) DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), selectedPawn, Keyed.RS_Selected_Partner, Keyed.RS_Selected_Partner);
+            if (selectedPawn != null) DrawSexInfoCard(listmain.GetRect(CARDHEIGHT), selectedPawn, Keyed.RS_Selected_Partner, Keyed.RS_Selected_Partner, RJWUIUtility.GetSexDays(selectedPawn.RecentSexTickAbs));
             else DrawExtraInfo(listmain.GetRect(CARDHEIGHT));
             
             listmain.End();
@@ -498,7 +500,13 @@ namespace RJWSexperience.UI
                 int sexindex = Sextype[i];
                 p = history.GetAVGSat(sexindex) / BASESAT;
                 string label = Keyed.RS_Sex_Info(Keyed.Sextype[sexindex], history.GetSexCount(sexindex).ToString());
-                FillableBarLabeled(listmain.GetRect(FONTHEIGHT),label, p / 2, HistoryUtility.SextypeColor[sexindex], Texture2D.blackTexture, null, Keyed.RS_SAT_AVG(String.Format("{0:P2}", p)));
+                Rect tmpRect = listmain.GetRect(FONTHEIGHT);
+                FillableBarLabeled(tmpRect,label, p / 2, HistoryUtility.SextypeColor[sexindex], Texture2D.blackTexture, null, Keyed.RS_SAT_AVG(String.Format("{0:P2}", p)));
+                if (Mouse.IsOver(tmpRect))
+                {
+                    TooltipHandler.TipRegion(tmpRect, Keyed.RS_LastSex.CapitalizeFirst() + ": " + history.SextypeRecentDays(Sextype[i]));
+                }
+
                 listmain.Gap(1f);
             }
 

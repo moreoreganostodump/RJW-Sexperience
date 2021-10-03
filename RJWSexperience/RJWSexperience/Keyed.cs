@@ -18,6 +18,7 @@ namespace RJWSexperience
         public static string RS_LostVirgin(string pawn, string partner) => "RS_LostVirgin".Translate(pawn.Colorize(Color.yellow),partner.Colorize(Color.yellow));
         public static string RS_Sex_Info(string sextype, string sexcount) => "RS_Sex_Info".Translate(sextype, sexcount);
         public static string RS_SAT_AVG(string avgsat) => "RS_SAT_AVG".Translate(avgsat);
+        public static string RS_HadBestSexDaysAgo(string days) => "RS_HadBestSexDaysAgo".Translate(days);
 
         public static readonly string Mod_Title = "RS_Mod_Title".Translate();
         public static readonly string SlaveStatFactorDefault = "SlaveStatFactorDefault".Translate();
@@ -72,6 +73,8 @@ namespace RJWSexperience
         public static readonly string RS_CumAddictiveness = "RS_CumAddictiveness".Translate();
         public static readonly string RS_CumAddictiveness_Tooltip = "RS_CumAddictiveness_Tooltip".Translate();
         public static readonly string RS_NumofTimes = "RS_NumofTimes".Translate();
+        public static readonly string RS_Ago = "RS_Ago".Translate();
+        public static readonly string RS_LastSex = "RS_LastSex".Translate();
         
 
         public static readonly string Option_1_Label = "RSOption_1_Label".Translate();

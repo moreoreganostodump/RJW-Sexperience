@@ -191,7 +191,7 @@ namespace RJWSexperience
     {
         public static void Postfix(Pawn pawn, ref Job __result)
         {
-            if (RJWPreferenceSettings.FapEverywhere && __result != null)
+            if (RJWPreferenceSettings.FapEverywhere && (pawn.Faction?.IsPlayer ?? false) && __result != null)
             {
                 Building_CumBucket bucket = pawn.FindClosestBucket();
                 if (bucket != null)

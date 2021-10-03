@@ -81,9 +81,18 @@ namespace RJWSexperience.UI
 
 		public static string GetStatExplanation(Pawn pawn, StatDef stat, float val)
         {
+			if (!pawn.Dead)
 			return stat.description + "\n" +
 				stat.Worker.GetExplanationFull(StatRequest.For(pawn), ToStringNumberSense.Undefined, val);
+			return "Dead".Translate();
         }
+
+		public static string GetSexDays(int absticks, bool printUnknown = false)
+        {
+			if (absticks != 0) return GenDate.ToStringTicksToDays(GenTicks.TicksAbs - absticks) + " " + Keyed.RS_Ago;
+			else if (printUnknown) return Keyed.Unknown;
+			else return "";
+		}
 
     }
 }

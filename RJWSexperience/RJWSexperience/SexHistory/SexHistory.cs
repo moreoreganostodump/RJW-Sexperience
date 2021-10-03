@@ -24,11 +24,13 @@ namespace RJWSexperience
         protected string recentpartner = "";
         protected int[] sextypecount = new int[ARRLEN];
         protected float[] sextypesat = new float[ARRLEN];
+        protected int[] sextyperecenttickabs = new int[ARRLEN];
         protected int virginstaken = 0;
         protected int incestuous = 0;
         protected int bestiality = 0;
         protected int corpsefuck = 0;
         protected int interspecies = 0;
+        protected int firstsextickabs = 0;
 
         protected string mostpartnercache = "";
         protected xxx.rjwSextype mostsextypecache = xxx.rjwSextype.None;
@@ -43,11 +45,15 @@ namespace RJWSexperience
         protected int preferracesexcountcache = 0;
         protected Pawn preferracepawncache = null;
         protected float avtsatcache = 0;
+        protected int recentsextickabscache = 0;
+        protected int mostsextickabscache = 0;
+        protected int bestsextickabscache = 0;
 
 
         private List<SexHistory> partnerlistcache;
         private List<int> sextypecountsave;
         private List<float> sextypesatsave;
+        private List<int> sextyperecenttickabssave;
 
 
         public SexHistory GetFirstPartnerHistory
@@ -198,6 +204,68 @@ namespace RJWSexperience
                 return sextypesat.Sum() / totalsexcache;
             }
         }
+        public int RecentSexElapsedTicks
+        {
+            get
+            {
+                return GenTicks.TicksAbs - recentsextickabscache;
+            }
+        }
+        public string RecentSexDays
+        {
+            get
+            {
+                if (recentsextickabscache != 0) return GenDate.ToStringTicksToDays(RecentSexElapsedTicks) + " " + Keyed.RS_Ago;
+                return "";
+            }
+        }
+        public int FirstSexElapsedTicks
+        {
+            get
+            {
+                return GenTicks.TicksAbs - firstsextickabs;
+            }
+        }
+        public string FirstSexDays
+        {
+            get
+            {
+                if (firstsextickabs != 0) return GenDate.ToStringTicksToDays(FirstSexElapsedTicks) + " " + Keyed.RS_Ago;
+                return "";
+            }
+        }
+        public int MostSexElapsedTicks
+        {
+            get
+            {
+                return GenTicks.TicksAbs - mostsextickabscache;
+            }
+        }
+        public string MostSexDays
+        {
+            get
+            {
+                if (mostsextickabscache != 0) return GenDate.ToStringTicksToDays(MostSexElapsedTicks) + " " + Keyed.RS_Ago;
+                return "";
+            }
+        }
+        public int BestSexElapsedTicks
+        {
+            get
+            {
+                return GenTicks.TicksAbs - bestsextickabscache;
+            }
+        }
+        public string BestSexDays
+        {
+            get
+            {
+                if (bestsextickabscache != 0) return GenDate.ToStringTicksToDays(BestSexElapsedTicks) + " " + Keyed.RS_Ago;
+                return "";
+            }
+        }
+
+
         public Texture GetPreferRaceIcon(Vector2 size)
         {
             Update();
@@ -218,6 +286,13 @@ namespace RJWSexperience
             if (dirty) Update();
             sextype = recentsex;
             return recentsat;
+        }
+
+        public string SextypeRecentDays(int sextype)
+        {
+            int index = (int)sextype;
+            if (sextyperecenttickabs[index] != 0) return GenDate.ToStringTicksToDays(GenTicks.TicksAbs - sextyperecenttickabs[index]) + " " + Keyed.RS_Ago;
+            return Keyed.Unknown;
         }
 
         public SexHistory this[Pawn pawn]
@@ -253,6 +328,7 @@ namespace RJWSexperience
             {
                 sextypecountsave = sextypecount.ToList();
                 sextypesatsave = sextypesat.ToList();
+                sextyperecenttickabssave = sextyperecenttickabs.ToList();
             }
 
             Scribe_Collections.Look(ref histories, "histories", LookMode.Value, LookMode.Deep);
@@ -265,14 +341,17 @@ namespace RJWSexperience
             Scribe_Values.Look(ref bestiality, "bestiality", bestiality, true);
             Scribe_Values.Look(ref corpsefuck, "corpsefuck", corpsefuck, true);
             Scribe_Values.Look(ref interspecies, "interspecies", interspecies, true);
+            Scribe_Values.Look(ref firstsextickabs, "firstsextickabs", firstsextickabs, true);
             Scribe_Collections.Look(ref sextypecountsave, "sextypecountsave", LookMode.Value);
             Scribe_Collections.Look(ref sextypesatsave, "sextypesatsave", LookMode.Value);
+            Scribe_Collections.Look(ref sextyperecenttickabssave, "sextyperecenttickabssave", LookMode.Value);
             //Scribe_Values.Look(ref sextypecount, "sextypecount", new int[ARRLEN], true); // not work
             //Scribe_Values.Look(ref sextypesat, "sextypesat", new float[ARRLEN], true);
             if (Scribe.mode == LoadSaveMode.LoadingVars)
             {
                 sextypecount = sextypecountsave?.ToArray() ?? new int[ARRLEN];
                 sextypesat = sextypesatsave?.ToArray() ?? new float[ARRLEN];
+                sextyperecenttickabs = sextyperecenttickabssave?.ToArray() ?? new int[ARRLEN];
             }
 
             if (histories == null) histories = new Dictionary<string, SexHistory>();
@@ -290,6 +369,7 @@ namespace RJWSexperience
             history?.RecordSex(props);
             recentsex = props.sexType;
             sextypecount[(int)props.sexType]++;
+            sextyperecenttickabs[(int)props.sexType] = GenTicks.TicksAbs;
             if (partner.IsIncest(pawn)) incestuous++;
             if (partner.Dead) corpsefuck++;
             if (props.IsBestiality()) bestiality++;
@@ -331,6 +411,7 @@ namespace RJWSexperience
                 TryAddHistory(partner);
                 first = partner.ThingID;
                 SexPartnerHistory history = partner.GetPartnerHistory();
+                firstsextickabs = GenTicks.TicksAbs;
                 if (history != null)
                 {
                     history.TakeSomeonesVirgin(parent as Pawn);
@@ -366,6 +447,7 @@ namespace RJWSexperience
             int maxindex = 0;
             string mostID = Keyed.Unknown;
             string bestID = Keyed.Unknown;
+            
             totalsexcache = 0;
             totalrapedcache = 0;
             totalbeenrapedcache = 0;
@@ -431,6 +513,10 @@ namespace RJWSexperience
             mostpartnercache = mostID;
             bestpartnercache = bestID;
 
+            recentsextickabscache = histories.TryGetValue(recentpartner)?.RecentSexTickAbs ?? 0;
+            mostsextickabscache = histories.TryGetValue(mostpartnercache)?.RecentSexTickAbs ?? 0;
+            bestsextickabscache = histories.TryGetValue(bestpartnercache)?.BestSexTickAbs ?? 0;
+
             racetotalsat.Clear();
             allpartners.Clear();
         }
@@ -492,6 +578,8 @@ namespace RJWSexperience
         protected float bestsatisfaction = 0;
         protected bool itookvirgin = false;
         protected bool incest = false;
+        protected int recentsextickabs = 0;
+        protected int bestsextickabs = 0;
 
         public string Label
         {
@@ -578,7 +666,35 @@ namespace RJWSexperience
                 return rapedme;
             }
         }
-
+        public int RecentSexTickAbs
+        {
+            get
+            {
+                return recentsextickabs;
+            }
+        }
+        public int BestSexTickAbs
+        {
+            get
+            {
+                return bestsextickabs;
+            }
+        }
+        public int BestSexElapsedTicks
+        {
+            get
+            {
+                return GenTicks.TicksAbs - bestsextickabs;
+            }
+        }
+        public string BestSexDays
+        {
+            get
+            {
+                if (bestsextickabs != 0) return Keyed.RS_HadBestSexDaysAgo(GenDate.ToStringTicksToDays(BestSexElapsedTicks) + " " + Keyed.RS_Ago);
+                return "";
+            }
+        }
         public SexHistory() { }
 
         public SexHistory(Pawn pawn, bool incest = false)
@@ -601,6 +717,8 @@ namespace RJWSexperience
             Scribe_Values.Look(ref bestsatisfaction, "bestsatisfaction", bestsatisfaction, true);
             Scribe_Values.Look(ref itookvirgin, "itookvirgin", itookvirgin, true);
             Scribe_Values.Look(ref incest, "incest", incest, true);
+            Scribe_Values.Look(ref recentsextickabs, "recentsextickabs", recentsextickabs, true);
+            Scribe_Values.Look(ref bestsextickabs, "bestsextickabs", bestsextickabs, true);
         }
 
         public void RecordSex(SexProps props)
@@ -617,6 +735,8 @@ namespace RJWSexperience
                     raped++;
                 }
             }
+            recentsextickabs = GenTicks.TicksAbs;
+            
         }
 
         public void RecordSatisfaction(SexProps props, float satisfaction)
@@ -626,6 +746,7 @@ namespace RJWSexperience
                 orgasms++;
                 bestsextype = props.sexType;
                 bestsatisfaction = satisfaction;
+                bestsextickabs = GenTicks.TicksAbs;
             }
         }
 
