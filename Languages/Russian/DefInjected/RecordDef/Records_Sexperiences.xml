@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <NumofEatenCum.label>проглотил сперму </NumofEatenCum.label>
+  <NumofEatenCum.label>глотал сперму</NumofEatenCum.label>
   <NumofEatenCum.description>Количество раз, когда глотал сперму.</NumofEatenCum.description>
+
+  <AmountofEatenCum.label>проглочено спермы(mL)</AmountofEatenCum.label>
+  <AmountofEatenCum.description>Объём проглоченной спермы (в миллилитрах).</AmountofEatenCum.description>
 
   <Lust.label>похоть</Lust.label>
   <Lust.description>Насколько похотлив.</Lust.description>
-
 
 </LanguageData>

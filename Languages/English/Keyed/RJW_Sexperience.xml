@@ -111,11 +111,13 @@
   <MostlyHomosexual>Mostly gay</MostlyHomosexual>
   <Homosexual>Gay</Homosexual>
 
-
-
   <Lust>lust</Lust>
   <Unknown>unknown</Unknown>
   <Virgin>virgin</Virgin>
   <Incest>incest</Incest>
 
+  <RS_PONormal>Unordered</RS_PONormal>
+  <RS_PoRecent>Recent</RS_PoRecent>
+  <RS_PoMost>Most</RS_PoMost>
+  <RS_PoName>Name</RS_PoName>
 </LanguageData>

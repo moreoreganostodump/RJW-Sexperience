@@ -55,6 +55,9 @@
   <RS_CumAddictiveness>정액 중독성</RS_CumAddictiveness>
   <RS_CumAddictiveness_Tooltip>정액에 중독되기 쉬워집니다.</RS_CumAddictiveness_Tooltip>
   <RS_NumofTimes>번</RS_NumofTimes>
+  <RS_Ago>전</RS_Ago>
+  <RS_LastSex>마지막 섹스</RS_LastSex>
+  <RS_HadBestSexDaysAgo>{0}에 가장 만족스러운 섹스를 함.</RS_HadBestSexDaysAgo>
 
   <RSOption_1_Label>기록 생성기 활성화</RSOption_1_Label>
   <RSOption_1_Desc>폰의 섹스기록을 무작위로 생성합니다.</RSOption_1_Desc>

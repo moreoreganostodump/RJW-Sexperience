@@ -10,14 +10,31 @@
   <Gangbang.comps.4.label>жертва сильно сломлена</Gangbang.comps.4.label>
   <Gangbang.comps.5.label>жертва полностью сломлена</Gangbang.comps.5.label>
   <Gangbang.comps.6.label>довольные участники</Gangbang.comps.6.label>
+  <Gangbang.comps.7.label>полностью удовлетворенный участники</Gangbang.comps.7.label>
   <Gangbang.outcomeChances.0.label>Ужасно</Gangbang.outcomeChances.0.label>
-  <Gangbang.outcomeChances.0.description>{0} было ужасно! Речь была заикающейся и бессвязной, и жертва была испорчена - все ждали, когда это закончится.</Gangbang.outcomeChances.0.description>
+  <Gangbang.outcomeChances.0.description>{0} было ужасно! Речь была заикающейся и бессвязной, и жертва была неподходяща - все ждали, когда это закончится.</Gangbang.outcomeChances.0.description>
   <Gangbang.outcomeChances.1.label>Скучно</Gangbang.outcomeChances.1.label>
-  <Gangbang.outcomeChances.1.description>{0} было скучно. Речь была повторяющейся, и жертва была заметно испорчена. Это просто не казалось достойным.</Gangbang.outcomeChances.1.description>
+  <Gangbang.outcomeChances.1.description>{0} было скучно. Речь была повторяющейся, и жертва имела изъяны. Это просто не казалось достойным.</Gangbang.outcomeChances.1.description>
   <Gangbang.outcomeChances.2.label>Приятно</Gangbang.outcomeChances.2.label>
   <Gangbang.outcomeChances.2.description>{0} было приятно. Речь казалась осмысленной, а жертва была уместной и достойной.</Gangbang.outcomeChances.2.description>
   <Gangbang.outcomeChances.3.label>Потрясающе</Gangbang.outcomeChances.3.label>
   <Gangbang.outcomeChances.3.description>{0} было потрясающе! Эта речь привела всех на грань безумия, и жертва была похожа на суккуба.</Gangbang.outcomeChances.3.description>
+
+  <Gangbang_Consensual.description>В зависимости от качества ритуала участники получат от {MINMOOD} до {MAXMOOD} очков настроения на {MOODDAYS} дней.</Gangbang_Consensual.description>
+  <Gangbang_Consensual.extraPredictedOutcomeDescriptions.0>Если {0} удовлетворяет, один из участников может получить вдохновение.</Gangbang_Consensual.extraPredictedOutcomeDescriptions.0>
+  <Gangbang_Consensual.comps.0.label>присутствие морального лидера</Gangbang_Consensual.comps.0.label>
+  <Gangbang_Consensual.comps.1.label>количество участников</Gangbang_Consensual.comps.1.label>
+  <Gangbang_Consensual.comps.2.label>проводится у алтаря</Gangbang_Consensual.comps.2.label>
+  <Gangbang_Consensual.comps.3.label>довольные участники</Gangbang_Consensual.comps.3.label>
+  <Gangbang_Consensual.comps.4.label>полностью удовлетворенный участники</Gangbang_Consensual.comps.4.label>
+  <Gangbang_Consensual.outcomeChances.0.label>Ужасно</Gangbang_Consensual.outcomeChances.0.label>
+  <Gangbang_Consensual.outcomeChances.0.description>{0} было ужасно! Речь была заикающейся и бессвязной, и жертва была неподходяща - все ждали, когда это закончится.</Gangbang_Consensual.outcomeChances.0.description>
+  <Gangbang_Consensual.outcomeChances.1.label>Скучно</Gangbang_Consensual.outcomeChances.1.label>
+  <Gangbang_Consensual.outcomeChances.1.description>{0} было скучно. Речь была повторяющейся, и жертва имела изъяны. Это просто не казалось достойным.</Gangbang_Consensual.outcomeChances.1.description>
+  <Gangbang_Consensual.outcomeChances.2.label>Приятно</Gangbang_Consensual.outcomeChances.2.label>
+  <Gangbang_Consensual.outcomeChances.2.description>{0} было приятно. Речь казалась осмысленной, а жертва была уместной и достойной.</Gangbang_Consensual.outcomeChances.2.description>
+  <Gangbang_Consensual.outcomeChances.3.label>Потрясающе</Gangbang_Consensual.outcomeChances.3.label>
+  <Gangbang_Consensual.outcomeChances.3.description>{0} было потрясающе! Эта речь привела всех на грань безумия, и жертва была похожа на суккуба.</Gangbang_Consensual.outcomeChances.3.description>
 
   <BestialGangbang.description>В зависимости от качества ритуала участники получат от {MINMOOD} до {MAXMOOD} очков настроения на {MOODDAYS} дней.</BestialGangbang.description>
   <BestialGangbang.extraPredictedOutcomeDescriptions.0>Если {0} удовлетворяет, один из участников может получить вдохновение.</BestialGangbang.extraPredictedOutcomeDescriptions.0>
@@ -28,13 +45,27 @@
   <BestialGangbang.comps.4.label>производитель сильно сломлен</BestialGangbang.comps.4.label>
   <BestialGangbang.comps.5.label>производитель полностью сломлен</BestialGangbang.comps.5.label>
   <BestialGangbang.outcomeChances.0.label>Ужасно</BestialGangbang.outcomeChances.0.label>
-  <BestialGangbang.outcomeChances.0.description>{0} было ужасно! Речь была заикающейся и бессвязной, и жертва была испорчена - все ждали, когда это закончится.</BestialGangbang.outcomeChances.0.description>
+  <BestialGangbang.outcomeChances.0.description>{0} было ужасно! Речь была заикающейся и бессвязной, и жертва была неподходяща - все ждали, когда это закончится.</BestialGangbang.outcomeChances.0.description>
   <BestialGangbang.outcomeChances.1.label>Скучно</BestialGangbang.outcomeChances.1.label>
-  <BestialGangbang.outcomeChances.1.description>{0} было скучно. Речь была повторяющейся, и жертва была заметно испорчена. Это просто не казалось достойным.</BestialGangbang.outcomeChances.1.description>
+  <BestialGangbang.outcomeChances.1.description>{0} было скучно. Речь была повторяющейся, и жертва имела изъяны. Это просто не казалось достойным.</BestialGangbang.outcomeChances.1.description>
   <BestialGangbang.outcomeChances.2.label>Приятно</BestialGangbang.outcomeChances.2.label>
   <BestialGangbang.outcomeChances.2.description>{0} было приятно. Речь казалась осмысленной, а жертва была уместной и достойной.</BestialGangbang.outcomeChances.2.description>
   <BestialGangbang.outcomeChances.3.label>Потрясающе</BestialGangbang.outcomeChances.3.label>
   <BestialGangbang.outcomeChances.3.description>{0} было потрясающе! Эта речь привела всех на грань безумия, и жертва была похожа на суккуба.</BestialGangbang.outcomeChances.3.description>
+
+  <BestialGangbang_Consensual.description>В зависимости от качества ритуала участники получат от {MINMOOD} до {MAXMOOD} очков настроения на {MOODDAYS} дней.</BestialGangbang_Consensual.description>
+  <BestialGangbang_Consensual.extraPredictedOutcomeDescriptions.0>Если {0} удовлетворяет, один из участников может получить вдохновение.</BestialGangbang_Consensual.extraPredictedOutcomeDescriptions.0> 
+  <BestialGangbang_Consensual.comps.0.label>присутствие морального лидера</BestialGangbang_Consensual.comps.0.label>
+  <BestialGangbang_Consensual.comps.1.label>количество участников</BestialGangbang_Consensual.comps.1.label>
+  <BestialGangbang_Consensual.comps.2.label>проводится у алтаря</BestialGangbang_Consensual.comps.2.label>
+  <BestialGangbang_Consensual.outcomeChances.0.label>Ужасно</BestialGangbang_Consensual.outcomeChances.0.label>
+  <BestialGangbang_Consensual.outcomeChances.0.description>{0} было ужасно! Речь была заикающейся и бессвязной, и жертва была неподходяща - все ждали, когда это закончится.</BestialGangbang_Consensual.outcomeChances.0.description>
+  <BestialGangbang_Consensual.outcomeChances.1.label>Скучно</BestialGangbang_Consensual.outcomeChances.1.label>
+  <BestialGangbang_Consensual.outcomeChances.1.description>{0} было скучно. Речь была повторяющейся, и жертва имела изъяны. Это просто не казалось достойным.</BestialGangbang_Consensual.outcomeChances.1.description>
+  <BestialGangbang_Consensual.outcomeChances.2.label>Приятно</BestialGangbang_Consensual.outcomeChances.2.label>
+  <BestialGangbang_Consensual.outcomeChances.2.description>{0} было приятно. Речь казалась осмысленной, а жертва была уместной и достойной.</BestialGangbang_Consensual.outcomeChances.2.description>
+  <BestialGangbang_Consensual.outcomeChances.3.label>Потрясающе</BestialGangbang_Consensual.outcomeChances.3.label>
+  <BestialGangbang_Consensual.outcomeChances.3.description>{0} было потрясающе! Эта речь привела всех на грань безумия, и жертва была похожа на суккуба.</BestialGangbang_Consensual.outcomeChances.3.description>
 
   <DrugOrgy.description>В зависимости от качества ритуала участники получат от {MINMOOD} до {MAXMOOD} очков настроения на {MOODDAYS} дней.</DrugOrgy.description>
   <DrugOrgy.extraPredictedOutcomeDescriptions.0>Если {0} удовлетворяет, один из участников может получить вдохновение.</DrugOrgy.extraPredictedOutcomeDescriptions.0>
@@ -49,6 +80,5 @@
   <DrugOrgy.outcomeChances.2.description>{0} было приятно.</DrugOrgy.outcomeChances.2.description>
   <DrugOrgy.outcomeChances.3.label>Потрясающе</DrugOrgy.outcomeChances.3.label>
   <DrugOrgy.outcomeChances.3.description>{0} было потрясающе!</DrugOrgy.outcomeChances.3.description>
-
 
 </LanguageData>

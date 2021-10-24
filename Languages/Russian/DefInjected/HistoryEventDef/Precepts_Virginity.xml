@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Issues -->
+
+  <Virgin_TakenF.label>забрана девственность</Virgin_TakenF.label>
+  <Virgin_TakenM.label>забрана девственность</Virgin_TakenM.label>
+  <Virgin_TookF.label>забрала девственность</Virgin_TookF.label>
+  <Virgin_TookM.label>забрал девственность</Virgin_TookM.label>
+
+
+</LanguageData>

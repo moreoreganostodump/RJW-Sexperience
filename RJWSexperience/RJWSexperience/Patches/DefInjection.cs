@@ -19,7 +19,7 @@ namespace RJWSexperience
 
         private static void InjectRaces()
         {
-            List<ThingDef> PawnDefs = DefDatabase<ThingDef>.AllDefs.Where(x => x.race != null).ToList();
+            List<ThingDef> PawnDefs = DefDatabase<ThingDef>.AllDefs.Where(x => x.race != null && !x.race.IsMechanoid).ToList();
             InjectComp(PawnDefs);
         }
 

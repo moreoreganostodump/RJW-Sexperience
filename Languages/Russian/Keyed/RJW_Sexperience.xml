@@ -11,14 +11,62 @@
   <RSNotHuman>не человек</RSNotHuman>
   <RSNotAnimal>не животное</RSNotAnimal>
   <RSShouldCanFuck>требуется способность к сексу</RSShouldCanFuck>
-  <RSTotalGatheredCum>Всего собрано спермы: </RSTotalGatheredCum>
+  <RSTotalGatheredCum>Всего собрано спермы: </RSTotalGatheredCum>  
+
+  <RS_LostVirgin>{1} лишил {0} девственности.</RS_LostVirgin>
+  <RS_FloatMenu_CleanSelf>Собрал сперму на теле</RS_FloatMenu_CleanSelf>
+  <RS_Best_Sextype>Лучший способ</RS_Best_Sextype>
+  <RS_Recent_Sextype>Недавний способ</RS_Recent_Sextype>
+  <RS_Sex_Partners>Партнеры</RS_Sex_Partners>
+  <RS_Cum_Swallowed>Глотал сперму</RS_Cum_Swallowed>
+  <RS_Selected_Partner>Информация о партнере</RS_Selected_Partner>
+  <RS_Sex_Info>{0}: {1} раз</RS_Sex_Info>
+  <RS_SAT_AVG>срдн.: {0}</RS_SAT_AVG>
+  <RS_Sex_Count>Совокуплений: </RS_Sex_Count>
+  <RS_Orgasms>Оргазмов: </RS_Orgasms>
+  <RS_Recent_Sex_Partner>Недавний партнер</RS_Recent_Sex_Partner>
+  <RS_Recent_Sex_Partner_ToolTip>С кем было недавно.</RS_Recent_Sex_Partner_ToolTip>
+  <RS_First_Sex_Partner>Первый партнер </RS_First_Sex_Partner>
+  <RS_First_Sex_Partner_ToolTip>С кем был первый раз.</RS_First_Sex_Partner_ToolTip>
+  <RS_Most_Sex_Partner>Частый партнер</RS_Most_Sex_Partner>
+  <RS_Most_Sex_Partner_ToolTip>С кем было больше всего раз.</RS_Most_Sex_Partner_ToolTip>
+  <RS_Best_Sex_Partner>Лучший партнер</RS_Best_Sex_Partner>
+  <RS_Best_Sex_Partner_ToolTip>Кто был приятнее всех.</RS_Best_Sex_Partner_ToolTip>
+  <RS_VirginsTaken>Отнята девственность</RS_VirginsTaken>
+  <RS_VirginsTaken_ToolTip>У скольких был первый раз.</RS_VirginsTaken_ToolTip>
+  <RS_TotalSexHad>Всего было</RS_TotalSexHad>
+  <RS_TotalSexHad_ToolTip>Общее количество секса.</RS_TotalSexHad_ToolTip>
+  <RS_Raped>Насиловал: </RS_Raped>
+  <RS_RapedMe>Изнасилован: </RS_RapedMe>
+  <RS_Sex_History>Секс-история</RS_Sex_History>
+  <RS_Statistics>Секс-статистика</RS_Statistics>
+  <RS_PartnerList>Список партнеров</RS_PartnerList>
+  <RS_Sexuality>Сексуальность</RS_Sexuality>
+  <RS_BeenRaped>Был изнасилован</RS_BeenRaped>
+  <RS_RapedSomeone>Изнасиловал кого-то</RS_RapedSomeone>
+  <RS_PreferRace>Предпочитает расу</RS_PreferRace>
+  <RS_Bestiality>Зоофили</RS_Bestiality>
+  <RS_Interspecies>Межвидовой</RS_Interspecies>
+  <RS_Normal>Нормальный</RS_Normal>
+  <RS_Necrophile>Некрофил</RS_Necrophile>
+  <RS_GatherCum>Собрать сперму</RS_GatherCum>
+  <RS_SexSkill>Секс навыки</RS_SexSkill>
+  <RS_CumAddiction>Зависимость от спермы</RS_CumAddiction>
+  <RS_CumAddiction_Tooltip>Пристрастился к сперме.</RS_CumAddiction_Tooltip>
+  <RS_CumAddictiveness>Зависимость от спермы</RS_CumAddictiveness>
+  <RS_CumAddictiveness_Tooltip>С большей вероятностью пристрастится к сперме.</RS_CumAddictiveness_Tooltip>
+  <RS_NumofTimes>раз</RS_NumofTimes>
+  <RS_Ago>назад</RS_Ago>
+  <RS_LastSex>прошлый раз</RS_LastSex>
+  <RS_HadBestSexDaysAgo>Был лучший секс {0}.</RS_HadBestSexDaysAgo>
 
   <RSOption_1_Label>Включить случайные записи</RSOption_1_Label>
   <RSOption_1_Desc>Сделать записи о сексе пешек случайными.</RSOption_1_Desc>
   <RSOption_2_Label>Сила влияния похоти</RSOption_2_Label>
   <RSOption_2_Desc>Установите, насколько сильно похоть влияет на сексуальное влечение.</RSOption_2_Desc>
   <RSOption_3_Label>Максимальный разброс похоти</RSOption_3_Label>
-  <RSOption_3_Desc>Установите максимальное отклонение вожделения. Значение похоти может быть отрицательным в зависимости от его среднего значения.</RSOption_3_Desc>
+  <RSOption_3_Desc>Установите максимальное отклонение вожделения.
+Значение похоти может быть отрицательным в зависимости от его среднего значения.</RSOption_3_Desc>
   <RSOption_4_Label>Среднее значение похоти</RSOption_4_Label>
   <RSOption_4_Desc>Установите среднее значение похоти.</RSOption_4_Desc>
   <RSOption_5_Label>Максимальное отклонение количества половых контактов</RSOption_5_Label>
@@ -27,14 +75,49 @@
   <RSOption_6_Desc>Установите среднее количество половых контактов.</RSOption_6_Desc>
   <RSOption_7_Label>Позвольте рабам получить опыт от изнасилования</RSOption_7_Label>
   <RSOption_7_Desc>Рабы будут получать опыт от изнасилования</RSOption_7_Desc>
-  <RSOption_8_Label>Предел похоти </RSOption_8_Label>
-  <RSOption_8_Desc>Установить ограничение похоти .
+  <RSOption_8_Label>Предел похоти </RSOption_8_Label>  
+  <RSOption_8_Desc>Установить ограничение похоти.
 Если абсолютное значение вожделения близко или больше, чем это значение, вожделение с меньшей вероятностью изменится.</RSOption_8_Desc>
-  <RSOption_9_Label></RSOption_9_Label>
-  <RSOption_9_Desc> </RSOption_9_Desc>
-  <RSOption_10_Label></RSOption_10_Label>
-  <RSOption_10_Desc> </RSOption_10_Desc>
+  <RSOption_9_Label>Минимальный возраст половой жизни</RSOption_9_Label>
+  <RSOption_9_Desc>Установить минимальный возраст половой жизни.
+Это значение не связано с минимальным половым возрастом RJW. Используется только для генерации записей.</RSOption_9_Desc>
+  <RSOption_10_Label>Коэффициент девственности</RSOption_10_Label>
+  <RSOption_10_Desc>Установить вероятность девственности независимо от возраста.</RSOption_10_Desc>
   <RSOption_11_Label></RSOption_11_Label>
   <RSOption_11_Desc> </RSOption_11_Desc>
+
+  <Vaginal>Вагинальный</Vaginal>
+  <Anal>Анальный</Anal>
+  <Oral>Минет</Oral>
+  <Masturbation>Мастурбация</Masturbation>
+  <DoublePenetration>В две дырки</DoublePenetration>
+  <Boobjob>Стимуляция грудью</Boobjob>
+  <Handjob>Стимуляция руками</Handjob>
+  <Footjob>Стимуляция ногами</Footjob>
+  <Fingering>Вагинальный фингеринг</Fingering>
+  <Scissoring>Ножницы</Scissoring>
+  <MutualMasturbation>Взаимная мастурбация</MutualMasturbation>
+  <Fisting>Фистинг</Fisting>
+  <MechImplant>Мех имплант</MechImplant>
+  <Rimming>Римминг</Rimming>
+  <Fellatio>Фелляция</Fellatio>
+  <Cunnilingus>Куни</Cunnilingus>
+  <Sixtynine>Поза 69</Sixtynine>
+
+  <None>Нет</None>
+  <Asexual>Асексуальный</Asexual>
+  <Pansexual>Пансексуальный</Pansexual>
+  <Heterosexual>Гетеросексуальный</Heterosexual>
+  <MostlyHeterosexual>В основном гетеро</MostlyHeterosexual>
+  <LeaningHeterosexual>Бисексуал, больше гетеро</LeaningHeterosexual>
+  <Bisexual>Бисексуальный</Bisexual>
+  <LeaningHomosexual>Бисексуал, больше гомо</LeaningHomosexual>
+  <MostlyHomosexual>В основном гомо </MostlyHomosexual>
+  <Homosexual>Гомосексуал</Homosexual>
+
+  <Lust>похоть</Lust>
+  <Unknown>неизвестныо</Unknown>
+  <Virgin>девственность</Virgin>
+  <Incest>инцест</Incest>
 
 </LanguageData>

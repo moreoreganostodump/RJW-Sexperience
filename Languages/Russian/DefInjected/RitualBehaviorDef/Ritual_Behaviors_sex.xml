@@ -4,9 +4,13 @@
   <Gangbang.roles.0.label>инициатор</Gangbang.roles.0.label>
   <Gangbang.roles.1.label>жертва</Gangbang.roles.1.label>
 
-  <GangbangByAnimal.roles.0.label>инициатор</GangbangByAnimal.roles.0.label>
-  <GangbangByAnimal.roles.1.label>breedee</GangbangByAnimal.roles.1.label>
-  <GangbangByAnimal.roles.2.label>breeder</GangbangByAnimal.roles.2.label>
+  <Gangbang_Consensual.roles.0.label>инициатор</Gangbang_Consensual.roles.0.label>
 
+  <GangbangByAnimal.roles.0.label>инициатор</GangbangByAnimal.roles.0.label>
+  <GangbangByAnimal.roles.1.label>производимый</GangbangByAnimal.roles.1.label>
+  <GangbangByAnimal.roles.2.label>производитель</GangbangByAnimal.roles.2.label>
+
+  <GangbangByAnimal_Consensual.roles.0.label>инициатор</GangbangByAnimal_Consensual.roles.0.label>
+  <GangbangByAnimal_Consensual.roles.1.label>производитель</GangbangByAnimal_Consensual.roles.1.label>
 
 </LanguageData>

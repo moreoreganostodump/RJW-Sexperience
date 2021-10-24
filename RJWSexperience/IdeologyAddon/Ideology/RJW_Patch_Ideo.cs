@@ -409,7 +409,8 @@ namespace RJWSexperience.Ideology
             if (!mother.IsAnimal())
             {
                 //baby.SetFactionDirect(baby.GetFactionUsingPrecept());
-                baby.SetFaction(baby.GetFactionUsingPrecept(out Ideo ideo));
+                Faction faction = baby.GetFactionUsingPrecept(out Ideo ideo);
+                if (baby.Faction != faction) baby.SetFaction(faction);
                 baby.ideo?.SetIdeo(ideo);
                 if (baby.Faction == Find.FactionManager.OfPlayer && !baby.IsSlave) baby.guest?.SetGuestStatus(null, GuestStatus.Guest);
             }

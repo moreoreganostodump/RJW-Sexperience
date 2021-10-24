@@ -12,6 +12,22 @@ using rjw;
 
 namespace RJWSexperience.UI
 {
+    public enum PartnerOrderMode
+    {
+        Normal = 0,
+        Recent = 1,
+        Most = 2,
+        Name, Maxvlaue = 3
+    };
+
+    public static class PartnerOrderModeExtension
+    {
+        public static PartnerOrderMode Next(this PartnerOrderMode mode)
+        {
+            return (PartnerOrderMode)(((int)mode + 1) % ((int)PartnerOrderMode.Maxvlaue+1));
+        }
+    }
+
     public class SexStatusWindow : Window
     {
         public const float FONTHEIGHT = RJWUIUtility.FONTHEIGHT;
@@ -19,6 +35,7 @@ namespace RJWSexperience.UI
         public const float LISTPAWNSIZE = RJWUIUtility.LISTPAWNSIZE;
         public const float BASESAT = RJWUIUtility.BASESAT;
         public const float ICONSIZE = RJWUIUtility.ICONSIZE;
+
 
         public static readonly int[] Sextype =
         {
@@ -44,6 +61,8 @@ namespace RJWSexperience.UI
         protected SexHistory selectedPawn;
         protected SexPartnerHistory history;
         protected CompRJW rjwcomp;
+        protected List<SexHistory> partnerList;
+        protected PartnerOrderMode orderMode;
 
         private static GUIStyleState fontstylestate = new GUIStyleState() { textColor = Color.white };
         private static GUIStyleState boxstylestate = GUI.skin.textArea.normal;
@@ -64,6 +83,9 @@ namespace RJWSexperience.UI
             this.history = history;
             this.selectedPawn = null;
             this.rjwcomp = pawn.TryGetComp<CompRJW>();
+            this.partnerList = history?.PartnerList;
+            orderMode = PartnerOrderMode.Recent;
+            SortPartnerList(orderMode);
         }
 
         protected override void SetInitialSizeAndPosition()
@@ -148,7 +170,30 @@ namespace RJWSexperience.UI
             this.history = history;
             this.selectedPawn = null;
             this.rjwcomp = pawn.TryGetComp<CompRJW>();
+            this.partnerList = history?.PartnerList;
             if (!pawn.DestroyedOrNull() && Find.CurrentMap == pawn.Map) Find.Selector.Select(pawn);
+            SortPartnerList(orderMode);
+        }
+
+        public void SortPartnerList(PartnerOrderMode mode)
+        {
+            if (partnerList.NullOrEmpty()) return;
+            switch (mode)
+            {
+                case PartnerOrderMode.Normal:
+                default:
+                    partnerList = history?.PartnerList;
+                    break;
+                case PartnerOrderMode.Recent:
+                    partnerList.Sort(new SexHistory.RecentOrderComparer());
+                    break;
+                case PartnerOrderMode.Most:
+                    partnerList.Sort(new SexHistory.MostOrderComparer());
+                    break;
+                case PartnerOrderMode.Name:
+                    partnerList.Sort(new SexHistory.NameOrderComparer());
+                    break;
+            }
         }
 
         /// <summary>
@@ -517,19 +562,30 @@ namespace RJWSexperience.UI
             p = history.VirginsTaken;
             FillableBarLabeled(listmain.GetRect(FONTHEIGHT), String.Format(Keyed.RS_VirginsTaken + ": {0:0}", p), p / 100, HistoryUtility.Partners, Texture2D.blackTexture);
             listmain.Gap(1f);
-            
+
             //Partner list
-            GUI.Label(listmain.GetRect(FONTHEIGHT)," "+Keyed.RS_PartnerList, fontstyleleft);
+            Rect listLabelRect = listmain.GetRect(FONTHEIGHT);
+            Rect sortbtnRect = new Rect(listLabelRect.xMax - 80f, listLabelRect.y, 80f, listLabelRect.height);
+            GUI.Label(listLabelRect ," "+Keyed.RS_PartnerList, fontstyleleft);
+            if (Widgets.ButtonText(sortbtnRect, orderMode.Translate()))
+            {
+                SoundDefOf.Click.PlayOneShotOnCamera();
+                orderMode = orderMode.Next();
+                SortPartnerList(orderMode);
+            }
+            
             listmain.Gap(1f);
 
             Rect scrollRect = listmain.GetRect(CARDHEIGHT+1f);
             GUI.Box(scrollRect,"", buttonstyle);
-            List<SexHistory> partnerList = history.PartnerList;
-            Rect listRect = new Rect(scrollRect.x, scrollRect.y, LISTPAWNSIZE * partnerList.Count, scrollRect.height - 30f);
-            Widgets.BeginScrollView(scrollRect, ref scroll, listRect);
-            Widgets.ScrollHorizontal(scrollRect, ref scroll, listRect);
-            DrawPartnerList(listRect, partnerList);
-            Widgets.EndScrollView();
+            if (!partnerList.NullOrEmpty())
+            {
+                Rect listRect = new Rect(scrollRect.x, scrollRect.y, LISTPAWNSIZE * partnerList.Count, scrollRect.height - 30f);
+                Widgets.ScrollHorizontal(scrollRect, ref scroll, listRect);
+                Widgets.BeginScrollView(scrollRect, ref scroll, listRect);
+                DrawPartnerList(listRect, partnerList);
+                Widgets.EndScrollView();
+            }
 
             listmain.End();
         }
@@ -565,18 +621,23 @@ namespace RJWSexperience.UI
                 bool drawheart = false;
                 Rect iconRect = new Rect(rect.x + rect.width * 3 / 4, rect.y, rect.width / 4, rect.height / 4);
                 Texture img = HistoryUtility.UnknownPawn;
+
+                if (history.IamFirst)
+                {
+                    GUI.color = HistoryUtility.HistoryColor;
+                    Widgets.DrawTextureFitted(rect, HistoryUtility.FirstOverlay, 1.0f);
+                    GUI.color = Color.white;
+                }
+
                 if (history.Partner != null)
                 {
                     img = PortraitsCache.Get(history.Partner, rect.size, Rot4.South, default, 1, true, true, false, false);
-                    if (history.IamFirst)
-                    {
-                        GUI.color = HistoryUtility.HistoryColor;
-                        Widgets.DrawTextureFitted(rect, HistoryUtility.FirstOverlay, 1.0f);
-                        GUI.color = Color.white;
-                    }
                     
                     drawheart = LovePartnerRelationUtility.LovePartnerRelationExists(pawn, history.Partner);
-
+                }
+                else if (history.Race != null && history.Race.uiIcon != null)
+                {
+                    img = history.Race.uiIcon;
                 }
 
                 if (history.Incest)

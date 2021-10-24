@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Precepts -->
+
+  <Virgin_UselessF.label>безразлична</Virgin_UselessF.label>
+  <Virgin_UselessF.description>Девственность для женщины неважна.</Virgin_UselessF.description>
+
+  <Virgin_UselessM.label>безразлична</Virgin_UselessM.label>
+  <Virgin_UselessM.description>Девственность для мужчины неважна.</Virgin_UselessM.description>
+
+  <Virgin_PreciousF.label>ценится</Virgin_PreciousF.label>
+  <Virgin_PreciousF.description>Девственность для женщины драгоценна.</Virgin_PreciousF.description>
+
+  <Virgin_PreciousM.label>ценится</Virgin_PreciousM.label>
+  <Virgin_PreciousM.description>Девственность для мужчины драгоценна.</Virgin_PreciousM.description>
+
+  <Virgin_OnlyForSpouseF.label>строго сберегается</Virgin_OnlyForSpouseF.label>
+  <Virgin_OnlyForSpouseF.description>Для женщины потеря девственности до брака аморальна.</Virgin_OnlyForSpouseF.description>
+
+  <Virgin_OnlyForSpouseM.label>строго сберегается</Virgin_OnlyForSpouseM.label>
+  <Virgin_OnlyForSpouseM.description>Для мужчины потеря девственности до брака аморальна.</Virgin_OnlyForSpouseM.description>
+
+  <Virgin_ShamefulF.label>постыдно</Virgin_ShamefulF.label>
+  <Virgin_ShamefulF.description>Для женщины оставаться девственницей позорно, это значит быть посмешищем.</Virgin_ShamefulF.description>
+
+  <Virgin_ShamefulM.label>постыдно</Virgin_ShamefulM.label>
+  <Virgin_ShamefulM.description>Для мужчины оставаться девственником позорно, это значит быть посмешищем.</Virgin_ShamefulM.description>
+
+
+</LanguageData>

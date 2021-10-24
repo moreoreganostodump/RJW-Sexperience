@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Thoughts -->
+
+  <Virgin_Precious_Taken.stages.0.label>Девственность отнята {0}</Virgin_Precious_Taken.stages.0.label>
+  <Virgin_Precious_Taken.stages.0.description>Потеряна девственность.</Virgin_Precious_Taken.stages.0.description>
+  <Virgin_Precious_Taken.stages.1.label>Девственность отнята {0}</Virgin_Precious_Taken.stages.1.label>
+  <Virgin_Precious_Taken.stages.1.description>Потеряна девственность.</Virgin_Precious_Taken.stages.1.description>
+  <Virgin_Precious_Taken.stages.2.label>Девственность отнята {0}</Virgin_Precious_Taken.stages.2.label>
+  <Virgin_Precious_Taken.stages.2.description>Потеряна девственность.</Virgin_Precious_Taken.stages.2.description>
+  <Virgin_Precious_Taken.stages.3.label>Девственность подарена {0}</Virgin_Precious_Taken.stages.3.label>
+  <Virgin_Precious_Taken.stages.3.description>девственность оттдана ради любви.</Virgin_Precious_Taken.stages.3.description>
+
+  <Virgin_Shameful_Taken.stages.0.label>Девственность отнята {0}</Virgin_Shameful_Taken.stages.0.label>
+  <Virgin_Shameful_Taken.stages.0.description>Наконец-то!</Virgin_Shameful_Taken.stages.0.description>
+  <Virgin_Shameful_Taken.stages.1.label>Девственность отнята {0}</Virgin_Shameful_Taken.stages.1.label>
+  <Virgin_Shameful_Taken.stages.1.description>Наконец-то!</Virgin_Shameful_Taken.stages.1.description>
+  <Virgin_Shameful_Taken.stages.2.label>Девственность отнята {0}</Virgin_Shameful_Taken.stages.2.label>
+  <Virgin_Shameful_Taken.stages.2.description>Наконец-то!</Virgin_Shameful_Taken.stages.2.description>
+
+
+</LanguageData>

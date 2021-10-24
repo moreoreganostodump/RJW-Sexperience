@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <VaginalSexCount.label>вагинальные акты</VaginalSexCount.label>
+  <VaginalSexCount.description>Сколько раз был вагинальный секс.</VaginalSexCount.description>
+
+  <AnalSexCount.label>анальные акты</AnalSexCount.label>
+  <AnalSexCount.description>Сколько раз был анальный секс.</AnalSexCount.description>
+
+  <OralSexCount.label>оральные акты</OralSexCount.label>
+  <OralSexCount.description>Сколько раз был оральный секс.</OralSexCount.description>
+
+  <BlowjobCount.label>минеты</BlowjobCount.label>
+  <BlowjobCount.description>Сколько раз был минет.</BlowjobCount.description>
+
+  <CunnilingusCount.label>куннилингусы</CunnilingusCount.label>
+  <CunnilingusCount.description>Сколько раз был куннилингус.</CunnilingusCount.description>
+
+  <GenitalCaressCount.label>прикосновение к гениталиям</GenitalCaressCount.label>
+  <GenitalCaressCount.description>Сколько раз была стимуляция пальцами пениса/вагины.</GenitalCaressCount.description>
+
+  <HandjobCount.label>стимуляции руками</HandjobCount.label>
+  <HandjobCount.description>Сколько раз была стимуляция пальцами пениса.</HandjobCount.description>
+
+  <FingeringCount.label>стимуляции пальцами</FingeringCount.label>
+  <FingeringCount.description>Сколько раз была стимуляция пальцами вагины.</FingeringCount.description>
+
+  <FootjobCount.label>стимуляции ступнями</FootjobCount.label>
+  <FootjobCount.description>Сколько раз была стимуляция ступнями.</FootjobCount.description>
+
+  <MiscSexualBehaviorCount.label>разные сношения</MiscSexualBehaviorCount.label>
+  <MiscSexualBehaviorCount.description>Сколько всего раз произошло что-то сексуальное.</MiscSexualBehaviorCount.description>
+
+  <OrgasmCount.label>оргазмы</OrgasmCount.label>
+  <OrgasmCount.description>Сколько раз достигнут оргазм.</OrgasmCount.description>
+
+  <SexPartnerCount.label>партнеры</SexPartnerCount.label>
+  <SexPartnerCount.description>Количество партнеров.</SexPartnerCount.description>
+
+
+</LanguageData>

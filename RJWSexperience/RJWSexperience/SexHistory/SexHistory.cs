@@ -7,6 +7,7 @@ using RimWorld;
 using Verse;
 using rjw;
 using UnityEngine;
+using System.Collections;
 
 namespace RJWSexperience
 {
@@ -50,10 +51,6 @@ namespace RJWSexperience
         protected int bestsextickabscache = 0;
 
 
-        private List<SexHistory> partnerlistcache;
-        private List<int> sextypecountsave;
-        private List<float> sextypesatsave;
-        private List<int> sextyperecenttickabssave;
 
 
         public SexHistory GetFirstPartnerHistory
@@ -123,8 +120,13 @@ namespace RJWSexperience
         {
             get
             {
+                List<SexHistory> res = null;
                 Update();
-                return partnerlistcache;
+                if (!histories.NullOrEmpty())
+                {
+                    res = histories.Values.ToList();
+                }
+                return res;
             }
         }
         public int PartnerCount
@@ -324,11 +326,21 @@ namespace RJWSexperience
 
         public override void PostExposeData()
         {
+            List<int> sextypecountsave;
+            List<float> sextypesatsave;
+            List<int> sextyperecenttickabssave;
+
             if (Scribe.mode == LoadSaveMode.Saving)
             {
                 sextypecountsave = sextypecount.ToList();
                 sextypesatsave = sextypesat.ToList();
                 sextyperecenttickabssave = sextyperecenttickabs.ToList();
+            }
+            else
+            {
+                sextypecountsave = new List<int>();
+                sextypesatsave = new List<float>();
+                sextyperecenttickabssave = new List<int>();
             }
 
             Scribe_Collections.Look(ref histories, "histories", LookMode.Value, LookMode.Deep);
@@ -347,15 +359,20 @@ namespace RJWSexperience
             Scribe_Collections.Look(ref sextyperecenttickabssave, "sextyperecenttickabssave", LookMode.Value);
             //Scribe_Values.Look(ref sextypecount, "sextypecount", new int[ARRLEN], true); // not work
             //Scribe_Values.Look(ref sextypesat, "sextypesat", new float[ARRLEN], true);
+            if (histories == null) histories = new Dictionary<string, SexHistory>();
+
             if (Scribe.mode == LoadSaveMode.LoadingVars)
             {
                 sextypecount = sextypecountsave?.ToArray() ?? new int[ARRLEN];
                 sextypesat = sextypesatsave?.ToArray() ?? new float[ARRLEN];
                 sextyperecenttickabs = sextyperecenttickabssave?.ToArray() ?? new int[ARRLEN];
+
+                foreach (KeyValuePair<string,SexHistory> element in histories)
+                {
+                    element.Value.parent = this;
+                    element.Value.partnerID = element.Key;
+                }
             }
-
-            if (histories == null) histories = new Dictionary<string, SexHistory>();
-
             base.PostExposeData();
         }
 
@@ -434,7 +451,6 @@ namespace RJWSexperience
             {
                 UpdateStatistics();
                 UpdateBestSex();
-                UpdatePartnerList();
                 dirty = false;
             }
         }
@@ -474,13 +490,13 @@ namespace RJWSexperience
                 {
                     Pawn partner = h.Partner;
                     allpartners.Add(partner);
-                    if (racetotalsat.ContainsKey(partner.def))
+                    if (racetotalsat.ContainsKey(h.Race))
                     {
-                        racetotalsat[partner.def] += h.TotalSexCount - h.RapedMe;
+                        racetotalsat[h.Race] += h.TotalSexCount - h.RapedMe;
                     }
                     else
                     {
-                        racetotalsat.Add(partner.def, h.TotalSexCount - h.RapedMe);
+                        racetotalsat.Add(h.Race, h.TotalSexCount - h.RapedMe);
                     }
                 }
 
@@ -539,16 +555,6 @@ namespace RJWSexperience
             bestsextypesatcache = bestsat;
         }
 
-        protected void UpdatePartnerList()
-        {
-            if (partnerlistcache == null) partnerlistcache = new List<SexHistory>();
-            partnerlistcache.Clear();
-            if (!histories.NullOrEmpty()) foreach (SexHistory history in histories.Values)
-                {
-                    if (history != null) partnerlistcache.Add(history);
-                }
-        }
-
         protected bool VirginCheck()
         {
             if (histories.TryGetValue(first) != null) return false;
@@ -561,13 +567,16 @@ namespace RJWSexperience
             return false;
         }
 
-        
+
 
     }
 
 
     public class SexHistory : IExposable
     {
+        public SexPartnerHistory parent;
+        public string partnerID;
+
         protected Pawn partner = null;
         protected string namecache;
         protected int totalsexhad = 0;
@@ -580,6 +589,9 @@ namespace RJWSexperience
         protected bool incest = false;
         protected int recentsextickabs = 0;
         protected int bestsextickabs = 0;
+        protected bool cannotLoadPawnData = false;
+        protected ThingDef race;
+
 
         public string Label
         {
@@ -618,6 +630,11 @@ namespace RJWSexperience
         {
             get
             {
+                if (!cannotLoadPawnData && partner == null)
+                {
+                    LoadPartnerPawn(partnerID);
+                    if (partner == null) cannotLoadPawnData = true;
+                }
                 return partner;
             }
         }
@@ -695,6 +712,19 @@ namespace RJWSexperience
                 return "";
             }
         }
+        public ThingDef Race
+        {
+            get
+            {
+                if (Partner != null)
+                {
+                    race = Partner.def;
+                    return race;
+                }
+                else return race;
+            }
+        }
+
         public SexHistory() { }
 
         public SexHistory(Pawn pawn, bool incest = false)
@@ -702,12 +732,13 @@ namespace RJWSexperience
             this.partner = pawn; 
             this.namecache = pawn.Label;
             this.incest = incest;
+            this.race = pawn.def;
         }
 
 
         public void ExposeData()
         {
-            Scribe_References.Look(ref partner, "partner", true);
+            //Scribe_References.Look(ref partner, "partner", true);
             Scribe_Values.Look(ref namecache, "namecache", namecache, true);
             Scribe_Values.Look(ref totalsexhad, "totalsexhad", totalsexhad, true);
             Scribe_Values.Look(ref raped, "raped", raped, true);
@@ -719,6 +750,7 @@ namespace RJWSexperience
             Scribe_Values.Look(ref incest, "incest", incest, true);
             Scribe_Values.Look(ref recentsextickabs, "recentsextickabs", recentsextickabs, true);
             Scribe_Values.Look(ref bestsextickabs, "bestsextickabs", bestsextickabs, true);
+            Scribe_Defs.Look(ref race, "race");
         }
 
         public void RecordSex(SexProps props)
@@ -753,6 +785,40 @@ namespace RJWSexperience
         public void TookVirgin()
         {
             itookvirgin = true;
+        }
+
+        public void LoadPartnerPawn(string partnerID)
+        {
+            foreach (Map map in Find.Maps)
+            {
+                partner = map.mapPawns.AllPawns.FirstOrDefault(x => x.ThingID.Equals(partnerID));
+                if (partner != null) return;
+            }
+            partner = Find.WorldPawns.AllPawnsAliveOrDead.FirstOrDefault(x => x.ThingID.Equals(partnerID));
+        }
+
+        public class RecentOrderComparer : IComparer<SexHistory>
+        {
+            public int Compare(SexHistory x, SexHistory y)
+            {
+                return y.RecentSexTickAbs.CompareTo(x.RecentSexTickAbs);
+            }
+        }
+
+        public class MostOrderComparer : IComparer<SexHistory>
+        {
+            public int Compare(SexHistory x, SexHistory y)
+            {
+                return y.TotalSexCount.CompareTo(x.TotalSexCount);
+            }
+        }
+
+        public class NameOrderComparer : IComparer<SexHistory>
+        {
+            public int Compare(SexHistory x, SexHistory y)
+            {
+                return x.Label.CompareTo(y.Label);
+            }
         }
     }
 

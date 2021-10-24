@@ -7,6 +7,7 @@ using Verse;
 using RimWorld;
 using rjw;
 using UnityEngine;
+using RJWSexperience.UI;
 
 namespace RJWSexperience
 {
@@ -100,7 +101,22 @@ namespace RJWSexperience
         public static readonly string Option_11_Label = "RSOption_11_Label".Translate();
         public static readonly string Option_11_Desc = "RSOption_11_Desc".Translate();
 
-        
+        public static string Translate(this PartnerOrderMode mode)
+        {
+            switch (mode)
+            {
+                case PartnerOrderMode.Normal:
+                default:
+                    return "RS_PONormal".Translate();
+                case PartnerOrderMode.Recent:
+                    return "RS_PoRecent".Translate();
+                case PartnerOrderMode.Most:
+                    return "RS_PoMost".Translate();
+                case PartnerOrderMode.Name:
+                    return "RS_PoName".Translate();
+            }
+        }
+
         public static readonly string[] Sextype =
         {
             ((xxx.rjwSextype)0).ToString().Translate(),

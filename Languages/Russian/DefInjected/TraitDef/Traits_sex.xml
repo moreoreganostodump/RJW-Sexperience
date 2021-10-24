@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Virgin.degreeDatas.0.label>поврежденная девственность</Virgin.degreeDatas.0.label>
+  <Virgin.degreeDatas.0.description>[PAWN_nameDef] не имеет сексуального опыта. Однако ее девственная плева по какой-то причине повредилась.</Virgin.degreeDatas.0.description>
+  <Virgin.degreeDatas.0.labelMale>ОШИБКА! МУЖЧИНА НЕ МОЖЕТ ОБЛАДАТЬ ЭТОЙ ЧЕРТОЙ</Virgin.degreeDatas.0.labelMale>
+  <Virgin.degreeDatas.1.label>девственность</Virgin.degreeDatas.1.label>
+  <Virgin.degreeDatas.1.description>[PAWN_nameDef] не имеет сексуального опыта.</Virgin.degreeDatas.1.description>
+  <Virgin.degreeDatas.2.label>virgin?</Virgin.degreeDatas.2.label>
+  <Virgin.degreeDatas.2.description>[PAWN_nameDef] выглядит опытным. Но девственная плева все еще там.</Virgin.degreeDatas.2.description>
+  <Virgin.degreeDatas.2.labelMale>ОШИБКА! МУЖЧИНА НЕ МОЖЕТ ОБЛАДАТЬ ЭТОЙ ЧЕРТОЙ</Virgin.degreeDatas.2.labelMale>
+  <Virgin.degreeDatas.3.label>девственность</Virgin.degreeDatas.3.label>
+  <Virgin.degreeDatas.3.description>[PAWN_nameDef] не имеет сексуального опыта.</Virgin.degreeDatas.3.description>
+  <Virgin.degreeDatas.3.labelMale>ОШИБКА! МУЖЧИНА НЕ МОЖЕТ ОБЛАДАТЬ ЭТОЙ ЧЕРТОЙ</Virgin.degreeDatas.3.labelMale>
+
+
+</LanguageData>

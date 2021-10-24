@@ -63,4 +63,41 @@
     </logRulesInitiator>
   </InteractionDef>
 
+
+  <InteractionDef>
+    <defName>Speech_Lewd</defName>
+    <label>lewd speech</label>
+    <workerClass>InteractionWorker</workerClass>
+    <ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <symbol>Things/Mote/SpeechSymbols/Speech</symbol>
+    <logRulesInitiator>
+      <include><li>SpeechUtility</li></include>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [spokeof] [speechtopic].</li>
+        <li>r_logentry(p=0.2)->[INITIATOR_nameDef] [crazy].</li>
+
+        <li>speechtopic->the meaning and true value of sex</li>
+        <li>speechtopic->expressions of sex</li>
+        <li>speechtopic->uncontrolled lustful</li>
+        <li>speechtopic->the warmth of pussy</li>
+        <li>speechtopic->the meaning of cum</li>
+        <li>speechtopic->love and incest</li>
+        <li>speechtopic->symbolizing rape</li>
+        <li>speechtopic->dick and pussy</li>
+        <li>speechtopic->the art of sex</li>
+        <li>speechtopic->the seduction of [spokeof]</li>
+        <li>speechtopic->the music of moan</li>
+        <li>speechtopic->cums on the floor</li>
+
+        <li>crazy->moaned maniacally</li>
+        <li>crazy->threw a dildo</li>
+        <li>crazy->threw an onahole</li>
+        <li>crazy->chanted towards the heavens</li>
+        <li>crazy->moaned</li>
+        <li>crazy->brandished a dildo</li>
+        <li>crazy->muttered repetitively while masturbating</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
 </Defs>
