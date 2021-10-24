@@ -4,7 +4,6 @@ Version Beta 1.0.2.3
  - removed sex histories from mechanoids
  - added sorting partner list
 
-
 Version Beta 1.0.2.2
  - non-player faction pawns no longer use cum buckets
  - fixed sex history error with dead pawns
