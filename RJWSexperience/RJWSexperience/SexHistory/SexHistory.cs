@@ -758,11 +758,13 @@ namespace RJWSexperience
             totalsexhad++;
             if (props.isRape)
             {
-                if (partner == props.giver)
+                RJWUtility.DetermineGiversAndReceivers(props, out Pawn giver, out Pawn receiver);
+
+                if (partner == giver)
                 {
                     rapedme++;
                 }
-                else if (partner == props.reciever)
+                else if (partner == receiver)
                 {
                     raped++;
                 }

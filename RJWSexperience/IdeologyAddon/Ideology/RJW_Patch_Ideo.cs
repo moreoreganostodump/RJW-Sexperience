@@ -9,6 +9,10 @@ using RimWorld;
 using Verse;
 using UnityEngine;
 using SexperienceDefOf = RJWSexperience.VariousDefOf;
+using rjw.Modules.Interactions.Internals.Implementation;
+using rjw.Modules.Interactions.Contexts;
+using rjw.Modules.Interactions.Objects;
+using rjw.Modules.Interactions.Rules.InteractionRules;
 
 namespace RJWSexperience.Ideology
 {
@@ -295,42 +299,50 @@ namespace RJWSexperience.Ideology
     /// <summary>
     /// Set prefer sextype using precepts
     /// </summary>
-    [HarmonyPatch(typeof(SexUtility), "DetermineSexScores")]
+    [HarmonyPatch(typeof(InteractionSelectorService), "Score")]
     public static class RJW_Patch_DetermineSexScores
     {
-        public static void Postfix(Pawn pawn, Pawn partner, bool rape, bool whoring, Pawn receiving, List<float> __result)
+        public static void Postfix(InteractionContext context, InteractionWithExtension interaction, IInteractionRule rule, ref float __result)
         {
-            Ideo ideo = pawn.Ideo;
-            if (ideo != null) PreceptSextype(ideo, pawn.GetStatValue(xxx.sex_drive_stat), __result, 0);
+            
 
-            ideo = partner.Ideo;
-            if (!rape && ideo != null) PreceptSextype(ideo, pawn.GetStatValue(xxx.sex_drive_stat), __result, 1);
+            Ideo ideo = context.Inputs.Initiator.Ideo;
+            if (ideo != null) PreceptSextype(ideo, context.Inputs.Initiator.GetStatValue(xxx.sex_drive_stat), __result, 0, interaction);
+
+            ideo = context.Inputs.Partner.Ideo;
+            if (!context.Inputs.IsRape && ideo != null) PreceptSextype(ideo, context.Inputs.Partner.GetStatValue(xxx.sex_drive_stat), __result, 1, interaction);
 
         }
 
-        public static void PreceptSextype(Ideo ideo, float sexdrive, List<float> result, int offset)
+        public static List<String> promiscuousSexTypes = new List<String> { 
+            "DoublePenetration",
+            "Scissoring",
+            "Sixtynine",
+            "Fisting",
+        };
+
+        public static void PreceptSextype(Ideo ideo, float sexdrive, float result, int offset, InteractionWithExtension interaction)
         {
             float mult = 8.0f * Math.Max(0.3f, 1 / Math.Max(0.01f, sexdrive));
-            if (ideo.HasPrecept(VariousDefOf.Sex_VaginalOnly))
+            if ((interaction.Extension.rjwSextype == "Vaginal")
+                && ideo.HasPrecept(VariousDefOf.Sex_VaginalOnly))
             {
-                result[0 + offset] *= mult;
+                result *= mult;
             }
-            else if (ideo.HasPrecept(VariousDefOf.Sex_AnalOnly))
+            else if ((interaction.Extension.rjwSextype == "Anal")
+                     && ideo.HasPrecept(VariousDefOf.Sex_AnalOnly))
             {
-                result[2 + offset] *= mult;
-                result[6 + offset] *= mult;
+                result *= mult;
             }
-            else if (ideo.HasPrecept(VariousDefOf.Sex_OralOnly))
+            else if ((interaction.Extension.rjwSextype == "Cunnilingus" || interaction.Extension.rjwSextype == "Fellatio" || interaction.Extension.rjwSextype == "Beakjob")
+                     && ideo.HasPrecept(VariousDefOf.Sex_OralOnly))
             {
-                result[4 + offset] *= mult;
-                result[8 + offset] *= mult;
+                result *= mult;
             }
-            else if (ideo.HasPrecept(VariousDefOf.Sex_Promiscuous))
+            else if (promiscuousSexTypes.Contains(interaction.Extension.rjwSextype)
+                     && ideo.HasPrecept(VariousDefOf.Sex_Promiscuous))
             {
-                result[10 + offset] *= mult;
-                result[20 + offset] *= mult;
-                result[24 + offset] *= mult;
-                result[26 + offset] *= mult;
+                result *= mult;
             }
         }
     }

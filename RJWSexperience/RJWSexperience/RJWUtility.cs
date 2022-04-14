@@ -8,6 +8,9 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 using UnityEngine;
+using rjw.Modules.Interactions.Objects;
+using rjw.Modules.Interactions.Helpers;
+using rjw.Modules.Interactions.Enums;
 
 namespace RJWSexperience
 {
@@ -102,13 +105,33 @@ namespace RJWSexperience
             }
         }
 
+        /*
+         * Uses RJW 4.9.0's new interactiondefs to determine giver and receiver based on reverse interactiontag
+         */
+
+        public static void DetermineGiversAndReceivers(SexProps props, out Pawn giver, out Pawn receiver)
+        {
+            InteractionWithExtension interaction = InteractionHelper.GetWithExtension(props.dictionaryKey);
+            if (interaction.HasInteractionTag(InteractionTag.Reverse))
+            {
+                receiver = props.partner;
+                giver = props.pawn;
+            }
+            else
+            {
+                receiver = props.pawn;
+                giver = props.partner;
+            }
+        }
+
         public static void UpdateSextypeRecords(SexProps props)
         {
             xxx.rjwSextype sextype = props.sexType;
             Pawn pawn = props.pawn;
             Pawn partner = props.partner;
-            Pawn receiver = props.reciever;
-            Pawn giver = props.giver;
+
+            DetermineGiversAndReceivers(props, out Pawn giver, out Pawn receiver);
+
 
             if (partner != null)
             {
